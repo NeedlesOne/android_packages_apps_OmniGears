@@ -56,10 +56,12 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String KEY_ASPECT_RATIO_APPS_LIST = "aspect_ratio_apps_list";
     private static final String KEY_ASPECT_RATIO_CATEGORY = "aspect_ratio_category";
     private static final String KEY_ASPECT_RATIO_APPS_LIST_SCROLLER = "aspect_ratio_apps_list_scroller";
+    private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
 
     private ListPreference mQuickPulldown;
     private AppMultiSelectListPreference mAspectRatioAppsSelect;
     private ScrollAppsViewPreference mAspectRatioApps;
+    private ListPreference mHeadsUpSnoozeTime;
 
     @Override
     public int getMetricsCategory() {
@@ -112,6 +114,22 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             mAspectRatioAppsSelect.setValues(valuesList);
             mAspectRatioAppsSelect.setOnPreferenceChangeListener(this);
         }
+
+         Resources systemUiResources;
+         try {
+             systemUiResources = getPackageManager().getResourcesForApplication("com.android.systemui");
+         } catch (Exception e) {
+             return;
+         }
+
+        int defaultSnooze = systemUiResources.getInteger(systemUiResources.getIdentifier(
+                    "com.android.systemui:integer/heads_up_default_snooze_length_ms", null, null));
+        mHeadsUpSnoozeTime = (ListPreference) findPreference(PREF_HEADS_UP_SNOOZE_TIME);
+        mHeadsUpSnoozeTime.setOnPreferenceChangeListener(this);
+        int headsUpSnooze = Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_NOTIFICATION_SNOOZE, defaultSnooze);
+        mHeadsUpSnoozeTime.setValue(String.valueOf(headsUpSnooze));
+        updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
     }
 
     @Override
@@ -139,6 +157,13 @@ public class BarsSettings extends SettingsPreferenceFragment implements
                 Settings.System.putString(getContentResolver(), Settings.System.ASPECT_RATIO_APPS_LIST, "");
             }
             return true;
+        } else if (preference == mHeadsUpSnoozeTime) {
+            int headsUpSnooze = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HEADS_UP_NOTIFICATION_SNOOZE,
+                    headsUpSnooze);
+            updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
+            return true;
         }
         return false;
     }
@@ -157,6 +182,17 @@ public class BarsSettings extends SettingsPreferenceFragment implements
                     : R.string.quick_pulldown_right);
             mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
        }
+    }
+
+    private void updateHeadsUpSnoozeTimeSummary(int value) {
+        if (value == 0) {
+            mHeadsUpSnoozeTime.setSummary(getResources().getString(R.string.heads_up_snooze_disabled_summary));
+        } else if (value == 60000) {
+            mHeadsUpSnoozeTime.setSummary(getResources().getString(R.string.heads_up_snooze_summary_one_minute));
+        } else {
+            String summary = getResources().getString(R.string.heads_up_snooze_summary, value / 60 / 1000);
+            mHeadsUpSnoozeTime.setSummary(summary);
+        }
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

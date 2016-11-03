@@ -75,6 +75,19 @@
         </PreferenceCategory>
 
         <PreferenceCategory
+            android:key="category_headsup"
+            android:title="@string/heads_up_category">
+
+            <ListPreference
+                android:key="heads_up_snooze_time"
+                android:title="@string/heads_up_snooze_title"
+                android:entries="@array/heads_up_snooze_entries"
+                android:entryValues="@array/heads_up_snooze_values"
+                android:persistent="false" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
             android:key="category_navigationbar"
             android:title="@string/navigationbar_title">
 
