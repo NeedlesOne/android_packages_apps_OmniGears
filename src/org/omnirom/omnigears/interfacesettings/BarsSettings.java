@@ -56,11 +56,13 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String KEY_ASPECT_RATIO_APPS_LIST = "aspect_ratio_apps_list";
     private static final String KEY_ASPECT_RATIO_CATEGORY = "aspect_ratio_category";
     private static final String KEY_ASPECT_RATIO_APPS_LIST_SCROLLER = "aspect_ratio_apps_list_scroller";
+    private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
     private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
 
     private ListPreference mQuickPulldown;
     private AppMultiSelectListPreference mAspectRatioAppsSelect;
     private ScrollAppsViewPreference mAspectRatioApps;
+    private ListPreference mHeadsUpTimeOut;
     private ListPreference mHeadsUpSnoozeTime;
 
     @Override
@@ -122,6 +124,15 @@ public class BarsSettings extends SettingsPreferenceFragment implements
              return;
          }
 
+        int defaultTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
+                    "com.android.systemui:integer/heads_up_notification_decay", null, null));
+        mHeadsUpTimeOut = (ListPreference) findPreference(PREF_HEADS_UP_TIME_OUT);
+        mHeadsUpTimeOut.setOnPreferenceChangeListener(this);
+        int headsUpTimeOut = Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_TIMEOUT, defaultTimeOut);
+        mHeadsUpTimeOut.setValue(String.valueOf(headsUpTimeOut));
+        updateHeadsUpTimeOutSummary(headsUpTimeOut);
+
         int defaultSnooze = systemUiResources.getInteger(systemUiResources.getIdentifier(
                     "com.android.systemui:integer/heads_up_default_snooze_length_ms", null, null));
         mHeadsUpSnoozeTime = (ListPreference) findPreference(PREF_HEADS_UP_SNOOZE_TIME);
@@ -157,6 +168,13 @@ public class BarsSettings extends SettingsPreferenceFragment implements
                 Settings.System.putString(getContentResolver(), Settings.System.ASPECT_RATIO_APPS_LIST, "");
             }
             return true;
+        } else if (preference == mHeadsUpTimeOut) {
+            int headsUpTimeOut = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HEADS_UP_TIMEOUT,
+                    headsUpTimeOut);
+            updateHeadsUpTimeOutSummary(headsUpTimeOut);
+            return true;
         } else if (preference == mHeadsUpSnoozeTime) {
             int headsUpSnooze = Integer.valueOf((String) newValue);
             Settings.System.putInt(getContentResolver(),
@@ -182,6 +200,12 @@ public class BarsSettings extends SettingsPreferenceFragment implements
                     : R.string.quick_pulldown_right);
             mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
        }
+    }
+
+    private void updateHeadsUpTimeOutSummary(int value) {
+        String summary = getResources().getString(R.string.heads_up_time_out_summary,
+                value / 1000);
+        mHeadsUpTimeOut.setSummary(summary);
     }
 
     private void updateHeadsUpSnoozeTimeSummary(int value) {
