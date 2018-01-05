@@ -735,4 +735,8 @@
     <string name="expanded_user_configurable">User configurable</string>
     <string name="show_only_launcher_menu">Only launcher apps</string>
     <string name="show_all_apps_menu">All apps</string>
+
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 </resources>

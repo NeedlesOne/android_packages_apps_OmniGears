@@ -30,6 +30,12 @@
                 android:defaultValue="false" />
 
             <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+                android:key="status_bar_brightness_control"
+                android:title="@string/status_bar_toggle_brightness"
+                android:summary="@string/status_bar_toggle_brightness_summary"
+                android:defaultValue="false" />
+
+            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
                 android:key="status_bar_ime_notification"
                 android:title="@string/status_bar_ime_notification_title"
                 android:summary="@string/status_bar_ime_notification_summary"
