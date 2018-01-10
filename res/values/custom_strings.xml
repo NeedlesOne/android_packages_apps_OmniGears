@@ -748,5 +748,15 @@
 
     <!-- Bottom shortcuts -->
     <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Bottom shortcuts</string>
-    <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Configure the bottom shortcuts</string>
+    <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Configure the bottom shortcuts in the keyguard</string>
+
+    <!-- Hide Lockscreen clock, date, alarm -->
+    <string name="lockscreen_item_title">Hide Lockscreen Items</string>
+    <string name="lockscreen_item_summary">Hide Lockscreen clock, date, alarm</string>
+    <string name="hide_lockscreen_clock_title">Clock widget</string>
+    <string name="hide_lockscreen_clock_summary">Change the clock widget\'s visibility</string>
+    <string name="hide_lockscreen_date_title">Date widget</string>
+    <string name="hide_lockscreen_date_summary">Change the date\'s visibility underneath the clock widget</string>
+    <string name="hide_lockscreen_alarm_title">Alarm text</string>
+    <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
 </resources>
