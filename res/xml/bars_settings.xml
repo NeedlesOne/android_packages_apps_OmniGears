@@ -81,6 +81,18 @@
         </PreferenceCategory>
 
         <PreferenceCategory
+            android:key="expanded_desktop_category"
+            android:title="@string/expanded_desktop_title">
+
+            <Preference
+                android:key="expanded_desktop_category"
+                android:title="@string/expanded_desktop_title"
+                android:summary="@string/expanded_desktop_summary"
+                android:fragment="org.omnirom.omnigears.interfacesettings.ExpandedDesktop" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
             android:key="lockscreen_category"
             android:title="@string/lockscreen_category_title" >
 

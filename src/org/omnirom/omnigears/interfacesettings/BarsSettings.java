@@ -55,6 +55,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "BarsSettings";
     private static final String NETWORK_TRAFFIC_ROOT = "category_network_traffic";
     private static final String NAVIGATIONBAR_ROOT = "category_navigationbar";
+    private static final String EXPANDED_DESKTOP_CATEGORY = "expanded_desktop_category";
 
     private static final String QUICK_PULLDOWN = "quick_pulldown";
 
