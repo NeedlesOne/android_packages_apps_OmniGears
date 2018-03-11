@@ -18,6 +18,9 @@
 package org.omnirom.omnigears;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.support.v7.preference.Preference;
 import android.provider.SearchIndexableResource;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -35,6 +38,18 @@ public class OmniDashboardFragment extends DashboardFragment {
 
     private static final String TAG = "OmniDashboardFragment";
     public static final String CATEGORY_OMNI = "com.android.settings.category.ia.omni";
+    private static final String KEY_DEVICE_PARTS = "device_parts";
+
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        super.onCreatePreferences(savedInstanceState, rootKey);
+        if (!isDevicePartsSupported(getContext())) {
+            Preference pref = getPreferenceScreen().findPreference(KEY_DEVICE_PARTS);
+            if (pref != null) {
+                getPreferenceScreen().removePreference(pref);
+            }
+        }
+    }
 
     @Override
     public int getMetricsCategory() {
@@ -56,6 +71,16 @@ public class OmniDashboardFragment extends DashboardFragment {
         return null;
     }
 
+    private static boolean isDevicePartsSupported(Context context) {
+        boolean devicePartsSupported = false;
+        try {
+            devicePartsSupported = context.getPackageManager().getPackageInfo(
+                    "org.omnirom.device", 0).versionCode > 0;
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        return devicePartsSupported;
+    }
+
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
 
@@ -64,6 +89,15 @@ public class OmniDashboardFragment extends DashboardFragment {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.omni_dashboard_fragment;
                     return Arrays.asList(sir);
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    if (!isDevicePartsSupported(context)) {
+                        result.add(KEY_DEVICE_PARTS);
+                    }
+                    return result;
                 }
             };
 }

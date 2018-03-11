@@ -19,7 +19,7 @@
     android:title="@string/header_category_omni">
 
     <Preference
-        android:key="style_settings"
+        android:key="style_settings_new"
         android:title="@string/style_settings_title"
         android:summary="@string/style_settings_summary"
         android:icon="@drawable/ic_settings_style"
