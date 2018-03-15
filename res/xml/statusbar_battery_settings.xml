@@ -19,6 +19,11 @@
             android:title="@string/battery_title"
             android:key="statusbar_battery">
 
+	<Preference
+            android:key="batterybar"
+            android:fragment="org.omnirom.omnigears.BatteryBarSettings"
+            android:title="@string/batterybar_title"/>
+
         <ListPreference
             android:key="statusbar_battery_style"
             android:title="@string/battery_style_title"
