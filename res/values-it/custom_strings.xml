@@ -74,7 +74,7 @@
   <string name="button_home_answers_call_summary">Premendo il pulsante home si risponderà alla chiamata in arrivo</string>
   <string name="button_other_title">Altro</string>
   <string name="keys_action_app_switch_card">AOSP (pila)</string>
-  <string name="keys_action_omniswitch_short">OmniSwitch</string>
+  <string name="keys_action_omniswitch_short">Interruttore di Omni</string>
   <string name="keys_action_app_switch_grid">AOSP (griglia)</string>
   <string name="button_back_kill_enable_title">Termina app con tasto indietro</string>
   <string name="button_back_kill_enable_summary">Termina app in primo piano premendo a lungo il tasto indietro</string>
@@ -155,7 +155,7 @@
   <string name="led_color_red">Rosso</string>
   <string name="led_color_blue">Blu</string>
   <string name="statusbar_title">Barra di stato</string>
-  <string name="battery_title">Visualizza batteria</string>
+  <string name="battery_title">Display della batteria</string>
   <string name="statusbar_battery_summary">Imposta stile visualizzazione stato batteria</string>
   <string name="battery_style_title">Stile</string>
   <string name="battery_percent_title">Visualizza percentuale</string>
@@ -186,8 +186,8 @@
   <string name="navbar_title">Barra di navigazione</string>
   <string name="navbar_recents_style_title">Stile recenti</string>
   <string name="omniswitch_settings">Impostazioni</string>
-  <string name="omniswitch_dialog_running_new">OmniSwitch non è attualmente abilitato. Per favore abilitalo nelle impostazioni dell\'app.</string>
-  <string name="omniswitch_dialog_unavail">OmniSwitch non è installato.</string>
+  <string name="omniswitch_dialog_running_new">L\'interruttore di Omni non è attualmente abilitato. Per favore abilitalo nelle impostazioni dell\'app.</string>
+  <string name="omniswitch_dialog_unavail">L\'interruttore di Omni non è installato.</string>
   <string name="omniswitch_title">Stili recenti</string>
   <string name="long_press_recents_action_title">Azione alla pressione prolungata del tasto recenti</string>
   <string name="long_press_recents_action_split">Attiva schermo diviso</string>
@@ -302,7 +302,7 @@
   <string name="global_actions_lockdown_title">Blocca</string>
   <string name="global_actions_settings_title">Impostazioni</string>
   <string name="global_actions_airplane_title">Modalità aereo</string>
-  <string name="global_actions_screenshot_title">Screenshot</string>
+  <string name="global_actions_screenshot_title">Immagine del display</string>
   <string name="global_actions_screenrecord_title">Registra schermo</string>
   <string name="global_actions_torch_title">Torcia</string>
   <string name="global_actions_users_title">Utenti</string>
@@ -386,7 +386,7 @@
   <string name="device_hostname">Nome host del dispositivo</string>
   <!-- OMS -->
   <string name="theming_title">Tema</string>
-  <string name="oms_app_title">Substratum theme engine</string>
+  <string name="oms_app_title">Substratum motore tema</string>
   <string name="oms_app_summary">Inizia l\'esperienza di Substratum</string>
   <string name="status_bar_ime_notification_title">Visualizza notifica di IME</string>
   <string name="status_bar_ime_notification_summary">Se la barra di navigazione non è disponibile</string>

@@ -235,12 +235,12 @@
   <string name="custom_header_browse_title">Sirvi installitud päiseid</string>
   <string name="custom_header_browse_summary">Klõpsa mistahes pildil, et seda kasutada staatilises režiimis</string>
   <string name="custom_header_browse_summary_new">Sirvi kõiki saadaolevaid päisepakke</string>
-  <string name="custom_header_pick_title">Vali päise pilt</string>
+  <string name="custom_header_pick_title">Vali päisepilt</string>
   <string name="custom_header_pick_summary">Vali pilt staatilises režiimis kasutamiseks</string>
-  <string name="style_enabled_summary">Kohandatud päise pilt VÄLJAS</string>
-  <string name="style_disabled_summary">Kohandatud päise pilt SEES</string>
+  <string name="style_enabled_summary">Kohandatud päisepilt VÄLJAS</string>
+  <string name="style_disabled_summary">Kohandatud päisepilt SEES</string>
   <string name="header_provider_disabled">Keelatud</string>
-  <string name="custom_header_title">Kohandatud päise pilt</string>
+  <string name="custom_header_title">Kohandatud päisepilt</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Võrguliiklus</string>
   <string name="network_traffic_summary">Olekuriba liiklusmonitor</string>

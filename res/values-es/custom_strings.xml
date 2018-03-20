@@ -483,7 +483,13 @@
   <string name="string_default">Por defecto</string>
   <string name="action_filter">Filtro</string>
   <string name="doze_settings_applied">Configuración aplicada</string>
+  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Este es el tiempo máximo que ejecutaremos el mantenimiento en modo inactivo</string>
+  <string name="SHORT_INACTIVE_TIMEOUT">Tiempo de espera inactivo</string>
   <string name="omni_theme_title">Tema claro/oscuro</string>
   <string name="show_dashboard_columns_title">Diseño de dos columnas</string>
   <string name="hide_dashboard_summary_title">Ocultar Resumen</string>
+  <string name="systemui_theme_style_dark">Estilo oscuro</string>
+  <string name="volume_steps_30">30 pasos</string>
+  <string name="volume_steps_15">15 pasos</string>
+  <string name="volume_steps_7">7 pasos</string>
 </resources>

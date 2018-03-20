@@ -489,6 +489,12 @@
   <string name="DESC_SENSING_TIMEOUT">Si nous ne recevons un rappel de AnyMotion dans ce laps de temps + locating_to, nous allons changer de STATE_SENSING à STATE_INACTIVE, et tous les rappels de AnyMotion passés hors STATE_SENSING seront ignorés</string>
   <string name="DESC_LOCATING_TIMEOUT">C\'est le temps que nous attendrons pour obtenir une bonne localisation avant de passer en mode veille</string>
   <string name="DESC_LOCATION_ACCURACY">La précision maximale désirée (en mètres) pour laquelle nous considérons la localisation être suffisante pour passer en veille. Nous allons essayer d’obtenir une précision équivalente ou jusqu\'à l’expiration de la locating_to</string>
+  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">C\'est la durée maximum d\'exécution en mode de maintenance inactif</string>
+  <string name="SHORT_INACTIVE_TIMEOUT">Délai d’inactivité</string>
+  <string name="SHORT_LOCATION_ACCURACY">Précision de la localisation</string>
+  <string name="SHORT_IDLE_TIMEOUT">Délai d’inactivité</string>
+  <string name="SHORT_MAX_IDLE_TIMEOUT">Délai maximum d\'inactivité</string>
+  <string name="logcat_app_title">MatLog</string>
   <string name="logcat_app_summary">Démarrer l\'application pour collecter les logs</string>
   <string name="omni_theme_title">Thème Sombre/Clair</string>
   <string name="omni_theme_summary">Thème basé sur Substratum</string>

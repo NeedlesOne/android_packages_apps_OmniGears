@@ -130,15 +130,61 @@
   <string name="swap_volume_buttons_title">Tilpass rotasjon</string>
   <string name="swap_volume_buttons_summary">Juster volumknapper basert på gjeldende rotasjon</string>
   <!-- Battery light settings  -->
+  <string name="fast_charging_led_enabled_summary">Ved hurtiglading, bruk annen farge til 90%</string>
+  <string name="fast_charging_light_color_title">Farge</string>
+  <string name="edit_battery_settings">Rediger batteriinnstillinger</string>
   <string name="led_color_green">Grønn</string>
   <string name="led_color_red">Rød</string>
   <string name="led_color_blue">Blå</string>
+  <string name="statusbar_title">Statuslinje</string>
+  <string name="battery_title">Batterivisning</string>
+  <string name="statusbar_battery_summary">Angi stil for statuslinjen batterivisning</string>
+  <string name="battery_style_title">Stil</string>
+  <string name="battery_percent_title">Vis prosent</string>
+  <string name="statusbar_percent_inside_title">Prosentvisning</string>
+  <string name="statusbar_percent_inside_summary">Vise prosent over batteriikonet</string>
   <string name="statusbar_charging_image_title">Ladeindikator</string>
   <string name="statusbar_category_charging_title">Lader</string>
+  <string name="statusbar_charging_image_summary">Vis boltindikator under lading. Skjul prosentvisning</string>
   <string name="statusbar_battery_charging_color_title">Farge</string>
+  <string name="statusbar_battery_charging_color_enable_title">Farge under lading</string>
+  <string name="battery_enable_title">Vis batteri</string>
+  <string name="button_backlight_title">Knapp: Bakgrunnsbelysning</string>
+  <string name="button_backlight_on_touch_only_title">Knappetrykk</string>
+  <string name="button_backlight_on_touch_only_summary">Aktiver bakgrunnsbelysning ved tidsavbrudd bare med knappetrykk</string>
+  <string name="button_timeout_title">Tidsavbrudd bakgrunnsbelysning</string>
+  <string name="button_timeout_summary">Deaktivert på verdien 0</string>
+  <string name="button_link_brightness">Koble til skjermen</string>
+  <string name="button_link_brightness_summary">Bruk skjermens lysstyrkenivå</string>
+  <string name="button_manual_brightness">Lysstyrkenivå</string>
   <string name="unit_sec">sek</string>
+  <string name="unit_msec">ms</string>
   <string name="button_backlight_enable_title">Aktiver</string>
+  <string name="navigation_bar_show_title">Vis navigasjonsfelt</string>
+  <string name="navigation_bar_show_summary">Tving navigasjonsfelt</string>
+  <string name="hardware_keys_disable_title">Deaktiver knapper</string>
+  <string name="hardware_keys_disable_summary">Tving deaktivering av fysiske knapper</string>
+  <string name="navbar_title">Navigasjonsfelt</string>
+  <string name="navbar_recents_style_title">Siste stil</string>
+  <string name="omniswitch_settings">Innstillinger</string>
+  <string name="omniswitch_dialog_running_new">OmniSwitch er ikke aktivert. Aktiver i app-innstillinger.</string>
+  <string name="omniswitch_dialog_unavail">OmniSwitch er ikke installert.</string>
+  <string name="omniswitch_title">Siste stil</string>
+  <string name="long_press_recents_action_title">Langt trykk siste handling</string>
+  <string name="long_press_recents_action_split">Veksle delt skjerm</string>
+  <string name="keys_action_recents">Siste</string>
+  <string name="doze_brightness_level_title">Lysstyrkenivå</string>
   <!-- Lock screen config -->
+  <string name="lockscreen_shortcut_title">Snarveier</string>
+  <string name="lockscreen_voice_shortcut_title">Talestøtte snarvei</string>
+  <string name="lockscreen_voice_shortcut_summary">Vis talestøtte i stedet for telefon</string>
+  <string name="lockscreen_shortcuts_enable_title">Aktiver</string>
+  <string name="lockscreen_clock_display_time_title">Vise klokke</string>
+  <string name="lockscreen_clock_display_date_title">Vise dato</string>
+  <string name="lockscreen_clock_display_alarm_title">Vise neste alarm</string>
+  <string name="lockscreen_clock">Klokke</string>
+  <string name="lockscreen_clock_font_title">Skrifttype for klokke</string>
+  <string name="lockscreen_clock_color_title">Klokke- og datostørrelse</string>
   <string name="daylight_header_pack_title">Topplinje bildepakke</string>
   <string name="status_bar_custom_header_shadow_title">Topplinje bildeskygge</string>
   <string name="custom_header_provider_title">Topplinje leverandør</string>
@@ -151,8 +197,13 @@
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Lysstyrkekontroll</string>
   <!-- Status Bar Activity Indicators -->
+  <string name="status_bar_network_activity_title">Aktivitetsindikatorer</string>
+  <string name="status_bar_network_activity_summary">Vis indikatorer i signalbarer</string>
+  <string name="quick_settings_title">Hurtiginnstillinger</string>
+  <string name="quick_settings_summary">Konfigurere hurtiginnstillingsfliser</string>
   <string name="status_bar_icon_blacklist_title">Statuslinje ikoner</string>
   <string name="status_bar_icon_blacklist_summary">Konfigurere hvilke ikoner på statuslinje</string>
+  <string name="recents_category">Siste</string>
   <string name="header_weather_title">Topplinje se vær</string>
   <string name="weather_icon_pack_title">Tilstand ikonpakke</string>
   <string name="weather_icon_pack_note">Merknad\u003a du kan installere nye ikonpakker fra Play Store ved å søke etter \"Chronus ikoner\"</string>
@@ -180,5 +231,6 @@
   <string name="deep_sleep_time">Dyp dvale</string>
   <string name="deep_sleep">"Dyp dvale"</string>
   <!-- Display : Rotation -->
+  <string name="category_display">Skjerm</string>
   <!-- Doze settings editor -->
 </resources>
