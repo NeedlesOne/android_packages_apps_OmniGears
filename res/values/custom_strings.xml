@@ -689,6 +689,10 @@
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
 
+    <string name="choose_app">Choose app</string>
+    <string name="not_ready_summary">Resolving...</string>
+    <string name="resolve_failed_summary">Resolving app failed</string>
+    <string name="disabled_entry">Disabled</string>
 <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
