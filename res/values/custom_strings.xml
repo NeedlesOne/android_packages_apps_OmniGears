@@ -513,6 +513,8 @@
     <string name="show_cpu_summary">Screen overlay showing current CPU info</string>
     <string name="headset_plugged_notification_title">Headset notification</string>
     <string name="headset_plugged_notification_summary">Show notification when connecting wired headsets</string>
+    <string name="wake_when_plugged_or_unplugged_title">Wake when plugged in/unplugged</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Wake up the device when it is plugged in/unplugged from a charger</string>
 
     <!-- Display : Rotation -->
     <string name="category_display">Display</string>
