@@ -27,6 +27,13 @@
             android:key="category_media_player"
             android:title="@string/category_media_player_title">
 
+            <Preference
+                android:key="category_media_player_info"
+                android:summary="@string/category_media_player_info_title"
+                android:persistent="false"
+                android:icon="@drawable/ic_info_outline_24dp"
+                android:dependency="event_service_enabled" />
+
             <org.omnirom.omnigears.preference.AppSelectListPreference
                 android:key="bt_a2dp_connect_app"
                 android:title="@string/bt_a2dp_connect_app_title"
@@ -36,6 +43,12 @@
             <org.omnirom.omnigears.preference.AppSelectListPreference
                 android:key="headset_connect_app"
                 android:title="@string/headset_connect_app_title"
+                android:persistent="false"
+                android:dependency="event_service_enabled" />
+
+            <SwitchPreference
+                android:key="media_player_autostart"
+                android:title="@string/media_player_autostart_title"
                 android:persistent="false"
                 android:dependency="event_service_enabled" />
 

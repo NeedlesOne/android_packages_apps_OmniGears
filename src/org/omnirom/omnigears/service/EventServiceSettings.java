@@ -54,10 +54,12 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
     public static final String EVENT_A2DP_CONNECT = "bt_a2dp_connect_app";
     public static final String EVENT_WIRED_HEADSET_CONNECT = "headset_connect_app";
     public static final String EVENT_SERVICE_ENABLED = "event_service_enabled";
+    public static final String EVENT_MEDIA_PLAYER_START = "media_player_autostart";
 
     private AppSelectListPreference mA2DPappSelect;
     private AppSelectListPreference mWiredHeadsetAppSelect;
     private SwitchPreference mEnable;
+    private SwitchPreference mAutoStart;
     private Handler mHandler = new Handler();
 
     @Override
@@ -79,6 +81,10 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
         mEnable.setOnPreferenceChangeListener(this);
         mEnable.setSummary(isServiceRunning() ? getResources().getString(R.string.event_service_running)
                 : getResources().getString(R.string.event_service_stopped));
+
+        mAutoStart = (SwitchPreference) findPreference(EVENT_MEDIA_PLAYER_START);
+        mAutoStart.setChecked(getPrefs().getBoolean(EventServiceSettings.EVENT_MEDIA_PLAYER_START, false));
+        mAutoStart.setOnPreferenceChangeListener(this);
 
         mA2DPappSelect = (AppSelectListPreference) findPreference(EVENT_A2DP_CONNECT);
         mEnable.setChecked(getPrefs().getBoolean(EventServiceSettings.EVENT_SERVICE_ENABLED, false));
@@ -119,6 +125,10 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
                             : getResources().getString(R.string.event_service_stopped));
                 }
             }, 1000);
+            return true;
+        } else if (preference == mAutoStart) {
+            boolean value = ((Boolean) newValue).booleanValue();
+            getPrefs().edit().putBoolean(EVENT_MEDIA_PLAYER_START, value).commit();
             return true;
         }
         return false;

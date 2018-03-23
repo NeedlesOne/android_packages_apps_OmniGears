@@ -17,10 +17,7 @@
 */
 package org.omnirom.omnigears.service;
 
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
+import android.app.ActivityManagerNative;
 import android.app.Service;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothA2dp;
@@ -32,17 +29,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.location.LocationManager;
+import android.media.IAudioService;
 import android.media.AudioManager;
-import android.net.ConnectivityManager;
-import android.os.BatteryManager;
-import android.os.HandlerThread;
+import android.media.session.MediaSessionLegacyHelper;
+import android.os.Handler;
 import android.os.Binder;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.UserHandle;
-import android.provider.Settings;
+import android.os.ServiceManager;
+import android.os.SystemClock;
 import android.util.Log;
+import android.view.KeyEvent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,6 +50,9 @@ public class EventService extends Service {
     private static final boolean DEBUG = true;
     private PowerManager.WakeLock mWakeLock;
     private static boolean mIsRunning;
+    private Handler mHandler = new Handler();
+    private boolean mWiredHeadsetConnected;
+    private boolean mA2DPConnected;
 
     private BroadcastReceiver mStateListener = new BroadcastReceiver() {
         @Override
@@ -62,7 +63,7 @@ public class EventService extends Service {
                 if (DEBUG) Log.d(TAG, "onReceive " + action);
                 if (BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)) {
                     if(intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, -1) == BluetoothAdapter.STATE_OFF){
-                    } else {
+                        mA2DPConnected = false;
                     }
                 }
                 if (BluetoothDevice.ACTION_ACL_CONNECTED.equals(action)) {
@@ -72,35 +73,55 @@ public class EventService extends Service {
                 if (BluetoothA2dp.ACTION_CONNECTION_STATE_CHANGED.equals(action)) {
                     int state = intent.getIntExtra(BluetoothProfile.EXTRA_STATE,
                             BluetoothProfile.STATE_CONNECTED);
-                    if (state == BluetoothProfile.STATE_CONNECTED) {
+                    if (state == BluetoothProfile.STATE_CONNECTED && !mA2DPConnected) {
+                        mA2DPConnected = true;
                         if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = true" );
                         String app = getPrefs(context).getString(EventServiceSettings.EVENT_A2DP_CONNECT, null);
                         if (app != null) {
                             if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG app = " + app);
                             try {
                                 context.startActivityAsUser(createIntent(app), UserHandle.CURRENT);
+                                if (getPrefs(context).getBoolean(EventServiceSettings.EVENT_MEDIA_PLAYER_START, false)) {
+                                    mHandler.postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            dispatchMediaKeyToAudioService(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE);
+                                        }
+                                    }, 1000);
+                                }
                             } catch (Exception e) {
                                 Log.e(TAG, "BluetoothProfile.STATE_CONNECTED", e);
                             }
                         }
                     } else {
+                        mA2DPConnected = false;
                         if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = false" );
                     }
                 }
                 if (AudioManager.ACTION_HEADSET_PLUG.equals(action)) {
                     boolean useHeadset = intent.getIntExtra("state", 0) == 1;
-                    if (useHeadset) {
+                    if (useHeadset && !mWiredHeadsetConnected) {
+                        mWiredHeadsetConnected = true;
                         if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = true" );
                         String app = getPrefs(context).getString(EventServiceSettings.EVENT_WIRED_HEADSET_CONNECT, null);
                         if (app != null) {
                             if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG app = " + app);
                             try {
                                 context.startActivityAsUser(createIntent(app), UserHandle.CURRENT);
+                                if (getPrefs(context).getBoolean(EventServiceSettings.EVENT_MEDIA_PLAYER_START, false)) {
+                                    mHandler.postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            dispatchMediaKeyToAudioService(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE);
+                                        }
+                                    }, 1000);
+                                }
                             } catch (Exception e) {
                                 Log.e(TAG, "AudioManager.ACTION_HEADSET_PLUG", e);
                             }
                         }
                     } else {
+                        mWiredHeadsetConnected = false;
                         if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = false" );
                     }
                 }
@@ -177,5 +198,22 @@ public class EventService extends Service {
                 | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
         intent.setComponent(componentName);
         return intent;
+    }
+
+    private void dispatchMediaKeyToAudioService(int keycode) {
+        if (ActivityManagerNative.isSystemReady()) {
+            IAudioService audioService = IAudioService.Stub
+                    .asInterface(ServiceManager.checkService(Context.AUDIO_SERVICE));
+            if (audioService != null) {
+                if (DEBUG) Log.d(TAG, "dispatchMediaKeyToAudioService " + keycode);
+
+                KeyEvent event = new KeyEvent(SystemClock.uptimeMillis(),
+                        SystemClock.uptimeMillis(), KeyEvent.ACTION_DOWN,
+                        keycode, 0);
+                MediaSessionLegacyHelper.getHelper(this).sendMediaButtonEvent(event, true);
+                event = KeyEvent.changeAction(event, KeyEvent.ACTION_UP);
+                MediaSessionLegacyHelper.getHelper(this).sendMediaButtonEvent(event, true);
+            }
+        }
     }
 }
