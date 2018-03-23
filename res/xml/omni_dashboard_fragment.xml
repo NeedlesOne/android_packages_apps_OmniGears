@@ -57,6 +57,12 @@
         android:fragment="org.omnirom.omnigears.batterylight.BatteryLightSettings" />
 
     <Preference
+        android:key="event_service_settings"
+        android:title="@string/event_service_settings_title"
+        android:icon="@drawable/ic_settings_event_service"
+        android:fragment="org.omnirom.omnigears.service.EventServiceSettings" />
+
+    <Preference
         android:key="more_settings"
         android:title="@string/more_settings_title"
         android:icon="@drawable/ic_settings_more"

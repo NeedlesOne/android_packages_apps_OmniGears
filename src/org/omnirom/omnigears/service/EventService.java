@@ -27,9 +27,11 @@ import android.bluetooth.BluetoothA2dp;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothProfile;
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.location.LocationManager;
 import android.media.AudioManager;
 import android.net.ConnectivityManager;
@@ -38,6 +40,7 @@ import android.os.HandlerThread;
 import android.os.Binder;
 import android.os.IBinder;
 import android.os.PowerManager;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 
@@ -48,6 +51,7 @@ public class EventService extends Service {
     private static final String TAG = "OmniEventService";
     private static final boolean DEBUG = true;
     private PowerManager.WakeLock mWakeLock;
+    private static boolean mIsRunning;
 
     private BroadcastReceiver mStateListener = new BroadcastReceiver() {
         @Override
@@ -70,6 +74,15 @@ public class EventService extends Service {
                             BluetoothProfile.STATE_CONNECTED);
                     if (state == BluetoothProfile.STATE_CONNECTED) {
                         if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = true" );
+                        String app = getPrefs(context).getString(EventServiceSettings.EVENT_A2DP_CONNECT, null);
+                        if (app != null) {
+                            if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG app = " + app);
+                            try {
+                                context.startActivityAsUser(createIntent(app), UserHandle.CURRENT);
+                            } catch (Exception e) {
+                                Log.e(TAG, "BluetoothProfile.STATE_CONNECTED", e);
+                            }
+                        }
                     } else {
                         if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = false" );
                     }
@@ -78,6 +91,15 @@ public class EventService extends Service {
                     boolean useHeadset = intent.getIntExtra("state", 0) == 1;
                     if (useHeadset) {
                         if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = true" );
+                        String app = getPrefs(context).getString(EventServiceSettings.EVENT_WIRED_HEADSET_CONNECT, null);
+                        if (app != null) {
+                            if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG app = " + app);
+                            try {
+                                context.startActivityAsUser(createIntent(app), UserHandle.CURRENT);
+                            } catch (Exception e) {
+                                Log.e(TAG, "AudioManager.ACTION_HEADSET_PLUG", e);
+                            }
+                        }
                     } else {
                         if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = false" );
                     }
@@ -103,7 +125,7 @@ public class EventService extends Service {
         PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
         mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, TAG);
         mWakeLock.setReferenceCounted(true);
-
+        mIsRunning = true;
         registerListener();
     }
 
@@ -117,6 +139,7 @@ public class EventService extends Service {
         super.onDestroy();
         if (DEBUG) Log.d(TAG, "onDestroy");
         unregisterListener();
+        mIsRunning = false;
     }
 
     private void registerListener() {
@@ -136,5 +159,23 @@ public class EventService extends Service {
             this.unregisterReceiver(mStateListener);
         } catch (Exception e) {
         }
+    }
+
+    public static boolean isRunning() {
+        return mIsRunning;
+    }
+
+    private SharedPreferences getPrefs(Context context) {
+        return context.getSharedPreferences(EventServiceSettings.EVENTS_PREFERENCES_NAME, Context.MODE_PRIVATE);
+    }
+
+    private Intent createIntent(String value) {
+        ComponentName componentName = ComponentName.unflattenFromString(value);
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+        intent.setComponent(componentName);
+        return intent;
     }
 }

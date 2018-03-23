@@ -695,6 +695,14 @@
     <string name="not_ready_summary">Resolving...</string>
     <string name="resolve_failed_summary">Resolving app failed</string>
     <string name="disabled_entry">Disabled</string>
+
+    <string name="event_service_settings_title">Events</string>
+    <string name="category_media_player_title">Media player</string>
+    <string name="bt_a2dp_connect_app_title">Bluetooth A2DP connect</string>
+    <string name="headset_connect_app_title">Wired headset connect</string>
+    <string name="event_service_enabled_title">Enable event service</string>
+    <string name="event_service_running">Service is running</string>
+    <string name="event_service_stopped">Service is not running</string>
 <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>

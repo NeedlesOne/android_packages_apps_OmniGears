@@ -52,6 +52,7 @@ import com.android.settings.R;
 public class AppSelectListPreference extends CustomDialogPreference {
 
     private static String TAG = "AppSelectListPreference";
+    public static final String DISABLED_ENTRY = "disabled";
 
     private AppSelectListAdapter mAdapter;
     private Drawable mAppIconDrawable;
