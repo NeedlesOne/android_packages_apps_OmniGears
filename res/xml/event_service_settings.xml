@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--  Copyright (C) 2018 The OmniROM Project
 
   This program is free software: you can redistribute it and/or modify
@@ -18,39 +19,71 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="event_service_settings"
     android:title="@string/event_service_settings_title">
+
+    <SwitchPreference
+        android:key="event_service_enabled"
+        android:persistent="false"
+        android:title="@string/event_service_enabled_title" />
+
+    <PreferenceCategory
+        android:key="category_media_player"
+        android:title="@string/category_media_player_title">
+
+        <Preference
+            android:dependency="event_service_enabled"
+            android:icon="@drawable/ic_info_outline_24dp"
+            android:key="category_media_player_info"
+            android:persistent="false"
+            android:summary="@string/category_media_player_info_title" />
+
+        <org.omnirom.omnigears.preference.AppMultiSelectListPreference
+            android:dependency="event_service_enabled"
+            android:icon="@drawable/ic_settings_bluetooth"
+            android:key="bt_a2dp_connect_app_list"
+            android:persistent="false"
+            android:summary="@string/bt_a2dp_connect_app_list_summary"
+            android:title="@string/bt_a2dp_connect_app_list_title" />
+
+        <org.omnirom.omnigears.preference.ScrollAppsViewPreference
+            android:dependency="event_service_enabled"
+            android:key="a2dp_app_list"
+            android:selectable="false"
+            android:persistent="false" />
+
+        <org.omnirom.omnigears.preference.AppMultiSelectListPreference
+            android:dependency="event_service_enabled"
+            android:icon="@drawable/ic_headset_24dp"
+            android:key="headset_connect_app_list"
+            android:persistent="false"
+            android:summary="@string/headset_connect_app_list_summary"
+            android:title="@string/headset_connect_app_list_title" />
+
+        <org.omnirom.omnigears.preference.ScrollAppsViewPreference
+            android:dependency="event_service_enabled"
+            android:key="headset_app_list"
+            android:selectable="false"
+            android:persistent="false" />
+
         <SwitchPreference
-            android:key="event_service_enabled"
-            android:title="@string/event_service_enabled_title"
-            android:persistent="false"/>
+            android:defaultValue="true"
+            android:dependency="event_service_enabled"
+            android:key="autorun_single_app"
+            android:persistent="false"
+            android:summary="@string/autorun_single_app_summary"
+            android:title="@string/autorun_single_app_title" />
 
-        <PreferenceCategory
-            android:key="category_media_player"
-            android:title="@string/category_media_player_title">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="event_service_enabled"
+            android:key="media_player_music_active"
+            android:persistent="false"
+            android:title="@string/media_player_music_active_title" />
 
-            <Preference
-                android:key="category_media_player_info"
-                android:summary="@string/category_media_player_info_title"
-                android:persistent="false"
-                android:icon="@drawable/ic_info_outline_24dp"
-                android:dependency="event_service_enabled" />
+        <SwitchPreference
+            android:dependency="event_service_enabled"
+            android:key="media_player_autostart"
+            android:persistent="false"
+            android:title="@string/media_player_autostart_title" />
 
-            <org.omnirom.omnigears.preference.AppSelectListPreference
-                android:key="bt_a2dp_connect_app"
-                android:title="@string/bt_a2dp_connect_app_title"
-                android:persistent="false"
-                android:dependency="event_service_enabled" />
-
-            <org.omnirom.omnigears.preference.AppSelectListPreference
-                android:key="headset_connect_app"
-                android:title="@string/headset_connect_app_title"
-                android:persistent="false"
-                android:dependency="event_service_enabled" />
-
-            <SwitchPreference
-                android:key="media_player_autostart"
-                android:title="@string/media_player_autostart_title"
-                android:persistent="false"
-                android:dependency="event_service_enabled" />
-
-        </PreferenceCategory>
+    </PreferenceCategory>
 </PreferenceScreen>

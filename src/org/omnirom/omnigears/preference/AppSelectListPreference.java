@@ -217,7 +217,7 @@ public class AppSelectListPreference extends CustomDialogPreference {
 
     private void init() {
         mPm = getContext().getPackageManager();
-        setDialogLayoutResource(R.layout.preference_dialog_applist);
+        setDialogLayoutResource(R.layout.preference_app_list);
         setLayoutResource(R.layout.preference_app_select);
         setNegativeButtonText(android.R.string.cancel);
         setPositiveButtonText(null);
@@ -242,7 +242,7 @@ public class AppSelectListPreference extends CustomDialogPreference {
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 
-        final ListView list = (ListView) view.findViewById(R.id.applist);
+        final ListView list = (ListView) view.findViewById(R.id.app_list);
         list.setAdapter(mAdapter);
         list.setOnItemClickListener(new OnItemClickListener() {
             @Override

@@ -14,132 +14,135 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
-*/
+ */
 package org.omnirom.omnigears.service;
 
-import android.app.ActivityManagerNative;
 import android.app.Service;
-import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothA2dp;
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothProfile;
 import android.content.BroadcastReceiver;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.media.IAudioService;
 import android.media.AudioManager;
-import android.media.session.MediaSessionLegacyHelper;
-import android.os.Handler;
+import android.media.AudioSystem;
 import android.os.Binder;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.UserHandle;
-import android.os.ServiceManager;
-import android.os.SystemClock;
-import android.text.TextUtils;
 import android.util.Log;
-import android.view.KeyEvent;
 
-import org.omnirom.omnigears.preference.AppSelectListPreference;
+import org.omnirom.omnigears.ui.MultiAppSelectorActivity;
+import org.omnirom.omnigears.utils.SetStringPackUtils;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+
 
 public class EventService extends Service {
     private static final String TAG = "OmniEventService";
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
     private PowerManager.WakeLock mWakeLock;
     private static boolean mIsRunning;
-    private Handler mHandler = new Handler();
-    private boolean mWiredHeadsetConnected;
-    private boolean mA2DPConnected;
+    private static boolean mWiredHeadsetConnected;
+    private static boolean mA2DPConnected;
 
     private BroadcastReceiver mStateListener = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
             mWakeLock.acquire();
+
             try {
                 if (DEBUG) Log.d(TAG, "onReceive " + action);
-                if (BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)) {
-                    if(intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, -1) == BluetoothAdapter.STATE_OFF){
-                        mA2DPConnected = false;
-                    }
-                }
-                if (BluetoothDevice.ACTION_ACL_CONNECTED.equals(action)) {
-                }
-                if (BluetoothDevice.ACTION_ACL_DISCONNECTED.equals(action)) {
-                }
-                if (BluetoothA2dp.ACTION_CONNECTION_STATE_CHANGED.equals(action)) {
-                    int state = intent.getIntExtra(BluetoothProfile.EXTRA_STATE,
-                            BluetoothProfile.STATE_CONNECTED);
-                    if (state == BluetoothProfile.STATE_CONNECTED && !mA2DPConnected) {
-                        mA2DPConnected = true;
-                        if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = true" );
-                        String app = getPrefs(context).getString(EventServiceSettings.EVENT_A2DP_CONNECT, null);
-                        if (!TextUtils.isEmpty(app) && !app.equals(AppSelectListPreference.DISABLED_ENTRY)) {
-                            if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG app = " + app);
-                            try {
-                                context.startActivityAsUser(createIntent(app), UserHandle.CURRENT);
-                                if (getPrefs(context).getBoolean(EventServiceSettings.EVENT_MEDIA_PLAYER_START, false)) {
-                                    mHandler.postDelayed(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            dispatchMediaKeyToAudioService(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE);
-                                        }
-                                    }, 1000);
-                                }
-                            } catch (Exception e) {
-                                Log.e(TAG, "BluetoothProfile.STATE_CONNECTED", e);
-                            }
+
+                boolean disableIfMusicActive = getPrefs(context).getBoolean(EventServiceSettings.EVENT_MUSIC_ACTIVE, true);
+
+                switch (action) {
+                    case BluetoothAdapter.ACTION_STATE_CHANGED:
+                        if (intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, -1) == BluetoothAdapter.STATE_OFF) {
+                            mA2DPConnected = false;
                         }
-                    } else {
-                        mA2DPConnected = false;
-                        if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = false" );
-                    }
-                }
-                if (AudioManager.ACTION_HEADSET_PLUG.equals(action)) {
-                    boolean useHeadset = intent.getIntExtra("state", 0) == 1;
-                    if (useHeadset && !mWiredHeadsetConnected) {
-                        mWiredHeadsetConnected = true;
-                        if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = true" );
-                        String app = getPrefs(context).getString(EventServiceSettings.EVENT_WIRED_HEADSET_CONNECT, null);
-                        if (!TextUtils.isEmpty(app) && !app.equals(AppSelectListPreference.DISABLED_ENTRY)) {
-                            if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG app = " + app);
-                            try {
-                                context.startActivityAsUser(createIntent(app), UserHandle.CURRENT);
-                                if (getPrefs(context).getBoolean(EventServiceSettings.EVENT_MEDIA_PLAYER_START, false)) {
-                                    mHandler.postDelayed(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            dispatchMediaKeyToAudioService(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE);
-                                        }
-                                    }, 1000);
+                        break;
+                    case BluetoothA2dp.ACTION_CONNECTION_STATE_CHANGED:
+                        int state = intent.getIntExtra(BluetoothProfile.EXTRA_STATE,
+                                BluetoothProfile.STATE_CONNECTED);
+                        if (state == BluetoothProfile.STATE_CONNECTED && !mA2DPConnected) {
+                            mA2DPConnected = true;
+                            if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = true");
+
+                            if (!(disableIfMusicActive && isMusicActive())) {
+                                Set<String> apps = getPrefs(context).getStringSet(EventServiceSettings.EVENT_A2DP_CONNECT, null);
+                                if (apps != null) {
+                                    openMultiAppSelector(apps, context);
                                 }
-                            } catch (Exception e) {
-                                Log.e(TAG, "AudioManager.ACTION_HEADSET_PLUG", e);
                             }
+                        } else {
+                            mA2DPConnected = false;
+                            if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = false");
                         }
-                    } else {
-                        mWiredHeadsetConnected = false;
-                        if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = false" );
-                    }
+                        break;
+                    case AudioManager.ACTION_HEADSET_PLUG:
+                        boolean useHeadset = intent.getIntExtra("state", 0) == 1;
+                        if (useHeadset && !mWiredHeadsetConnected) {
+                            mWiredHeadsetConnected = true;
+                            if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = true");
+
+                            if (!(disableIfMusicActive && isMusicActive())) {
+                                Set<String> apps = getPrefs(context).getStringSet(EventServiceSettings.EVENT_WIRED_HEADSET_CONNECT, null);
+                                if (apps != null) {
+                                    openMultiAppSelector(apps, context);
+                                }
+                            }
+                        } else {
+                            mWiredHeadsetConnected = false;
+                            if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = false");
+                        }
+                        break;
                 }
-                
+
             } finally {
                 mWakeLock.release();
             }
         }
     };
 
+    private boolean isMusicActive() {
+        if (AudioSystem.isStreamActive(AudioSystem.STREAM_MUSIC, 0)) {
+            // local / wired / BT playback active
+            if (DEBUG) Log.d(TAG, "isMusicActive(): local");
+            return true;
+        }
+        if (AudioSystem.isStreamActiveRemotely(AudioSystem.STREAM_MUSIC, 0)) {
+            // remote submix playback active
+            if (DEBUG) Log.d(TAG, "isMusicActive(): remote submix");
+            return true;
+        }
+        if (DEBUG) Log.d(TAG, "isMusicActive(): no");
+        return false;
+    }
+
+    private void openMultiAppSelector(Set<String> apps, Context context) {
+        Intent intent = new Intent(context, MultiAppSelectorActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED
+                | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        intent.putExtra(MultiAppSelectorActivity.APPS, SetStringPackUtils.packSet(apps));
+        intent.putExtra(MultiAppSelectorActivity.AUTORUN_SINGLE,
+                getPrefs(context).getBoolean(EventServiceSettings.EVENT_AUTORUN_SINGLE, true));
+        intent.putExtra(MultiAppSelectorActivity.MEDIA_PLAYER_START,
+                getPrefs(context).getBoolean(EventServiceSettings.EVENT_MEDIA_PLAYER_START, false));
+        startActivityAsUser(intent, UserHandle.CURRENT);
+    }
+
     public class LocalBinder extends Binder {
         public EventService getService() {
             return EventService.this;
         }
     }
+
     private final LocalBinder mBinder = new LocalBinder();
 
     @Override
@@ -191,32 +194,5 @@ public class EventService extends Service {
 
     private SharedPreferences getPrefs(Context context) {
         return context.getSharedPreferences(EventServiceSettings.EVENTS_PREFERENCES_NAME, Context.MODE_PRIVATE);
-    }
-
-    private Intent createIntent(String value) {
-        ComponentName componentName = ComponentName.unflattenFromString(value);
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.addCategory(Intent.CATEGORY_LAUNCHER);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-        intent.setComponent(componentName);
-        return intent;
-    }
-
-    private void dispatchMediaKeyToAudioService(int keycode) {
-        if (ActivityManagerNative.isSystemReady()) {
-            IAudioService audioService = IAudioService.Stub
-                    .asInterface(ServiceManager.checkService(Context.AUDIO_SERVICE));
-            if (audioService != null) {
-                if (DEBUG) Log.d(TAG, "dispatchMediaKeyToAudioService " + keycode);
-
-                KeyEvent event = new KeyEvent(SystemClock.uptimeMillis(),
-                        SystemClock.uptimeMillis(), KeyEvent.ACTION_DOWN,
-                        keycode, 0);
-                MediaSessionLegacyHelper.getHelper(this).sendMediaButtonEvent(event, true);
-                event = KeyEvent.changeAction(event, KeyEvent.ACTION_UP);
-                MediaSessionLegacyHelper.getHelper(this).sendMediaButtonEvent(event, true);
-            }
-        }
     }
 }
