@@ -107,6 +107,10 @@ public class AppSelectListPreference extends CustomDialogPreference {
         private final Handler mHandler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
+                PackageItem disabledItem = new PackageItem(getContext().getResources().getString(R.string.disabled_entry),
+                        R.drawable.ic_disabled, DISABLED_ENTRY);
+                mInstalledPackages.add(0, disabledItem);
+
                 notifyDataSetChanged();
                 updatePreferenceViews();
             }
@@ -274,14 +278,19 @@ public class AppSelectListPreference extends CustomDialogPreference {
         mAppIconResourceId = R.drawable.ic_disabled;
 
         if (name != null) {
-            mAppIconDrawable = null;
-            ComponentName componentName = ComponentName.unflattenFromString(name);
-            PackageItem item = mAdapter.resolveApplication(componentName);
-            if (item != null) {
-                mTitle = item.mTitle;
-                mAppIconDrawable = resolveAppIcon(item);
+            if (name.equals(DISABLED_ENTRY)) {
+                mTitle = getContext().getResources().getString(R.string.disabled_entry);
+                mAppIconResourceId = R.drawable.ic_disabled;
             } else {
-                mTitle = getContext().getResources().getString(R.string.resolve_failed_summary);
+                mAppIconDrawable = null;
+                ComponentName componentName = ComponentName.unflattenFromString(name);
+                PackageItem item = mAdapter.resolveApplication(componentName);
+                if (item != null) {
+                    mTitle = item.mTitle;
+                    mAppIconDrawable = resolveAppIcon(item);
+                } else {
+                    mTitle = getContext().getResources().getString(R.string.resolve_failed_summary);
+                }
             }
         } else {
             mTitle = getContext().getResources().getString(R.string.disabled_entry);

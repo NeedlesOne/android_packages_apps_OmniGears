@@ -39,8 +39,11 @@ import android.os.PowerManager;
 import android.os.UserHandle;
 import android.os.ServiceManager;
 import android.os.SystemClock;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
+
+import org.omnirom.omnigears.preference.AppSelectListPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,7 +80,7 @@ public class EventService extends Service {
                         mA2DPConnected = true;
                         if (DEBUG) Log.d(TAG, "BluetoothProfile.STATE_CONNECTED = true" );
                         String app = getPrefs(context).getString(EventServiceSettings.EVENT_A2DP_CONNECT, null);
-                        if (app != null) {
+                        if (!TextUtils.isEmpty(app) && !app.equals(AppSelectListPreference.DISABLED_ENTRY)) {
                             if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG app = " + app);
                             try {
                                 context.startActivityAsUser(createIntent(app), UserHandle.CURRENT);
@@ -104,7 +107,7 @@ public class EventService extends Service {
                         mWiredHeadsetConnected = true;
                         if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = true" );
                         String app = getPrefs(context).getString(EventServiceSettings.EVENT_WIRED_HEADSET_CONNECT, null);
-                        if (app != null) {
+                        if (!TextUtils.isEmpty(app) && !app.equals(AppSelectListPreference.DISABLED_ENTRY)) {
                             if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG app = " + app);
                             try {
                                 context.startActivityAsUser(createIntent(app), UserHandle.CURRENT);
