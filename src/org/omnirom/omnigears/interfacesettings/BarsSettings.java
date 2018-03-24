@@ -18,6 +18,7 @@
 package org.omnirom.omnigears.interfacesettings;
 
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -55,6 +56,10 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String NETWORK_TRAFFIC_ROOT = "category_network_traffic";
     private static final String NAVIGATIONBAR_ROOT = "category_navigationbar";
 
+    private static final String QUICK_PULLDOWN = "quick_pulldown";
+
+    private ListPreference mQuickPulldown;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OMNI_SETTINGS;
@@ -66,6 +71,13 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.bars_settings);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        int quickPulldownValue = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0);
+        mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
+        updatePulldownSummary(quickPulldownValue);
 
         // Navigationbar catagory will not be displayed when the device is not a tablet
         // or the device has physical keys
@@ -87,7 +99,30 @@ public class BarsSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return true;
+         if (preference == mQuickPulldown) {
+            int quickPulldownValue = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
+                    quickPulldownValue);
+            updatePulldownSummary(quickPulldownValue);
+            return true;
+        }
+        return false;
+    }
+
+    private void updatePulldownSummary(int value) {
+        Resources res = getResources();
+        if (value == 0) {
+            // Quick Pulldown deactivated
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
+        } else if (value == 3) {
+            // Quick Pulldown always
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary_always));
+        } else {
+            String direction = res.getString(value == 2
+                    ? R.string.quick_pulldown_left
+                    : R.string.quick_pulldown_right);
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
+       }
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

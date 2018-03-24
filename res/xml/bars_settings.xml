@@ -59,6 +59,13 @@
                 android:summary="@string/statusbar_clock_summary"
                 android:fragment="org.omnirom.omnigears.interfacesettings.StatusbarClockSettings" />
 
+            <ListPreference
+                android:key="quick_pulldown"
+                android:title="@string/quick_pulldown_title"
+                android:entries="@array/quick_pulldown_entries"
+                android:entryValues="@array/quick_pulldown_values"
+                android:persistent="false" />
+
         </PreferenceCategory>
 
         <PreferenceCategory
