@@ -63,6 +63,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String BUTTON_BACK_KILL_TIMEOUT = "button_back_kill_timeout";
     private static final String KEY_BUTTON_LIGHT = "button_brightness";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
+    private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
 
     private ListPreference mNavbarRecentsStyle;
     private ListPreference mLongPressRecentsAction;
@@ -74,6 +75,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private Preference mButtonLight;
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
+    private SwitchPreference mFpKeystore;
 
     @Override
     public int getMetricsCategory() {
@@ -166,7 +168,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
             mFingerprintVib.setOnPreferenceChangeListener(this);
         }
-    }
+        // Fingerprint unlock keystore
+        mFpKeystore = (SwitchPreference) prefScreen.findPreference(FP_UNLOCK_KEYSTORE);
+        if (!mFingerprintManager.isHardwareDetected()){
+            prefScreen.removePreference(mFpKeystore);
+        }
+	}
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {

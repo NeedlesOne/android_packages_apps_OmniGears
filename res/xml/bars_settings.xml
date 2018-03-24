@@ -107,6 +107,12 @@
                 android:title="@string/face_auto_unlock_title"
                 android:summary="@string/face_auto_unlock_summary"
                 android:defaultValue="false" />
+    
+            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+                android:key="fp_unlock_keystore"
+                android:title="@string/fp_unlock_keystore_title"
+                android:summary="@string/fp_unlock_keystore_summary"
+                android:defaultValue="false" />
 
         </PreferenceCategory>
 </PreferenceScreen>
