@@ -50,10 +50,10 @@ public class MoreSettings extends SettingsPreferenceFragment implements OnPrefer
     private static final String KEY_SHOW_DASHBOARD_COLUMNS = "show_dashboard_columns";
     private static final String KEY_HIDE_DASHBOARD_SUMMARY = "hide_dashboard_summary";
     private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     private SharedPreferences mAppPreferences;
     private ListPreference mScreenOffAnimation;
-
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OMNI_SETTINGS;
@@ -67,6 +67,7 @@ public class MoreSettings extends SettingsPreferenceFragment implements OnPrefer
         mAppPreferences = getActivity().getSharedPreferences(SettingsActivity.APP_PREFERENCES_NAME,
                 Context.MODE_PRIVATE);
 
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         SwitchPreference showColumnsLayout = (SwitchPreference) findPreference(KEY_SHOW_DASHBOARD_COLUMNS);
         showColumnsLayout.setChecked(mAppPreferences.getInt(SettingsActivity.KEY_COLUMNS_COUNT, 1) == 2);
         showColumnsLayout.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
