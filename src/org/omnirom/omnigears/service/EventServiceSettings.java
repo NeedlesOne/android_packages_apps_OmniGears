@@ -61,6 +61,8 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
     private SwitchPreference mEnable;
     private SwitchPreference mAutoStart;
     private Handler mHandler = new Handler();
+    private String mServiceRunning;
+    private String mServiceStopped;
 
     @Override
     public int getMetricsCategory() {
@@ -79,8 +81,9 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
         mEnable = (SwitchPreference) findPreference(EVENT_SERVICE_ENABLED);
         mEnable.setChecked(getPrefs().getBoolean(EventServiceSettings.EVENT_SERVICE_ENABLED, false));
         mEnable.setOnPreferenceChangeListener(this);
-        mEnable.setSummary(isServiceRunning() ? getResources().getString(R.string.event_service_running)
-                : getResources().getString(R.string.event_service_stopped));
+        mServiceRunning = getResources().getString(R.string.event_service_running);
+        mServiceStopped = getResources().getString(R.string.event_service_stopped);
+        mEnable.setSummary(isServiceRunning() ? mServiceRunning : mServiceStopped);
 
         mAutoStart = (SwitchPreference) findPreference(EVENT_MEDIA_PLAYER_START);
         mAutoStart.setChecked(getPrefs().getBoolean(EventServiceSettings.EVENT_MEDIA_PLAYER_START, false));
@@ -121,8 +124,10 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    mEnable.setSummary(isServiceRunning() ? getResources().getString(R.string.event_service_running)
-                            : getResources().getString(R.string.event_service_stopped));
+                    try {
+                        mEnable.setSummary(isServiceRunning() ? mServiceRunning : mServiceStopped);
+                    } catch (Exception e) {
+                    }
                 }
             }, 1000);
             return true;
