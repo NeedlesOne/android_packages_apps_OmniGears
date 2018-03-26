@@ -30,6 +30,9 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManagerGlobal;
@@ -84,6 +87,8 @@ public class ExpandedDesktop extends SettingsPreferenceFragment implements
             new HashMap<String, ApplicationsState.AppEntry>();
     private int mExpandedDesktopState;
     private SwitchBar mSwitchBar;
+    private boolean mOnlyLauncher = true;
+    private MenuItem mMenuItem;
 
     private int getExpandedDesktopState(ContentResolver cr) {
         String value = Settings.Global.getString(cr, Settings.Global.POLICY_CONTROL);
@@ -107,6 +112,8 @@ public class ExpandedDesktop extends SettingsPreferenceFragment implements
                     Settings.Global.POLICY_CONTROL);
         }
         mAllPackagesAdapter = new AllPackagesAdapter(getActivity());
+
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -301,6 +308,33 @@ public class ExpandedDesktop extends SettingsPreferenceFragment implements
             enableForAll();
         } else {
             userConfigurableSettings();
+        }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.expanded_desktop_menu, menu);
+        mMenuItem = menu.findItem(R.id.show_all_apps);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case R.id.show_all_apps:
+            mOnlyLauncher = !mOnlyLauncher;
+            mActivityFilter.updateLauncherInfoList();
+            rebuild();
+            break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onPrepareOptionsMenu (Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+        if (mMenuItem != null) {
+            mMenuItem.setTitle(mOnlyLauncher ? getResources().getString(R.string.show_all_apps_menu)
+                    : getResources().getString(R.string.show_only_launcher_menu));
         }
     }
 
@@ -507,7 +541,6 @@ public class ExpandedDesktop extends SettingsPreferenceFragment implements
 
         private final PackageManager mPackageManager;
         private final List<String> launcherResolveInfoList = new ArrayList<String>();
-        private boolean onlyLauncher = false;
 
         private ActivityFilter(PackageManager packageManager) {
             this.mPackageManager = packageManager;
@@ -535,7 +568,7 @@ public class ExpandedDesktop extends SettingsPreferenceFragment implements
         @Override
         public boolean filterApp(AppEntry info) {
             boolean show = !mAllPackagesAdapter.entries.contains(info.info.packageName);
-            if (show && onlyLauncher) {
+            if (show && mOnlyLauncher) {
                 synchronized (launcherResolveInfoList) {
                     show = launcherResolveInfoList.contains(info.info.packageName);
                 }

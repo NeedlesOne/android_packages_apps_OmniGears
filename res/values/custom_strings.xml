@@ -726,4 +726,6 @@
     <string name="expanded_desktop_state">Expanded state</string>
     <string name="expanded_enabled_for_all">Enabled for all</string>
     <string name="expanded_user_configurable">User configurable</string>
+    <string name="show_only_launcher_menu">Only launcher apps</string>
+    <string name="show_all_apps_menu">All apps</string>
 </resources>
