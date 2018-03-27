@@ -97,6 +97,35 @@
             android:entryValues="@array/navbar_recents_style_values"
             android:persistent="false"/>
 
+        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            android:key="show_clear_all_recents"
+            android:title="@string/show_clear_all_recents_button_title"
+            android:summary="@string/show_clear_all_recents_button_summary"
+            android:defaultValue="true" />
+
+        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            android:key="systemui_recents_mem_display"
+            android:title="@string/recents_show_membar_title"
+            android:summary="@string/recents_show_membar_summary"
+            android:defaultValue="false" />
+<!--
+        <ListPreference
+            android:key="recents_clear_all_location"
+            android:title="@string/recents_clear_all_location_title"
+            android:entries="@array/recents_clear_all_location_entries"
+            android:entryValues="@array/recents_clear_all_location_values"
+            android:defaultValue="1"
+            android:dependency="show_clear_all_recents" />
+
+        <ListPreference
+            android:key="immersive_recents"
+            android:title="@string/immersive_recents_title"
+            android:summary="@string/immersive_recents_summary"
+            android:dialogTitle="@string/immersive_recents_dialog_title"
+            android:entries="@array/immersive_recents_entries"
+            android:entryValues="@array/immersive_recents_values"
+            android:persistent="false" />
+-->
         <ListPreference
             android:key="long_press_recents_action"
             android:title="@string/long_press_recents_action_title"
