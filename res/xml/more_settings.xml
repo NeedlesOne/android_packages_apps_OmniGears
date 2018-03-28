@@ -45,6 +45,28 @@
             android:key="category_system"
             android:title="@string/system_category">
 
+            <org.omnirom.omnigears.preference.GlobalSettingSwitchPreference
+                android:key="sensor_block"
+                android:title="@string/sensor_block_title"
+                android:summary="@string/sensor_block_summary"
+                android:defaultValue="false" />
+
+            <Preference
+                android:key="wakelock_blocker"
+                android:fragment="org.omnirom.omnigears.system.WakeLockBlocker"
+                android:title="@string/wakelock_blocker_title"
+                android:summary="@string/wakelock_blocker_summary" />
+
+            <Preference
+                android:id="@+id/alarm_blocker"
+                android:fragment="org.omnirom.omnigears.system.AlarmBlocker"
+                android:title="@string/alarm_blocker"
+                android:summary="@string/alarm_blocker_summary" />
+
+            <Preference
+                android:title="@string/app_ops_settings"
+                android:fragment="com.android.settings.applications.AppOpsSummary"/>
+
             <Preference
                 android:key="time_in_state"
                 android:title="@string/time_in_state_title"
@@ -81,18 +103,6 @@
                 android:title="@string/wake_when_plugged_or_unplugged_title"
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
                 android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
-
-            <Preference
-                android:key="wakelock_blocker"
-                android:fragment="org.omnirom.omnigears.system.WakeLockBlocker"
-                android:title="@string/wakelock_blocker_title"
-                android:summary="@string/wakelock_blocker_summary" />
-
-            <Preference
-                android:id="@+id/alarm_blocker"
-                android:fragment="org.omnirom.omnigears.system.AlarmBlocker"
-                android:title="@string/alarm_blocker"
-                android:summary="@string/alarm_blocker_summary" />
 
         </PreferenceCategory>
 
