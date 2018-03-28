@@ -82,6 +82,18 @@
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
                 android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
 
+            <Preference
+                android:key="wakelock_blocker"
+                android:fragment="org.omnirom.omnigears.system.WakeLockBlocker"
+                android:title="@string/wakelock_blocker_title"
+                android:summary="@string/wakelock_blocker_summary" />
+
+            <Preference
+                android:id="@+id/alarm_blocker"
+                android:fragment="org.omnirom.omnigears.system.AlarmBlocker"
+                android:title="@string/alarm_blocker"
+                android:summary="@string/alarm_blocker_summary" />
+
         </PreferenceCategory>
 
     <PreferenceCategory
