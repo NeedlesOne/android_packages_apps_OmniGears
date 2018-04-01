@@ -158,9 +158,7 @@
   <string name="battery_title">Ang display ng battery</string>
   <string name="statusbar_battery_summary">Maglagay ng estilo sa display ng status bar battery</string>
   <string name="battery_style_title">Ang stilo</string>
-  <string name="battery_percent_title">Ipakita ang pursyento</string>
   <string name="statusbar_percent_inside_title">Ang pag-overlay ng pursyento</string>
-  <string name="statusbar_percent_inside_summary">Sa taas ng battery image ay magdisplay ng pursyento</string>
   <string name="statusbar_charging_image_title">Ang indikasyon ng pagchacharge</string>
   <string name="statusbar_category_charging_title">Nag chacharge na</string>
   <string name="statusbar_charging_image_summary">E tago ang pursyento ng overly at edisplay ang bolt indiketor habang nagchacharge</string>
@@ -170,7 +168,6 @@
   <string name="button_backlight_title">Ang pindotan para sa backlight</string>
   <string name="button_backlight_summary">Bagohin ang pagbubukas at ang kanyang liwanag</string>
   <string name="button_backlight_on_touch_only_title">Ang button touch</string>
-  <string name="button_backlight_on_touch_only_summary">Gawing taym-out lamang sa button touch at paganahin ang backlight</string>
   <string name="button_timeout_title">Nag taym-out ang backlight</string>
   <string name="button_timeout_summary">Kung valyu ay 0 ito ay di gumagana</string>
   <string name="button_link_brightness">E-link sa screen</string>
@@ -225,18 +222,11 @@
   <string name="lockscreen_category_title">Ang lock skreen</string>
   <string name="notification_title">Ang panel sa mga notipikasyun</string>
   <string name="status_bar_custom_header_title">Gawing aktibo</string>
-  <string name="daylight_header_pack_title">Ang emahi ng header pack</string>
   <string name="status_bar_custom_header_shadow_title">Ang emahi ng header shadow</string>
   <string name="status_bar_custom_header_shadow_summary">Para sa mas magandang bisibiliti sa maliwanag na emahi</string>
   <string name="unit_percent">Ang \u0025</string>
-  <string name="static_header_provider_title">Ang statik</string>
-  <string name="daylight_header_provider_title">Dynamiko</string>
   <string name="custom_header_provider_title">Ang tagapagbigay ng header</string>
-  <string name="custom_header_browse_title">Hanapin ang nakainstall na mga headers</string>
-  <string name="custom_header_browse_summary">Maaring pindutin ang kahit anung emahi para sa statik mode</string>
-  <string name="custom_header_browse_summary_new">Hanapin ang lahat at pwedeng header pakages</string>
   <string name="custom_header_pick_title">Pumili ng emahi ng header</string>
-  <string name="custom_header_pick_summary">Maaring pumili ng emahi para gamitin sa statik mode</string>
   <string name="style_enabled_summary">Naka ON ang emahi ng kustom header</string>
   <string name="style_disabled_summary">Naka OFF ang emahi ng kustom header</string>
   <string name="header_provider_disabled">Hindi pinapagana</string>
@@ -374,4 +364,6 @@
   <string name="volume_steps_5">limang hakbang</string>
   <string name="system_volume_option_title">Ang sytem volume</string>
   <string name="call_volume_option_title">Ang tunog sa pagtawag</string>
+  <string name="battery_percent_title">Ipakita ang pursyento</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

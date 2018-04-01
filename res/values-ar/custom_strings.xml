@@ -137,7 +137,6 @@
   <string name="battery_title">عرض البطارية</string>
   <string name="statusbar_battery_summary">تعيين نمط عرض البطارية على شريط الحالة</string>
   <string name="battery_style_title">النمط</string>
-  <string name="battery_percent_title">اظهار النسبة المؤية للبطارية</string>
   <string name="statusbar_charging_image_title">مؤشر الشحن</string>
   <string name="statusbar_category_charging_title">الشحن</string>
   <string name="statusbar_battery_charging_color_title">اللون</string>
@@ -235,4 +234,6 @@
   <!-- Summaries -->
   <!-- Display : Rotation -->
   <!-- Doze settings editor -->
+  <string name="battery_percent_title">اظهار النسبة المؤية للبطارية</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

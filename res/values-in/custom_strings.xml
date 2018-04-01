@@ -158,9 +158,7 @@
   <string name="battery_title">Tampilan baterai</string>
   <string name="statusbar_battery_summary">Atur gaya tampilan baterai bar status</string>
   <string name="battery_style_title">Gaya</string>
-  <string name="battery_percent_title">Tampilkan persen</string>
   <string name="statusbar_percent_inside_title">Hamparan persentase</string>
-  <string name="statusbar_percent_inside_summary">Tampilkan persen di atas gambar baterai</string>
   <string name="statusbar_charging_image_title">Indikator pengisian daya</string>
   <string name="statusbar_category_charging_title">Pengisian</string>
   <string name="statusbar_charging_image_summary">Tampilkan indikator baut saat mengisi daya. Sembunyikan persen overlay</string>
@@ -170,7 +168,6 @@
   <string name="button_backlight_title">Tombol lampu latar</string>
   <string name="button_backlight_summary">Mengkonfigurasi pemberdayaan dan kecerahan</string>
   <string name="button_backlight_on_touch_only_title">Tombol sentuh</string>
-  <string name="button_backlight_on_touch_only_summary">Aktifkan lampu latar dengan batas waktu hanya pada sentuhan tombol</string>
   <string name="button_timeout_title">Batas waktu lampu latar</string>
   <string name="button_timeout_summary">Dihentikan pada nilai 0</string>
   <string name="button_link_brightness">Tautan ke layar</string>
@@ -224,18 +221,11 @@
   <string name="lockscreen_category_title">Kunci layar</string>
   <string name="notification_title">Panel pemberitahuan</string>
   <string name="status_bar_custom_header_title">Aktifkan</string>
-  <string name="daylight_header_pack_title">Paket gambar kepala</string>
   <string name="status_bar_custom_header_shadow_title">Banyangan gambar kepala</string>
   <string name="status_bar_custom_header_shadow_summary">Untuk visibilitas yang lebih baik pada gambar yang terang</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statis</string>
-  <string name="daylight_header_provider_title">Dinamis</string>
   <string name="custom_header_provider_title">Penyedia kepala</string>
-  <string name="custom_header_browse_title">Jelajahi header yang terinstal</string>
-  <string name="custom_header_browse_summary">Klik pada gambar yang akan digunakan untuk mode statis</string>
-  <string name="custom_header_browse_summary_new">Jelajahi semua paket header yang ada</string>
   <string name="custom_header_pick_title">Pilih gambar tajuk</string>
-  <string name="custom_header_pick_summary">Pilih gambar yang akan digunakan untuk mode statis</string>
   <string name="style_enabled_summary">Gambar header khusus adalah ON</string>
   <string name="style_disabled_summary">Gambar kepala khusus MATI</string>
   <string name="header_provider_disabled">Nonaktifkan</string>
@@ -320,9 +310,6 @@
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Nonaktifkan pengaturan cepat saat terkunci</string>
-  <string name="lockscreen_qs_summary">Nonaktifkan pintasan dan atur pengaturan cepat pada layar kunci aman</string>
-  <string name="lockscreen_qs_disabled_summary">Pengaturan cepat akses pada layar kunci ENABLED</string>
-  <string name="lockscreen_qs_enabled_summary">Pengaturan cepat akses pada layar kunci DISABLED</string>
   <string name="lockscreen_power_menu_disabled_title">Nonaktifkan menu daya saat terkunci</string>
   <string name="lockscreen_power_menu_disabled_summary">Nonaktifkan menu daya pada layar kunci aman</string>
   <string name="status_bar_quick_qs_pulldown_title">Cepat menarik kebawah</string>
@@ -385,8 +372,6 @@
   <string name="device_hostname">Nama host perangkat</string>
   <!-- OMS -->
   <string name="theming_title">Bertema</string>
-  <string name="oms_app_title">Dasar tema mesin</string>
-  <string name="oms_app_summary">Mulai pengalaman Substratum</string>
   <string name="status_bar_ime_notification_title">Tampilkan pemberitahuan IME</string>
   <string name="status_bar_ime_notification_summary">Jika bilah navigasi tidak tersedia</string>
   <string name="navigation_bar_ime_button_title">Tampilkan tombol bar navigasi IME</string>
@@ -539,8 +524,6 @@
   <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Notifikasi daftar putih notifikasi</string>
   <string name="logcat_app_title">Menempuh redup</string>
   <string name="logcat_app_summary">Mulai aplikasi untuk mengumpulkan log</string>
-  <string name="omni_theme_title">Omni Lampu/Tema gelap</string>
-  <string name="omni_theme_summary">Dasar berbasis tema</string>
   <string name="show_dashboard_columns_title">Gunakan tata letak kolom</string>
   <string name="show_dashboard_columns_summary">Di seting halaman utama</string>
   <string name="hide_dashboard_summary_title">Sembunyikan ringkasan</string>
@@ -557,4 +540,6 @@
   <string name="volume_steps_5">5 langkah</string>
   <string name="system_volume_option_title">Volume sistem</string>
   <string name="call_volume_option_title">Volume panggilan suara</string>
+  <string name="battery_percent_title">Tampilkan persen</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

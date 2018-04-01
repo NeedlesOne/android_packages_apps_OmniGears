@@ -121,7 +121,6 @@
   <string name="statusbar_title">Statusfält</string>
   <string name="battery_title">Batterivisning</string>
   <string name="battery_style_title">Stil</string>
-  <string name="battery_percent_title">Visa procent</string>
   <string name="statusbar_charging_image_title">Laddningsindikator</string>
   <string name="statusbar_category_charging_title">Laddar</string>
   <string name="statusbar_battery_charging_color_title">Färg</string>
@@ -166,9 +165,6 @@
   <string name="status_bar_custom_header_title">Anpassad sidhuvudsbild</string>
   <string name="status_bar_custom_header_shadow_summary">För bättre synlighet på ljusa bilder</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statisk</string>
-  <string name="daylight_header_provider_title">Dynamisk</string>
-  <string name="custom_header_browse_title">Bläddra bland installerade sidhuvud</string>
   <string name="style_enabled_summary">Anpassad sidhuvudsbild är PÅ</string>
   <string name="style_disabled_summary">Anpassad sidhuvudsbild är AV</string>
   <!-- Network traffic -->
@@ -269,8 +265,6 @@
   <!-- Hostname setting -->
   <string name="device_hostname">Enhetens värdnamn</string>
   <!-- OMS -->
-  <string name="oms_app_title">Substratum-temamotor</string>
-  <string name="oms_app_summary">Starta Substratum-upplevelse</string>
   <string name="status_bar_ime_notification_title">Visa IME-avisering</string>
   <!-- Summaries -->
   <string name="bars_brightness_enabled_summary">Ljusstyrkekontroll är PÅ</string>
@@ -329,4 +323,6 @@
   <string name="action_filter">Filter</string>
   <string name="doze_settings_applied">Inställningar tillämpade</string>
   <string name="SHORT_LOCATION_ACCURACY">Platsnoggrannhet</string>
+  <string name="battery_percent_title">Visa procent</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

@@ -152,9 +152,7 @@
   <string name="battery_title">Prikaz baterije</string>
   <string name="statusbar_battery_summary">Nastavi slog prikaza baterije v vrstici stanja</string>
   <string name="battery_style_title">Slog</string>
-  <string name="battery_percent_title">Prikaži odstotek</string>
   <string name="statusbar_percent_inside_title">Odstotek prekrivno</string>
-  <string name="statusbar_percent_inside_summary">Prikaži odstotek preko slike baterije</string>
   <string name="statusbar_charging_image_title">Kazalnik polnjenja</string>
   <string name="statusbar_category_charging_title">Polnjenje</string>
   <string name="statusbar_charging_image_summary">Prikaži strelo med polnjenjem.  Skrije odstotek</string>
@@ -208,15 +206,10 @@
   <string name="lockscreen_left_shortcut_enable_summary">Vidnost je odvisna od sistemskih nastavitev</string>
   <string name="notification_title">Plošča obvestil</string>
   <string name="status_bar_custom_header_title">Slika glave po meri</string>
-  <string name="daylight_header_pack_title">Paket slik glave</string>
   <string name="status_bar_custom_header_shadow_title">Senčenje slike glave</string>
   <string name="status_bar_custom_header_shadow_summary">Za boljšo vidnost na svetlih slikah</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statično</string>
-  <string name="daylight_header_provider_title">Dinamično</string>
   <string name="custom_header_provider_title">Ponudnik glav</string>
-  <string name="custom_header_browse_title">Brskaj po nameščenih glavah</string>
-  <string name="custom_header_browse_summary">Dolg pritisk na katerokoli sliko uporabi statični način</string>
   <string name="style_enabled_summary">Slika glave po meri je vkl.</string>
   <string name="style_disabled_summary">Slika glave po meri je izkl.</string>
   <!-- Network traffic -->
@@ -296,9 +289,6 @@
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Onemogoči hitre nastavitve, ko je zaklenjeno</string>
-  <string name="lockscreen_qs_summary">Onemogoči bližnjice in razširljive hitre nastavitve na varnih zaklenjenih zaslonih</string>
-  <string name="lockscreen_qs_disabled_summary">Dostop do hitrih nastavitev na zaklenjenem zaslonu je OMOGOČEN</string>
-  <string name="lockscreen_qs_enabled_summary">Dostop do hitrih nastavitev na zaklenjenem zaslonu je ONEMOGOČEN</string>
   <string name="status_bar_quick_qs_pulldown_title">Hitri spustni seznam</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s rob vrstice stanja spusti Hitre nastavitve</string>
   <string name="status_bar_quick_qs_pulldown_summary_left">Levi</string>
@@ -432,4 +422,6 @@
   <string name="category_display">Zaslon</string>
   <string name="display_rotation_disabled">Onemogoči</string>
   <!-- Doze settings editor -->
+  <string name="battery_percent_title">Prikaži odstotek</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

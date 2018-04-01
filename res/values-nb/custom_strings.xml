@@ -140,9 +140,7 @@
   <string name="battery_title">Batterivisning</string>
   <string name="statusbar_battery_summary">Angi stil for statuslinjen batterivisning</string>
   <string name="battery_style_title">Stil</string>
-  <string name="battery_percent_title">Vis prosent</string>
   <string name="statusbar_percent_inside_title">Prosentvisning</string>
-  <string name="statusbar_percent_inside_summary">Vise prosent over batteriikonet</string>
   <string name="statusbar_charging_image_title">Ladeindikator</string>
   <string name="statusbar_category_charging_title">Lader</string>
   <string name="statusbar_charging_image_summary">Vis boltindikator under lading. Skjul prosentvisning</string>
@@ -151,7 +149,6 @@
   <string name="battery_enable_title">Vis batteri</string>
   <string name="button_backlight_title">Knapp: Bakgrunnsbelysning</string>
   <string name="button_backlight_on_touch_only_title">Knappetrykk</string>
-  <string name="button_backlight_on_touch_only_summary">Aktiver bakgrunnsbelysning ved tidsavbrudd bare med knappetrykk</string>
   <string name="button_timeout_title">Tidsavbrudd bakgrunnsbelysning</string>
   <string name="button_timeout_summary">Deaktivert på verdien 0</string>
   <string name="button_link_brightness">Koble til skjermen</string>
@@ -185,10 +182,8 @@
   <string name="lockscreen_clock">Klokke</string>
   <string name="lockscreen_clock_font_title">Skrifttype for klokke</string>
   <string name="lockscreen_clock_color_title">Klokke- og datostørrelse</string>
-  <string name="daylight_header_pack_title">Topplinje bildepakke</string>
   <string name="status_bar_custom_header_shadow_title">Topplinje bildeskygge</string>
   <string name="custom_header_provider_title">Topplinje leverandør</string>
-  <string name="custom_header_browse_title">Bla gjennom topplinjer</string>
   <!-- Network traffic -->
   <string name="show_network_traffic_500">500 ms</string>
   <string name="show_network_traffic_1000">1000 ms</string>
@@ -233,4 +228,6 @@
   <!-- Display : Rotation -->
   <string name="category_display">Skjerm</string>
   <!-- Doze settings editor -->
+  <string name="battery_percent_title">Vis prosent</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

@@ -158,9 +158,7 @@
   <string name="battery_title">Batterie-Anzeige</string>
   <string name="statusbar_battery_summary">Darstellung der Batterieanzeige festlegen</string>
   <string name="battery_style_title">Aussehen</string>
-  <string name="battery_percent_title">Prozent anzeigen</string>
   <string name="statusbar_percent_inside_title">Prozent anzeigen</string>
-  <string name="statusbar_percent_inside_summary">Prozent über dem Batteriebild anzeigen</string>
   <string name="statusbar_charging_image_title">Ladeanzeige</string>
   <string name="statusbar_category_charging_title">Akku wird geladen</string>
   <string name="statusbar_charging_image_summary">Blitz Indikator beim Laden anzeigen. Versteckt die Prozent Anzeige</string>
@@ -170,7 +168,6 @@
   <string name="button_backlight_title">Schaltflächen-Hintergrundbeleuchtung</string>
   <string name="button_backlight_summary">Konfigurieren Sie die Aktivierung und Helligkeit</string>
   <string name="button_backlight_on_touch_only_title">Tastendruck</string>
-  <string name="button_backlight_on_touch_only_summary">Hintergrundbeleuchtung mit Timeout nur bei Berührung anschalten</string>
   <string name="button_timeout_title">Hintergrundbeleuchtungszeit</string>
   <string name="button_timeout_summary">Deaktiviert bei Wert 0</string>
   <string name="button_link_brightness">Mit Bildschirm verknüpfen</string>
@@ -225,18 +222,11 @@
   <string name="lockscreen_category_title">Sperrbildschirm</string>
   <string name="notification_title">Benachrichtigungsfeld</string>
   <string name="status_bar_custom_header_title">Benutzerdefiniertes Kopfzeilenbild</string>
-  <string name="daylight_header_pack_title">Kopfzeilen Bild-Sammlung</string>
   <string name="status_bar_custom_header_shadow_title">Kopfzeilenbild-Schatten</string>
   <string name="status_bar_custom_header_shadow_summary">Bessere Sichtbarkeit bei hellen Bildern</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statisch</string>
-  <string name="daylight_header_provider_title">Dynamisch</string>
   <string name="custom_header_provider_title">Header-Anbieter</string>
-  <string name="custom_header_browse_title">Durchsuche installierte Header</string>
-  <string name="custom_header_browse_summary">Langer Druck auf ein beliebiges Bild für statischen Modus verwenden</string>
-  <string name="custom_header_browse_summary_new">Durchsuchen aller verfügbaren Header-Pakete</string>
   <string name="custom_header_pick_title">Header-Bild festlegen</string>
-  <string name="custom_header_pick_summary">Wählen Sie ein Bild um es im statischen Modus zu verwenden</string>
   <string name="style_enabled_summary">Benutzerdefiniertes Header-Bild ist AN</string>
   <string name="style_disabled_summary">Benutzerdefiniertes Header-Bild ist AUS</string>
   <string name="header_provider_disabled">Deaktiviert</string>
@@ -321,9 +311,6 @@
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Schnelleinstellungen bei gesperrtem Bildschirm deaktivieren</string>
-  <string name="lockscreen_qs_summary">Zugriff auf die Verknüpfungen und Schnelleinstellungen bei gesichertem Sperrbildschirm deaktivieren</string>
-  <string name="lockscreen_qs_disabled_summary">Schnelleinstellungs Zugriff auf Sperrbildschirm ist aktiviert</string>
-  <string name="lockscreen_qs_enabled_summary">Schnelleinstellungs Zugriff auf Sperrbildschirm ist deaktiviert</string>
   <string name="lockscreen_power_menu_disabled_title">Power-Menü im Sperrbildschirm deaktivieren</string>
   <string name="lockscreen_power_menu_disabled_summary">Power-Menü im sicheren Sperrbildschirm deaktivieren</string>
   <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
@@ -386,8 +373,6 @@
   <string name="device_hostname">Hostname des Geräts</string>
   <!-- OMS -->
   <string name="theming_title">Design</string>
-  <string name="oms_app_title">Substratum Theme Engine</string>
-  <string name="oms_app_summary">Starte Substratum-Erlebnis</string>
   <string name="status_bar_ime_notification_title">IME-Benachrichtigung anzeigen</string>
   <string name="status_bar_ime_notification_summary">Wenn die Navigationsleiste nicht zur Verfügung steht</string>
   <string name="navigation_bar_ime_button_title">IME-Navigationsleistentaste anzeigen</string>
@@ -537,8 +522,6 @@
   <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Maximale Whitelist-Zeitspanne während Benachrichtigung</string>
   <string name="logcat_app_title">MatLog</string>
   <string name="logcat_app_summary">Starte App um Protokolle zu sammeln</string>
-  <string name="omni_theme_title">Omni Hell/Dunkel-Design</string>
-  <string name="omni_theme_summary">Substratum basiertes Design</string>
   <string name="show_dashboard_columns_title">Benutze Spalten-Layout</string>
   <string name="show_dashboard_columns_summary">In Einstellungen-Hauptseite</string>
   <string name="hide_dashboard_summary_title">Zusammenfassung verbergen</string>
@@ -555,4 +538,6 @@
   <string name="volume_steps_5">5 Schritte</string>
   <string name="system_volume_option_title">System-Lautstärke</string>
   <string name="call_volume_option_title">Gesprächslautstärke</string>
+  <string name="battery_percent_title">Prozent anzeigen</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

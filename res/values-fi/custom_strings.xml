@@ -51,21 +51,26 @@
   <string name="keys_action_in_app_search">Haku sovelluksessa</string>
   <string name="keys_action_home">Kotinäppäin</string>
   <string name="keys_action_back">Takaisin-näppäin</string>
+  <string name="keys_action_last_app">Viimeinen sovellus</string>
   <string name="keys_action_kill_app">Tapa sovellus</string>
   <string name="keys_action_normal">Normaali painallus</string>
   <string name="keys_action_long">Pitkä painallus</string>
   <string name="keys_action_double">Kaksoisnapautus</string>
   <string name="keys_action_all_apps">Kaikki sovellukset</string>
   <string name="button_volume_keys_title">Äänenvoimakkuus</string>
-  <string name="button_volume_wake_summary">Äänenvoimakkuus painikkeen painallus herättää laitteen</string>
+  <string name="button_volume_wake_title">Herätä laite</string>
+  <string name="button_volume_wake_summary">Äänenvoimakkuuspainikkeen painallus herättää laitteen</string>
   <string name="volume_button_music_control_title">Musiikin hallinta</string>
+  <string name="volume_button_music_control_summary">Vaihda kappaleita pitämällä äänenvoimakkuusnäppäimiä pohjassa näytön ollessa suljettuna</string>
   <string name="keys_action_sleep">Lepotila</string>
+  <string name="button_home_wake_title">Herätä laite</string>
   <string name="keys_action_app_switch_card">AOSP (pino)</string>
   <string name="keys_action_omniswitch_short">OmniSwitch</string>
   <string name="keys_action_app_switch_grid">AOSP (ruudukko)</string>
   <string name="button_back_kill_timeout_500ms">500 ms</string>
   <string name="button_back_kill_timeout_1000ms">1000 ms</string>
   <string name="button_back_kill_timeout_1500ms">1500 ms</string>
+  <string name="button_back_kill_timeout_2000ms">2000 ms</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">Kaksoisnapauta lepotilaan</string>
   <!-- Doze pulse (ambient display) options -->
@@ -96,12 +101,13 @@
   <string name="battery_light_really_full_color_title">Ladattu (100 %)</string>
   <string name="fast_color_cat_title">Pikalataus</string>
   <string name="fast_charging_light_color_title">Väri</string>
+  <string name="edit_battery_settings">Muokkaa akun asetuksia</string>
   <string name="led_color_green">Vihreä</string>
   <string name="led_color_red">Punainen</string>
   <string name="led_color_blue">Sininen</string>
   <string name="statusbar_title">Tilapalkki</string>
+  <string name="clock_title">Kello ja päivämäärä</string>
   <string name="battery_style_title">Tyyli</string>
-  <string name="battery_percent_title">Näytä prosentit</string>
   <string name="statusbar_category_charging_title">Ladataan</string>
   <string name="statusbar_battery_charging_color_title">Väri</string>
   <string name="statusbar_battery_charging_color_enable_title">Väri ladattaessa</string>
@@ -117,10 +123,18 @@
   <string name="navigation_bar_show_summary">Pakota navigointipalkki</string>
   <string name="hardware_keys_disable_title">Poista näppäimet käytöstä</string>
   <string name="navbar_title">Navigointipalkki</string>
+  <string name="navbar_recents_style_title">Viimeisimmät tyyli</string>
   <string name="omniswitch_settings">Asetukset</string>
+  <string name="omniswitch_dialog_unavail">OmniSwitch ei ole asennettu.</string>
+  <string name="omniswitch_title">Viimeisimmät tyyli</string>
+  <string name="long_press_recents_action_title">Viimeisimmät-näppäimen pitkän painalluksen tehtävä</string>
+  <string name="long_press_home_action_title">Kotinäppäimen pitkän painalluksen tehtävä</string>
+  <string name="double_press_home_action_title">Kotinäppäimen kaksoisnapautuksen tehtävä</string>
+  <string name="keys_action_recents">Viimeisimmät sovellukset</string>
   <string name="doze_brightness_level_title">Kirkkaustaso</string>
   <!-- Lock screen config -->
   <string name="lockscreen_shortcut_title">Pikakuvakkeet</string>
+  <string name="lockscreen_shortcuts_enable_title">Ota käyttöön</string>
   <string name="lockscreen_clock_display_time_title">Näytä aika</string>
   <string name="lockscreen_clock_display_date_title">Näytä päivämäärä</string>
   <string name="lockscreen_clock_display_alarm_title">Näytä seuraava hälytys</string>
@@ -128,10 +142,14 @@
   <string name="lockscreen_clock_font_title">Ajan fontti</string>
   <string name="lockscreen_clock_color_title">Ajan ja päivämäärän väri</string>
   <string name="lockscreen_clock_size_title">Ajan koko</string>
+  <string name="lockscreen_clock_enable_title">Ota käyttöön</string>
   <string name="lockscreen_shortcut_add_dialog_title">Lisää pikakuvake</string>
   <string name="lockscreen_shortcut_apps_title">Pikakuvakkeet</string>
   <string name="lockscreen_shortcut_add">Lisää\u2026</string>
   <string name="lockscreen_category_title">Lukitusnäyttö</string>
+  <string name="notification_title">Ilmoituspaneeli</string>
+  <string name="status_bar_custom_header_title">Ota käyttöön</string>
+  <string name="header_provider_disabled">Pois käytöstä</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Verkkoliikenne</string>
   <string name="network_traffic_summary">Tilapalkin verkkoliikenteen seuranta</string>
@@ -153,7 +171,9 @@
   <string name="status_bar_network_activity_title">Toimintaindikaattorit</string>
   <string name="quick_settings_title">Pika-asetukset</string>
   <string name="status_bar_icon_blacklist_title">Tilapalkin kuvakkeet</string>
+  <string name="recents_category">Viimeisimmät sovellukset</string>
   <string name="recents_search_bar_title">Näytä hakupalkki</string>
+  <string name="recents_fullscreen_title">Kokoruudun tila</string>
   <string name="weather_title">Sää</string>
   <string name="weather_config_title">Palvelun asetukset</string>
   <!-- Navigationbar settings -->
@@ -166,7 +186,7 @@
   <string name="dashboard_columns_three">3</string>
   <string name="dashboard_columns_four">4</string>
   <!-- global acions config -->
-  <string name="global_actions_power_title">Virta</string>
+  <string name="global_actions_power_title">Virtapainike</string>
   <string name="global_actions_reboot_title">Käynnistä uudelleen</string>
   <string name="global_actions_lockdown_title">Lukitse</string>
   <string name="global_actions_settings_title">Asetukset</string>
@@ -176,11 +196,19 @@
   <string name="global_actions_users_title">Käyttäjät</string>
   <string name="global_actions_silent_title">Äänetön tila</string>
   <string name="global_actions_dnd_title">Älä häiritse</string>
+  <string name="global_actions_summary">Käynnistysvalikossa näkyvät toiminnot</string>
   <string name="global_actions_anim">Ulkoasu</string>
-  <string name="global_actions_advanced_reboot_title">Ota kehittynyt uudelleenkäynnistys käyttöön</string>
+  <string name="global_actions_advanced_reboot_summary">Näytä lisää vaihtoehtoja uudelleenkäynnistysvalikossa</string>
+  <string name="global_actions_advanced_reboot_title">Ota edistynyt uudelleenkäynnistys käyttöön</string>
+  <string name="global_actions_advanced_reboot_summary_new">Näytä lisää vaihtoehtoja uudelleenkäynnistysvalikossa, jos laite ei ole lukittuna</string>
+  <string name="font_sample_text">11.57</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
+  <string name="lockscreen_power_menu_disabled_title">Poista käynnistysvalikko käytöstä lukittuna</string>
+  <string name="lockscreen_power_menu_disabled_summary">Poista käynnistysvalikko käytöstä turvatussa lukitusnäytössä</string>
   <!-- Power menu Animations  -->
+  <string name="power_menu_animation_title">Käynnistysvalikon animaatio</string>
+  <string name="power_menu_animation_dialog_title">Valitse käynnistysvalikon animaatio</string>
   <string name="power_menu_animation_enter">Omni (oletus)</string>
   <!-- Notification light dialogs -->
   <string name="default_time">Normaali</string>
@@ -208,7 +236,9 @@
   <!-- Lights settings, LED notification -->
   <!-- Hostname setting -->
   <!-- OMS -->
+  <string name="theming_title">Teemat</string>
   <!-- Summaries -->
+  <string name="night_mode_title">Vaalea/Tumma teema</string>
   <string name="since_unplugged">Irrotettu laturista</string>
   <string name="since_reset">Nollaa</string>
   <string name="create_ref">Nollaa</string>
@@ -236,9 +266,15 @@
   <string name="lockscreen_hide_status_bar_title">Piilota tilapalkki</string>
   <string name="status_bar_logo_title">Tilapalkin logo</string>
   <!-- Doze settings editor -->
+  <string name="action_save">Tallenna</string>
+  <string name="action_restoredefault">Palauta oletukset</string>
+  <string name="action_profile">Profiilit</string>
+  <string name="action_save_as_profile">Tallenna profiilina</string>
+  <string name="delete_profile">Poista profiili</string>
   <string name="profile_name">Nimi</string>
   <string name="string_seconds">sekuntia</string>
   <string name="string_default">Oletus</string>
+  <string name="logcat_app_title">MatLog</string>
   <string name="systemui_theme_style_title">SystemUI tyyli</string>
   <string name="systemui_theme_style_auto">Taustakuvan perusteella</string>
   <string name="systemui_theme_style_light">Vaalea tyyli</string>
@@ -247,4 +283,21 @@
   <string name="volume_steps_15">15 askelta</string>
   <string name="volume_steps_7">7 askelta</string>
   <string name="volume_steps_5">5 askelta</string>
+  <string name="screen_off_animation_crt">CRT</string>
+  <string name="omni_theme_select_title">Omni teemat</string>
+  <string name="omni_theme_select_summary">Selaa ja valitse asennettuja Omni teemoja</string>
+  <string name="battery_percent_none">Ei koskaan</string>
+  <string name="battery_percent_always">Aina</string>
+  <string name="battery_percent_title">Näytä prosentit</string>
+  <string name="status_bar_clock">Kello &amp; päivämäärä</string>
+  <string name="status_bar_show_clock_title">Näytä kello &amp; päivämäärä</string>
+  <string name="status_bar_am_pm_info">24 tunnin kello on valittu</string>
+  <string name="enable_clock_weekday">Viikonpäivä</string>
+  <string name="clock_date_format">Päivämäärän muoto</string>
+  <string name="am_pm_clock_none">Älä näytä</string>
+  <string name="clock_date_display_none">Älä näytä</string>
+  <string name="status_bar_clock_seconds_title">Näytä sekunnit</string>
+  <!-- fingerprint authentication vibration -->
+  <string name="choose_app">Valitse sovellus</string>
+  <string name="disabled_entry">Pois käytöstä</string>
 </resources>

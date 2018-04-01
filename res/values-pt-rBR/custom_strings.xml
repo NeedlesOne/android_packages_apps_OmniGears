@@ -153,9 +153,7 @@
   <string name="battery_title">Monitor de bateria</string>
   <string name="statusbar_battery_summary">Definir o estilo da bateria na barra de status</string>
   <string name="battery_style_title">Estilo</string>
-  <string name="battery_percent_title">Mostrar percentual</string>
   <string name="statusbar_percent_inside_title">Visualizar porcentagem</string>
-  <string name="statusbar_percent_inside_summary">Exibir porcentagem sobre a imagem da bateria</string>
   <string name="statusbar_charging_image_title">Indicador de carga</string>
   <string name="statusbar_category_charging_title">Carregando</string>
   <string name="statusbar_charging_image_summary">Exibir indicador de raio durante a carga. Isto esconde a porcentagem de bateria em amostra</string>
@@ -164,7 +162,6 @@
   <string name="battery_enable_title">Mostrar bateria</string>
   <string name="button_backlight_title">Luz de fundo dos botões</string>
   <string name="button_backlight_on_touch_only_title">Toque do botão</string>
-  <string name="button_backlight_on_touch_only_summary">Ativar retroiluminação com tempo limite apenas no toque do botão</string>
   <string name="button_timeout_title">Tempo limite da luz de fundo</string>
   <string name="button_timeout_summary">Desativado quando o valor é igual a 0</string>
   <string name="button_link_brightness">Ligação para a tela</string>
@@ -211,15 +208,10 @@
   <string name="lockscreen_left_shortcut_enable_summary">Visibilidade depende da configuração do sistema</string>
   <string name="notification_title">Painel de notificação</string>
   <string name="status_bar_custom_header_title">Imagem de cabeçalho personalizado</string>
-  <string name="daylight_header_pack_title">Pacote de imagem do cabeçalho</string>
   <string name="status_bar_custom_header_shadow_title">Sombra de imagem de cabeçalho</string>
   <string name="status_bar_custom_header_shadow_summary">Para melhor visibilidade nas imagens brilhantes</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Estático</string>
-  <string name="daylight_header_provider_title">Dinâmico</string>
   <string name="custom_header_provider_title">Provedor de cabeçalho</string>
-  <string name="custom_header_browse_title">Procurar cabeçalhos instalados</string>
-  <string name="custom_header_browse_summary">Toque longo em qualquer imagem para usar para o modo estático</string>
   <string name="style_enabled_summary">A imagem de cabeçalho personalizada está ativada</string>
   <string name="style_disabled_summary">A imagem de cabeçalho personalizada está desativada</string>
   <!-- Network traffic -->
@@ -299,9 +291,6 @@
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Desativar as configurações rápidas quando bloqueado</string>
-  <string name="lockscreen_qs_summary">Desativar a expansão de configurações rápida na tela de bloqueio</string>
-  <string name="lockscreen_qs_disabled_summary">Acesso rápido de configurações na tela de bloqueio está HABILITADO</string>
-  <string name="lockscreen_qs_enabled_summary">Acesso rápido de configurações na tela de bloqueio está DESABILITADO</string>
   <string name="lockscreen_power_menu_disabled_title">Desativar o menu de energia com o dispositivo bloqueado</string>
   <string name="lockscreen_power_menu_disabled_summary">Desativar o menu de energia em telas de bloqueio seguras</string>
   <string name="status_bar_quick_qs_pulldown_title">Puxar rápido para baixo</string>
@@ -364,8 +353,6 @@
   <string name="device_hostname">Nome do dispositivo</string>
   <!-- OMS -->
   <string name="theming_title">Temas</string>
-  <string name="oms_app_title">Motor de temas Substratum</string>
-  <string name="oms_app_summary">Iniciar a experiência Substratum</string>
   <string name="status_bar_ime_notification_title">Mostrar notificação</string>
   <string name="status_bar_ime_notification_summary">Se a barra de navegação não estiver disponível</string>
   <string name="navigation_bar_ime_button_title">Mostrar o seletor IME na barra de navegação</string>
@@ -461,4 +448,6 @@
   <string name="SHORT_MIN_LIGHT_MAINTENANCE_TIME">Maintenance mode light doze min timeout</string>
   <string name="SHORT_MIN_DEEP_MAINTENANCE_TIME">Maintenance mode full doze min timeout</string>
   <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Max notification whitelist duration</string>
+  <string name="battery_percent_title">Mostrar percentual</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

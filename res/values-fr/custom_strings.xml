@@ -158,9 +158,7 @@
   <string name="battery_title">Préférence d\'affichage de la batterie</string>
   <string name="statusbar_battery_summary">Définit le style d\'affichage de la batterie dans la barre d\'état</string>
   <string name="battery_style_title">Style</string>
-  <string name="battery_percent_title">Afficher le pourcentage</string>
   <string name="statusbar_percent_inside_title">Superposition du pourcentage</string>
-  <string name="statusbar_percent_inside_summary">Affiche le pourcentage au dessus de l\'icône de batterie</string>
   <string name="statusbar_charging_image_title">Indicateur de charge</string>
   <string name="statusbar_category_charging_title">En charge</string>
   <string name="statusbar_charging_image_summary">Afficher l\'icône en gras durant la charge. Masque la superposition du pourcentage</string>
@@ -170,7 +168,6 @@
   <string name="button_backlight_title">Rétro-éclairage des boutons</string>
   <string name="button_backlight_summary">Configurer activation et Luminosité</string>
   <string name="button_backlight_on_touch_only_title">Bouton tactile</string>
-  <string name="button_backlight_on_touch_only_summary">Activer l\'éclairage arrière avec une pause à l\'appuie du bouton seulement</string>
   <string name="button_timeout_title">Délai d\'extinction du rétro-éclairage</string>
   <string name="button_timeout_summary">Désactivé lorsque la valeur est égale à 0</string>
   <string name="button_link_brightness">Lier à l\'écran</string>
@@ -225,18 +222,11 @@
   <string name="lockscreen_category_title">Écran de verrouillage</string>
   <string name="notification_title">Panneau de notification</string>
   <string name="status_bar_custom_header_title">Personnalisation d\'en-tête</string>
-  <string name="daylight_header_pack_title">Pack d\'image d\'en-tête</string>
   <string name="status_bar_custom_header_shadow_title">Ombrage de l\'image d\'en-tête</string>
   <string name="status_bar_custom_header_shadow_summary">Pour une meilleure visibilité des images lumineuses</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statique</string>
-  <string name="daylight_header_provider_title">Dynamique</string>
   <string name="custom_header_provider_title">Fournisseur de l’en-tête</string>
-  <string name="custom_header_browse_title">Parcourir les en-têtes installées</string>
-  <string name="custom_header_browse_summary">Un appui long sur une image permet de l\'utiliser en mode statique</string>
-  <string name="custom_header_browse_summary_new">Parcourir toutes les en-têtes de pack</string>
   <string name="custom_header_pick_title">Définir l\'image d\'en-tête</string>
-  <string name="custom_header_pick_summary">Sélectionner une image pour le mode statique</string>
   <string name="style_enabled_summary">Personnalisation d\'en-tête activée</string>
   <string name="style_disabled_summary">Personnalisation d\'en-tête désactivée</string>
   <string name="header_provider_disabled">Désactivé</string>
@@ -321,9 +311,6 @@
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Désactiver les paramètres d\'accès rapides au verrouillage</string>
-  <string name="lockscreen_qs_summary">Désactive l’affichage des raccourcis et des paramètres rapides sur l\'écran de verrouillage</string>
-  <string name="lockscreen_qs_disabled_summary">L’accès aux paramètres rapides sur l’écran de verrouillage est activé</string>
-  <string name="lockscreen_qs_enabled_summary">L’accès aux paramètres rapides sur l’écran de verrouillage est désactivé</string>
   <string name="lockscreen_power_menu_disabled_title">Désactiver le menu d\'alimentation lorsque verrouillé</string>
   <string name="lockscreen_power_menu_disabled_summary">Désactiver le menu d\'alimentation sur les écrans de verrouillage sécurisé</string>
   <string name="status_bar_quick_qs_pulldown_title">Accès rapide au volet des paramètres</string>
@@ -386,8 +373,6 @@
   <string name="device_hostname">Nom d’hôte de l’appareil</string>
   <!-- OMS -->
   <string name="theming_title">Thèmes</string>
-  <string name="oms_app_title">Substratum theme engine</string>
-  <string name="oms_app_summary">Commencer l\'expérience substratum</string>
   <string name="status_bar_ime_notification_title">Afficher la notification du mode de saisie</string>
   <string name="status_bar_ime_notification_summary">Si la barre de navigation n\'est pas disponible</string>
   <string name="navigation_bar_ime_button_title">Afficher le bouton du mode de saisie dans la barre de navigation</string>
@@ -496,8 +481,6 @@
   <string name="SHORT_MAX_IDLE_TIMEOUT">Délai maximum d\'inactivité</string>
   <string name="logcat_app_title">MatLog</string>
   <string name="logcat_app_summary">Démarrer l\'application pour collecter les logs</string>
-  <string name="omni_theme_title">Thème Sombre/Clair</string>
-  <string name="omni_theme_summary">Thème basé sur Substratum</string>
   <string name="show_dashboard_columns_title">Disposition en colonnes</string>
   <string name="show_dashboard_columns_summary">Dans les réglages de la page principale</string>
   <string name="hide_dashboard_summary_title">Masquer le résumé</string>
@@ -514,4 +497,6 @@
   <string name="volume_steps_5">5 incréments</string>
   <string name="system_volume_option_title">Volume principal</string>
   <string name="call_volume_option_title">Volume pendant un appel</string>
+  <string name="battery_percent_title">Afficher le pourcentage</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

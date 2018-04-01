@@ -153,9 +153,7 @@
   <string name="battery_title">Accu weergave</string>
   <string name="statusbar_battery_summary">Stijl voor weergave van de batterij instellen</string>
   <string name="battery_style_title">Stijl</string>
-  <string name="battery_percent_title">Percentage weergeven</string>
   <string name="statusbar_percent_inside_title">Percentage overlay</string>
-  <string name="statusbar_percent_inside_summary">Percentage weergeven bovenop de accu afbeelding</string>
   <string name="statusbar_charging_image_title">Laad indicator</string>
   <string name="statusbar_category_charging_title">Opladen</string>
   <string name="statusbar_charging_image_summary">Weergeef dikgedrukte indicator gedurende het opladen. Verberg percentage</string>
@@ -209,15 +207,10 @@
   <string name="lockscreen_left_shortcut_enable_summary">Zichtbaarheid hangt af van systeeminstellingen</string>
   <string name="notification_title">Notificatie paneel</string>
   <string name="status_bar_custom_header_title">Aangepaste header afbeelding</string>
-  <string name="daylight_header_pack_title">Header afbeelding collectie</string>
   <string name="status_bar_custom_header_shadow_title">Header image schaduw</string>
   <string name="status_bar_custom_header_shadow_summary">Voor betere zichtbaarheid op heldere beelden</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statisch</string>
-  <string name="daylight_header_provider_title">Dynamisch</string>
   <string name="custom_header_provider_title">Header provider</string>
-  <string name="custom_header_browse_title">Bladeren door geïnstalleerde headers</string>
-  <string name="custom_header_browse_summary">Lang indrukken op een afbeelding om te gebruiken voor de statische modus</string>
   <string name="style_enabled_summary">Aangepaste header afbeelding staat AAN</string>
   <string name="style_disabled_summary">Aangepaste header afbeelding staat UIT</string>
   <!-- Network traffic -->
@@ -298,9 +291,6 @@ Schakel het tonen van het weer in het notificatiepaneel in</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Snelle instellingen uitschakelen als apparaat vergrendeld is</string>
-  <string name="lockscreen_qs_summary">Snelkoppelingen en snelle Instellingen uitschakelen op beveiligd vergrendelscherm</string>
-  <string name="lockscreen_qs_disabled_summary">Toegang tot snelle instellingen op het vergrendelscherm is INGESCHAKELD</string>
-  <string name="lockscreen_qs_enabled_summary">Toegang tot snelle instellingen op het vergrendelscherm is UITGESCHAKELD</string>
   <string name="status_bar_quick_qs_pulldown_title">Snel openen</string>
   <string name="status_bar_quick_qs_pulldown_summary">%1$s van statusbalk opent het snelle instellingenpaneel</string>
   <string name="status_bar_quick_qs_pulldown_summary_left">Links</string>
@@ -363,4 +353,6 @@ Schakel het tonen van het weer in het notificatiepaneel in</string>
   <string name="app_details">App informatie</string>
   <!-- Display : Rotation -->
   <!-- Doze settings editor -->
+  <string name="battery_percent_title">Percentage weergeven</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

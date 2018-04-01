@@ -157,9 +157,7 @@
   <string name="battery_title">Показувати батарею</string>
   <string name="statusbar_battery_summary">Задать стиль аккумулятора в строці стану</string>
   <string name="battery_style_title">Стиль</string>
-  <string name="battery_percent_title">Відображати відсотки</string>
   <string name="statusbar_percent_inside_title">Відсоток накладання</string>
-  <string name="statusbar_percent_inside_summary">Відображення відсотків на верхівці зображення акумулятора</string>
   <string name="statusbar_charging_image_title">Індикатор зарядки</string>
   <string name="statusbar_category_charging_title">Зарядка</string>
   <string name="statusbar_charging_image_summary">Показати значок блискавки під час зарядки. Приховує відсотки над акумулятором</string>
@@ -169,7 +167,6 @@
   <string name="button_backlight_title">Підсвітка кнопок</string>
   <string name="button_backlight_summary">Налаштування включення і яскравості</string>
   <string name="button_backlight_on_touch_only_title">Підсвітка при нажаті по кнопках</string>
-  <string name="button_backlight_on_touch_only_summary">Включати підсвітку кнопок з тайм-аутом тілько при нажаті на них</string>
   <string name="button_timeout_title">Тайм-аут підсвічування</string>
   <string name="button_timeout_summary">Вимикається при нульовому значенні</string>
   <string name="button_link_brightness">У відповідності з екраном</string>
@@ -279,4 +276,6 @@
   <!-- Doze settings editor -->
   <string name="action_save">Зберегти</string>
   <string name="action_profile">Профіль</string>
+  <string name="battery_percent_title">Відображати відсотки</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

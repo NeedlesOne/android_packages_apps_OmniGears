@@ -115,9 +115,7 @@
   <string name="battery_title">Batareya göstərişi</string>
   <string name="statusbar_battery_summary">Status barında batareya göstərişi stilini təyin et</string>
   <string name="battery_style_title">Stil</string>
-  <string name="battery_percent_title">Faizi göstər</string>
   <string name="statusbar_percent_inside_title">Faiz üzlüyü</string>
-  <string name="statusbar_percent_inside_summary">Batareya faizini ikonun üzərində göstər</string>
   <string name="statusbar_charging_image_title">Şarj indikatoru</string>
   <string name="statusbar_category_charging_title">Şarj edilir</string>
   <string name="statusbar_charging_image_summary">Şarj zamanı ildırım ikonunu göstər. Faizi gizlədir</string>
@@ -154,12 +152,9 @@
   <string name="lockscreen_shortcut_apps_title">Qısayollar</string>
   <string name="lockscreen_shortcut_add">Əlavə et\u2026</string>
   <string name="notification_title">Bildiriş paneli</string>
-  <string name="daylight_header_pack_title">Başlıq görünüşü paketi</string>
   <string name="status_bar_custom_header_shadow_title">Başlıq görünüşü kölgəsi</string>
   <string name="status_bar_custom_header_shadow_summary">Parlaq görüntülərdə daha yaxşı görünürlük üçün</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statik</string>
-  <string name="daylight_header_provider_title">Dinamik</string>
   <string name="custom_header_provider_title">Status operatoru</string>
   <!-- Network traffic -->
   <string name="show_network_traffic_frequency">Yeniləmə intervalı</string>
@@ -307,4 +302,6 @@
   <string name="string_seconds">saniyələr</string>
   <string name="string_default">Standart</string>
   <string name="action_filter">Filtr</string>
+  <string name="battery_percent_title">Faizi göstər</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

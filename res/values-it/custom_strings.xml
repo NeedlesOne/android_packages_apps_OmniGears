@@ -158,9 +158,7 @@
   <string name="battery_title">Display della batteria</string>
   <string name="statusbar_battery_summary">Imposta stile visualizzazione stato batteria</string>
   <string name="battery_style_title">Stile</string>
-  <string name="battery_percent_title">Visualizza percentuale</string>
   <string name="statusbar_percent_inside_title">Percentuale sovrapposizione</string>
-  <string name="statusbar_percent_inside_summary">Visualizza percentuale in alto sull\'immagine batteria</string>
   <string name="statusbar_charging_image_title">Indicatore di carica</string>
   <string name="statusbar_category_charging_title">In carica</string>
   <string name="statusbar_charging_image_summary">Visualizza indicatore grassetto in carica. Nascondi sovrapposizione percentuale</string>
@@ -170,7 +168,6 @@
   <string name="button_backlight_title">Illuminazione tasti</string>
   <string name="button_backlight_summary">Configurare l\'attivazione e la luminosità</string>
   <string name="button_backlight_on_touch_only_title">Tocco del tasto</string>
-  <string name="button_backlight_on_touch_only_summary">Attivare la retroilluminazione con timeout solo al tocco del tasto</string>
   <string name="button_timeout_title">Timer retroilluminazione</string>
   <string name="button_timeout_summary">Disattiva con valore 0</string>
   <string name="button_link_brightness">Collega allo schermo</string>
@@ -225,18 +222,11 @@
   <string name="lockscreen_category_title">Schermata di blocco</string>
   <string name="notification_title">Pannello notifiche</string>
   <string name="status_bar_custom_header_title">Immagine intestazione personalizzata</string>
-  <string name="daylight_header_pack_title">Pacchetto immagini intestazione</string>
   <string name="status_bar_custom_header_shadow_title">Ombra immagine intestazione</string>
   <string name="status_bar_custom_header_shadow_summary">Per una migliore visibilità su immagini luminose</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statico</string>
-  <string name="daylight_header_provider_title">Dinamico</string>
   <string name="custom_header_provider_title">Provider dell\'intestazione</string>
-  <string name="custom_header_browse_title">Sfoglia le intestazioni installate</string>
-  <string name="custom_header_browse_summary">Tieni premuto su un\'immagine per usarla nella modalità statica</string>
-  <string name="custom_header_browse_summary_new">Sfoglia tutti i pacchetti d\'intestazioni disponibili</string>
   <string name="custom_header_pick_title">Imposta immagine d\'intestazione</string>
-  <string name="custom_header_pick_summary">Seleziona un\'immagine per usarla nella modalità statica</string>
   <string name="style_enabled_summary">Immagine intestazione personalizzata attiva</string>
   <string name="style_disabled_summary">Immagine intestazione personalizzata non attiva</string>
   <string name="header_provider_disabled">Disabilitato</string>
@@ -321,9 +311,6 @@
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Disattivare le impostazioni rapide quando bloccato</string>
-  <string name="lockscreen_qs_summary">Disattiva scorciatoie e impostazioni rapide nella schermata di blocco con password</string>
-  <string name="lockscreen_qs_disabled_summary">L\'accesso ai quick settings nella schermata di blocco è attivato</string>
-  <string name="lockscreen_qs_enabled_summary">L\'accesso ai quick settings nella schermata di blocco è disattivato</string>
   <string name="lockscreen_power_menu_disabled_title">Disabilita menu di spegnimento quando bloccato</string>
   <string name="lockscreen_power_menu_disabled_summary">Disabilita menu di spegnimento nella schermata di blocco sicura</string>
   <string name="status_bar_quick_qs_pulldown_title">Menù a discesa rapido</string>
@@ -386,8 +373,6 @@
   <string name="device_hostname">Nome host del dispositivo</string>
   <!-- OMS -->
   <string name="theming_title">Tema</string>
-  <string name="oms_app_title">Substratum motore tema</string>
-  <string name="oms_app_summary">Inizia l\'esperienza di Substratum</string>
   <string name="status_bar_ime_notification_title">Visualizza notifica di IME</string>
   <string name="status_bar_ime_notification_summary">Se la barra di navigazione non è disponibile</string>
   <string name="navigation_bar_ime_button_title">Mostra il pulsante IME della barra di navigazione</string>
@@ -537,8 +522,6 @@
   <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Durata massima della notifica nella whitelist</string>
   <string name="logcat_app_title">MatLog</string>
   <string name="logcat_app_summary">Avvia l\'app per raccogliere i registri</string>
-  <string name="omni_theme_title">Tema Omni chiaro/scuro</string>
-  <string name="omni_theme_summary">Tema basato su Substratum</string>
   <string name="show_dashboard_columns_title">Usa un layout a colonne</string>
   <string name="show_dashboard_columns_summary">Nella pagina principale delle impostazioni</string>
   <string name="hide_dashboard_summary_title">Nascondi sommario</string>
@@ -555,4 +538,6 @@
   <string name="volume_steps_5">5 livelli</string>
   <string name="system_volume_option_title">Volume sistema</string>
   <string name="call_volume_option_title">Volume chiamate</string>
+  <string name="battery_percent_title">Visualizza percentuale</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

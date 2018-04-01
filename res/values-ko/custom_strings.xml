@@ -149,9 +149,7 @@
   <string name="battery_title">배터리 표시</string>
   <string name="statusbar_battery_summary">상태 표시줄의 배터리 스타일 설정</string>
   <string name="battery_style_title">스타일</string>
-  <string name="battery_percent_title">% 표시</string>
   <string name="statusbar_percent_inside_title">% 오버레이</string>
-  <string name="statusbar_percent_inside_summary">배터리 이미지 위에 %를 보입니다.</string>
   <string name="statusbar_charging_image_title">충전 표시</string>
   <string name="statusbar_category_charging_title">충전 중</string>
   <string name="statusbar_charging_image_summary">충전 중에 % 오버레이는 숨기고 번개 마크를 보여줍니다.</string>
@@ -202,7 +200,6 @@
   <string name="lockscreen_left_shortcut_enable_summary">표시는 시스템 설정에 따라 다릅니다.</string>
   <string name="notification_title">알림 패널</string>
   <string name="status_bar_custom_header_title">사용자 정의 헤더 이미지</string>
-  <string name="daylight_header_pack_title">헤더 이미지 팩</string>
   <string name="status_bar_custom_header_shadow_title">헤더 이미지 그림자</string>
   <string name="status_bar_custom_header_shadow_summary">밝은 이미지에 더 나은 가시성을 위해...</string>
   <string name="unit_percent">\u0025</string>
@@ -287,4 +284,6 @@
   <!-- Summaries -->
   <!-- Display : Rotation -->
   <!-- Doze settings editor -->
+  <string name="battery_percent_title">% 표시</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

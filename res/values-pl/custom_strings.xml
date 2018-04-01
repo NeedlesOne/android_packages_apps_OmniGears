@@ -152,9 +152,7 @@
   <string name="battery_title">Wyświetlanie stanu baterii</string>
   <string name="statusbar_battery_summary">Wybierz styl ikony baterii</string>
   <string name="battery_style_title">Styl</string>
-  <string name="battery_percent_title">Pokaż procent</string>
   <string name="statusbar_percent_inside_title">Wygląd procentowy</string>
-  <string name="statusbar_percent_inside_summary">Wyświetlaj procentowy stan baterii na ikonie</string>
   <string name="statusbar_charging_image_title">Wskaźnik ładowania</string>
   <string name="statusbar_category_charging_title">Ładowanie</string>
   <string name="statusbar_charging_image_summary">Wyświetlaj ikonę pioruna podczas ładowania. Ukrywa procentowy stan baterii</string>
@@ -206,15 +204,10 @@
   <string name="lockscreen_left_shortcut_enable_summary">Dostępność zależy od konfiguracji systemu</string>
   <string name="notification_title">Panel powiadomień</string>
   <string name="status_bar_custom_header_title">Niestandardowe tło panelu powiadomień</string>
-  <string name="daylight_header_pack_title">Paczka teł ekranu powiadomień</string>
   <string name="status_bar_custom_header_shadow_title">Cień obrazu nagłówka</string>
   <string name="status_bar_custom_header_shadow_summary">Dla lepszej widoczności na jasnych obrazach</string>
   <string name="unit_percent">\u0025</string>
-  <string name="static_header_provider_title">Statyczny</string>
-  <string name="daylight_header_provider_title">Dynamiczny</string>
   <string name="custom_header_provider_title">Dostawca nagłówka</string>
-  <string name="custom_header_browse_title">Przeglądaj zainstalowane nagłówki</string>
-  <string name="custom_header_browse_summary">Przytrzymaj dowolny obraz, by użyć go w trybie statycznym</string>
   <string name="style_enabled_summary">Niestandardowe tło panelu powiadomień jest włączone</string>
   <string name="style_disabled_summary">Niestandardowe tło panelu powiadomień jest wyłączone</string>
   <!-- Network traffic -->
@@ -319,4 +312,6 @@
   <string name="bars_brightness_disabled_summary">Regulacja jasności jest WYŁĄCZONA</string>
   <!-- Display : Rotation -->
   <!-- Doze settings editor -->
+  <string name="battery_percent_title">Pokaż procent</string>
+  <!-- fingerprint authentication vibration -->
 </resources>

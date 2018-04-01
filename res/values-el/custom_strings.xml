@@ -89,7 +89,6 @@
   <string name="statusbar_title">Γραμμή κατάστασης</string>
   <string name="battery_title">Εμφάνιση μπαταρίας</string>
   <string name="battery_style_title">Στυλ</string>
-  <string name="battery_percent_title">Εμφάνιση ποσοστού</string>
   <string name="statusbar_percent_inside_title">Ποσοστό επικάλυψης</string>
   <!-- Lock screen config -->
   <!-- Network traffic -->
@@ -112,4 +111,6 @@
   <!-- Summaries -->
   <!-- Display : Rotation -->
   <!-- Doze settings editor -->
+  <string name="battery_percent_title">Εμφάνιση ποσοστού</string>
+  <!-- fingerprint authentication vibration -->
 </resources>
