@@ -161,7 +161,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
-        if (!mFingerprintManager.isHardwareDetected()){
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
             otherCategory.removePreference(mFingerprintVib);
         } else {
             mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
