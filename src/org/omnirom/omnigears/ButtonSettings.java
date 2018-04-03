@@ -92,6 +92,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final int deviceKeys = getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
+        final boolean buttonLights = getResources().getBoolean(
+                com.android.internal.R.bool.config_button_brightness_support);
         final PreferenceCategory keysCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
         final PreferenceCategory otherCategory =
@@ -101,13 +103,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         mDisabkeHWKeys = (SwitchPreference) prefScreen.findPreference(KEYS_DISABLE_HW_KEY);
         mButtonLight = prefScreen.findPreference(KEY_BUTTON_LIGHT);
 
-        if (deviceKeys == 0) {
+        // No keys or no dedicated HW home/nav keys
+        if (deviceKeys == 0 || deviceKeys % 8 == 0) {
             keysCategory.removePreference(mDisabkeHWKeys);
-            keysCategory.removePreference(mButtonLight);
         } else {
             boolean hardwareKeysDisable = Settings.System.getInt(resolver,
                     Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
             mDisabkeHWKeys.setChecked(hardwareKeysDisable);
+        }
+        if (!buttonLights || deviceKeys == 0) {
+            keysCategory.removePreference(mButtonLight);
         }
 
         boolean showNavBarDefault = DeviceUtils.deviceSupportNavigationBar(getActivity());
@@ -181,12 +186,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_SHOW, checked ? 1:0);
-            // remove hw button disable if we disable navbar
-            if (!checked) {
-                Settings.System.putInt(getContentResolver(),
-                        Settings.System.HARDWARE_KEYS_DISABLE, 0);
-                mDisabkeHWKeys.setChecked(false);
-            }
             return true;
         } else if (preference == mDisabkeHWKeys) {
             boolean checked = ((SwitchPreference)preference).isChecked();
