@@ -191,6 +191,8 @@
     <string name="statusbar_battery_charging_color_enable_title">Color while charging</string>
     <string name="statusbar_battery_charging_color_enable_summary"></string>
     <string name="battery_enable_title">Show battery</string>
+    <string name="statusbar_battery_low_color_enable_title">Low battery color</string>
+    <string name="statusbar_battery_low_color_enable_summary">Enable different color if battery below 15%</string>
 
     <string name="button_backlight_title">Button backlight</string>
     <string name="button_backlight_summary">Configure enablement and brightness</string>

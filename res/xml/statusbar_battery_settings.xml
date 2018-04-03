@@ -52,6 +52,12 @@
             android:summary="@string/statusbar_battery_dotted_line_summary"
             android:defaultValue="false"/>
 
+        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            android:key="statusbar_battery_low_color_enable"
+            android:title="@string/statusbar_battery_low_color_enable_title"
+            android:summary="@string/statusbar_battery_low_color_enable_summary"
+            android:defaultValue="true"/>
+
         <PreferenceCategory
             android:key="statusbar_category_charging"
             android:title="@string/statusbar_category_charging_title">
