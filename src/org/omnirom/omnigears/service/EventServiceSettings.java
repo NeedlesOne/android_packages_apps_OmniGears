@@ -21,10 +21,12 @@ package org.omnirom.omnigears.service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.SearchIndexableResource;
 import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 
@@ -36,6 +38,7 @@ import com.android.settings.search.Indexable;
 
 import org.omnirom.omnigears.preference.AppMultiSelectListPreference;
 import org.omnirom.omnigears.preference.ScrollAppsViewPreference;
+import org.omnirom.omnigears.preference.SeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -53,6 +56,8 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
     public static final String EVENT_AUTORUN_SINGLE = "autorun_single_app";
     public static final String A2DP_APP_LIST = "a2dp_app_list";
     public static final String HEADSET_APP_LIST = "headset_app_list";
+    public static final String APP_CHOOSER_TIMEOUT = "app_chooser_timeout";
+    public static final String APP_CHOOSER_POSITION = "app_chooser_position";
 
     // -- For backward compatibility
     public static final String OLD_EVENT_A2DP_CONNECT = "bt_a2dp_connect_app";
@@ -67,6 +72,8 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
     private SwitchPreference mAutoStart;
     private SwitchPreference mMusicActive;
     private SwitchPreference mAutorun;
+    private SeekBarPreference mChooserTimeout;
+    private ListPreference mChooserPosition;
     private Handler mHandler = new Handler();
     private String mServiceRunning;
     private String mServiceStopped;
@@ -103,6 +110,12 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
         mServiceStopped = getResources().getString(R.string.event_service_stopped);
         mEnable.setSummary(isServiceRunning() ? mServiceRunning : mServiceStopped);
 
+        mChooserPosition = (ListPreference) findPreference(APP_CHOOSER_POSITION);
+        mChooserPosition.setOnPreferenceChangeListener(this);
+        mChooserPosition.setValue(
+                Integer.toString(getPrefs().getInt(EventServiceSettings.APP_CHOOSER_POSITION, 0)));
+        mChooserPosition.setSummary(mChooserPosition.getEntry());
+
         mAutoStart = (SwitchPreference) findPreference(EVENT_MEDIA_PLAYER_START);
         mAutoStart.setChecked(getPrefs().getBoolean(EventServiceSettings.EVENT_MEDIA_PLAYER_START, false));
         mAutoStart.setOnPreferenceChangeListener(this);
@@ -114,6 +127,10 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
         mAutorun = (SwitchPreference) findPreference(EVENT_AUTORUN_SINGLE);
         mAutorun.setChecked(getPrefs().getBoolean(EventServiceSettings.EVENT_AUTORUN_SINGLE, true));
         mAutorun.setOnPreferenceChangeListener(this);
+
+        mChooserTimeout = (SeekBarPreference) findPreference(APP_CHOOSER_TIMEOUT);
+        mChooserTimeout.setValue(getPrefs().getInt(EventServiceSettings.APP_CHOOSER_TIMEOUT, 15));
+        mChooserTimeout.setOnPreferenceChangeListener(this);
 
         mA2DPappSelect = (AppMultiSelectListPreference) findPreference(EVENT_A2DP_CONNECT);
         Set<String> value = getPrefs().getStringSet(EVENT_A2DP_CONNECT, null);
@@ -205,8 +222,26 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
             boolean value = ((Boolean) newValue).booleanValue();
             getPrefs().edit().putBoolean(EVENT_AUTORUN_SINGLE, value).commit();
             return true;
+        } else if (preference == mChooserTimeout) {
+            int value = ((int) newValue);
+            getPrefs().edit().putInt(APP_CHOOSER_TIMEOUT, value).commit();
+            return true;
+        } else if (preference == mChooserPosition) {
+            int value = Integer.valueOf((String) newValue);
+            getPrefs().edit().putInt(APP_CHOOSER_POSITION, value).commit();
+            updateChooserPositionSummary(value);
+            return true;
         }
         return false;
+    }
+
+    private void updateChooserPositionSummary(int value) {
+        Resources res = getResources();
+        if (value == 0) {
+            mChooserPosition.setSummary(res.getString(R.string.app_chooser_left));
+        } else {
+            mChooserPosition.setSummary(res.getString(R.string.app_chooser_right));
+        }
     }
 
     private boolean isServiceRunning() {

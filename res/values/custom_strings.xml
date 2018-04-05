@@ -712,6 +712,10 @@
     <string name="autorun_single_app_summary">Dont show app selection dialog</string>
     <string name="bt_a2dp_connect_app_list_summary">App(s) to be listed when an A2DP event is triggered, such as connecting a Bluetooth headset</string>
     <string name="headset_connect_app_list_summary">App(s) to be listed when a wired headset is connected</string>
+    <string name="app_chooser_left">Left</string>
+    <string name="app_chooser_right">Right</string>
+    <string name="app_chooser_timeout_title">App chooser dialog timeout</string>
+    <string name="app_chooser_position_title">App chooser dialog position</string>
 
     <!-- Quick Pulldown-->
     <string name="quick_pulldown_title">Quick pulldown</string>
