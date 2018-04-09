@@ -50,6 +50,8 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Interpolator;
+import android.view.animation.PathInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -65,6 +67,8 @@ public class EventService extends Service {
     private static boolean mIsRunning;
     private static boolean mWiredHeadsetConnected;
     private static boolean mA2DPConnected;
+    private static final int ANIM_DURATION = 300;
+    private static final Interpolator FAST_OUT_SLOW_IN = new PathInterpolator(0.4f, 0f, 0.2f, 1f);
 
     private WindowManager mWindowManager;
     private View mFloatingWidget = null;
@@ -154,8 +158,7 @@ public class EventService extends Service {
                     WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
                     PixelFormat.TRANSLUCENT);
 
-            params.x = 25;
-            params.windowAnimations = android.R.style.Animation_Dialog;
+            params.x = context.getResources().getDimensionPixelSize(R.dimen.floating_widget_window_padding);
 
             int chooserPosition = getPrefs(context).getInt(EventServiceSettings.APP_CHOOSER_POSITION, 0);
             if (chooserPosition == 0) {
@@ -195,12 +198,13 @@ public class EventService extends Service {
             close.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    mWindowManager.removeViewImmediate(mFloatingWidget);
+                    slideAnimation(context, false);
                 }
             });
             linearLayout.addView(close);
 
             mWindowManager.addView(mFloatingWidget, params);
+            slideAnimation(context, true);
 
             final int timeout = getPrefs(context).getInt(EventServiceSettings.APP_CHOOSER_TIMEOUT, 15);
             if (timeout > 0) {
@@ -212,7 +216,7 @@ public class EventService extends Service {
                                 && mFloatingWidget.getWindowToken() != null);
 
                         if (stillThere) {
-                            mWindowManager.removeViewImmediate(mFloatingWidget);
+                            slideAnimation(context, false);
                         }
                     }
                 }, timeout * 1000);
@@ -338,5 +342,49 @@ public class EventService extends Service {
 
     private SharedPreferences getPrefs(Context context) {
         return context.getSharedPreferences(EventServiceSettings.EVENTS_PREFERENCES_NAME, Context.MODE_PRIVATE);
+    }
+
+    private int getOverlayWidth(Context context) {
+        return (context.getResources().getDimensionPixelSize(R.dimen.floating_widget_view_padding) +
+                context.getResources().getDimensionPixelSize(android.R.dimen.app_icon_size)) / 2;
+    }
+
+    private void slideAnimation(Context context, final boolean show) {
+        // 0 is left
+        int chooserPosition = getPrefs(context).getInt(EventServiceSettings.APP_CHOOSER_POSITION, 0);
+
+        if (show) {
+            int startValue = 0;
+            if (chooserPosition == 1) {
+                startValue = getOverlayWidth(context);
+            } else {
+                startValue = -getOverlayWidth(context);
+            }
+            mFloatingWidget.setTranslationX(startValue);
+            mFloatingWidget.setAlpha(0);
+            mFloatingWidget.animate()
+                    .alpha(1)
+                    .translationX(0)
+                    .setDuration(ANIM_DURATION)
+                    .setInterpolator(FAST_OUT_SLOW_IN)
+                    .start();
+
+        } else {
+            int endValue = 0;
+            if (chooserPosition == 1) {
+                endValue = getOverlayWidth(context);
+            } else {
+                endValue = -getOverlayWidth(context);
+            }
+            mFloatingWidget.setTranslationX(0);
+            mFloatingWidget.setAlpha(1);
+            mFloatingWidget.animate()
+                    .alpha(0)
+                    .translationX(endValue)
+                    .setDuration(ANIM_DURATION)
+                    .setInterpolator(FAST_OUT_SLOW_IN)
+                    .withEndAction(() -> mWindowManager.removeViewImmediate(mFloatingWidget))
+                    .start();
+        }
     }
 }

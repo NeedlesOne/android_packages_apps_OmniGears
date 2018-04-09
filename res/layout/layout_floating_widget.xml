@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_app_chooser"
                 android:orientation="vertical"
-                android:padding="10dp" />
+                android:padding="@dimen/floating_widget_view_padding" />
         </ScrollView>
     </RelativeLayout>
 </FrameLayout>
