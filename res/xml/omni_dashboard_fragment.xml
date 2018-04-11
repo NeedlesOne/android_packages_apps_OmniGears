@@ -44,6 +44,12 @@
         android:fragment="org.omnirom.omnigears.interfacesettings.BarsSettings" />
 
     <Preference
+        android:key="lockscreen_settings"
+        android:title="@string/lockscreen_category_title"
+        android:icon="@drawable/ic_lockscreen_tile"
+        android:fragment="org.omnirom.omnigears.interfacesettings.LockscreenSettings" />
+
+    <Preference
         android:key="rotation_settings"
         android:title="@string/display_rotation_title"
         android:summary="@string/display_rotation_summary"

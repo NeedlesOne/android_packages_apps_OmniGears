@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2018 The OmniROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+            android:key="lockscreen_settings"
+            android:title="@string/lockscreen_category_title" >
+
+    <Preference
+        android:key="bottom_shortcuts_category"
+        android:title="@string/systemui_tuner_lockscreen_bottom_shortcuts_title"
+        android:summary="@string/systemui_tuner_lockscreen_bottom_shortcuts_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
+    </Preference>
+
+            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+                android:key="lockscreen_hide_media"
+                android:title="@string/lockscreen_hide_media_title"
+                android:summary="@string/lockscreen_hide_media_summary"
+                android:defaultValue="false" />
+
+            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+                android:key="double_tap_sleep_lockscreen"
+                android:title="@string/double_tap_sleep_lockscreen_title"
+                android:summary="@string/double_tap_sleep_lockscreen_summary"
+                android:defaultValue="false" />
+
+            <org.omnirom.omnigears.preference.SecureSettingSwitchPreference
+                android:key="lockscreen_qs_disabled"
+                android:title="@string/lockscreen_qs_disabled_title"
+                android:summary="@string/lockscreen_qs_disabled_summary"
+                android:defaultValue="false" />
+
+            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+                android:key="face_auto_unlock"
+                android:title="@string/face_auto_unlock_title"
+                android:summary="@string/face_auto_unlock_summary"
+                android:defaultValue="false" />
+    
+            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+                android:key="fp_unlock_keystore"
+                android:title="@string/fp_unlock_keystore_title"
+                android:summary="@string/fp_unlock_keystore_summary"
+                android:defaultValue="false" />
+
+</PreferenceScreen>
+

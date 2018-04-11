@@ -743,4 +743,8 @@
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
+    <!-- Bottom shortcuts -->
+    <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Bottom shortcuts</string>
+    <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Configure the bottom shortcuts</string>
 </resources>
