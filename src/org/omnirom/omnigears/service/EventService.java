@@ -68,6 +68,8 @@ public class EventService extends Service {
     private static boolean mWiredHeadsetConnected;
     private static boolean mA2DPConnected;
     private static final int ANIM_DURATION = 300;
+    private static final int LEFT = 0;
+    private static final int RIGHT = 1;
     private static final Interpolator FAST_OUT_SLOW_IN = new PathInterpolator(0.4f, 0f, 0.2f, 1f);
 
     private WindowManager mWindowManager;
@@ -75,6 +77,7 @@ public class EventService extends Service {
     private Set<String> appList = null;
     private Handler mHandler = new Handler();
     private PackageManager mPm;
+    private int chooserPosition;
 
     private BroadcastReceiver mStateListener = new BroadcastReceiver() {
         @Override
@@ -160,13 +163,6 @@ public class EventService extends Service {
 
             params.x = context.getResources().getDimensionPixelSize(R.dimen.floating_widget_window_padding);
 
-            int chooserPosition = getPrefs(context).getInt(EventServiceSettings.APP_CHOOSER_POSITION, 0);
-            if (chooserPosition == 0) {
-                params.gravity = Gravity.CENTER_VERTICAL | Gravity.LEFT;
-            } else {
-                params.gravity = Gravity.CENTER_VERTICAL | Gravity.RIGHT;
-            }
-
             // Selected apps
             LinearLayout linearLayout = (LinearLayout) mFloatingWidget.findViewById(R.id.selected_apps);
             if (linearLayout.getChildCount() > 0) linearLayout.removeAllViews();
@@ -193,7 +189,6 @@ public class EventService extends Service {
 
             // Close button
             View close = inflater.inflate(R.layout.app_grid_item, null);
-            ((ImageView) close.findViewById(R.id.appIcon)).setImageResource(R.drawable.ic_disabled);
             close.setPadding(30, 15, 30, 15);
             close.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -201,6 +196,17 @@ public class EventService extends Service {
                     slideAnimation(context, false);
                 }
             });
+
+            // Position and close icon
+            chooserPosition = getPrefs(context).getInt(EventServiceSettings.APP_CHOOSER_POSITION, LEFT);
+            if (chooserPosition == LEFT) {
+                params.gravity = Gravity.CENTER_VERTICAL | Gravity.LEFT;
+                ((ImageView) close.findViewById(R.id.appIcon)).setImageResource(R.drawable.ic_chevron_left);
+            } else {
+                params.gravity = Gravity.CENTER_VERTICAL | Gravity.RIGHT;
+                ((ImageView) close.findViewById(R.id.appIcon)).setImageResource(R.drawable.ic_chevron_right);
+            }
+
             linearLayout.addView(close);
 
             mWindowManager.addView(mFloatingWidget, params);
@@ -350,12 +356,9 @@ public class EventService extends Service {
     }
 
     private void slideAnimation(Context context, final boolean show) {
-        // 0 is left
-        int chooserPosition = getPrefs(context).getInt(EventServiceSettings.APP_CHOOSER_POSITION, 0);
-
         if (show) {
             int startValue = 0;
-            if (chooserPosition == 1) {
+            if (chooserPosition == RIGHT) {
                 startValue = getOverlayWidth(context);
             } else {
                 startValue = -getOverlayWidth(context);
@@ -371,7 +374,7 @@ public class EventService extends Service {
 
         } else {
             int endValue = 0;
-            if (chooserPosition == 1) {
+            if (chooserPosition == RIGHT) {
                 endValue = getOverlayWidth(context);
             } else {
                 endValue = -getOverlayWidth(context);
