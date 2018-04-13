@@ -58,6 +58,7 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
     public static final String HEADSET_APP_LIST = "headset_app_list";
     public static final String APP_CHOOSER_TIMEOUT = "app_chooser_timeout";
     public static final String APP_CHOOSER_POSITION = "app_chooser_position";
+    public static final String WIRED_EVENTS_THRESHOLD = "wired_events_threshold";
 
     // -- For backward compatibility
     public static final String OLD_EVENT_A2DP_CONNECT = "bt_a2dp_connect_app";
@@ -77,6 +78,7 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
     private Handler mHandler = new Handler();
     private String mServiceRunning;
     private String mServiceStopped;
+    private SeekBarPreference mWiredThresholdTimeout;
 
     @Override
     public int getMetricsCategory() {
@@ -131,6 +133,10 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
         mChooserTimeout = (SeekBarPreference) findPreference(APP_CHOOSER_TIMEOUT);
         mChooserTimeout.setValue(getPrefs().getInt(EventServiceSettings.APP_CHOOSER_TIMEOUT, 15));
         mChooserTimeout.setOnPreferenceChangeListener(this);
+
+        mWiredThresholdTimeout = (SeekBarPreference) findPreference(WIRED_EVENTS_THRESHOLD);
+        mWiredThresholdTimeout.setValue(getPrefs().getInt(EventServiceSettings.WIRED_EVENTS_THRESHOLD, 0));
+        mWiredThresholdTimeout.setOnPreferenceChangeListener(this);
 
         mA2DPappSelect = (AppMultiSelectListPreference) findPreference(EVENT_A2DP_CONNECT);
         Set<String> value = getPrefs().getStringSet(EVENT_A2DP_CONNECT, null);
@@ -230,6 +236,10 @@ public class EventServiceSettings extends SettingsPreferenceFragment implements 
             int value = Integer.valueOf((String) newValue);
             getPrefs().edit().putInt(APP_CHOOSER_POSITION, value).commit();
             updateChooserPositionSummary(value);
+            return true;
+        } else if (preference == mWiredThresholdTimeout) {
+            int value = ((int) newValue);
+            getPrefs().edit().putInt(WIRED_EVENTS_THRESHOLD, value).commit();
             return true;
         }
         return false;

@@ -104,5 +104,15 @@
             android:persistent="false"
             android:title="@string/app_chooser_position_title" />
 
+        <org.omnirom.omnigears.preference.SeekBarPreference
+            android:dependency="event_service_enabled"
+            android:key="wired_events_threshold"
+            android:max="6"
+            android:persistent="false"
+            android:title="@string/wired_events_threshold_title"
+            android:summary="@string/wired_events_threshold_summary"
+            settings:min="0"
+            settings:unitsLeft=""
+            settings:unitsRight="@string/unit_sec" />
     </PreferenceCategory>
 </PreferenceScreen>

@@ -62,7 +62,7 @@ import java.util.Set;
 
 public class EventService extends Service {
     private static final String TAG = "OmniEventService";
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
     private PowerManager.WakeLock mWakeLock;
     private static boolean mIsRunning;
     private static boolean mWiredHeadsetConnected;
@@ -71,6 +71,8 @@ public class EventService extends Service {
     private static final int LEFT = 0;
     private static final int RIGHT = 1;
     private static final Interpolator FAST_OUT_SLOW_IN = new PathInterpolator(0.4f, 0f, 0.2f, 1f);
+    private static boolean mOverlayShown;
+    private static long mLastUnplugEventTimestamp;
 
     private WindowManager mWindowManager;
     private View mFloatingWidget = null;
@@ -121,7 +123,16 @@ public class EventService extends Service {
                         break;
                     case AudioManager.ACTION_HEADSET_PLUG:
                         boolean useHeadset = intent.getIntExtra("state", 0) == 1;
+                        final int threshold = getPrefs(context).getInt(EventServiceSettings.WIRED_EVENTS_THRESHOLD, 0);
+
                         if (useHeadset && !mWiredHeadsetConnected) {
+                            if (mLastUnplugEventTimestamp != 0) {
+                                final long eventDelta = System.currentTimeMillis() - mLastUnplugEventTimestamp;
+                                if (eventDelta < threshold * 1000) {
+                                    if (DEBUG) Log.d(TAG, "Ignore AudioManager.ACTION_HEADSET_PLUG = " + useHeadset + " delta = " + eventDelta);
+                                    return;
+                                }
+                            }
                             mWiredHeadsetConnected = true;
                             if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = true");
 
@@ -138,6 +149,7 @@ public class EventService extends Service {
                         } else {
                             mWiredHeadsetConnected = false;
                             if (DEBUG) Log.d(TAG, "AudioManager.ACTION_HEADSET_PLUG = false");
+                            mLastUnplugEventTimestamp = System.currentTimeMillis();
                         }
                         break;
                 }
@@ -149,11 +161,11 @@ public class EventService extends Service {
     };
 
     public void openAppChooserDialog(final Context context) {
-        final LayoutInflater inflater = LayoutInflater.from(new ContextThemeWrapper(
+        if (!mOverlayShown) {
+            final LayoutInflater inflater = LayoutInflater.from(new ContextThemeWrapper(
                 context, android.R.style.Theme_DeviceDefault_Light_Dialog));
-        mFloatingWidget = inflater.inflate(R.layout.layout_floating_widget, null);
+            mFloatingWidget = inflater.inflate(R.layout.layout_floating_widget, null);
 
-        if (mFloatingWidget.getWindowToken() == null) {
             final WindowManager.LayoutParams params = new WindowManager.LayoutParams(
                     WindowManager.LayoutParams.WRAP_CONTENT,
                     WindowManager.LayoutParams.WRAP_CONTENT,
@@ -218,15 +230,13 @@ public class EventService extends Service {
                 mCloseHandler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        boolean stillThere = (mFloatingWidget != null
-                                && mFloatingWidget.getWindowToken() != null);
-
-                        if (stillThere) {
+                        if (mOverlayShown) {
                             slideAnimation(context, false);
                         }
                     }
                 }, timeout * 1000);
             }
+            mOverlayShown = true;
         }
     }
 
@@ -386,7 +396,10 @@ public class EventService extends Service {
                     .translationX(endValue)
                     .setDuration(ANIM_DURATION)
                     .setInterpolator(FAST_OUT_SLOW_IN)
-                    .withEndAction(() -> mWindowManager.removeViewImmediate(mFloatingWidget))
+                    .withEndAction(() -> {
+                        mOverlayShown = false;
+                        mWindowManager.removeViewImmediate(mFloatingWidget);
+                    })
                     .start();
         }
     }

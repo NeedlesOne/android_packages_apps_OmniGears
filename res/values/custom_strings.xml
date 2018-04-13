@@ -716,6 +716,8 @@
     <string name="app_chooser_right">Right</string>
     <string name="app_chooser_timeout_title">App chooser dialog timeout</string>
     <string name="app_chooser_position_title">App chooser dialog position</string>
+    <string name="wired_events_threshold_title">Wired headset event threshold</string>
+    <string name="wired_events_threshold_summary">Ignore headset events if they are within threshold time</string>
 
     <!-- Quick Pulldown-->
     <string name="quick_pulldown_title">Quick pulldown</string>
