@@ -79,6 +79,7 @@
     <string name="button_back_kill_enable_title">Kill app back button</string>
     <string name="button_back_kill_enable_summary">Kill the foreground app by long-pressing the back button</string>
     <string name="button_back_kill_timeout_title">Kill app timeout</string>
+    <string name="button_back_kill_timeout_250ms">250 ms</string>
     <string name="button_back_kill_timeout_500ms">500 ms</string>
     <string name="button_back_kill_timeout_1000ms">1000 ms</string>
     <string name="button_back_kill_timeout_1500ms">1500 ms</string>
