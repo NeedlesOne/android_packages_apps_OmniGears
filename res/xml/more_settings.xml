@@ -38,11 +38,7 @@
                 android:title="@string/hide_dashboard_summary_title"
                 android:summary="@string/hide_dashboard_summary_summary"
                 android:persistent="false" />
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
-                android:key="system_default_animation"
-                android:title="@string/system_default_animation_title"
-                android:summary="@string/system_default_animation_summary"
-                android:defaultValue="false" />
+
         </PreferenceCategory>
 
         <PreferenceCategory
