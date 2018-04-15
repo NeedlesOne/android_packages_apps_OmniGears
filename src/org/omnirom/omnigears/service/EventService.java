@@ -30,6 +30,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
@@ -80,6 +81,16 @@ public class EventService extends Service {
     private Handler mHandler = new Handler();
     private PackageManager mPm;
     private int chooserPosition;
+    private int mOverlayWidth;
+    private boolean mRecalcOverlayWidth;
+    private Runnable mCloseRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (mOverlayShown) {
+                slideAnimation(false);
+            }
+        }
+    };
 
     private BroadcastReceiver mStateListener = new BroadcastReceiver() {
         @Override
@@ -162,6 +173,13 @@ public class EventService extends Service {
 
     public void openAppChooserDialog(final Context context) {
         if (!mOverlayShown) {
+            if (mRecalcOverlayWidth) {
+                mOverlayWidth = getOverlayWidth(context);
+                mRecalcOverlayWidth = false;
+            }
+            // never enter again once this started
+            mOverlayShown = true;
+
             final LayoutInflater inflater = LayoutInflater.from(new ContextThemeWrapper(
                 context, android.R.style.Theme_DeviceDefault_Light_Dialog));
             mFloatingWidget = inflater.inflate(R.layout.layout_floating_widget, null);
@@ -189,7 +207,13 @@ public class EventService extends Service {
                     v.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            mWindowManager.removeViewImmediate(mFloatingWidget);
+                            mHandler.removeCallbacks(mCloseRunnable);
+                            mOverlayShown = false;
+                            try {
+                                mWindowManager.removeViewImmediate(mFloatingWidget);
+                            } catch (Exception e) {
+                                Log.e(TAG, "openApp ", e);
+                            }
                             openApp(value, context);
                         }
                     });
@@ -205,7 +229,8 @@ public class EventService extends Service {
             close.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    slideAnimation(context, false);
+                    mHandler.removeCallbacks(mCloseRunnable);
+                    slideAnimation(false);
                 }
             });
 
@@ -222,21 +247,12 @@ public class EventService extends Service {
             linearLayout.addView(close);
 
             mWindowManager.addView(mFloatingWidget, params);
-            slideAnimation(context, true);
+            slideAnimation(true);
 
             final int timeout = getPrefs(context).getInt(EventServiceSettings.APP_CHOOSER_TIMEOUT, 15);
             if (timeout > 0) {
-                Handler mCloseHandler = new Handler();
-                mCloseHandler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (mOverlayShown) {
-                            slideAnimation(context, false);
-                        }
-                    }
-                }, timeout * 1000);
+                mHandler.postDelayed(mCloseRunnable, timeout * 1000);
             }
-            mOverlayShown = true;
         }
     }
 
@@ -317,6 +333,13 @@ public class EventService extends Service {
         mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
         mPm = getPackageManager();
         registerListener();
+        mOverlayWidth = getOverlayWidth(this);
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mRecalcOverlayWidth = true;
     }
 
     @Override
@@ -365,13 +388,13 @@ public class EventService extends Service {
                 context.getResources().getDimensionPixelSize(android.R.dimen.app_icon_size)) / 2;
     }
 
-    private void slideAnimation(Context context, final boolean show) {
+    private void slideAnimation(final boolean show) {
         if (show) {
             int startValue = 0;
             if (chooserPosition == RIGHT) {
-                startValue = getOverlayWidth(context);
+                startValue = mOverlayWidth;
             } else {
-                startValue = -getOverlayWidth(context);
+                startValue = -mOverlayWidth;
             }
             mFloatingWidget.setTranslationX(startValue);
             mFloatingWidget.setAlpha(0);
@@ -385,9 +408,9 @@ public class EventService extends Service {
         } else {
             int endValue = 0;
             if (chooserPosition == RIGHT) {
-                endValue = getOverlayWidth(context);
+                endValue = mOverlayWidth;
             } else {
-                endValue = -getOverlayWidth(context);
+                endValue = -mOverlayWidth;
             }
             mFloatingWidget.setTranslationX(0);
             mFloatingWidget.setAlpha(1);
@@ -398,7 +421,11 @@ public class EventService extends Service {
                     .setInterpolator(FAST_OUT_SLOW_IN)
                     .withEndAction(() -> {
                         mOverlayShown = false;
-                        mWindowManager.removeViewImmediate(mFloatingWidget);
+                        try {
+                            mWindowManager.removeViewImmediate(mFloatingWidget);
+                        } catch (Exception e) {
+                            Log.e(TAG, "slideAnimation close ", e);
+                        }
                     })
                     .start();
         }
