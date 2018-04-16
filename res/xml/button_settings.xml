@@ -81,8 +81,14 @@
             android:key="global_actions"
             android:title="@string/global_actions_title"
             android:summary="@string/global_actions_summary"
-            android:icon="@drawable/ic_settings_power"
             android:fragment="org.omnirom.omnigears.interfacesettings.GlobalActionsSettings" />
+
+        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            android:key="long_press_power_torch"
+            android:title="@string/long_press_power_torch_title"
+            android:summary="@string/long_press_power_torch_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
