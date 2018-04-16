@@ -39,7 +39,7 @@
 
     <Preference
         android:key="bars_settings"
-        android:title="@string/bars_settings_title"
+        android:title="@string/custom_bars_settings_title"
         android:icon="@drawable/ic_bars_tile"
         android:fragment="org.omnirom.omnigears.interfacesettings.BarsSettings" />
 
