@@ -558,7 +558,7 @@
   <string name="screen_off_animation_fade">简单淡入</string>
   <string name="screen_off_animation_color">颜色褪色</string>
   <string name="screen_off_animation_crt">CRT</string>
-  <string name="screen_off_animation_scale">规模</string>
+  <string name="screen_off_animation_scale">比例尺</string>
   <string name="screen_off_animation_title">关屏动画</string>
   <string name="omni_theme_select_title">Omni主题</string>
   <string name="omni_theme_select_none">禁用</string>

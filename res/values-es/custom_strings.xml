@@ -491,7 +491,9 @@
   <string name="SHORT_MIN_TIME_TO_ALARM">Tiempo mínimo para alarmar</string>
   <string name="logcat_app_title">MatLog</string>
   <string name="show_dashboard_columns_title">Diseño de dos columnas</string>
+  <string name="show_dashboard_columns_summary">En la página principal de configuración</string>
   <string name="hide_dashboard_summary_title">Ocultar Resumen</string>
+  <string name="hide_dashboard_summary_summary">En la página principal de configuración</string>
   <string name="systemui_theme_style_auto">Basado en el fondo de pantalla</string>
   <string name="systemui_theme_style_light">Estilo ligero</string>
   <string name="systemui_theme_style_dark">Estilo oscuro</string>
@@ -505,6 +507,7 @@
   <string name="call_volume_option_title">Volumen de la voz en llamadas</string>
   <string name="double_tap_sleep_lockscreen_title">Doble toque en la pantalla de bloqueo para bloquear</string>
   <string name="double_tap_sleep_lockscreen_summary">Doble toque en cualquier lugar de la pantalla de bloqueo para bloquear equipo</string>
+  <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">Escalar</string>
   <string name="screen_off_animation_title">Animación al apagar la pantalla</string>
   <string name="omni_theme_select_title">Temas de Omni</string>

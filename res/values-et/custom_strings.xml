@@ -159,8 +159,10 @@
   <string name="battery_title">Aku kuva</string>
   <string name="statusbar_battery_summary">Määra olekuriba aku kuva stiil</string>
   <string name="clock_title">Kell ja kuupäev</string>
+  <string name="statusbar_clock_summary">Määra olekuriba kella kuva stiil</string>
   <string name="battery_style_title">Stiil</string>
   <string name="statusbar_percent_inside_title">Protsentide ülekate</string>
+  <string name="statusbar_percent_inside_summary">Kuva protsente aku pildi peal</string>
   <string name="statusbar_charging_image_title">Laadija indikaator</string>
   <string name="statusbar_category_charging_title">Laadimine</string>
   <string name="statusbar_charging_image_summary">Kuva laadimisel välguindikaatorit. Peidab protsentide ülekatte</string>
@@ -170,6 +172,7 @@
   <string name="button_backlight_title">Nupu taustavalgus</string>
   <string name="button_backlight_summary">Seadista lubamist ja heledust</string>
   <string name="button_backlight_on_touch_only_title">Nupu vajutusel</string>
+  <string name="button_backlight_on_touch_only_summary">Luba ajalõpuga taustavalgustus ainult nupuvajutusel</string>
   <string name="button_timeout_title">Taustavalguse ajalõpp</string>
   <string name="button_timeout_summary">Keelatud väärtuse 0 korral</string>
   <string name="button_link_brightness">Lingi ekraanile</string>
@@ -224,6 +227,7 @@
   <string name="lockscreen_category_title">Lukukuva</string>
   <string name="notification_title">Teatepaneel</string>
   <string name="status_bar_custom_header_title">Luba</string>
+  <string name="daylight_header_pack_title">Päisepiltide kogu</string>
   <string name="status_bar_custom_header_shadow_title">Päisepildi vari</string>
   <string name="status_bar_custom_header_shadow_summary">Parema nähtavuse jaoks heledatel piltidel</string>
   <string name="unit_percent">\u0025</string>
@@ -231,10 +235,13 @@
   <string name="daylight_header_provider_title">Pildikollektsioon</string>
   <string name="custom_header_provider_title">Päise pakkuja</string>
   <string name="custom_header_pick_title">Vali päisepilt</string>
+  <string name="custom_header_pick_summary">Vali kohalik või võrgusolev pilt</string>
   <string name="style_enabled_summary">Kohandatud päisepilt VÄLJAS</string>
   <string name="style_disabled_summary">Kohandatud päisepilt SEES</string>
   <string name="header_provider_disabled">Keelatud</string>
   <string name="custom_header_title">Kohandatud päisepilt</string>
+  <string name="file_header_select_title">Vali kohalik pilt</string>
+  <string name="file_header_select_summary">Vali sisemälust pilt</string>
   <string name="file_header_provider_title">Üksik pilt</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Võrguliiklus</string>
@@ -316,6 +323,7 @@
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Keela lukustatud olekus kiirseaded</string>
+  <string name="lockscreen_qs_disabled_summary">Keela kiirseadete laiendamine turvalistel lukukuvadel</string>
   <string name="lockscreen_power_menu_disabled_title">Keela lukus olles toitemenüü</string>
   <string name="lockscreen_power_menu_disabled_summary">Keela toitemenüü turvalisel lukukuval</string>
   <string name="status_bar_quick_qs_pulldown_title">Kiire allatõmme</string>
@@ -424,6 +432,8 @@
   <string name="copy_as_text">Kopeeri tekstina</string>
   <string name="google_it">Googelda seda</string>
   <string name="app_details">Rakenduse üksikasjad</string>
+  <string name="no_stat_because_reset_state">Vajuta nulli, et alustada aja lugemist andmete olekus</string>
+  <string name="no_stat_because_reset_wakelock">Vajuta nulli, et alustada ärkamisluku andmete kogumist</string>
   <string name="no_states_file_found">Olekute faili ei leitud. Kas oled kindel, et su telefon
         ühildub?\n\nKui sa kasutad kohandatud ROMi või tuuma, proovi
         kontakteeruda selle arendajaga, teatamaks, et olekute fail
@@ -503,6 +513,8 @@
   <string name="volume_steps_5">5 astet</string>
   <string name="system_volume_option_title">Süsteemi helitugevus</string>
   <string name="call_volume_option_title">Kõne helitugevus</string>
+  <string name="double_tap_sleep_lockscreen_title">Topeltkoputa lukukuva unerežiimiks</string>
+  <string name="double_tap_sleep_lockscreen_summary">Topeltkoputa lukukuval mistahes kohas, et viia seade unerežiimi</string>
   <string name="screen_off_animation_fade">Lihtne hajumine</string>
   <string name="screen_off_animation_color">Värvi hajumine</string>
   <string name="screen_off_animation_crt">Kineskoop</string>
@@ -522,6 +534,7 @@
   <string name="statusbar_battery_dotted_line_summary">Kasuta katkendjoone efekti teatud stiilide puhul</string>
   <string name="battery_percent_none">Mitte kunagi</string>
   <string name="battery_percent_always">Alati</string>
+  <string name="battery_percent_expanded">Ainult laiendatult</string>
   <string name="battery_percent_title">Kuva protsente</string>
   <string name="status_bar_clock">Kell ja kuupäev</string>
   <string name="clock_title_enable">Paigutus</string>
@@ -532,10 +545,12 @@
   <string name="status_bar_am_pm_title">AM/PM</string>
   <string name="status_bar_am_pm_info">24-tunni kell on lubatud</string>
   <string name="enable_clock_weekday">Nädalapäev</string>
+  <string name="enable_clock_weekday_summary">Lühendatud nädalapäev enne kella</string>
   <string name="right_clock">Kell paremal</string>
   <string name="left_clock">Kell vasakul</string>
   <string name="dont_show">Ära näita</string>
   <string name="clock_date_display">Kuupäev</string>
+  <string name="clock_date_display_summary">Kuva kohandatud kuupäeva enne kella</string>
   <string name="clock_date_style">Kuupäeva laad</string>
   <string name="clock_date_position">Kuupäeva asukoht</string>
   <string name="clock_date_format">Kuupäeva vorming</string>
@@ -555,6 +570,10 @@
   <string name="clock_date_format_custom">Kohandatud Java vorming</string>
   <string name="status_bar_clock_seconds_title">Kuva sekundeid</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Sõrmejälje autentimise vibratsioon</string>
+  <string name="fprint_sucess_vib_summary">Vibreeri edukal sõrmejälje autentimisel</string>
   <string name="choose_app">Vali rakendus</string>
+  <string name="not_ready_summary">Lahendan...</string>
+  <string name="resolve_failed_summary">Rakenduse lahendamine ebaõnnestus</string>
   <string name="disabled_entry">Keelatud</string>
 </resources>

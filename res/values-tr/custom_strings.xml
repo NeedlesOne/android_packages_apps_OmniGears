@@ -455,8 +455,8 @@
   <string name="show_cpu_summary">Mevcûd işlemci bilgisini gösteren yardımcı grafik</string>
   <string name="headset_plugged_notification_title">Kulaklık bildirimi</string>
   <string name="headset_plugged_notification_summary">Kablolu kulaklık bağlandığında bildirim göster</string>
-  <string name="wake_when_plugged_or_unplugged_title">Fişe takıldığında veyâ çıkarıldığında uyan</string>
-  <string name="wake_when_plugged_or_unplugged_summary">Cihazı bir şarj cihazına takdığınızda veyâ şarj cihazından çıkardığınızda cihazı uyandırın</string>
+  <string name="wake_when_plugged_or_unplugged_title">Fişe takıldığında veyâ fişten çıkarıldığında uyan</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Cihazı bir şarj cihazına takdığınızda veyâ bir şarj cihazından çıkardığınızda uyandırın</string>
   <!-- Display : Rotation -->
   <string name="category_display">Ekran</string>
   <string name="display_rotation_disabled">Devre dışı</string>
@@ -499,9 +499,9 @@
   <string name="DESC_MAX_IDLE_TIMEOUT">Kullanmamıza müsaade ettiğiniz azami boşta durma süresi</string>
   <string name="DESC_IDLE_FACTOR">O hal boyunca devir yaptığımız her zaman mevcûd boşta kalma zaman aşımına uygulanacak olan ölçekleme oranı</string>
   <string name="DESC_MIN_TIME_TO_ALARM">Bu, fiilen boşta kalma moduna geçmemiz için gelecek olan bir sonraki îkâza kadar müsâade edeceğimiz asgarî süre</string>
-  <string name="DESC_MAX_TEMP_APP_WHITELIST_DURATION">Bir uygulama yüksek bir alâka gördüğünde uygulamayı geçici olarak güvenli listede tutacak âzamî süre miktarı</string>
-  <string name="DESC_MMS_TEMP_APP_WHITELIST_DURATION">Bir MMS alan uygulamayı güvenli listede tutmayı arzu ettiğimiz süre miktarı</string>
-  <string name="DESC_SMS_TEMP_APP_WHITELIST_DURATION">Bir SMS alan uygulamayı güvenli listede tutmayı arzu ettiğimiz süre miktarı</string>
+  <string name="DESC_MAX_TEMP_APP_WHITELIST_DURATION">Bir uygulama yüksek bir alâka gördüğünde uygulamanın idareten istisna sayılacağı âzamî süre miktarı</string>
+  <string name="DESC_MMS_TEMP_APP_WHITELIST_DURATION">Bir MMS alan uygulamanın istisna sayılacağı süre miktarı</string>
+  <string name="DESC_SMS_TEMP_APP_WHITELIST_DURATION">Bir SMS alan uygulamanın istisna sayılacağı süre miktarı</string>
   <string name="DESC_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Bu, gayri faal olduktan sonra ilk hafif boşta kalma moduna girdiğimiz zamandır</string>
   <string name="DESC_LIGHT_PRE_IDLE_TIMEOUT">Bu, işlerin ve diğer mevcûd faaliyetlerin tamamlanmasını beklerken boşta kalma moduna geçmeye kanaat getirdiğimiz ândan fi\'len boşta kalma moduna geçeceğimiz âna kadar bekleyeceğimiz süre miktarıdır</string>
   <string name="DESC_LIGHT_IDLE_TIMEOUT">Bu, boşta kalma bakımı modunda çalışacağımız ilk zamandır</string>
@@ -511,7 +511,7 @@
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Bu, hafiften boşta kalma esnâsında bakım modunun kullanımına sunmayı arzu ettiğimiz âzamî süre miktarıdır</string>
   <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Bu, hafif bir uykuya geçtikten sonra bakım modunda kalacağımız asgarî süre miktarıdır</string>
   <string name="DESC_MIN_DEEP_MAINTENANCE_TIME">Bu, tam bir uykuya geçtikten sonra bakım modunda kalacağımız asgarî süre miktarıdır</string>
-  <string name="DESC_KEY_NOTIFICATION_WHITELIST_DURATION">Bir bildirimi ele alan uygulamayı güvenli listede tutmayı arzu ettiğimiz süre miktarı</string>
+  <string name="DESC_KEY_NOTIFICATION_WHITELIST_DURATION">Bir bildirimi ele alan uygulamanın istisna sayılacağı süre miktarı</string>
   <string name="SHORT_INACTIVE_TIMEOUT">Gayri faal zaman aşımı</string>
   <string name="SHORT_SENSING_TIMEOUT">Sensör zaman aşımı</string>
   <string name="SHORT_LOCATING_TIMEOUT">Konumlandırma zaman aşımı</string>
@@ -525,9 +525,9 @@
   <string name="SHORT_MAX_IDLE_TIMEOUT">Âzamî boşta kalma zaman aşımı</string>
   <string name="SHORT_IDLE_FACTOR">Boşta kalma sebebi</string>
   <string name="SHORT_MIN_TIME_TO_ALARM">İkaz edilecek asgarî süre</string>
-  <string name="SHORT_MAX_TEMP_APP_WHITELIST_DURATION">Uygulamanın geçici olarak güvenli listede âzamî tutulma süresi</string>
-  <string name="SHORT_MMS_TEMP_APP_WHITELIST_DURATION">MMS uygulamasının güvenli listede âzamî tutulma süresi</string>
-  <string name="SHORT_SMS_TEMP_APP_WHITELIST_DURATION">SMS uygulamasının güvenli listede âzamî tutulma süresi</string>
+  <string name="SHORT_MAX_TEMP_APP_WHITELIST_DURATION">Uygulamanın idareten istisna listesinde kalacağı âzamî süre</string>
+  <string name="SHORT_MMS_TEMP_APP_WHITELIST_DURATION">MMS uygulamasının istisna listesinde kalacağı âzamî süre</string>
+  <string name="SHORT_SMS_TEMP_APP_WHITELIST_DURATION">SMS uygulamasının istisna listesinde kalacağı âzamî süre</string>
   <string name="SHORT_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Gayri faal zaman aşımından sonra hafif boşta kal</string>
   <string name="SHORT_LIGHT_PRE_IDLE_TIMEOUT">Hafif ön boşta kalma zaman aşımı</string>
   <string name="SHORT_LIGHT_IDLE_TIMEOUT">Hafif boşta kalma zaman aşımı</string>
@@ -537,7 +537,7 @@
   <string name="SHORT_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Hafif boşta kalma esnâsındaki bakım modunun âzamî zaman aşımı</string>
   <string name="SHORT_MIN_LIGHT_MAINTENANCE_TIME">Hafif uyku esnâsındaki bakım modunun asgarî zaman aşımı</string>
   <string name="SHORT_MIN_DEEP_MAINTENANCE_TIME">Tam uyku esnâsındaki bakım modunun asgarî zaman aşımı</string>
-  <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Bildirimin güvenli listede âzamî tutulma süresi</string>
+  <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Bildirimin istisna listesinde kalacağı âzamî süre</string>
   <string name="logcat_app_title">MatLog</string>
   <string name="logcat_app_summary">Kayıtları toplamak için uygulama başlatın</string>
   <string name="show_dashboard_columns_title">Sütun düzenini kullan</string>

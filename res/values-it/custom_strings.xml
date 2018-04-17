@@ -82,6 +82,7 @@
   <string name="button_back_kill_timeout_500ms">500 ms</string>
   <string name="button_back_kill_timeout_1000ms">1000 ms</string>
   <string name="button_back_kill_timeout_1500ms">1500 ms</string>
+  <string name="button_back_kill_timeout_2000ms">2000 ms</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">Doppio tocco per bloccare</string>
   <string name="double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere lo schermo</string>
@@ -157,6 +158,7 @@
   <string name="statusbar_title">Barra di stato</string>
   <string name="battery_title">Display della batteria</string>
   <string name="statusbar_battery_summary">Imposta stile visualizzazione stato batteria</string>
+  <string name="clock_title">Ora e data</string>
   <string name="battery_style_title">Stile</string>
   <string name="statusbar_percent_inside_title">Percentuale sovrapposizione</string>
   <string name="statusbar_charging_image_title">Indicatore di carica</string>
@@ -225,12 +227,14 @@
   <string name="status_bar_custom_header_shadow_title">Ombra immagine intestazione</string>
   <string name="status_bar_custom_header_shadow_summary">Per una migliore visibilità su immagini luminose</string>
   <string name="unit_percent">\u0025</string>
+  <string name="static_header_provider_title">Immagine statica</string>
   <string name="custom_header_provider_title">Provider dell\'intestazione</string>
   <string name="custom_header_pick_title">Imposta immagine d\'intestazione</string>
   <string name="style_enabled_summary">Immagine intestazione personalizzata attiva</string>
   <string name="style_disabled_summary">Immagine intestazione personalizzata non attiva</string>
   <string name="header_provider_disabled">Disabilitato</string>
   <string name="custom_header_title">Immagine intestazione personalizzata</string>
+  <string name="file_header_provider_title">Immagine singola</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Traffico di rete</string>
   <string name="network_traffic_summary">Traffico di rete nella barra di stato</string>
@@ -538,6 +542,29 @@
   <string name="volume_steps_5">5 livelli</string>
   <string name="system_volume_option_title">Volume sistema</string>
   <string name="call_volume_option_title">Volume chiamate</string>
+  <string name="battery_percent_none">Mai</string>
+  <string name="battery_percent_always">Sempre</string>
   <string name="battery_percent_title">Visualizza percentuale</string>
+  <string name="clock_title_enable">Allineamento</string>
+  <string name="clock_enabled">Abilitato</string>
+  <string name="clock_disabled">Disabilitato</string>
+  <string name="status_bar_am_pm_info">Formato 24 ore abilitato</string>
+  <string name="enable_clock_weekday">Giorno della settimana</string>
+  <string name="enable_clock_weekday_summary">Giorno della settimana abbreviato prima dell\'ora</string>
+  <string name="right_clock">Orologio a destra</string>
+  <string name="left_clock">Orologio a sinistra</string>
+  <string name="dont_show">Non mostrare</string>
+  <string name="clock_date_display">Data</string>
+  <string name="clock_date_position">Posizione data</string>
+  <string name="clock_date_format">Formato della data</string>
+  <string name="am_pm_clock_none">Non mostrare</string>
+  <string name="clock_date_display_none">Non mostrare</string>
+  <string name="clock_date_style_normal">Normale</string>
+  <string name="clock_date_style_lowercase">Minuscolo</string>
+  <string name="clock_date_style_uppercase">Maiuscolo</string>
+  <string name="status_bar_clock_seconds_title">Mostra i secondi</string>
   <!-- fingerprint authentication vibration -->
+  <string name="choose_app">Seleziona applicazione</string>
+  <string name="not_ready_summary">Risoluzione...</string>
+  <string name="disabled_entry">Disabilitato</string>
 </resources>

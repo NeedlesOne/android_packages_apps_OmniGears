@@ -107,6 +107,7 @@
   <string name="led_color_blue">Sininen</string>
   <string name="statusbar_title">Tilapalkki</string>
   <string name="clock_title">Kello ja päivämäärä</string>
+  <string name="statusbar_clock_summary">Aseta tilapalkin kellon tyyli</string>
   <string name="battery_style_title">Tyyli</string>
   <string name="statusbar_category_charging_title">Ladataan</string>
   <string name="statusbar_battery_charging_color_title">Väri</string>
@@ -143,6 +144,8 @@
   <string name="lockscreen_clock_color_title">Ajan ja päivämäärän väri</string>
   <string name="lockscreen_clock_size_title">Ajan koko</string>
   <string name="lockscreen_clock_enable_title">Ota käyttöön</string>
+  <string name="lockscreen_clock_enable_summary">Tilapalkin kello näytetään, jos tämä on pois käytöstä</string>
+  <string name="lockscreen_clock_shadow_title">Varjostus</string>
   <string name="lockscreen_shortcut_add_dialog_title">Lisää pikakuvake</string>
   <string name="lockscreen_shortcut_apps_title">Pikakuvakkeet</string>
   <string name="lockscreen_shortcut_add">Lisää\u2026</string>
@@ -206,6 +209,12 @@
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_power_menu_disabled_title">Poista käynnistysvalikko käytöstä lukittuna</string>
   <string name="lockscreen_power_menu_disabled_summary">Poista käynnistysvalikko käytöstä turvatussa lukitusnäytössä</string>
+  <string name="status_bar_quick_qs_pulldown_title">Nopea avaaminen</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Vasen</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Oikea</string>
+  <string name="status_bar_quick_qs_pulldown_off">Ei käytössä</string>
+  <string name="status_bar_quick_qs_pulldown_left">Vasen</string>
+  <string name="status_bar_quick_qs_pulldown_right">Oikea</string>
   <!-- Power menu Animations  -->
   <string name="power_menu_animation_title">Käynnistysvalikon animaatio</string>
   <string name="power_menu_animation_dialog_title">Valitse käynnistysvalikon animaatio</string>
@@ -290,12 +299,35 @@
   <string name="battery_percent_always">Aina</string>
   <string name="battery_percent_title">Näytä prosentit</string>
   <string name="status_bar_clock">Kello &amp; päivämäärä</string>
+  <string name="clock_title_enable">Sijoittelu</string>
+  <string name="clock_enabled">Käytössä</string>
+  <string name="clock_disabled">Pois käytöstä</string>
+  <string name="status_bar_clock_style_reset">Nollaa värit</string>
   <string name="status_bar_show_clock_title">Näytä kello &amp; päivämäärä</string>
   <string name="status_bar_am_pm_info">24 tunnin kello on valittu</string>
   <string name="enable_clock_weekday">Viikonpäivä</string>
+  <string name="enable_clock_weekday_summary">Lyhennetty viikonpäivä ennen kellonaikaa</string>
+  <string name="right_clock">Kello oikealla</string>
+  <string name="left_clock">Kello vasemmalla</string>
+  <string name="clock_date_display">Päivämäärä</string>
+  <string name="clock_date_display_summary">Näytä mukautettu päiväys ennen kelloa</string>
+  <string name="clock_date_style">Päivämäärän tyyli</string>
+  <string name="clock_date_position">Päivämäärän sijainti</string>
   <string name="clock_date_format">Päivämäärän muoto</string>
+  <string name="clock_date_string_edittext_title">On oltava DateFormat muodossa esim. MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">Syötä merkkijono</string>
+  <string name="clock_date_right">Ajan oikealla puolella</string>
+  <string name="clock_date_left">Ajan vasemmalla puolella</string>
+  <string name="am_pm_clock_normal">Normaali fonttikoko</string>
+  <string name="am_pm_clock_small">Pieni fonttikoko</string>
   <string name="am_pm_clock_none">Älä näytä</string>
   <string name="clock_date_display_none">Älä näytä</string>
+  <string name="clock_date_display_small">Pieni fonttikoko</string>
+  <string name="clock_date_display_normal">Normaali fonttikoko</string>
+  <string name="clock_date_style_normal">Normaali</string>
+  <string name="clock_date_style_lowercase">Pienet kirjaimet</string>
+  <string name="clock_date_style_uppercase">Isot kirjaimet</string>
+  <string name="clock_date_format_custom">Mukautettu java-muoto</string>
   <string name="status_bar_clock_seconds_title">Näytä sekunnit</string>
   <!-- fingerprint authentication vibration -->
   <string name="choose_app">Valitse sovellus</string>

@@ -82,6 +82,7 @@
   <string name="button_back_kill_timeout_500ms">500 ms</string>
   <string name="button_back_kill_timeout_1000ms">1000 ms</string>
   <string name="button_back_kill_timeout_1500ms">1500 ms</string>
+  <string name="button_back_kill_timeout_2000ms">2000 ms</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">Doppelt Tippen für Schlafmodus</string>
   <string name="double_tap_to_sleep_summary">Tippe die Statusleiste zweimal an, um das Gerät in den Ruhemodus zu versetzen</string>
@@ -157,6 +158,7 @@
   <string name="statusbar_title">Statusleiste</string>
   <string name="battery_title">Batterie-Anzeige</string>
   <string name="statusbar_battery_summary">Darstellung der Batterieanzeige festlegen</string>
+  <string name="clock_title">Uhrzeit und Datum</string>
   <string name="battery_style_title">Aussehen</string>
   <string name="statusbar_percent_inside_title">Prozent anzeigen</string>
   <string name="statusbar_charging_image_title">Ladeanzeige</string>
@@ -231,6 +233,7 @@
   <string name="style_disabled_summary">Benutzerdefiniertes Header-Bild ist AUS</string>
   <string name="header_provider_disabled">Deaktiviert</string>
   <string name="custom_header_title">Benutzerdefiniertes Header-Bild</string>
+  <string name="file_header_provider_title">Einzelnes Bild</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Netzwerkverkehr</string>
   <string name="network_traffic_summary">Statusleisten Netzwerkverkehrsanzeige</string>
@@ -311,6 +314,7 @@
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_qs_disabled_title">Schnelleinstellungen bei gesperrtem Bildschirm deaktivieren</string>
+  <string name="lockscreen_qs_disabled_summary">Zugriff auf die Schnelleinstellungen bei gesichertem Sperrbildschirm deaktivieren</string>
   <string name="lockscreen_power_menu_disabled_title">Power-Menü im Sperrbildschirm deaktivieren</string>
   <string name="lockscreen_power_menu_disabled_summary">Power-Menü im sicheren Sperrbildschirm deaktivieren</string>
   <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
@@ -538,6 +542,32 @@
   <string name="volume_steps_5">5 Schritte</string>
   <string name="system_volume_option_title">System-Lautstärke</string>
   <string name="call_volume_option_title">Gesprächslautstärke</string>
+  <string name="battery_style_text">Nur Text</string>
+  <string name="battery_style_default">Standard</string>
+  <string name="battery_percent_none">Niemals</string>
+  <string name="battery_percent_always">Immer</string>
   <string name="battery_percent_title">Prozent anzeigen</string>
+  <string name="clock_enabled">Aktiviert</string>
+  <string name="clock_disabled">Deaktiviert</string>
+  <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
+  <string name="status_bar_am_pm_title">AM/PM</string>
+  <string name="status_bar_am_pm_info">24-Stunden-Anzeige ist aktiviert</string>
+  <string name="enable_clock_weekday">Wochentag</string>
+  <string name="right_clock">Uhr rechts</string>
+  <string name="left_clock">Uhr links</string>
+  <string name="dont_show">Nicht anzeigen</string>
+  <string name="clock_date_display">Datum</string>
+  <string name="clock_date_format">Datumsformat</string>
+  <string name="am_pm_clock_normal">Normale Schriftgröße</string>
+  <string name="am_pm_clock_small">Kleine Schriftgröße</string>
+  <string name="am_pm_clock_none">Nicht anzeigen</string>
+  <string name="clock_date_display_none">Nicht anzeigen</string>
+  <string name="clock_date_display_small">Kleine Schriftgröße</string>
+  <string name="clock_date_display_normal">Normale Schriftgröße</string>
+  <string name="clock_date_style_normal">Normal</string>
+  <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
+  <string name="clock_date_style_uppercase">Großbuchstaben</string>
+  <string name="status_bar_clock_seconds_title">Sekunden anzeigen</string>
   <!-- fingerprint authentication vibration -->
+  <string name="disabled_entry">Deaktiviert</string>
 </resources>

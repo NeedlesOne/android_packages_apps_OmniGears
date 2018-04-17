@@ -89,8 +89,8 @@
   <!-- Doze pulse (ambient display) options -->
   <string name="doze_overwrite_value_title">Érték felülírása</string>
   <string name="doze_overwrite_value_summary">Alapértelmezett érték felülírásának engedélyezése felhasználói beállítással</string>
-  <string name="doze_list_mode_title">Szundi mód</string>
-  <string name="doze_list_mode_summary">Szundi mód beállításának lehetősége</string>
+  <string name="doze_list_mode_title">Doze mód</string>
+  <string name="doze_list_mode_summary">Doze mód beállításának lehetősége</string>
   <string name="doze_pulse_title">Idő beállítások</string>
   <string name="doze_pulse_duration_in_title">Beúsztatás</string>
   <string name="doze_pulse_duration_visible_title">Látható időtartam</string>
