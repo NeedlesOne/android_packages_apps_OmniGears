@@ -206,6 +206,7 @@
     <string name="button_manual_brightness">Brightness level</string>
     <string name="unit_sec">sec</string>
     <string name="unit_msec">ms</string>
+    <string name="unit_minutes">min</string>
     <string name="button_backlight_enable_title">Enable</string>
 
     <string name="navigation_bar_show_title">Show navigation bar</string>
@@ -712,6 +713,9 @@
     <string name="app_chooser_position_title">App chooser dialog position</string>
     <string name="wired_events_threshold_title">Wired headset event threshold</string>
     <string name="wired_events_threshold_summary">Ignore headset events if they are within threshold time</string>
+    <string name="category_network_title">Network</string>
+    <string name="disable_wifi_threshold_title">Turn off Wi\u2011Fi automatically</string>
+    <string name="disable_wifi_threshold_summary">Deactivate Wi\u2011Fi if, when disconnecting from a network, we do not reconnect after a few minutes</string>
 
     <!-- Quick Pulldown-->
     <string name="quick_pulldown_title">Quick pulldown</string>
@@ -753,8 +757,11 @@
     <string name="hide_lockscreen_date_summary">Change the date\'s visibility underneath the clock widget</string>
     <string name="hide_lockscreen_alarm_title">Alarm text</string>
     <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
+    <string name="hide_lockscreen_status_bar_title">Hide status bar</string>
+    <string name="hide_lockscreen_status_bar_summary">Touch status bar to toggle visibility</string>
 
     <!-- Longpress Power for Torch -->
     <string name="long_press_power_torch_title">Long press for flashlight</string>
     <string name="long_press_power_torch_summary">Toggle flashlight when screen is off</string>
+
 </resources>
