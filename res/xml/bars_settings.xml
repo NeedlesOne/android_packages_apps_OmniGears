@@ -17,7 +17,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:key="bars_settings"
-            android:title="@string/bars_settings_title" >
+            android:title="@string/custom_bars_settings_title" >
 
         <PreferenceCategory
             android:key="category_statusbar"
