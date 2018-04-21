@@ -502,7 +502,9 @@ public class TimeInState extends SettingsPreferenceFragment {
         long total = monitor.getTotalStateTime(0, true);
         if (activeMode) {
             CpuState deepSleepState = monitor.getDeepSleepState();
-            return total - deepSleepState.getDuration();
+            if (deepSleepState != null) {
+                return total - deepSleepState.getDuration();
+            }
         }
         return total;
     }
