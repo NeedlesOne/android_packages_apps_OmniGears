@@ -527,8 +527,6 @@
     <string name="volume_button_force_media_title">Force media volume</string>
     <string name="volume_button_force_media_summary">Media volume will be changed by default</string>
 
-    <string name="lockscreen_hide_status_bar_title">Hide status bar</string>
-    <string name="lockscreen_hide_status_bar_summary">Touch status bar to toggle visibility</string>
     <string name="status_bar_logo_title">Status bar logo</string>
     <string name="status_bar_logo_summary">A little swag</string>
 

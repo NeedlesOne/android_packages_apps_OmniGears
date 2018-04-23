@@ -52,11 +52,6 @@
                 android:summary="@string/lockscreen_qs_disabled_summary"
                 android:defaultValue="false" />
 
-            <org.omnirom.omnigears.preference.SecureSettingSwitchPreference
-                android:key="lockscreen_hide_status_bar"
-                android:title="@string/lockscreen_hide_status_bar_title"
-                android:summary="@string/lockscreen_hide_status_bar_summary"
-                android:defaultValue="false" />
             <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
                 android:key="face_auto_unlock"
                 android:title="@string/face_auto_unlock_title"
