@@ -239,18 +239,7 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    <!-- Power menu Animations  -->
-    <string-array name="power_menu_animations_entries">
-        <item>@string/power_menu_animation_enter</item>
-        <item>@string/power_menu_animation_bottom</item>
-        <item>@string/power_menu_animation_top</item>
-    </string-array>
 
-    <string-array name="power_menu_animations_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
     <!-- Values for the notification light pulse spinners -->
     <string-array name="notification_pulse_length_entries" translatable="false">
         <item>@string/pulse_length_always_on</item>
