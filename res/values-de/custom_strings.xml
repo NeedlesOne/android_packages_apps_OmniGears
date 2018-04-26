@@ -304,7 +304,6 @@
   <string name="global_actions_dnd_title">Nicht stören</string>
   <string name="global_actions_summary">Im Ein/Aus-Menü angezeigte Aktionen</string>
   <string name="global_actions_header">Einige Aktionen sind nur abhängig von den Einstellungen oder wenn das Gerät entsperrt ist sichtbar</string>
-  <string name="global_actions_anim">Aussehen</string>
   <string name="global_actions_advanced_reboot_summary">Zeige weitere Optionen im Neustart-Menü</string>
   <string name="global_actions_advanced_reboot_title">Erweiterten Neustart aktivieren</string>
   <string name="global_actions_advanced_reboot_summary_new">Zeige weitere Optionen im Neustart-Menü, wenn nicht gesperrt</string>
@@ -324,13 +323,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Deaktiviert</string>
   <string name="status_bar_quick_qs_pulldown_left">Links</string>
   <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Power-Menü Animation</string>
-  <string name="power_menu_animation_summary">Ändern Sie Ein/Ausblend-Animation des Power-Menü</string>
-  <string name="power_menu_animation_dialog_title">Power-Menü Animation auswählen</string>
-  <string name="power_menu_animation_enter">Omni (Standard)</string>
-  <string name="power_menu_animation_bottom">Unten</string>
-  <string name="power_menu_animation_top">Oben</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">LED-Einstellungen bearbeiten</string>
   <string name="pulse_speed_title">Intervall Länge und Geschwindigkeit</string>
@@ -455,8 +447,6 @@
   <string name="display_lockscreen_rotation_title">Sperrbildschirm</string>
   <string name="volume_button_force_media_title">Medien-Lautstärke verwenden</string>
   <string name="volume_button_force_media_summary">Medienlautstärke wird standardmäßig geändert</string>
-  <string name="lockscreen_hide_status_bar_title">Statusleiste ausblenden</string>
-  <string name="lockscreen_hide_status_bar_summary">Tippe auf die Statusleiste, um die Sichtbarkeit umzuschalten</string>
   <string name="status_bar_logo_title">Statusleisten Logo</string>
   <string name="status_bar_logo_summary">Bonus-Feature</string>
   <!-- Doze settings editor -->
@@ -570,4 +560,9 @@
   <string name="status_bar_clock_seconds_title">Sekunden anzeigen</string>
   <!-- fingerprint authentication vibration -->
   <string name="disabled_entry">Deaktiviert</string>
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

@@ -169,6 +169,8 @@
   <string name="statusbar_battery_charging_color_title">Farba</string>
   <string name="statusbar_battery_charging_color_enable_title">Pri nabíjaní zmeniť farbu</string>
   <string name="battery_enable_title">Zobraziť batériu</string>
+  <string name="statusbar_battery_low_color_enable_title">Farba nízkeho stavu batérie</string>
+  <string name="statusbar_battery_low_color_enable_summary">Povoliť inú farbu pri poklese stavu batérie pod 15%</string>
   <string name="button_backlight_title">Podsvietenie tlačidiel</string>
   <string name="button_backlight_summary">Nastavenie aktivácie a jasu</string>
   <string name="button_backlight_on_touch_only_title">Dotyk tlačidla</string>
@@ -313,7 +315,6 @@
   <string name="global_actions_dnd_title">Nerušiť</string>
   <string name="global_actions_summary">Možnosti zobrazované pri vypnutí</string>
   <string name="global_actions_header">Niektoré voľby sú viditeľné v závislosti od nastavení alebo len pri odomknutom zariadení</string>
-  <string name="global_actions_anim">Vzhľad</string>
   <string name="global_actions_advanced_reboot_summary">Zobraziť viac volieb v ponuke reštartovania</string>
   <string name="global_actions_advanced_reboot_title">Povoliť pokročilé reštartovanie</string>
   <string name="global_actions_advanced_reboot_summary_new">Zobraziť viac možností v ponuke reštartovania, ak to nie je uzamknuté</string>
@@ -333,13 +334,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Vyp</string>
   <string name="status_bar_quick_qs_pulldown_left">Vľavo</string>
   <string name="status_bar_quick_qs_pulldown_right">Vpravo</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Animácia ponuky napájania</string>
-  <string name="power_menu_animation_summary">Zmena vstupnej/končiacej animácie ponuky napájania</string>
-  <string name="power_menu_animation_dialog_title">Vyberte animáciu ponuky vypnutia</string>
-  <string name="power_menu_animation_enter">Omni (predvolená)</string>
-  <string name="power_menu_animation_bottom">Zdola</string>
-  <string name="power_menu_animation_top">Zhora</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Upraviť nastavenia svetla</string>
   <string name="pulse_speed_title">Dĺžka a rýchlosť blikania</string>
@@ -469,8 +463,6 @@
   <string name="display_lockscreen_rotation_title">Obrazovka uzamknutia</string>
   <string name="volume_button_force_media_title">Vynútiť hlasitosť médií</string>
   <string name="volume_button_force_media_summary">Hlasitosť médií bude predvolene zmenená</string>
-  <string name="lockscreen_hide_status_bar_title">Skryť stavovú lištu</string>
-  <string name="lockscreen_hide_status_bar_summary">Dotknutím stavovej lišty sa prepne viditeľnosť</string>
   <string name="status_bar_logo_title">Logo v stavovej lište</string>
   <string name="status_bar_logo_summary">Malý bonus</string>
   <!-- Doze settings editor -->
@@ -619,4 +611,65 @@
   <string name="not_ready_summary">Riešenie...</string>
   <string name="resolve_failed_summary">Riešenie aplikácie zlyhalo</string>
   <string name="disabled_entry">Zakázané</string>
+  <string name="event_service_settings_title">Udalosti</string>
+  <string name="category_media_player_title">Prehrávač médií</string>
+  <string name="bt_a2dp_connect_app_list_title">Pripojenie Bluetooth A2DP</string>
+  <string name="headset_connect_app_list_title">Pripojenie drôtových slúchadiel</string>
+  <string name="event_service_enabled_title">Povolit službu udalostí</string>
+  <string name="event_service_running">Služba je spustená</string>
+  <string name="event_service_stopped">Služba nie je spustená</string>
+  <string name="category_media_player_info_title">Výber aplikácie</string>
+  <string name="media_player_autostart_title">Odoslať udalosť prehrávania médií po spustení</string>
+  <string name="media_player_music_active_title">Nespustiť udalosť počas prehrávania</string>
+  <string name="autorun_single_app_title">Okamžité spustenie, ak je k dispozícii len jedna aplikácia</string>
+  <string name="autorun_single_app_summary">Nezobrazovať dialóg pre výber aplikácie</string>
+  <string name="bt_a2dp_connect_app_list_summary">Aplikácie, ktoré sa majú zobraziť pri spustení udalosti A2DP, napríklad pripojenie slúchadiel Bluetooth</string>
+  <string name="headset_connect_app_list_summary">Aplikácie, ktoré sa majú zobraziť pri pripojení káblových slúchadiel</string>
+  <string name="app_chooser_left">Vľavo</string>
+  <string name="app_chooser_right">Vpravo</string>
+  <string name="app_chooser_timeout_title">Časový limit dialógu výberu aplikácie</string>
+  <string name="app_chooser_position_title">Umiestnenie dialógu výberu aplikácie</string>
+  <string name="wired_events_threshold_title">Prahová hodnota udalosti káblových slúchadiel</string>
+  <string name="wired_events_threshold_summary">Ignorovať udalosti slúchadiel, ak sú v rámci prahovej hodnoty</string>
+  <!-- Quick Pulldown-->
+  <string name="quick_pulldown_title">Rýchle rozbalenie ponuky</string>
+  <string name="quick_pulldown_summary">Ťahaním dolu z %1$s strany stavového riadku bude vysunutá ponuka rýchlych nastavení
+</string>
+  <string name="quick_pulldown_summary_always">Vždy zobraziť rýchle nastavenia pri vysunutí stavového riadku</string>
+  <string name="quick_pulldown_off">Vypnuté</string>
+  <string name="quick_pulldown_left">ľavej</string>
+  <string name="quick_pulldown_right">pravej</string>
+  <string name="quick_pulldown_always">Vždy</string>
+  <!-- Expanded desktop -->
+  <string name="expanded_desktop_title">Rozšírená plocha</string>
+  <string name="expanded_desktop_summary">Nastavenie stavového riadku a zobrazenia navigačných tlačidiel podľa aplikácie</string>
+  <string name="expanded_hide_nothing">Nič neskrývať</string>
+  <string name="expanded_hide_status">Skryť stavový riadok</string>
+  <string name="expanded_hide_navigation">Skryť navigačný panel</string>
+  <string name="expanded_hide_both">Skryť oboje</string>
+  <string name="expanded_nothing_to_show">Ak chcete pridať vlastný režim rozšírenej konfigurácie pre vybrané aplikácie, nastavte do voľbu \"Povolené pre všetky\" do vypnutej pozície</string>
+  <string name="expanded_desktop_state">Rozšírený stav</string>
+  <string name="expanded_enabled_for_all">Povolené pre všetky aplikácie</string>
+  <string name="expanded_user_configurable">Užívateľsky nastaviteľné</string>
+  <string name="show_only_launcher_menu">Iba spúšťač aplikácií</string>
+  <string name="show_all_apps_menu">Všetky aplikácie</string>
+  <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
+  <string name="status_bar_toggle_brightness_summary">Umožňuje nastaviť jas ťahaním prsta po stavovom riadku</string>
+  <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Spodné odkazy</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Nastaviť spodné odkazy</string>
+  <string name="long_press_power_torch_title">Dlhým stlačením zapnúť baterku</string>
+  <string name="long_press_power_torch_summary">Prepínanie baterky pri vypnutej obrazovke</string>
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Položky na obrazovke uzamknutia</string>
+  <string name="lockscreen_item_summary">Nastaviť viditeľnosť položiek na obrazovke uzamknutia</string>
+  <string name="hide_lockscreen_clock_title">Skryť miniaplikáciu hodín</string>
+  <string name="hide_lockscreen_clock_summary">Zmeniť viditeľnosť miniaplikácie hodín</string>
+  <string name="hide_lockscreen_date_title">Skryť dátum na widgete</string>
+  <string name="hide_lockscreen_date_summary">Zmeniť viditeľnosť dátumu pod miniaplikáciou hodín</string>
+  <string name="hide_lockscreen_alarm_title">Skryť text budíku</string>
+  <string name="hide_lockscreen_alarm_summary">Zmeniť viditeľnosť textu budíka pod miniaplikáciou</string>
+  <string name="hide_lockscreen_status_bar_title">Skryť stavový riadok</string>
+  <string name="hide_lockscreen_status_bar_summary">Dotykom na stavový riadok sa prepne viditeľnosť</string>
 </resources>

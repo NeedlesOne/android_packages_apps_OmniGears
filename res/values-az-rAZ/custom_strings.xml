@@ -196,7 +196,6 @@
   <string name="global_actions_silent_title">Səssiz mod</string>
   <string name="global_actions_dnd_title">Narahat etməyin</string>
   <string name="global_actions_summary">Güc menyusunda göstərilən əməllər</string>
-  <string name="global_actions_anim">Görünüş</string>
   <string name="global_actions_advanced_reboot_summary">Yenidən başlatma menyusunda daha çox parametr göstər</string>
   <string name="global_actions_advanced_reboot_title">Qabaqcıl yenidən başlatmanı aktivləşdir</string>
   <string name="font_sample_text">11:57</string>
@@ -207,12 +206,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Qapalı</string>
   <string name="status_bar_quick_qs_pulldown_left">Sol</string>
   <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Güc menyusu animasyası</string>
-  <string name="power_menu_animation_dialog_title">Güc menyusu animasyası seç</string>
-  <string name="power_menu_animation_enter">Omni (standart)</string>
-  <string name="power_menu_animation_bottom">Alt</string>
-  <string name="power_menu_animation_top">Üst</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">İşıq parametrlərini redaktə et</string>
   <string name="pulse_speed_title">Yanma uzunluğu və sürəti</string>
@@ -304,4 +297,9 @@
   <string name="action_filter">Filtr</string>
   <string name="battery_percent_title">Faizi göstər</string>
   <!-- fingerprint authentication vibration -->
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

@@ -169,6 +169,8 @@
   <string name="statusbar_battery_charging_color_title">Värv</string>
   <string name="statusbar_battery_charging_color_enable_title">Värv laadimise ajal</string>
   <string name="battery_enable_title">Kuva akut</string>
+  <string name="statusbar_battery_low_color_enable_title">Madala aku värv</string>
+  <string name="statusbar_battery_low_color_enable_summary">Luba teine värv, kui aku on alla 15%</string>
   <string name="button_backlight_title">Nupu taustavalgus</string>
   <string name="button_backlight_summary">Seadista lubamist ja heledust</string>
   <string name="button_backlight_on_touch_only_title">Nupu vajutusel</string>
@@ -313,7 +315,6 @@
   <string name="global_actions_dnd_title">Mitte segada</string>
   <string name="global_actions_summary">Toitemenüüs kuvatavad tegevused</string>
   <string name="global_actions_header">Mõned tegevused kuvatakse vastavalt seadme seadistusele või ainult siis, kui seade on lukustamata</string>
-  <string name="global_actions_anim">Välimus</string>
   <string name="global_actions_advanced_reboot_summary">Kuva rohkem valikuid taaskäivitusmenüüs</string>
   <string name="global_actions_advanced_reboot_title">Luba täpsem taaskäivitus</string>
   <string name="global_actions_advanced_reboot_summary_new">Kuva lukustamata olekus taaskäivitusmenüüs rohkem valikuid</string>
@@ -333,13 +334,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Väljas</string>
   <string name="status_bar_quick_qs_pulldown_left">Vasak</string>
   <string name="status_bar_quick_qs_pulldown_right">Parem</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Toitemenüü animatsioon</string>
-  <string name="power_menu_animation_summary">Muuda toitemenüü avanemise/sulgumise animatsiooni</string>
-  <string name="power_menu_animation_dialog_title">Vali toitemenüü animatsioon</string>
-  <string name="power_menu_animation_enter">Omni (vaikimisi)</string>
-  <string name="power_menu_animation_bottom">All</string>
-  <string name="power_menu_animation_top">Üleval</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Muuda valguse seadeid</string>
   <string name="pulse_speed_title">Pulseerimise pikkus ja kiirus</string>
@@ -434,6 +428,7 @@
   <string name="app_details">Rakenduse üksikasjad</string>
   <string name="no_stat_because_reset_state">Vajuta nulli, et alustada aja lugemist andmete olekus</string>
   <string name="no_stat_because_reset_wakelock">Vajuta nulli, et alustada ärkamisluku andmete kogumist</string>
+  <string name="no_stat_because_plugged">Palun eemalda laadija, et saada ärkamisluku andmeid</string>
   <string name="no_states_file_found">Olekute faili ei leitud. Kas oled kindel, et su telefon
         ühildub?\n\nKui sa kasutad kohandatud ROMi või tuuma, proovi
         kontakteeruda selle arendajaga, teatamaks, et olekute fail
@@ -465,8 +460,6 @@
   <string name="display_lockscreen_rotation_title">Lukukuva</string>
   <string name="volume_button_force_media_title">Sunni meedia helitugevust</string>
   <string name="volume_button_force_media_summary">Meedia helitugevust muudetakse vaikimisi</string>
-  <string name="lockscreen_hide_status_bar_title">Peida olekuriba</string>
-  <string name="lockscreen_hide_status_bar_summary">Koputa olekuriba nähtavuse lülitamiseks</string>
   <string name="status_bar_logo_title">Olekuriba logo</string>
   <string name="status_bar_logo_summary">Tunne uhkust</string>
   <!-- Doze settings editor -->
@@ -576,4 +569,15 @@
   <string name="not_ready_summary">Lahendan...</string>
   <string name="resolve_failed_summary">Rakenduse lahendamine ebaõnnestus</string>
   <string name="disabled_entry">Keelatud</string>
+  <string name="event_service_stopped">Teenus ei tööta</string>
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <string name="expanded_desktop_title">Laiendatud töölaud</string>
+  <string name="expanded_desktop_summary">Rakendusepõhine seadistus olekuriba ja navigatsiooniriba vaatele</string>
+  <string name="expanded_desktop_state">Laiendatud olek</string>
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <string name="long_press_power_torch_title">Pikk vajutus taskulambi jaoks</string>
+  <string name="long_press_power_torch_summary">Lülita taskulampi, kui ekraan on väljas</string>
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

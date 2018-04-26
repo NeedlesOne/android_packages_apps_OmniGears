@@ -280,7 +280,6 @@
   <string name="global_actions_dnd_title">Ne moti</string>
   <string name="global_actions_summary">Dejanja menija gumba za vklop/izklop</string>
   <string name="global_actions_header">Nekatera dejanja so vidna glede na nastavitev ali samo, če je naprava odklenjena</string>
-  <string name="global_actions_anim">Videz</string>
   <string name="global_actions_advanced_reboot_summary">Prikaži več možnosti v meniju zagon</string>
   <string name="global_actions_advanced_reboot_title">Omogoči napreden zagonski meni</string>
   <string name="font_sample_text">11:57</string>
@@ -296,13 +295,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Izk.</string>
   <string name="status_bar_quick_qs_pulldown_left">Levi</string>
   <string name="status_bar_quick_qs_pulldown_right">Desni</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Animacija menija gumba za vklop/izklop</string>
-  <string name="power_menu_animation_summary">Spremeni animacijo vstopa/izhoda iz menija gumba za vklop/izklop</string>
-  <string name="power_menu_animation_dialog_title">Izberi animacijo gumba za vklop/izklop</string>
-  <string name="power_menu_animation_enter">Omni (privzeta)</string>
-  <string name="power_menu_animation_bottom">Spodaj</string>
-  <string name="power_menu_animation_top">Zgoraj</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Uredi nastavitve lučke</string>
   <string name="pulse_speed_title">Dolžina in hitrost utripanja</string>
@@ -424,4 +416,9 @@
   <!-- Doze settings editor -->
   <string name="battery_percent_title">Prikaži odstotek</string>
   <!-- fingerprint authentication vibration -->
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

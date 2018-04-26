@@ -301,13 +301,11 @@
   <string name="global_actions_dnd_title">Wag e-disturbo</string>
   <string name="global_actions_summary">Ang mga aksyon ay makikita sa power menu</string>
   <string name="global_actions_header">Ang ibang mga aksyun ay makikita lamang depende sa pagset-ap o kapag ang device ay hindi naka-lock</string>
-  <string name="global_actions_anim">Ang kaanyuan</string>
   <string name="global_actions_advanced_reboot_summary">Magpapakita ng maraming pagpipilian sa restart menu</string>
   <string name="global_actions_advanced_reboot_title">Paganahin ang adbans restart</string>
   <string name="global_actions_advanced_reboot_summary_new">Magpakita ng mas maraming pagpipilian sa restart menu kapag hindi naka-lock</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
-  <!-- Power menu Animations  -->
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
   <!-- Lights settings screen, notification light settings -->
@@ -366,4 +364,9 @@
   <string name="call_volume_option_title">Ang tunog sa pagtawag</string>
   <string name="battery_percent_title">Ipakita ang pursyento</string>
   <!-- fingerprint authentication vibration -->
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

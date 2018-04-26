@@ -219,7 +219,6 @@
   <string name="global_actions_voiceassist_title">Röstassistera</string>
   <string name="global_actions_silent_title">Tyst läge</string>
   <string name="global_actions_dnd_title">Stör ej</string>
-  <string name="global_actions_anim">Utseende</string>
   <string name="global_actions_advanced_reboot_summary">Visa fler alternativ i omstartsmeny</string>
   <string name="global_actions_advanced_reboot_title">Aktivera avancerad omstart</string>
   <string name="font_sample_text">11:57</string>
@@ -231,9 +230,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Av</string>
   <string name="status_bar_quick_qs_pulldown_left">Vänster</string>
   <string name="status_bar_quick_qs_pulldown_right">Höger</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_enter">Omni (standard)</string>
-  <string name="power_menu_animation_top">Topp</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Redigera ljusinställningar</string>
   <string name="default_time">Normal</string>
@@ -312,7 +308,6 @@
   <string name="display_lockscreen_rotation_title">Låsskärm</string>
   <string name="volume_button_force_media_title">Tvinga mediavolym</string>
   <string name="volume_button_force_media_summary">Mediavolym kommer ändras som standard</string>
-  <string name="lockscreen_hide_status_bar_title">Dölj statusfält</string>
   <string name="status_bar_logo_title">Statusfältslogotyp</string>
   <!-- Doze settings editor -->
   <string name="doze_settings_title">Doze-inställningar</string>
@@ -325,4 +320,9 @@
   <string name="SHORT_LOCATION_ACCURACY">Platsnoggrannhet</string>
   <string name="battery_percent_title">Visa procent</string>
   <!-- fingerprint authentication vibration -->
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

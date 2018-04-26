@@ -282,7 +282,6 @@
   <string name="global_actions_dnd_title">Não perturbe</string>
   <string name="global_actions_summary">Ações mostradas no menu de energia</string>
   <string name="global_actions_header">Algumas ações são apenas visíveis, dependendo da configuração ou somente se o dispositivo é desbloqueado</string>
-  <string name="global_actions_anim">Aparência</string>
   <string name="global_actions_advanced_reboot_summary">Mostrar mais opções no menu reiniciar</string>
   <string name="global_actions_advanced_reboot_title">Ativar opções avançadas de reinicio</string>
   <string name="font_sample_text">11:57</string>
@@ -300,13 +299,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
   <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
   <string name="status_bar_quick_qs_pulldown_right">Direita</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Animação do menu de energia</string>
-  <string name="power_menu_animation_summary">Alterar a animação de enter/sair do menu de energia</string>
-  <string name="power_menu_animation_dialog_title">Selecione a animação de menu de energia</string>
-  <string name="power_menu_animation_enter">Omni (padrão)</string>
-  <string name="power_menu_animation_bottom">Margem inferior</string>
-  <string name="power_menu_animation_top">De cima</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Editar configurações de luz</string>
   <string name="pulse_speed_title">Duração e velocidade do pulsar do LED</string>
@@ -415,8 +407,6 @@
   <string name="display_rotation_180_title">180 graus</string>
   <string name="display_rotation_270_title">270 graus</string>
   <string name="display_lockscreen_rotation_title">Tela de bloqueio</string>
-  <string name="lockscreen_hide_status_bar_title">Ocultar barra de status</string>
-  <string name="lockscreen_hide_status_bar_summary">Toque na barra de estado para alternar a visibilidade</string>
   <!-- Doze settings editor -->
   <string name="DESC_LIGHT_PRE_IDLE_TIMEOUT">This is amount of time we will wait from the point where we decide we would like to go idle until we actually do, while waiting for jobs and other current activity to finish</string>
   <string name="DESC_LIGHT_IDLE_TIMEOUT">This is the initial time that we will run in idle maintenance mode</string>
@@ -450,4 +440,9 @@
   <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Max notification whitelist duration</string>
   <string name="battery_percent_title">Mostrar percentual</string>
   <!-- fingerprint authentication vibration -->
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

@@ -169,6 +169,8 @@
   <string name="statusbar_battery_charging_color_title">颜色</string>
   <string name="statusbar_battery_charging_color_enable_title">充电时的颜色</string>
   <string name="battery_enable_title">显示电池</string>
+  <string name="statusbar_battery_low_color_enable_title">低电池颜色</string>
+  <string name="statusbar_battery_low_color_enable_summary">启用不同颜色如果电池低于 15%</string>
   <string name="button_backlight_title">按键背景灯</string>
   <string name="button_backlight_summary">配置启用和亮度</string>
   <string name="button_backlight_on_touch_only_title">触摸按钮</string>
@@ -313,7 +315,6 @@
   <string name="global_actions_dnd_title">勿扰</string>
   <string name="global_actions_summary">电源菜单选项</string>
   <string name="global_actions_header">部分选项根据设置仅在解锁后出现</string>
-  <string name="global_actions_anim">布局</string>
   <string name="global_actions_advanced_reboot_summary">在重新启动菜单中显示更多选项</string>
   <string name="global_actions_advanced_reboot_title">启用高级重启</string>
   <string name="global_actions_advanced_reboot_summary_new">如果未锁定将在重新启动菜单中显示更多选项</string>
@@ -333,13 +334,6 @@
   <string name="status_bar_quick_qs_pulldown_off">关闭</string>
   <string name="status_bar_quick_qs_pulldown_left">左侧</string>
   <string name="status_bar_quick_qs_pulldown_right">右侧</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">电源菜单动画</string>
-  <string name="power_menu_animation_summary">更改电源菜单的进入/退出动画</string>
-  <string name="power_menu_animation_dialog_title">选择电源菜单动画</string>
-  <string name="power_menu_animation_enter">Omni（默认）</string>
-  <string name="power_menu_animation_bottom">底部</string>
-  <string name="power_menu_animation_top">顶部</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">编辑呼吸灯设置</string>
   <string name="pulse_speed_title">呼吸长度以及速度</string>
@@ -466,8 +460,6 @@
   <string name="display_lockscreen_rotation_title">锁定屏幕</string>
   <string name="volume_button_force_media_title">使用媒体音量</string>
   <string name="volume_button_force_media_summary">默认情况下会更改媒体音量</string>
-  <string name="lockscreen_hide_status_bar_title">隐藏状态栏</string>
-  <string name="lockscreen_hide_status_bar_summary">触摸状态栏以显示状态栏</string>
   <string name="status_bar_logo_title">状态栏图标</string>
   <string name="status_bar_logo_summary">一个小的swag</string>
   <!-- Doze settings editor -->
@@ -616,4 +608,64 @@
   <string name="not_ready_summary">处理中...</string>
   <string name="resolve_failed_summary">处理应用程序失败</string>
   <string name="disabled_entry">禁用</string>
+  <string name="event_service_settings_title">事件</string>
+  <string name="category_media_player_title">媒体播放器</string>
+  <string name="bt_a2dp_connect_app_list_title">蓝牙 A2DP 连接</string>
+  <string name="headset_connect_app_list_title">有线耳机连接</string>
+  <string name="event_service_enabled_title">启用事件服务</string>
+  <string name="event_service_running">服务正在运行</string>
+  <string name="event_service_stopped">服务未运行</string>
+  <string name="category_media_player_info_title">应用程序选择</string>
+  <string name="media_player_autostart_title">启动后发送媒体播放事件</string>
+  <string name="media_player_music_active_title">播放时不启动事件</string>
+  <string name="autorun_single_app_title">自动运行单个应用程序</string>
+  <string name="autorun_single_app_summary">不显示应用程序选择对话框</string>
+  <string name="bt_a2dp_connect_app_list_summary">当A2DP事件被触发时应用程序(s) 将被列出，例如连接蓝牙耳机</string>
+  <string name="headset_connect_app_list_summary">连接有线耳机时要列出的应用程序(s)</string>
+  <string name="app_chooser_left">左侧</string>
+  <string name="app_chooser_right">右侧</string>
+  <string name="app_chooser_timeout_title">应用程序选择器对话超时</string>
+  <string name="app_chooser_position_title">应用程序选择器对话框位置</string>
+  <string name="wired_events_threshold_title">有线耳机事件阈值</string>
+  <string name="wired_events_threshold_summary">在阈值时间内忽略耳机事件</string>
+  <!-- Quick Pulldown-->
+  <string name="quick_pulldown_title">快速下拉</string>
+  <string name="quick_pulldown_summary">状态栏的%1$s 边缘拉下快速设置</string>
+  <string name="quick_pulldown_summary_always">始终显示状态栏下拉的快速设置</string>
+  <string name="quick_pulldown_off">关闭</string>
+  <string name="quick_pulldown_left">左侧</string>
+  <string name="quick_pulldown_right">右侧</string>
+  <string name="quick_pulldown_always">总是</string>
+  <!-- Expanded desktop -->
+  <string name="expanded_desktop_title">全屏桌面</string>
+  <string name="expanded_desktop_summary">状态栏和导航键视图的每应用程序配置</string>
+  <string name="expanded_hide_nothing">不隐藏</string>
+  <string name="expanded_hide_status">隐藏状态栏</string>
+  <string name="expanded_hide_navigation">隐藏导航栏</string>
+  <string name="expanded_hide_both">两者都隐藏</string>
+  <string name="expanded_nothing_to_show">如果要为应用分别设置扩展状态，请关闭“全部启用”</string>
+  <string name="expanded_desktop_state">扩展状态</string>
+  <string name="expanded_enabled_for_all">全部启用</string>
+  <string name="expanded_user_configurable">用户配置</string>
+  <string name="show_only_launcher_menu">只有启动程序应用程序</string>
+  <string name="show_all_apps_menu">所有的应用程序</string>
+  <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">亮度调节</string>
+  <string name="status_bar_toggle_brightness_summary">通过滑动状态栏调节亮度</string>
+  <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">底部快捷键</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">配置底部快捷方式</string>
+  <string name="long_press_power_torch_title">长按手电筒</string>
+  <string name="long_press_power_torch_summary">关闭屏幕时切换手电筒</string>
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">锁屏小部件</string>
+  <string name="lockscreen_item_summary">配置锁定屏幕项的可见性</string>
+  <string name="hide_lockscreen_clock_title">隐藏时钟部件</string>
+  <string name="hide_lockscreen_clock_summary">更改时钟部件的可见性</string>
+  <string name="hide_lockscreen_date_title">隐藏日期小部件</string>
+  <string name="hide_lockscreen_date_summary">更改时钟部件下面的日期可见性</string>
+  <string name="hide_lockscreen_alarm_title">隐藏闹钟文本</string>
+  <string name="hide_lockscreen_alarm_summary">更改闹钟文本在时钟小部件下方的可见性</string>
+  <string name="hide_lockscreen_status_bar_title">隐藏状态栏</string>
+  <string name="hide_lockscreen_status_bar_summary">触摸状态栏以显示状态栏</string>
 </resources>

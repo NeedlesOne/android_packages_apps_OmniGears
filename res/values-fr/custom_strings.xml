@@ -82,6 +82,7 @@
   <string name="button_back_kill_timeout_500ms">500 ms</string>
   <string name="button_back_kill_timeout_1000ms">1000 ms</string>
   <string name="button_back_kill_timeout_1500ms">1500 ms</string>
+  <string name="button_back_kill_timeout_2000ms">2000 ms</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">Double appui pour mettre en veille</string>
   <string name="double_tap_to_sleep_summary">Tapoter deux fois sur la barre d\'état pour mettre l\'appareil en veille</string>
@@ -301,7 +302,6 @@
   <string name="global_actions_dnd_title">Ne pas déranger</string>
   <string name="global_actions_summary">Actions affichées dans le menu Marche/Arrêt</string>
   <string name="global_actions_header">Certaines actions sont uniquement visibles en fonction de la configuration ou seulement si l\'appareil est déverrouillé</string>
-  <string name="global_actions_anim">Apparence</string>
   <string name="global_actions_advanced_reboot_summary">Affiche plus d\'options dans le menu redémarrer</string>
   <string name="global_actions_advanced_reboot_title">Activer le redémarrage avancé</string>
   <string name="global_actions_advanced_reboot_summary_new">Affiche plus d\'options dans le menu redémarrer si non verrouillé</string>
@@ -320,13 +320,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Désactivé</string>
   <string name="status_bar_quick_qs_pulldown_left">Gauche</string>
   <string name="status_bar_quick_qs_pulldown_right">Droite</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Animation du menu Marche/Arrêt</string>
-  <string name="power_menu_animation_summary">Modifier l’animation d’ouverture et de fermeture du menu d’animation</string>
-  <string name="power_menu_animation_dialog_title">Sélectionner l’animation du menu Marche/Arrêt</string>
-  <string name="power_menu_animation_enter">Omni (valeur par défaut)</string>
-  <string name="power_menu_animation_bottom">Bas</string>
-  <string name="power_menu_animation_top">Haut</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Modifier les paramètres de luminosité</string>
   <string name="pulse_speed_title">Durée et vitesse du clignotement</string>
@@ -453,8 +446,6 @@
   <string name="display_lockscreen_rotation_title">Écran de verrouillage</string>
   <string name="volume_button_force_media_title">Forcer le volume média</string>
   <string name="volume_button_force_media_summary">Le volume du média sera modifié par défaut</string>
-  <string name="lockscreen_hide_status_bar_title">Masquer la barre d\'État</string>
-  <string name="lockscreen_hide_status_bar_summary">Toucher la barre d\'état pour le faire apparaitre ou disparaitre</string>
   <string name="status_bar_logo_title">Logo de la barre d\'état</string>
   <string name="status_bar_logo_summary">Un peu swag</string>
   <!-- Doze settings editor -->
@@ -499,4 +490,9 @@
   <string name="call_volume_option_title">Volume pendant un appel</string>
   <string name="battery_percent_title">Afficher le pourcentage</string>
   <!-- fingerprint authentication vibration -->
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

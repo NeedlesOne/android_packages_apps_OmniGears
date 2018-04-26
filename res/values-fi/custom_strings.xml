@@ -200,7 +200,6 @@
   <string name="global_actions_silent_title">Äänetön tila</string>
   <string name="global_actions_dnd_title">Älä häiritse</string>
   <string name="global_actions_summary">Käynnistysvalikossa näkyvät toiminnot</string>
-  <string name="global_actions_anim">Ulkoasu</string>
   <string name="global_actions_advanced_reboot_summary">Näytä lisää vaihtoehtoja uudelleenkäynnistysvalikossa</string>
   <string name="global_actions_advanced_reboot_title">Ota edistynyt uudelleenkäynnistys käyttöön</string>
   <string name="global_actions_advanced_reboot_summary_new">Näytä lisää vaihtoehtoja uudelleenkäynnistysvalikossa, jos laite ei ole lukittuna</string>
@@ -215,10 +214,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Ei käytössä</string>
   <string name="status_bar_quick_qs_pulldown_left">Vasen</string>
   <string name="status_bar_quick_qs_pulldown_right">Oikea</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Käynnistysvalikon animaatio</string>
-  <string name="power_menu_animation_dialog_title">Valitse käynnistysvalikon animaatio</string>
-  <string name="power_menu_animation_enter">Omni (oletus)</string>
   <!-- Notification light dialogs -->
   <string name="default_time">Normaali</string>
   <string name="dialog_delete_title">Poista</string>
@@ -272,7 +267,6 @@
   <string name="display_rotation_180_title">180 astetta</string>
   <string name="display_rotation_270_title">270 astetta</string>
   <string name="display_lockscreen_rotation_title">Lukitusnäyttö</string>
-  <string name="lockscreen_hide_status_bar_title">Piilota tilapalkki</string>
   <string name="status_bar_logo_title">Tilapalkin logo</string>
   <!-- Doze settings editor -->
   <string name="action_save">Tallenna</string>
@@ -332,4 +326,9 @@
   <!-- fingerprint authentication vibration -->
   <string name="choose_app">Valitse sovellus</string>
   <string name="disabled_entry">Pois käytöstä</string>
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

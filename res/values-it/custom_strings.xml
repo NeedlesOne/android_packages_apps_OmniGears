@@ -305,7 +305,6 @@
   <string name="global_actions_dnd_title">Non disturbare</string>
   <string name="global_actions_summary">Azioni visualizzate nel menu alimentazione</string>
   <string name="global_actions_header">Alcune azioni sono visibili solo a seconda dell\'impostazione o solo se il dispositivo è sbloccato</string>
-  <string name="global_actions_anim">Aspetto</string>
   <string name="global_actions_advanced_reboot_summary">Mostra più opzioni nel menu di riavvio</string>
   <string name="global_actions_advanced_reboot_title">Abilita riavvio avanzato</string>
   <string name="global_actions_advanced_reboot_summary_new">Mostra più opzioni nel menu di riavvio se non bloccato</string>
@@ -324,13 +323,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Spento</string>
   <string name="status_bar_quick_qs_pulldown_left">Sinistra</string>
   <string name="status_bar_quick_qs_pulldown_right">Destra</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Animazione menu power</string>
-  <string name="power_menu_animation_summary">Cambia l\'animazione di entrata/uscita del menu di spegnimento</string>
-  <string name="power_menu_animation_dialog_title">Seleziona animazione del menu di spegnimento</string>
-  <string name="power_menu_animation_enter">Omni (predefinito)</string>
-  <string name="power_menu_animation_bottom">Sotto</string>
-  <string name="power_menu_animation_top">In alto</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Modifica impostazioni Led</string>
   <string name="pulse_speed_title">Durata e velocità pulse</string>
@@ -455,8 +447,6 @@
   <string name="display_lockscreen_rotation_title">Schermata di blocco</string>
   <string name="volume_button_force_media_title">Utilizza volume contenuti multimediali</string>
   <string name="volume_button_force_media_summary">Il volume dei file multimediali verrà modificato di default</string>
-  <string name="lockscreen_hide_status_bar_title">Nascondi la barra di stato</string>
-  <string name="lockscreen_hide_status_bar_summary">Toccare la barra di stato per alternare la visibilità</string>
   <string name="status_bar_logo_title">Logo barra di stato</string>
   <string name="status_bar_logo_summary">Un po\' di swag</string>
   <!-- Doze settings editor -->
@@ -567,4 +557,9 @@
   <string name="choose_app">Seleziona applicazione</string>
   <string name="not_ready_summary">Risoluzione...</string>
   <string name="disabled_entry">Disabilitato</string>
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

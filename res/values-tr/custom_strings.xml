@@ -169,6 +169,8 @@
   <string name="statusbar_battery_charging_color_title">Renk</string>
   <string name="statusbar_battery_charging_color_enable_title">Şarj edilme esnâsındaki renk</string>
   <string name="battery_enable_title">Pili göster</string>
+  <string name="statusbar_battery_low_color_enable_title">Düşük pil rengi</string>
+  <string name="statusbar_battery_low_color_enable_summary">Pil seviyesi %15\'in altına indiğinde farklı renk kullan</string>
   <string name="button_backlight_title">Düğme arka ışığı</string>
   <string name="button_backlight_summary">Etkinleştirmeyi ve parlaklığı ayarlayın</string>
   <string name="button_backlight_on_touch_only_title">Düğmeye dokununca yan</string>
@@ -313,7 +315,6 @@
   <string name="global_actions_dnd_title">Rahatsız etmeyin</string>
   <string name="global_actions_summary">Güç menüsünde gösterilen eylemler</string>
   <string name="global_actions_header">Bazı eylemler yalnızca kuruluma bağlı olarak yada sadece cihaz kilidi açıksa görünür</string>
-  <string name="global_actions_anim">Görünüm</string>
   <string name="global_actions_advanced_reboot_summary">Yeniden başlat menüsünde daha fazla seçenek göster</string>
   <string name="global_actions_advanced_reboot_title">İleri seviye tekrar başlatmayı etkinleştir</string>
   <string name="global_actions_advanced_reboot_summary_new">Telefon kilitli değilse, tekrar başlatma menüsünde daha fazla tercih göster</string>
@@ -326,20 +327,13 @@
   <string name="lockscreen_qs_disabled_summary">Güvenli kilit ekranlarında hızlı ayarları genişletmeyi devre dışı bırak</string>
   <string name="lockscreen_power_menu_disabled_title">Kilitlendiğinde güç menüsünü devre dışı bırak</string>
   <string name="lockscreen_power_menu_disabled_summary">Güvenli kilit ekranlarında güç menüsünü devre dışı bırak</string>
-  <string name="status_bar_quick_qs_pulldown_title">Hızlı açılır menü</string>
+  <string name="status_bar_quick_qs_pulldown_title">Hızlı aşağı çekme</string>
   <string name="status_bar_quick_qs_pulldown_summary">Durum çubuğunun %1$s kenarı Hızlı Ayarları açar</string>
-  <string name="status_bar_quick_qs_pulldown_summary_left">Sol</string>
-  <string name="status_bar_quick_qs_pulldown_summary_right">Sağ</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">sol</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">sağ</string>
   <string name="status_bar_quick_qs_pulldown_off">Kapalı</string>
   <string name="status_bar_quick_qs_pulldown_left">Sol</string>
   <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Güç menüsü animasyonu</string>
-  <string name="power_menu_animation_summary">Güç menüsü açılış/kapanış animasyonunu değiştir</string>
-  <string name="power_menu_animation_dialog_title">Güç menüsü animasyonunu seç</string>
-  <string name="power_menu_animation_enter">Omni (varsayılan)</string>
-  <string name="power_menu_animation_bottom">Alt</string>
-  <string name="power_menu_animation_top">Üst</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Işık ayarlarını düzenle</string>
   <string name="pulse_speed_title">Yanma hızı ve süresi</string>
@@ -469,8 +463,6 @@
   <string name="display_lockscreen_rotation_title">Kilit ekranı</string>
   <string name="volume_button_force_media_title">Ortam sesini zorla</string>
   <string name="volume_button_force_media_summary">Ortam sesi varsayılan olarak değiştirilecektir</string>
-  <string name="lockscreen_hide_status_bar_title">Durum çubuğunu gizle</string>
-  <string name="lockscreen_hide_status_bar_summary">Görünürlüğü değiştirmek için durum çubuğuna dokunun</string>
   <string name="status_bar_logo_title">Durum çubuğu logosu</string>
   <string name="status_bar_logo_summary">İlâve tarz</string>
   <!-- Doze settings editor -->
@@ -619,4 +611,64 @@
   <string name="not_ready_summary">Tahlil ediliyor...</string>
   <string name="resolve_failed_summary">Uygulama tahlil edilemedi</string>
   <string name="disabled_entry">Devre dışı</string>
+  <string name="event_service_settings_title">Hadiseler</string>
+  <string name="category_media_player_title">Medya oynatıcı</string>
+  <string name="bt_a2dp_connect_app_list_title">Bluetooth A2DP bağlantısı</string>
+  <string name="headset_connect_app_list_title">Kablolu kulaklık bağlantısı</string>
+  <string name="event_service_enabled_title">Hadise hizmetini fa\'âl hâle getir</string>
+  <string name="event_service_running">Hizmet çalışıyor</string>
+  <string name="event_service_stopped">Hizmet çalışmıyor</string>
+  <string name="category_media_player_info_title">Uygulama seçimi</string>
+  <string name="media_player_autostart_title">Başladıktan sonra medya oynatma hadisesi gönder</string>
+  <string name="media_player_music_active_title">Oynatılırken hadiseyi başlatma</string>
+  <string name="autorun_single_app_title">Kendiliğinden uygulama çalıştır</string>
+  <string name="autorun_single_app_summary">Uygulama seçimi penceresini gösterme</string>
+  <string name="bt_a2dp_connect_app_list_summary">Bluetooth kulaklığı bağlamak gibi olan bir A2DP hadisesi başladığında listenecek olan uygulama(lar)</string>
+  <string name="headset_connect_app_list_summary">Kablolu kulaklık bağlandığında listelenecek olan uygulama(lar)</string>
+  <string name="app_chooser_left">Sol</string>
+  <string name="app_chooser_right">Sağ</string>
+  <string name="app_chooser_timeout_title">Uygulama seçimi penceresinin zaman aşımı</string>
+  <string name="app_chooser_position_title">Uygulama seçimi penceresinin yeri</string>
+  <string name="wired_events_threshold_title">Kablolu kulaklık hadisesinin eşiği</string>
+  <string name="wired_events_threshold_summary">Eşik zamanı dahilindeki kulaklık hadiselerini yoksay</string>
+  <!-- Quick Pulldown-->
+  <string name="quick_pulldown_title">Hızlı aşağı çekme</string>
+  <string name="quick_pulldown_summary">Durum çubuğunun %1$s kenarı Hızlı Ayarları açar</string>
+  <string name="quick_pulldown_summary_always">Durum çubuğunu aşağı çekince Hızlı Ayarları dâîmâ göster</string>
+  <string name="quick_pulldown_off">Kapalı</string>
+  <string name="quick_pulldown_left">sol</string>
+  <string name="quick_pulldown_right">sağ</string>
+  <string name="quick_pulldown_always">Dâimâ</string>
+  <!-- Expanded desktop -->
+  <string name="expanded_desktop_title">Genişletilmiş masaüstü</string>
+  <string name="expanded_desktop_summary">Durum çubuğunu ve gezinti tuşunu uygulamaya mahsusen ayarlama</string>
+  <string name="expanded_hide_nothing">Hiçbir şeyi saklama</string>
+  <string name="expanded_hide_status">Durum çubuğunu sakla</string>
+  <string name="expanded_hide_navigation">Gezinti çubuğunu sakla</string>
+  <string name="expanded_hide_both">Her ikisini de sakla</string>
+  <string name="expanded_nothing_to_show">Genişletilmiş hâl için uygulamaya mahsus bir ayar ilâve etmek istiyorsanız, \"Hepsi için fa\'âl\" ayarını kapalı olarak ayarlayın</string>
+  <string name="expanded_desktop_state">Genişletilmiş hâl</string>
+  <string name="expanded_enabled_for_all">Hepsi için fa\'âl</string>
+  <string name="expanded_user_configurable">Şahsi</string>
+  <string name="show_only_launcher_menu">Sadece başlatıcı uygulamaları</string>
+  <string name="show_all_apps_menu">Bütün uygulamalar</string>
+  <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Parlaklık idaresi</string>
+  <string name="status_bar_toggle_brightness_summary">Parlaklığı durum çubuğu üzerinde parmağınızı kaydırarak ayarlayın</string>
+  <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Alt kısayollar</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Alt kısayolları ayarla</string>
+  <string name="long_press_power_torch_title">Feneri açmak için uzun bir müddet dokunma</string>
+  <string name="long_press_power_torch_summary">Ekran kapalıyken feneri açıp kapatın</string>
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Kilit ekranı unsurları</string>
+  <string name="lockscreen_item_summary">Kilit ekranı unsurlarının görünürlüğünü ayarlayın</string>
+  <string name="hide_lockscreen_clock_title">Saat widget\'ını sakla</string>
+  <string name="hide_lockscreen_clock_summary">Saat widget\'ının görünürlüğünü değiştirin</string>
+  <string name="hide_lockscreen_date_title">Târih widget\'ını sakla</string>
+  <string name="hide_lockscreen_date_summary">Saat widget\'ının altındaki târihin görünürlüğünü değiştirin</string>
+  <string name="hide_lockscreen_alarm_title">Alarm metnini sakla</string>
+  <string name="hide_lockscreen_alarm_summary">Saat widget\'ının altındaki alarm metninin görünürlüğünü değiştirin</string>
+  <string name="hide_lockscreen_status_bar_title">Durum çubuğunu sakla</string>
+  <string name="hide_lockscreen_status_bar_summary">Görünürlüğü değiştirmek için durum çubuğuna dokunun</string>
 </resources>

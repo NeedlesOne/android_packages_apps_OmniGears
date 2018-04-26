@@ -277,7 +277,6 @@
   <string name="global_actions_dnd_title">Nie przeszkadzać</string>
   <string name="global_actions_summary">Akcje wyświetlane w menu zasilania</string>
   <string name="global_actions_header">Niektóre akcje są widoczne w zależności od konfiguracji lub tylko wtedy, gdy urządzenie jest odblokowane</string>
-  <string name="global_actions_anim">Wygląd</string>
   <string name="global_actions_advanced_reboot_summary">Pokaż więcej opcji w menu restartu</string>
   <string name="global_actions_advanced_reboot_title">Włącz zaawansowany restart</string>
   <string name="font_sample_text">11:57</string>
@@ -291,10 +290,6 @@
   <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź paska stanu rozwija szybkie ustawienia</string>
   <string name="status_bar_quick_qs_pulldown_summary_left">Lewa</string>
   <string name="status_bar_quick_qs_pulldown_summary_right">Prawa</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Animacja menu zasilania</string>
-  <string name="power_menu_animation_summary">Zmień animację włączenia/wyłączenia menu zasilania</string>
-  <string name="power_menu_animation_dialog_title">Wybierz animację menu zasilania</string>
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_speed_very_fast">Bardzo szybkie</string>
@@ -314,4 +309,9 @@
   <!-- Doze settings editor -->
   <string name="battery_percent_title">Pokaż procent</string>
   <!-- fingerprint authentication vibration -->
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

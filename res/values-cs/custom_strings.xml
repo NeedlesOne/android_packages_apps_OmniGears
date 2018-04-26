@@ -169,6 +169,8 @@
   <string name="statusbar_battery_charging_color_title">Barva</string>
   <string name="statusbar_battery_charging_color_enable_title">Barva při nabíjení</string>
   <string name="battery_enable_title">Zobrazit baterii</string>
+  <string name="statusbar_battery_low_color_enable_title">Barva nízkého stavu baterie</string>
+  <string name="statusbar_battery_low_color_enable_summary">Povolit odlišnou barvu při poklesu stavu baterie pod 15%</string>
   <string name="button_backlight_title">Tlačítko podsvícení</string>
   <string name="button_backlight_summary">Nastavení aktivace a jasu</string>
   <string name="button_backlight_on_touch_only_title">Dotyk tlačítka</string>
@@ -313,7 +315,6 @@
   <string name="global_actions_dnd_title">Nerušit</string>
   <string name="global_actions_summary">Akce v nabídce tlačítka Vypnout</string>
   <string name="global_actions_header">Některé akce jsou viditelné v závislosti na nastavení nebo pouze v případě, že zařízení je odemčené</string>
-  <string name="global_actions_anim">Vzhled</string>
   <string name="global_actions_advanced_reboot_summary">Zobrazit další možnosti v nabídce restartu</string>
   <string name="global_actions_advanced_reboot_title">Povolit rozšířené restartování</string>
   <string name="global_actions_advanced_reboot_summary_new">Zobrazit další možnosti v nabídce restartu není-li zamknuto</string>
@@ -333,13 +334,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Vypnuto</string>
   <string name="status_bar_quick_qs_pulldown_left">Vlevo</string>
   <string name="status_bar_quick_qs_pulldown_right">Vpravo</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Animace menu Vypnout</string>
-  <string name="power_menu_animation_summary">Změnit animaci menu Vypnout</string>
-  <string name="power_menu_animation_dialog_title">Vyberte animaci menu</string>
-  <string name="power_menu_animation_enter">Omni (výchozí)</string>
-  <string name="power_menu_animation_bottom">Dolů</string>
-  <string name="power_menu_animation_top">Nahoru</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Upravit nastavení LED diody</string>
   <string name="pulse_speed_title">Délka impulsu a rychlost</string>
@@ -469,8 +463,6 @@
   <string name="display_lockscreen_rotation_title">Zamykací obrazovka</string>
   <string name="volume_button_force_media_title">Použít hlasitost médií</string>
   <string name="volume_button_force_media_summary">Hlasitost médií bude změněna na výchozí</string>
-  <string name="lockscreen_hide_status_bar_title">Skrýt stavový řádek</string>
-  <string name="lockscreen_hide_status_bar_summary">Dotykem na stavový řádek přepnete viditelnost</string>
   <string name="status_bar_logo_title">Logo stavové lišty</string>
   <string name="status_bar_logo_summary">Bonus funkce</string>
   <!-- Doze settings editor -->
@@ -619,4 +611,64 @@
   <string name="not_ready_summary">Řešení...</string>
   <string name="resolve_failed_summary">Řešení aplikace selhalo</string>
   <string name="disabled_entry">Zakázáno</string>
+  <string name="event_service_settings_title">Události</string>
+  <string name="category_media_player_title">Přehrávač médií</string>
+  <string name="bt_a2dp_connect_app_list_title">Připojení Bluetooth A2DP</string>
+  <string name="headset_connect_app_list_title">Připojení drátových sluchátek</string>
+  <string name="event_service_enabled_title">Povolit službu událostí</string>
+  <string name="event_service_running">Služba je spuštěna</string>
+  <string name="event_service_stopped">Služba není spuštěna</string>
+  <string name="category_media_player_info_title">Výběr aplikace</string>
+  <string name="media_player_autostart_title">Odeslat událost přehrávání médií po spuštění</string>
+  <string name="media_player_music_active_title">Nespustit událost během přehrávání</string>
+  <string name="autorun_single_app_title">Autom. spuštění samostatné aplikace</string>
+  <string name="autorun_single_app_summary">Nezobrazovat dialog pro výběr aplikace</string>
+  <string name="bt_a2dp_connect_app_list_summary">Aplikace, které se mají zobrazit při spuštění události A2DP, například připojení sluchátek Bluetooth</string>
+  <string name="headset_connect_app_list_summary">Aplikace, které se mají zobrazit při připojení kabelových sluchátek</string>
+  <string name="app_chooser_left">Vlevo</string>
+  <string name="app_chooser_right">Vpravo</string>
+  <string name="app_chooser_timeout_title">Časový limit dialogu výběru aplikace</string>
+  <string name="app_chooser_position_title">Pozice dialogu výběru aplikace</string>
+  <string name="wired_events_threshold_title">Prahová hodnota události kabelových sluchátek</string>
+  <string name="wired_events_threshold_summary">Ignorovat událostí sluchátek, pokud jsou v rámci prahové hodnoty</string>
+  <!-- Quick Pulldown-->
+  <string name="quick_pulldown_title">Rychlé vysunutí nabídky</string>
+  <string name="quick_pulldown_summary">Tažením dolů z %1$s strany stavové lišty bude vysunuta rychlá nabídka nastavení</string>
+  <string name="quick_pulldown_summary_always">Vždy zobrazit rychlé nastavení při vysunutí stavové lišty</string>
+  <string name="quick_pulldown_off">Vypnuto</string>
+  <string name="quick_pulldown_left">Vlevo</string>
+  <string name="quick_pulldown_right">Vpravo</string>
+  <string name="quick_pulldown_always">Vždy</string>
+  <!-- Expanded desktop -->
+  <string name="expanded_desktop_title">Rozšířená plocha</string>
+  <string name="expanded_desktop_summary">Nastavení stavové lišty a zobrazení navigačních tlačítek podle aplikace</string>
+  <string name="expanded_hide_nothing">Nic neskrývat</string>
+  <string name="expanded_hide_status">Skrýt stavovou lištu</string>
+  <string name="expanded_hide_navigation">Skrýt navigační panel</string>
+  <string name="expanded_hide_both">Skrýt obojí</string>
+  <string name="expanded_nothing_to_show">Chcete-li přidat vlastní režim rozšířené konfigurace pro vybrané aplikace, nastavte do polohy vypnuto \"Povoleno pro všechny\"</string>
+  <string name="expanded_desktop_state">Rozšířený stav</string>
+  <string name="expanded_enabled_for_all">Povoleno pro všechny aplikace</string>
+  <string name="expanded_user_configurable">Uživatelsky nastavitelné</string>
+  <string name="show_only_launcher_menu">Pouze spouštěč aplikací</string>
+  <string name="show_all_apps_menu">Všechny aplikace</string>
+  <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Ovládání jasu</string>
+  <string name="status_bar_toggle_brightness_summary">Umožňuje nastavit jas tažením prstu na stavové liště</string>
+  <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Dolní zkratky</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Nastavit dolní zkratky</string>
+  <string name="long_press_power_torch_title">Dlouhým stiskem zapnout svítilnu</string>
+  <string name="long_press_power_torch_summary">Přepínat svítilnu při vypnuté obrazovce</string>
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Položky na zamykací obrazovce</string>
+  <string name="lockscreen_item_summary">Nastavit viditelnost položek na zamykací obrazovce</string>
+  <string name="hide_lockscreen_clock_title">Skrýt widget hodin</string>
+  <string name="hide_lockscreen_clock_summary">Změnit viditelnost widgetu hodin</string>
+  <string name="hide_lockscreen_date_title">Skrýt widget data</string>
+  <string name="hide_lockscreen_date_summary">Změnit viditelnost data pod widgetem hodin</string>
+  <string name="hide_lockscreen_alarm_title">Skrýt text budíku</string>
+  <string name="hide_lockscreen_alarm_summary">Změnit viditelnost textu budíku pod widgetem hodin</string>
+  <string name="hide_lockscreen_status_bar_title">Skrýt stavovou lištu</string>
+  <string name="hide_lockscreen_status_bar_summary">Dotykem na stavovou lištu přepnete viditelnost</string>
 </resources>

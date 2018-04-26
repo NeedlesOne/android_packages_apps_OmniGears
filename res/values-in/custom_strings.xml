@@ -300,7 +300,6 @@
   <string name="global_actions_dnd_title">Jangan ganggu</string>
   <string name="global_actions_summary">Tindakan ditampilkan di menu power</string>
   <string name="global_actions_header">Beberapa tindakan hanya terlihat tergantung pada pengaturan atau hanya jika perangkat tidak terkunci</string>
-  <string name="global_actions_anim">Penampilan</string>
   <string name="global_actions_advanced_reboot_summary">Tampilkan lebih banyak pilihan di menu restart</string>
   <string name="global_actions_advanced_reboot_title">Aktifkan lanjutan restart</string>
   <string name="global_actions_advanced_reboot_summary_new">Tampilkan lebih banyak pilihan di menu restart jika tidak terkunci</string>
@@ -319,13 +318,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Mati</string>
   <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
   <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Menu power animasi</string>
-  <string name="power_menu_animation_summary">Ubah animasi masuk/keluar dari menu daya</string>
-  <string name="power_menu_animation_dialog_title">Pilih animasi menu daya</string>
-  <string name="power_menu_animation_enter">Omni (default)</string>
-  <string name="power_menu_animation_bottom">Bawah</string>
-  <string name="power_menu_animation_top">Atas</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Edit pengaturan cahaya</string>
   <string name="pulse_speed_title">Panjang dan kecepatan pulsa</string>
@@ -453,8 +445,6 @@
   <string name="display_lockscreen_rotation_title">Kunci layar</string>
   <string name="volume_button_force_media_title">Paksa media volume</string>
   <string name="volume_button_force_media_summary">Volume media akan berubah secara default</string>
-  <string name="lockscreen_hide_status_bar_title">Sembunyikan status bar</string>
-  <string name="lockscreen_hide_status_bar_summary">Sentuh bilah status untuk mengaktifkan keterlihatan</string>
   <string name="status_bar_logo_title">Logo status bar</string>
   <string name="status_bar_logo_summary">Sedikit swag</string>
   <!-- Doze settings editor -->
@@ -542,4 +532,9 @@
   <string name="call_volume_option_title">Volume panggilan suara</string>
   <string name="battery_percent_title">Tampilkan persen</string>
   <!-- fingerprint authentication vibration -->
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

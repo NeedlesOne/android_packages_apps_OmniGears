@@ -169,6 +169,8 @@
   <string name="statusbar_battery_charging_color_title">Color</string>
   <string name="statusbar_battery_charging_color_enable_title">Colorear mientras se está cargando</string>
   <string name="battery_enable_title">Mostrar batería</string>
+  <string name="statusbar_battery_low_color_enable_title">Color de batería baja</string>
+  <string name="statusbar_battery_low_color_enable_summary">Permitir diferente color por debajo del 15% de batería</string>
   <string name="button_backlight_title">Luz de fondo de botones</string>
   <string name="button_backlight_summary">Configurar brillo y habilitación</string>
   <string name="button_backlight_on_touch_only_title">Botón táctil</string>
@@ -313,7 +315,6 @@
   <string name="global_actions_dnd_title">No molestar</string>
   <string name="global_actions_summary">Acciones del menú de apagado</string>
   <string name="global_actions_header">Algunas acciones son solamente visibles dependiendo de la configuración o solamente si el dispositivo está desbloqueado</string>
-  <string name="global_actions_anim">Apariencia</string>
   <string name="global_actions_advanced_reboot_summary">Mostrar más opciones en el menú de reinicio</string>
   <string name="global_actions_advanced_reboot_title">Habilitar reinicio avanzado</string>
   <string name="global_actions_advanced_reboot_summary_new">Mostrar más opciones en el menú de reinicio</string>
@@ -333,13 +334,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Desactivado</string>
   <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
   <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Animación del menú de apagdo</string>
-  <string name="power_menu_animation_summary">Cambiar la animación de entrar/salir del menú de apagado</string>
-  <string name="power_menu_animation_dialog_title">Selecciona la animación del menú de apagado</string>
-  <string name="power_menu_animation_enter">Omni (por defecto)</string>
-  <string name="power_menu_animation_bottom">Inferior</string>
-  <string name="power_menu_animation_top">Superior</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Editar la configuración de luz</string>
   <string name="pulse_speed_title">Duración del impulso y la velocidad</string>
@@ -466,8 +460,6 @@
   <string name="display_lockscreen_rotation_title">Pantalla de bloqueo</string>
   <string name="volume_button_force_media_title">Forzar volumen de medios</string>
   <string name="volume_button_force_media_summary">El volumen de los medios se cambiará por defecto</string>
-  <string name="lockscreen_hide_status_bar_title">Ocultar la barra de estado</string>
-  <string name="lockscreen_hide_status_bar_summary">Toca la barra de estado para cambiar la visibilidad</string>
   <string name="status_bar_logo_title">Logo de la barra de estado</string>
   <string name="status_bar_logo_summary">Un poco de swag</string>
   <!-- Doze settings editor -->
@@ -565,4 +557,37 @@
   <string name="choose_app">Elegir aplicación</string>
   <string name="not_ready_summary">Resolviendo...</string>
   <string name="disabled_entry">Deshabilitado</string>
+  <string name="event_service_settings_title">Eventos</string>
+  <string name="category_media_player_title">Reproductor de medios</string>
+  <string name="bt_a2dp_connect_app_list_title">Conectar Bluetooth A2DP</string>
+  <string name="headset_connect_app_list_title">Conectar auricular con cable</string>
+  <string name="event_service_enabled_title">Activar eventos</string>
+  <string name="event_service_running">El servicio se está ejecutando</string>
+  <string name="event_service_stopped">El servicio no se está ejecutando</string>
+  <string name="category_media_player_info_title">Selección de aplicación</string>
+  <string name="app_chooser_left">Izquierda</string>
+  <string name="app_chooser_right">Derecha</string>
+  <string name="app_chooser_timeout_title">Tiempo de espera del diálogo de ejecución de aplicaciones</string>
+  <!-- Quick Pulldown-->
+  <string name="quick_pulldown_title">Despliegue rápido</string>
+  <string name="quick_pulldown_off">Apagado</string>
+  <string name="quick_pulldown_left">Izquierda</string>
+  <string name="quick_pulldown_right">Derecha</string>
+  <string name="quick_pulldown_always">Siempre</string>
+  <!-- Expanded desktop -->
+  <string name="expanded_desktop_title">Escritorio expandido</string>
+  <string name="expanded_hide_nothing">No ocultar nada</string>
+  <string name="expanded_hide_status">Ocultar la barra de estado</string>
+  <string name="expanded_hide_navigation">Ocultar la barra de navegación</string>
+  <string name="expanded_hide_both">Ocultar ambas</string>
+  <string name="expanded_enabled_for_all">Activado para todo</string>
+  <string name="expanded_user_configurable">Configurable por el usuario</string>
+  <string name="show_all_apps_menu">Todas las aplicaciones</string>
+  <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Control de brillo</string>
+  <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
+  <!-- Bottom shortcuts -->
+  <string name="long_press_power_torch_title">Pulsación larga para linterna</string>
+  <string name="long_press_power_torch_summary">Activar linterna cuando la pantalla está apagada</string>
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

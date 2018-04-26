@@ -313,7 +313,6 @@
   <string name="global_actions_dnd_title">Не беспокоить</string>
   <string name="global_actions_summary">Действия, отображаемые в меню питания</string>
   <string name="global_actions_header">Некоторые действия зависят от настроек устройства и статуса разблокировки загрузчика</string>
-  <string name="global_actions_anim">Внешний вид</string>
   <string name="global_actions_advanced_reboot_summary">Показывать варианты перезагрузки</string>
   <string name="global_actions_advanced_reboot_title">Включить расширенную перезагрузку</string>
   <string name="global_actions_advanced_reboot_summary_new">Показывать больше параметров в меню перезагрузки, если не заблокировано</string>
@@ -333,13 +332,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Выкл</string>
   <string name="status_bar_quick_qs_pulldown_left">Левый</string>
   <string name="status_bar_quick_qs_pulldown_right">Правый</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Анимация меню питания</string>
-  <string name="power_menu_animation_summary">Изменить анимацию появления/изчезания меню питания</string>
-  <string name="power_menu_animation_dialog_title">Выберите анимацию меню питания</string>
-  <string name="power_menu_animation_enter">Omni (по умолчанию)</string>
-  <string name="power_menu_animation_bottom">Низ</string>
-  <string name="power_menu_animation_top">Верх</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Изменить настройки индикатора</string>
   <string name="pulse_speed_title">Длительность и скорость мигания</string>
@@ -466,8 +458,6 @@
   <string name="display_lockscreen_rotation_title">Экран блокировки</string>
   <string name="volume_button_force_media_title">Управление медиа</string>
   <string name="volume_button_force_media_summary">Кнопки громкости регулируют громкость мультимедиа</string>
-  <string name="lockscreen_hide_status_bar_title">Скрыть строку состояния</string>
-  <string name="lockscreen_hide_status_bar_summary">Нажмите для изменения видимости строки состоянии</string>
   <string name="status_bar_logo_title">Логотип Omni в строке состояния</string>
   <string name="status_bar_logo_summary">Немного крутости</string>
   <!-- Doze settings editor -->
@@ -616,4 +606,9 @@
   <string name="not_ready_summary">Получение разрешения...</string>
   <string name="resolve_failed_summary">Ошибка получения разрешения приложения</string>
   <string name="disabled_entry">Отключено</string>
+  <!-- Quick Pulldown-->
+  <!-- Expanded desktop -->
+  <!-- Brightness control -->
+  <!-- Bottom shortcuts -->
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

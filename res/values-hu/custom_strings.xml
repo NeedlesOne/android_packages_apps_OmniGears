@@ -169,6 +169,8 @@
   <string name="statusbar_battery_charging_color_title">Szín</string>
   <string name="statusbar_battery_charging_color_enable_title">Színek töltés közben</string>
   <string name="battery_enable_title">Akkumulátor megjelenítése</string>
+  <string name="statusbar_battery_low_color_enable_title">Alacsony akkumulátorszint színe</string>
+  <string name="statusbar_battery_low_color_enable_summary">15% alatti akkumulátorszint más színnel való kijelzésének engedélyezése</string>
   <string name="button_backlight_title">Gomb háttérvilágítás</string>
   <string name="button_backlight_summary">Engedélyezés és fényerő beállítása</string>
   <string name="button_backlight_on_touch_only_title">Gomb érintése</string>
@@ -313,7 +315,6 @@
   <string name="global_actions_dnd_title">Ne zavarjanak</string>
   <string name="global_actions_summary">Kikapcsoló menüben látható műveletek</string>
   <string name="global_actions_header">Egyes tevékenységek csak a beállításai függvényében láthatóak, vagy csak akkor, ha a készülék fel van oldva</string>
-  <string name="global_actions_anim">Megjelenés</string>
   <string name="global_actions_advanced_reboot_summary">További lehetőségek megjelenítése az újraindítási menüben</string>
   <string name="global_actions_advanced_reboot_title">Speciális újraindítás engedélyezése</string>
   <string name="global_actions_advanced_reboot_summary_new">További lehetőségek megjelenítése az újraindítás menüben, ha nincs zárolva</string>
@@ -333,13 +334,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Ki</string>
   <string name="status_bar_quick_qs_pulldown_left">Bal</string>
   <string name="status_bar_quick_qs_pulldown_right">Jobb</string>
-  <!-- Power menu Animations  -->
-  <string name="power_menu_animation_title">Kikapcsoló menü animációk</string>
-  <string name="power_menu_animation_summary">Kikapcsoló menü be/kilépési animációjának módosítása</string>
-  <string name="power_menu_animation_dialog_title">Kikapcsoló menü animáció választása</string>
-  <string name="power_menu_animation_enter">Omni (alapértelmezett)</string>
-  <string name="power_menu_animation_bottom">Alul</string>
-  <string name="power_menu_animation_top">Fent</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Értesítési fény beállítások</string>
   <string name="pulse_speed_title">Impulzus hossza és sebessége</string>
@@ -469,8 +463,6 @@
   <string name="display_lockscreen_rotation_title">Zárképernyő</string>
   <string name="volume_button_force_media_title">Média hangerő kényszerítése</string>
   <string name="volume_button_force_media_summary">Média hangerő alapértelmezés szerint változik</string>
-  <string name="lockscreen_hide_status_bar_title">Állapotsor elrejtése</string>
-  <string name="lockscreen_hide_status_bar_summary">Érintse meg az állapotsort a láthatóság váltásához</string>
   <string name="status_bar_logo_title">Állapotsori logó</string>
   <string name="status_bar_logo_summary">Egy kis bónusz</string>
   <!-- Doze settings editor -->
@@ -619,4 +611,64 @@
   <string name="not_ready_summary">Elemzés...</string>
   <string name="resolve_failed_summary">Alkalmazás elemzése sikertelen</string>
   <string name="disabled_entry">Letiltva</string>
+  <string name="event_service_settings_title">Események</string>
+  <string name="category_media_player_title">Médialejátszó</string>
+  <string name="bt_a2dp_connect_app_list_title">Bluetooth A2DP csatlakoztatása</string>
+  <string name="headset_connect_app_list_title">Vezetékes fejhallgató csatlakoztatása</string>
+  <string name="event_service_enabled_title">Eseményszolgáltatás engedélyezése</string>
+  <string name="event_service_running">A szolgáltatás működik</string>
+  <string name="event_service_stopped">A szolgáltatás nem működik</string>
+  <string name="category_media_player_info_title">Alkalmazás kiválasztása</string>
+  <string name="media_player_autostart_title">Média lejátszási esemény küldése indítás után</string>
+  <string name="media_player_music_active_title">Ne indítsa el az eseményt, ha épp médialejátszás van folyamatban</string>
+  <string name="autorun_single_app_title">Azonnali indítás, ha csak egy alkalmazás áll rendelkezésre</string>
+  <string name="autorun_single_app_summary">Ne jelenítse meg feleslegesen az alkalmazásválasztó panelt, ha csak egy alkalmazás áll rendelkezésre</string>
+  <string name="bt_a2dp_connect_app_list_summary">A listázandó alkalmazás(ok), ha A2DP esemény lett indítva, például egy Bluetooth fejhallgató csatlakoztatásakor</string>
+  <string name="headset_connect_app_list_summary">A listázandó alkalmazás(ok) egy vezetékes fejhallgató csatlakoztatásakor</string>
+  <string name="app_chooser_left">Balra</string>
+  <string name="app_chooser_right">Jobbra</string>
+  <string name="app_chooser_timeout_title">Alkalmazásválasztó párbeszédpanel időkorlátja</string>
+  <string name="app_chooser_position_title">Alkalmazásválasztó párbeszédpanel pozíciója</string>
+  <string name="wired_events_threshold_title">A vezetékes fejhallgató által kiváltott esemény küszöbe</string>
+  <string name="wired_events_threshold_summary">A fejhallgató által kiváltott események figyelmen kívül hagyása, ha küszöbidőn belül vannak</string>
+  <!-- Quick Pulldown-->
+  <string name="quick_pulldown_title">Gyors legördítés</string>
+  <string name="quick_pulldown_summary">Gyorsbeállítások megjelenítése az állapotsor %1$s oldalán történő lehúzásakor</string>
+  <string name="quick_pulldown_summary_always">Mindig jelenítse meg a gyorsbeállításokat az állapotsor lehúzásakor</string>
+  <string name="quick_pulldown_off">Ki</string>
+  <string name="quick_pulldown_left">Bal</string>
+  <string name="quick_pulldown_right">Jobb</string>
+  <string name="quick_pulldown_always">Mindig</string>
+  <!-- Expanded desktop -->
+  <string name="expanded_desktop_title">Kiterjesztett képernyő</string>
+  <string name="expanded_desktop_summary">Állapotsor és navigációs gombok megjelenítésének alkalmazásonkénti konfigurációja</string>
+  <string name="expanded_hide_nothing">Ne rejtsen el semmit</string>
+  <string name="expanded_hide_status">Állapotsor elrejtése</string>
+  <string name="expanded_hide_navigation">Navigációs sáv elrejtése</string>
+  <string name="expanded_hide_both">Mindkettő elrejtése</string>
+  <string name="expanded_nothing_to_show">Az alkalmazásonkénti kiterjesztett állapothoz állítsa a \"Mindenre engedélyezve\" menüt ki állapotra</string>
+  <string name="expanded_desktop_state">Kiterjesztett állapot</string>
+  <string name="expanded_enabled_for_all">Mindenre engedélyezve</string>
+  <string name="expanded_user_configurable">Felhasználó által beállítható</string>
+  <string name="show_only_launcher_menu">Csak az indító alkalmazásai</string>
+  <string name="show_all_apps_menu">Az összes alkalmazás</string>
+  <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Fényerő vezérlése</string>
+  <string name="status_bar_toggle_brightness_summary">Fényerő beállítása az állapotsoron való csúsztatással</string>
+  <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Alsó parancsikonok</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Az alsó parancsikonok beállítása</string>
+  <string name="long_press_power_torch_title">Zseblámpához nyomja hosszan</string>
+  <string name="long_press_power_torch_summary">Zseblámpa váltása kikapcsolt képernyőnél</string>
+  <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Záróképernyő elemei</string>
+  <string name="lockscreen_item_summary">Állítsa be mely elemek látszódjanak a záróképernyőn</string>
+  <string name="hide_lockscreen_clock_title">Óra modul elrejtése</string>
+  <string name="hide_lockscreen_clock_summary">Az óra modul láthatóságának módosítása</string>
+  <string name="hide_lockscreen_date_title">Dátum modul elrejtése</string>
+  <string name="hide_lockscreen_date_summary">Módosítsa a dátum láthatóságát az óra modul alatt</string>
+  <string name="hide_lockscreen_alarm_title">Ébresztő szövegének elrejtése</string>
+  <string name="hide_lockscreen_alarm_summary">Módosítsa az ébresztőszöveg láthatóságát az óra modul alatt</string>
+  <string name="hide_lockscreen_status_bar_title">Állapotsor elrejtése</string>
+  <string name="hide_lockscreen_status_bar_summary">Érintse meg az állapotsort a láthatóság és az elrejtés közötti váltásához</string>
 </resources>
