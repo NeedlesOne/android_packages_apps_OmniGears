@@ -20,8 +20,8 @@
     android:title="@string/lockscreen_item_title"
     android:key="lockscreen_item">
 
-    <org.omnirom.omnigears.preference.SecureSettingSwitchPreference
-        android:key="lockscreen_hide_status_bar"
+    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        android:key="hide_lockscreen_status_bar"
         android:title="@string/hide_lockscreen_status_bar_title"
         android:summary="@string/hide_lockscreen_status_bar_summary"
         android:defaultValue="true" />
@@ -43,6 +43,12 @@
         android:title="@string/hide_lockscreen_alarm_title"
         android:summary="@string/hide_lockscreen_alarm_summary"
         android:defaultValue="true" />
+
+    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        android:key="hide_lockscreen_indicator_display"
+        android:title="@string/hide_lockscreen_indicator_display_title"
+        android:summary="@string/hide_lockscreen_indicator_display_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
 

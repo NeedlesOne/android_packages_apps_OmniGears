@@ -249,8 +249,6 @@
     <string name="lockscreen_shortcut_add_dialog_title">Add shortcut</string>
     <string name="lockscreen_shortcut_apps_title">Shortcuts</string>
     <string name="lockscreen_shortcut_add">Add\u2026</string>
-    <string name="lockscreen_hide_indicator_display_title">Hide bottom status text</string>
-    <string name="lockscreen_hide_indicator_display_summary">Hide charging information and unlock hints</string>
     <string name="lockscreen_camera_shortcut_enable_title">Show camera shortcut</string>
     <string name="lockscreen_camera_shortcut_enable_summary">Visibility depends on system setup</string>
     <string name="lockscreen_left_shortcut_enable_title">Show dialer or voice assist shortcut</string>
@@ -757,6 +755,8 @@
     <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
     <string name="hide_lockscreen_status_bar_title">Hide status bar</string>
     <string name="hide_lockscreen_status_bar_summary">Touch status bar to toggle visibility</string>
+    <string name="hide_lockscreen_indicator_display_title">Hide bottom status text</string>
+    <string name="hide_lockscreen_indicator_display_summary">Hide charging information and unlock hints</string>
 
     <!-- Longpress Power for Torch -->
     <string name="long_press_power_torch_title">Long press for flashlight</string>
