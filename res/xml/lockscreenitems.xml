@@ -50,5 +50,11 @@
         android:summary="@string/hide_lockscreen_indicator_display_summary"
         android:defaultValue="false" />
 
+    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        android:key="hide_lockscreen_icon"
+        android:title="@string/hide_lockscreen_icon_title"
+        android:summary="@string/hide_lockscreen_icon_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
 
