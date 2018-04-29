@@ -69,6 +69,16 @@
         android:fragment="org.omnirom.omnigears.service.EventServiceSettings" />
 
     <Preference
+        android:key="weather_service_settings"
+        android:icon="@drawable/ic_qs_weather_default_on"
+        android:title="@string/weather_config_title"
+        android:summary="@string/weather_config_summary" >
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="org.omnirom.omnijaws"
+                android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
+    </Preference>
+
+    <Preference
         android:key="more_settings"
         android:title="@string/more_settings_title"
         android:icon="@drawable/ic_settings_more"
