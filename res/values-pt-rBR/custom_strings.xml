@@ -246,7 +246,6 @@
   <string name="recents_search_bar_title">Mostrar barra de pesquisa</string>
   <string name="recents_fullscreen_title">Tela cheia</string>
   <string name="weather_title">Clima</string>
-  <string name="weather_config_title">Configurações do serviço</string>
   <string name="header_weather_title">Tempo de exibição de cabeçalho</string>
   <string name="header_weather_summary">Habilitar exibição de notificação do tempo no painel</string>
   <string name="weather_icon_pack_title">Condição pacote de ícone</string>

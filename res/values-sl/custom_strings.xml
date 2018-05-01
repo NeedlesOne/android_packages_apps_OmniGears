@@ -244,7 +244,6 @@
   <string name="recents_search_bar_title">Prikaži iskalno vrstico</string>
   <string name="recents_fullscreen_title">Celozaslonski način</string>
   <string name="weather_title">Vreme</string>
-  <string name="weather_config_title">Nastavitve storitve</string>
   <string name="header_weather_title">Glavni podatki o vremenu</string>
   <string name="header_weather_summary">Omogoči prikaz glavnih podatkov o vremenu na plošči obvestil</string>
   <string name="weather_icon_pack_title">Paket ikon stanja vremena</string>

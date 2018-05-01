@@ -194,7 +194,6 @@
   <string name="recents_search_bar_title">عرض شريط البحث</string>
   <string name="recents_fullscreen_title">ملء الشاشة</string>
   <string name="weather_title">الطقس</string>
-  <string name="weather_config_title">إعدادات الخدمة</string>
   <!-- Navigationbar settings -->
   <!-- Enable Tablet Style navigation bar -->
   <string name="enable_tablet_navigation_title">تفعيل نمط الجهاز اللوحي</string>

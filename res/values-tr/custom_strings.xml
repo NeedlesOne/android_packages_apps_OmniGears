@@ -279,7 +279,7 @@
   <string name="recents_search_bar_title">Arama çubuğunu göster</string>
   <string name="recents_fullscreen_title">Tam ekran</string>
   <string name="weather_title">Hava Durumu</string>
-  <string name="weather_config_title">Servis ayarları</string>
+  <string name="weather_config_title">Hava durumu hizmeti</string>
   <string name="header_weather_title">Başlıkta hava durumu</string>
   <string name="header_weather_summary">Bildirim paneli başlığında hava durumu göstermeyi etkinleştirin</string>
   <string name="weather_icon_pack_title">Hava durumu simge paketi</string>

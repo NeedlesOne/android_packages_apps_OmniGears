@@ -178,7 +178,6 @@
   <string name="recents_search_bar_title">Näytä hakupalkki</string>
   <string name="recents_fullscreen_title">Kokoruudun tila</string>
   <string name="weather_title">Sää</string>
-  <string name="weather_config_title">Palvelun asetukset</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Navigointipalkki</string>
   <!-- Enable Tablet Style navigation bar -->

@@ -279,7 +279,7 @@
   <string name="recents_search_bar_title">显示搜索栏</string>
   <string name="recents_fullscreen_title">全屏</string>
   <string name="weather_title">天气</string>
-  <string name="weather_config_title">服务设置</string>
+  <string name="weather_config_title">天气服务</string>
   <string name="header_weather_title">标题栏显示天气</string>
   <string name="header_weather_summary">在通知面板标题栏显示天气</string>
   <string name="weather_icon_pack_title">天气状态图标包</string>

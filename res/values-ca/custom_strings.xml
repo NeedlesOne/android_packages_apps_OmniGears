@@ -227,7 +227,6 @@
   <string name="recents_search_bar_title">Mostra la barra de cerca</string>
   <string name="recents_fullscreen_title">Pantalla completa</string>
   <string name="weather_title">El temps</string>
-  <string name="weather_config_title">Configuració del servei</string>
   <string name="header_weather_title">Visualització del temps a la capçalera</string>
   <string name="header_weather_summary">Habilita la visualització del temps a la capçalera del tauler d\'avisos</string>
   <string name="weather_icon_pack_title">Paquet d\'icones per al temps</string>

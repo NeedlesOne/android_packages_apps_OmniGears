@@ -169,6 +169,8 @@
   <string name="statusbar_battery_charging_color_title">Цвет</string>
   <string name="statusbar_battery_charging_color_enable_title">Цвет во время зарядки</string>
   <string name="battery_enable_title">Показать батарею</string>
+  <string name="statusbar_battery_low_color_enable_title">Низкий уровень заряда аккумулятора</string>
+  <string name="statusbar_battery_low_color_enable_summary">Включить разный цвет, если батарея ниже 15%</string>
   <string name="button_backlight_title">Подсветка кнопок</string>
   <string name="button_backlight_summary">Настройка включения и яркости</string>
   <string name="button_backlight_on_touch_only_title">Подсветка по прикосновению к кнопкам</string>
@@ -277,7 +279,6 @@
   <string name="recents_search_bar_title">Показывать строку поиска</string>
   <string name="recents_fullscreen_title">Полноэкранный режим</string>
   <string name="weather_title">Погода</string>
-  <string name="weather_config_title">Параметры службы</string>
   <string name="header_weather_title">Показать погоду в заголовке</string>
   <string name="header_weather_summary">Показывать изображение в заголовке панели уведомления в зависимости от времени суток</string>
   <string name="weather_icon_pack_title">Набор значков \"Погода\"</string>
@@ -606,9 +607,59 @@
   <string name="not_ready_summary">Получение разрешения...</string>
   <string name="resolve_failed_summary">Ошибка получения разрешения приложения</string>
   <string name="disabled_entry">Отключено</string>
+  <string name="event_service_settings_title">Мероприятия</string>
+  <string name="category_media_player_title">Медиаплеер</string>
+  <string name="bt_a2dp_connect_app_list_title">Подключение Bluetooth A2DP</string>
+  <string name="headset_connect_app_list_title">Подключение проводной гарнитуры</string>
+  <string name="event_service_enabled_title">Включить службу событий</string>
+  <string name="event_service_running">Служба запущена</string>
+  <string name="event_service_stopped">Служба не запущена</string>
+  <string name="category_media_player_info_title">Выбор приложения</string>
+  <string name="media_player_autostart_title">Отправить событие воспроизведения мультимедиа после запуска</string>
+  <string name="media_player_music_active_title">Не запускать событие при воспроизведении</string>
+  <string name="autorun_single_app_title">Автозапуск одного приложения</string>
+  <string name="autorun_single_app_summary">Не показывать диалог выбора приложения</string>
+  <string name="app_chooser_left">Слева</string>
+  <string name="app_chooser_right">Справа</string>
+  <string name="app_chooser_timeout_title">Тайм-аут диалогового окна выбора</string>
+  <string name="app_chooser_position_title">Позиция диалогового окна выбора приложения</string>
   <!-- Quick Pulldown-->
+  <string name="quick_pulldown_title">Быстрый доступ</string>
+  <string name="quick_pulldown_summary">%1$s строки состояния при опускании вниз открывает панель быстрых настроек</string>
+  <string name="quick_pulldown_summary_always">Всегда показывать быстрые настройки в строке состояния выпадающего списка</string>
+  <string name="quick_pulldown_off">Выкл.</string>
+  <string name="quick_pulldown_left">Левый край</string>
+  <string name="quick_pulldown_right">Правый край</string>
+  <string name="quick_pulldown_always">Всегда</string>
   <!-- Expanded desktop -->
+  <string name="expanded_desktop_title">Расширенный рабочий стол</string>
+  <string name="expanded_hide_nothing">Ничего не скрывать</string>
+  <string name="expanded_hide_status">Скрыть строку состояния</string>
+  <string name="expanded_hide_navigation">Скрыть панель навигации</string>
+  <string name="expanded_hide_both">Скрыть оба</string>
+  <string name="expanded_nothing_to_show">Для добавление пользовательской конфигурации для каждого приложения для расширенного режима, отключите \"Включено для всех\"</string>
+  <string name="expanded_desktop_state">Расширенное состояние</string>
+  <string name="expanded_enabled_for_all">Включено для всех</string>
+  <string name="expanded_user_configurable">Настраивается пользователем</string>
+  <string name="show_only_launcher_menu">Только для приложений лаунчера</string>
+  <string name="show_all_apps_menu">Все приложения</string>
   <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Управление яркостью</string>
+  <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
   <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Нижние ярлыки</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Настройка нижних ярлыков</string>
+  <string name="long_press_power_torch_title">Длительное нажатие для включения фонарика</string>
+  <string name="long_press_power_torch_summary">Включение и выключение фонарика, когда экран выключен</string>
   <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Элементы на заблокированном экране</string>
+  <string name="lockscreen_item_summary">Настройка видимости элементов на экране блокировки</string>
+  <string name="hide_lockscreen_clock_title">Скрыть виджет часов</string>
+  <string name="hide_lockscreen_clock_summary">Изменение видимости виджета часов</string>
+  <string name="hide_lockscreen_date_title">Скрыть виджет даты</string>
+  <string name="hide_lockscreen_date_summary">Изменение видимости даты под виджетом часов</string>
+  <string name="hide_lockscreen_alarm_title">Скрыть текст будильника</string>
+  <string name="hide_lockscreen_alarm_summary">Изменение видимости текста будильника под виджетом часов</string>
+  <string name="hide_lockscreen_status_bar_title">Скрыть строку состояния</string>
+  <string name="hide_lockscreen_status_bar_summary">Нажмите на строку состояния, чтобы переключить видимость</string>
 </resources>

@@ -268,7 +268,6 @@
   <string name="recents_search_bar_title">Suche-Leiste anzeigen</string>
   <string name="recents_fullscreen_title">Vollbild</string>
   <string name="weather_title">Wetter</string>
-  <string name="weather_config_title">Diensteinstellungen</string>
   <string name="header_weather_title">Wetteranzeige in Kopfzeile</string>
   <string name="header_weather_summary">Wetteranzeige in Benachrichtigungsfeld-Kopfzeile aktivieren</string>
   <string name="weather_icon_pack_title">Wetter Symbol-Paket</string>

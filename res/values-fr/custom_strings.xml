@@ -158,6 +158,8 @@
   <string name="statusbar_title">Barre d\'état</string>
   <string name="battery_title">Préférence d\'affichage de la batterie</string>
   <string name="statusbar_battery_summary">Définit le style d\'affichage de la batterie dans la barre d\'état</string>
+  <string name="clock_title">Date et heure</string>
+  <string name="statusbar_clock_summary">Définir le style d\'affichage de l\'horloge dans la barre d\'état</string>
   <string name="battery_style_title">Style</string>
   <string name="statusbar_percent_inside_title">Superposition du pourcentage</string>
   <string name="statusbar_charging_image_title">Indicateur de charge</string>
@@ -166,6 +168,8 @@
   <string name="statusbar_battery_charging_color_title">Couleur</string>
   <string name="statusbar_battery_charging_color_enable_title">Couleurs pendant la charge</string>
   <string name="battery_enable_title">Afficher la batterie</string>
+  <string name="statusbar_battery_low_color_enable_title">Couleur pour batterie faible</string>
+  <string name="statusbar_battery_low_color_enable_summary">Couleur différente si batterie inférieure à 15 %</string>
   <string name="button_backlight_title">Rétro-éclairage des boutons</string>
   <string name="button_backlight_summary">Configurer activation et Luminosité</string>
   <string name="button_backlight_on_touch_only_title">Bouton tactile</string>
@@ -226,12 +230,15 @@
   <string name="status_bar_custom_header_shadow_title">Ombrage de l\'image d\'en-tête</string>
   <string name="status_bar_custom_header_shadow_summary">Pour une meilleure visibilité des images lumineuses</string>
   <string name="unit_percent">\u0025</string>
+  <string name="static_header_provider_title">Image statique</string>
   <string name="custom_header_provider_title">Fournisseur de l’en-tête</string>
   <string name="custom_header_pick_title">Définir l\'image d\'en-tête</string>
+  <string name="custom_header_pick_summary">Sélectionnez une image locale ou distante</string>
   <string name="style_enabled_summary">Personnalisation d\'en-tête activée</string>
   <string name="style_disabled_summary">Personnalisation d\'en-tête désactivée</string>
   <string name="header_provider_disabled">Désactivé</string>
   <string name="custom_header_title">Personnalisation de l\'image d\'en-tête</string>
+  <string name="file_header_select_title">Sélectionner une image locale</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Trafic réseau</string>
   <string name="network_traffic_summary">Indicateur d\'activité réseau dans la barre d\'état</string>
@@ -266,7 +273,7 @@
   <string name="recents_search_bar_title">Afficher la barre de recherche</string>
   <string name="recents_fullscreen_title">Plein écran</string>
   <string name="weather_title">Météo</string>
-  <string name="weather_config_title">Paramètres du service</string>
+  <string name="weather_config_title">Service météo</string>
   <string name="header_weather_title">Image météo de l\'en-tête</string>
   <string name="header_weather_summary">Activer l\'affichage météo de l\'en-tête sur le panneau de notification</string>
   <string name="weather_icon_pack_title">Pack d\'icône des conditions météo</string>
@@ -434,6 +441,7 @@
   <string name="show_cpu_summary">Affiche les stats et les ressources utilisées par le CPU</string>
   <string name="headset_plugged_notification_title">Notification de connexion des écouteurs</string>
   <string name="headset_plugged_notification_summary">Affiche une notification lorsque des écouteurs filaires sont connectés</string>
+  <string name="wake_when_plugged_or_unplugged_title">Réveiller lorsqu’il est branché/débranché</string>
   <!-- Display : Rotation -->
   <string name="category_display">Affichage</string>
   <string name="display_rotation_disabled">Désactivée</string>
@@ -467,6 +475,7 @@
   <string name="DESC_LOCATION_ACCURACY">La précision maximale désirée (en mètres) pour laquelle nous considérons la localisation être suffisante pour passer en veille. Nous allons essayer d’obtenir une précision équivalente ou jusqu\'à l’expiration de la locating_to</string>
   <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">C\'est la durée maximum d\'exécution en mode de maintenance inactif</string>
   <string name="SHORT_INACTIVE_TIMEOUT">Délai d’inactivité</string>
+  <string name="SHORT_SENSING_TIMEOUT">Délai de détection</string>
   <string name="SHORT_LOCATION_ACCURACY">Précision de la localisation</string>
   <string name="SHORT_IDLE_TIMEOUT">Délai d’inactivité</string>
   <string name="SHORT_MAX_IDLE_TIMEOUT">Délai maximum d\'inactivité</string>
@@ -488,11 +497,52 @@
   <string name="volume_steps_5">5 incréments</string>
   <string name="system_volume_option_title">Volume principal</string>
   <string name="call_volume_option_title">Volume pendant un appel</string>
+  <string name="battery_style_text">Texte </string>
+  <string name="battery_style_default">Par défaut</string>
+  <string name="battery_style_meter_horizontal">Barre horizontale</string>
+  <string name="battery_style_circle">Cercle</string>
+  <string name="battery_style_droid">Droid</string>
+  <string name="battery_style_round_rect">Carré</string>
+  <string name="statusbar_battery_dotted_line_title">Ligne pointillée</string>
+  <string name="battery_percent_none">Jamais</string>
+  <string name="battery_percent_always">Toujours</string>
   <string name="battery_percent_title">Afficher le pourcentage</string>
+  <string name="clock_enabled">Activée</string>
+  <string name="clock_disabled">Désactivée</string>
+  <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
+  <string name="status_bar_show_clock_title">Afficher l\'heure &amp; la date</string>
+  <string name="status_bar_am_pm_title">AM/PM</string>
+  <string name="status_bar_am_pm_info">L\'horloge au format 24 heures est activée</string>
+  <string name="enable_clock_weekday">Jour de la semaine</string>
+  <string name="right_clock">Horloge à droite</string>
+  <string name="left_clock">Horloge à gauche</string>
+  <string name="dont_show">Ne pas afficher</string>
+  <string name="clock_date_display">Date</string>
+  <string name="clock_date_display_summary">Afficher une date personnalisée avant l\'heure</string>
+  <string name="clock_date_style">Format de date</string>
+  <string name="clock_date_position">Position de la date</string>
+  <string name="clock_date_format">Format de la date</string>
   <!-- fingerprint authentication vibration -->
   <!-- Quick Pulldown-->
   <!-- Expanded desktop -->
+  <string name="show_all_apps_menu">Toutes les applications</string>
   <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
+  <string name="status_bar_toggle_brightness_summary">Ajuster la luminosité en glissant sur la barre d\'état</string>
   <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Raccourcis du bas</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Configurer les raccourcis du bas</string>
+  <string name="long_press_power_torch_title">Appuis long pour la torche</string>
+  <string name="long_press_power_torch_summary">Basculer vers la lampe de poche quand l\'écran est éteint</string>
   <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Éléments de l\'écran de verrouillage</string>
+  <string name="lockscreen_item_summary">Configurer la visibilité des éléments affichés à l\'écran de verrouillage</string>
+  <string name="hide_lockscreen_clock_title">Masquer l\'horloge</string>
+  <string name="hide_lockscreen_clock_summary">Changer la visibilité de l\'horloge</string>
+  <string name="hide_lockscreen_date_title">Masquer la date</string>
+  <string name="hide_lockscreen_date_summary">Changer la visibilité de la date sous l\'horloge</string>
+  <string name="hide_lockscreen_alarm_title">Masquer le texte de l\'alarme</string>
+  <string name="hide_lockscreen_alarm_summary">Changer la visibilité du texte de l\'alarme sous l\'horloge</string>
+  <string name="hide_lockscreen_status_bar_title">Masquer la barre d\'état</string>
+  <string name="hide_lockscreen_status_bar_summary">Toucher la barre d\'état pour le faire apparaitre ou disparaitre</string>
 </resources>

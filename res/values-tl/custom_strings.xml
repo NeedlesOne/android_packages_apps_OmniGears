@@ -265,7 +265,6 @@
   <string name="recents_search_bar_title">Ang seach bar ay ipakita</string>
   <string name="recents_fullscreen_title">Ang buong Screen</string>
   <string name="weather_title">Ang panahon</string>
-  <string name="weather_config_title">Ang mga settings para sa serbis</string>
   <string name="header_weather_title">Ang estado ng panahon ay gawing header view</string>
   <string name="header_weather_summary">Paganahin ang notipikasyon sa panel header display ng estado ng panahon</string>
   <string name="weather_icon_pack_title">Ang kondisyon ng icon pack</string>

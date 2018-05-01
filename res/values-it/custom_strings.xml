@@ -269,7 +269,6 @@
   <string name="recents_search_bar_title">Visualizza barra di ricerca</string>
   <string name="recents_fullscreen_title">Schermo pieno</string>
   <string name="weather_title">Meteo</string>
-  <string name="weather_config_title">Impostazioni servizio</string>
   <string name="header_weather_title">Vista intestazione meteo</string>
   <string name="header_weather_summary">Abilita visualizzazione intestazione pannello notifica Meteo</string>
   <string name="weather_icon_pack_title">Pack icone condizione</string>

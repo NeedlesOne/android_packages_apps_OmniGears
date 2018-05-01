@@ -173,7 +173,6 @@
   <string name="status_bar_icon_blacklist_title">Durum çubuğu ikonları</string>
   <string name="recents_fullscreen_title">Tam ekran</string>
   <string name="weather_title">Hava</string>
-  <string name="weather_config_title">Servis parametrləri</string>
   <string name="weather_icon_pack_title">Hava məlumatı ikon paketi</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Naviqasiya paneli</string>

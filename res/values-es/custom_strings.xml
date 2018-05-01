@@ -279,7 +279,6 @@
   <string name="recents_search_bar_title">Mostrar la barra de búsqueda</string>
   <string name="recents_fullscreen_title">Pantalla completa</string>
   <string name="weather_title">El Tiempo</string>
-  <string name="weather_config_title">Ajustes de servicio</string>
   <string name="header_weather_title">Ver tiempo en la cortina de notificaciones</string>
   <string name="header_weather_summary">Habilitar la visualización del tiempo en la cortina de notificaciones</string>
   <string name="weather_icon_pack_title">Paquete de iconos de clima</string>

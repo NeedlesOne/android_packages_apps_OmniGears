@@ -89,8 +89,8 @@
   <!-- Doze pulse (ambient display) options -->
   <string name="doze_overwrite_value_title">Kirjuta väärtus üle</string>
   <string name="doze_overwrite_value_summary">Luba kasutaja seadistusega vaikeväärtuse ülekirjutamine</string>
-  <string name="doze_list_mode_title">Tukkumisrežiim</string>
-  <string name="doze_list_mode_summary">Valik tukkumisrežiimi seadistamiseks</string>
+  <string name="doze_list_mode_title">Uinumisrežiim</string>
+  <string name="doze_list_mode_summary">Valik uinumisrežiimi seadistamiseks</string>
   <string name="doze_pulse_title">Aja seaded</string>
   <string name="doze_pulse_duration_in_title">Sujuvalt sisse</string>
   <string name="doze_pulse_duration_visible_title">Nähtav pikkus</string>
@@ -193,9 +193,9 @@
   <string name="omniswitch_dialog_running_new">OmniSwitch ei ole hetkel lubatud. Palun luba see rakenduse seadetes.</string>
   <string name="omniswitch_dialog_unavail">OmniSwitch pole installitud.</string>
   <string name="omniswitch_title">Viimatiste stiil</string>
-  <string name="long_press_recents_action_title">Vajuta viimatiste tegevust pikalt</string>
+  <string name="long_press_recents_action_title">Viimatiste nupu pikk vajutus</string>
   <string name="long_press_recents_action_split">Lülita poolitatud ekraani</string>
-  <string name="long_press_home_action_title">Vajuta kodutegevust pikalt</string>
+  <string name="long_press_home_action_title">Kodunupu pikk vajutus</string>
   <string name="double_press_home_action_title">Kodu topeltkoputuse tegevus</string>
   <string name="keys_action_recents">Viimatised</string>
   <string name="keys_action_assist">Käivita abirakendus</string>
@@ -279,7 +279,7 @@
   <string name="recents_search_bar_title">Kuva otsinguriba</string>
   <string name="recents_fullscreen_title">Täisekraan</string>
   <string name="weather_title">Ilm</string>
-  <string name="weather_config_title">Teenuse seaded</string>
+  <string name="weather_config_title">Ilmateenus</string>
   <string name="header_weather_title">Päisevaate ilm</string>
   <string name="header_weather_summary">Luba teadetepaneeli päises ilmateate kuvamine</string>
   <string name="weather_icon_pack_title">Ilmateate ikoonipakk</string>
@@ -415,6 +415,7 @@
   <string name="screen_on_time">Ekraan sees</string>
   <string name="awake_time">Ärkvel</string>
   <string name="deep_sleep_time">Sügavuni</string>
+  <string name="no_kernel_wakelock_file_found">Tuuma äratusluku andmete fail /proc/wakelocks või /sys/kernel/debug/wakeup_sources puudub.</string>
   <string name="more_line_text">veel\u2026</string>
   <string name="state_core_mode">Tuumad</string>
   <string name="kernel_wakelock_time">Tuuma ärkamislukud</string>
@@ -426,7 +427,7 @@
   <string name="copy_as_text">Kopeeri tekstina</string>
   <string name="google_it">Googelda seda</string>
   <string name="app_details">Rakenduse üksikasjad</string>
-  <string name="no_stat_because_reset_state">Vajuta nulli, et alustada aja lugemist andmete olekus</string>
+  <string name="no_stat_because_reset_state">Vajuta nulli, et alustada aja olekus andmete kogumist</string>
   <string name="no_stat_because_reset_wakelock">Vajuta nulli, et alustada ärkamisluku andmete kogumist</string>
   <string name="no_stat_because_plugged">Palun eemalda laadija, et saada ärkamisluku andmeid</string>
   <string name="no_states_file_found">Olekute faili ei leitud. Kas oled kindel, et su telefon
@@ -448,6 +449,8 @@
   <string name="show_cpu_summary">Ekraani ülekate, mis näitab hetkelist protsessorikasutust</string>
   <string name="headset_plugged_notification_title">Peakomplekti teade</string>
   <string name="headset_plugged_notification_summary">Kuva teade juhtmega peakomplekti ühendamisel</string>
+  <string name="wake_when_plugged_or_unplugged_title">Ärata laadimise alustamisel/lõpetamisel</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Ärata seade, kui laadija on ühendatud/lahti ühendatud</string>
   <!-- Display : Rotation -->
   <string name="category_display">Kuva</string>
   <string name="display_rotation_disabled">Keelatud</string>
@@ -463,8 +466,8 @@
   <string name="status_bar_logo_title">Olekuriba logo</string>
   <string name="status_bar_logo_summary">Tunne uhkust</string>
   <!-- Doze settings editor -->
-  <string name="doze_settings_title">Tukkumise seaded</string>
-  <string name="doze_settings_summary">Muuda tukkumise seadistusi</string>
+  <string name="doze_settings_title">Uinumise seaded</string>
+  <string name="doze_settings_summary">Muuda uinumise seadistusi</string>
   <string name="action_save">Salvesta</string>
   <string name="action_restoredefault">Taasta vaikeväärtused</string>
   <string name="action_profile">Profiilid</string>
@@ -475,19 +478,51 @@
   <string name="string_default">Vaikimisi</string>
   <string name="action_filter">Filter</string>
   <string name="doze_settings_applied">Seaded rakendatud</string>
+  <string name="DESC_LOCATING_TIMEOUT">Aeg, kui kaua ootame, proovimaks saada head asukohamäärangut enne eemalolekurežiimi minekut</string>
+  <string name="DESC_LOCATION_ACCURACY">Soovitud maksimaalne täpsus (meetrites), mille järgi peame asukohta heaks enne eemalolekurežiimi minemist. Proovime saada vähemalt nii head täpsusmäärangut või kuni locating_to aegub</string>
+  <string name="DESC_MAX_IDLE_PENDING_TIMEOUT">Maksimaalne oodatav eemaloleku ajalõpp (töötamise aeg), mida saame kasutada</string>
+  <string name="DESC_IDLE_PENDING_FACTOR">Skaleerimistegur, mida rakendada praegusele ootel eemaloleku ajalõpule iga kord, kui läbime tsükli läbi selle oleku</string>
+  <string name="DESC_MAX_IDLE_TIMEOUT">Maksimaalne eemaoleku aeg, mida võime kasutada</string>
+  <string name="DESC_IDLE_FACTOR">Skaleerimistegur, mida rakendada praegusele eemaloleku ajalõpule iga kord, kui läbime tsükli läbi selle oleku</string>
+  <string name="DESC_MIN_TIME_TO_ALARM">Minimaalne aeg, mida lubame kuni järgmise tuleva äratuseni, et saaks üldse eemalolekurežiimi minna</string>
+  <string name="DESC_MAX_TEMP_APP_WHITELIST_DURATION">Maksimaalne aeg, mil lisame rakenduse ajutiselt valgesse nimekirja, kui see saab kõrge kõdituse</string>
+  <string name="DESC_MMS_TEMP_APP_WHITELIST_DURATION">Aeg, mil soovime lisada MMS\'i vastuvõtva rakenduse valgesse nimekirja</string>
+  <string name="DESC_SMS_TEMP_APP_WHITELIST_DURATION">Aeg, mil soovime lisada SMS\'i vastuvõtva rakenduse valgesse nimekirja</string>
+  <string name="DESC_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Aeg pärast ebaaktiivsust, mil me lähme esimesse kergesse ebaaktiivsusrežiimi</string>
+  <string name="DESC_LIGHT_IDLE_TIMEOUT">Esialgne aeg, mil töötame eemaloleku haldusrežiimis</string>
+  <string name="DESC_LIGHT_IDLE_FACTOR">Skaleerimistegur, mida rakendada kergele eemalolekurežiimile iga kord, kui lõpetame tsükli</string>
+  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Maksimaalne aeg, mil töötame eemaloleku haldusrežiimis</string>
+  <string name="DESC_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Minimaalne aeg, mida tahame muuta haldusrežiimile kättesaadavaks, kui oleme kerges eemalolekus</string>
+  <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Maksimaalne aeg, mida tahame muuta haldusrežiimile kättesaadavaks, kui oleme kerges eemalolekus</string>
+  <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Minimaalne aeg, mil jääme haldusrežiimi peale kerget uinakut</string>
+  <string name="DESC_MIN_DEEP_MAINTENANCE_TIME">Minimaalne aeg, mil jääme haldusrežiimi peale täielikku uinakut</string>
+  <string name="DESC_KEY_NOTIFICATION_WHITELIST_DURATION">Aeg, mil soovime lisada teadet käitleva rakenduse valgesse nimekirja</string>
   <string name="SHORT_INACTIVE_TIMEOUT">Ebaaktiivsuse ajalõpp</string>
   <string name="SHORT_SENSING_TIMEOUT">Tunnetuse ajalõpp</string>
   <string name="SHORT_LOCATING_TIMEOUT">Koha leidmise ajalõpp</string>
   <string name="SHORT_LOCATION_ACCURACY">Asukoha täpsus</string>
   <string name="SHORT_MOTION_INACTIVE_TIMEOUT">Liikumise ebaaktiivsuse ajalõpp</string>
+  <string name="SHORT_IDLE_AFTER_INACTIVE_TIMEOUT">Eemaloleku ajalõpp peale ebaaktiivsust</string>
+  <string name="SHORT_IDLE_PENDING_TIMEOUT">Eemaloleku oote ajalõpp</string>
+  <string name="SHORT_MAX_IDLE_PENDING_TIMEOUT">Maksimaalne eemaloleku oote ajalõpp</string>
+  <string name="SHORT_IDLE_PENDING_FACTOR">Eemaloleku oote tegur</string>
   <string name="SHORT_IDLE_TIMEOUT">Eemaloleku ajalõpp</string>
   <string name="SHORT_MAX_IDLE_TIMEOUT">Maksimaalne eemaloleku ajalõpp</string>
   <string name="SHORT_IDLE_FACTOR">Eemaloleku tegur</string>
   <string name="SHORT_MIN_TIME_TO_ALARM">Min. aeg äratuseni</string>
-  <string name="SHORT_LIGHT_PRE_IDLE_TIMEOUT">Tule eel-eemaloleku ajalõpp</string>
-  <string name="SHORT_LIGHT_IDLE_TIMEOUT">Tule eemaloleku ajalõpp</string>
-  <string name="SHORT_LIGHT_IDLE_FACTOR">Tule eemaloleku tegur</string>
-  <string name="SHORT_LIGHT_MAX_IDLE_TIMEOUT">Maksimaalne tule eemaloleku ajalõpp</string>
+  <string name="SHORT_MAX_TEMP_APP_WHITELIST_DURATION">Maksimaalne ajutise rakenduse valge nimekirja aeg</string>
+  <string name="SHORT_MMS_TEMP_APP_WHITELIST_DURATION">Maksimaalne MMS-rakenduse valge nimekirja aeg</string>
+  <string name="SHORT_SMS_TEMP_APP_WHITELIST_DURATION">Maksimaalne SMS-rakenduse valge nimekirja aeg</string>
+  <string name="SHORT_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Kerge eemaloleku ajalõpp peale ebaaktiivsust</string>
+  <string name="SHORT_LIGHT_PRE_IDLE_TIMEOUT">Kerge eel-eemaloleku ajalõpp</string>
+  <string name="SHORT_LIGHT_IDLE_TIMEOUT">Kerge eemaloleku ajalõpp</string>
+  <string name="SHORT_LIGHT_IDLE_FACTOR">Kerge eemaloleku tegur</string>
+  <string name="SHORT_LIGHT_MAX_IDLE_TIMEOUT">Maksimaalne kerge eemaloleku ajalõpp</string>
+  <string name="SHORT_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Haldusrežiimi kerge eemaloleku minimaalne ajalõpp</string>
+  <string name="SHORT_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Haldusrežiimi kerge eemaloleku maksimaalne ajalõpp</string>
+  <string name="SHORT_MIN_LIGHT_MAINTENANCE_TIME">Haldusrežiimi kerge uinumise minimaalne ajalõpp</string>
+  <string name="SHORT_MIN_DEEP_MAINTENANCE_TIME">Haldusrežiimi täieliku uinaku minimaalne ajalõpp</string>
+  <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Maksimaalne teate valge nimekirja kestus</string>
   <string name="logcat_app_title">MatLog</string>
   <string name="logcat_app_summary">Käivita rakendus logide kogumiseks</string>
   <string name="show_dashboard_columns_title">Kasuta veergude paigutust</string>
@@ -563,21 +598,70 @@
   <string name="clock_date_format_custom">Kohandatud Java vorming</string>
   <string name="status_bar_clock_seconds_title">Kuva sekundeid</string>
   <!-- fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Sõrmejälje autentimise vibratsioon</string>
-  <string name="fprint_sucess_vib_summary">Vibreeri edukal sõrmejälje autentimisel</string>
+  <string name="fprint_sucess_vib_title">Sõrmejäljega autentimise vibratsioon</string>
+  <string name="fprint_sucess_vib_summary">Vibreeri edukal sõrmejäljega autentimisel</string>
   <string name="choose_app">Vali rakendus</string>
   <string name="not_ready_summary">Lahendan...</string>
   <string name="resolve_failed_summary">Rakenduse lahendamine ebaõnnestus</string>
   <string name="disabled_entry">Keelatud</string>
+  <string name="event_service_settings_title">Sündmused</string>
+  <string name="category_media_player_title">Meediamängija</string>
+  <string name="bt_a2dp_connect_app_list_title">Bluetooth A2DP ühendamine</string>
+  <string name="headset_connect_app_list_title">Juhtmega peakomplekti ühendamine</string>
+  <string name="event_service_enabled_title">Luba sündmuste teenus</string>
+  <string name="event_service_running">Teenus töötab</string>
   <string name="event_service_stopped">Teenus ei tööta</string>
+  <string name="category_media_player_info_title">Rakenduse valimine</string>
+  <string name="media_player_autostart_title">Saada meedia esitus-sündmus peale käivitust</string>
+  <string name="media_player_music_active_title">Ära alusta sündmust esitamisel</string>
+  <string name="autorun_single_app_title">Käivita üksik rakendus automaatselt</string>
+  <string name="autorun_single_app_summary">Ära kuva rakenduse valimise dialoogi</string>
+  <string name="bt_a2dp_connect_app_list_summary">Rakendus(ed), mida loetleda, kui A2DP sündmus toimub, näiteks ühendatakse Bluetooth peakomplekt</string>
+  <string name="headset_connect_app_list_summary">Rakendus(ed), mida loetleda juhtmega peakomplekti ühendamisel</string>
+  <string name="app_chooser_left">Vasakul</string>
+  <string name="app_chooser_right">Paremal</string>
+  <string name="app_chooser_timeout_title">Rakendusevalija dialoogi ajalõpp</string>
+  <string name="app_chooser_position_title">Rakendusevalija dialoogi asukoht</string>
+  <string name="wired_events_threshold_title">Juhtmega peakomplekti sündmuse piirmäär</string>
+  <string name="wired_events_threshold_summary">Ignoreeri peakomplekti sündmusi, kui need toimuvad aja piirmääras</string>
   <!-- Quick Pulldown-->
+  <string name="quick_pulldown_title">Kiire allatõmme</string>
+  <string name="quick_pulldown_summary">%1$s tõmmates kuvatakse kiirseadeid</string>
+  <string name="quick_pulldown_summary_always">Kuva alati kiirseaded olekuriba tõmbamisel</string>
+  <string name="quick_pulldown_off">Väljas</string>
+  <string name="quick_pulldown_left">Vasakult</string>
+  <string name="quick_pulldown_right">Paremalt</string>
+  <string name="quick_pulldown_always">Alati</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Laiendatud töölaud</string>
   <string name="expanded_desktop_summary">Rakendusepõhine seadistus olekuriba ja navigatsiooniriba vaatele</string>
+  <string name="expanded_hide_nothing">Ära peida midagi</string>
+  <string name="expanded_hide_status">Peida olekuriba</string>
+  <string name="expanded_hide_navigation">Peida navigatsiooniriba</string>
+  <string name="expanded_hide_both">Peida mõlemad</string>
+  <string name="expanded_nothing_to_show">Et valida kohandatud rakendusepõhine seadistus laiendatud olekule, vii \"Lubatud kõigile\" väljasolekusse</string>
   <string name="expanded_desktop_state">Laiendatud olek</string>
+  <string name="expanded_enabled_for_all">Lubatud kõigile</string>
+  <string name="expanded_user_configurable">Kasutaja seatud</string>
+  <string name="show_only_launcher_menu">Ainult käivitatavad rakendused</string>
+  <string name="show_all_apps_menu">Kõik rakendused</string>
   <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Heleduse reguleerimine</string>
+  <string name="status_bar_toggle_brightness_summary">Reguleeri heledust, libistades mööda olekuriba</string>
   <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Alumised otseteed</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Seadista alumisi otseteid</string>
   <string name="long_press_power_torch_title">Pikk vajutus taskulambi jaoks</string>
   <string name="long_press_power_torch_summary">Lülita taskulampi, kui ekraan on väljas</string>
   <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Lukukuva üksused</string>
+  <string name="lockscreen_item_summary">Seadista lukukuva üksuste nähtavust</string>
+  <string name="hide_lockscreen_clock_title">Peida kellavidin</string>
+  <string name="hide_lockscreen_clock_summary">Muuda kellavidina nähtavust</string>
+  <string name="hide_lockscreen_date_title">Peida kuupäevavidin</string>
+  <string name="hide_lockscreen_date_summary">Muuda kuupäeva nähtavust kellavidina all</string>
+  <string name="hide_lockscreen_alarm_title">Peida äratustekst</string>
+  <string name="hide_lockscreen_alarm_summary">Muuda äratusteksti nähtavust kellavidina all</string>
+  <string name="hide_lockscreen_status_bar_title">Peida olekuriba</string>
+  <string name="hide_lockscreen_status_bar_summary">Koputa olekuriba nähtavuse lülitamiseks</string>
 </resources>

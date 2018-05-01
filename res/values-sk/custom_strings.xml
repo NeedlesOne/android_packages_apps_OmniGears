@@ -279,7 +279,6 @@
   <string name="recents_search_bar_title">Zobrazovať vyhľadávaciu lištu</string>
   <string name="recents_fullscreen_title">Celá obrazovka</string>
   <string name="weather_title">Počasie</string>
-  <string name="weather_config_title">Nastavenia služby</string>
   <string name="header_weather_title">Zobrazenie počasia v záhlaví</string>
   <string name="header_weather_summary">Povoliť zobrazenie počasia v záhlaví na notifikačnom paneli</string>
   <string name="weather_icon_pack_title">Balíček ikon počasia</string>

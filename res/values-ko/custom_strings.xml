@@ -235,7 +235,6 @@
   <string name="recents_search_bar_title">검색 표시줄 표시</string>
   <string name="recents_fullscreen_title">전체 화면</string>
   <string name="weather_title">날씨</string>
-  <string name="weather_config_title">서비스 설정</string>
   <string name="header_weather_title">헤더에 날씨 보기</string>
   <string name="header_weather_summary">알림 패널 헤더에 날씨를 표시합니다.</string>
   <string name="weather_icon_pack_title">상태 아이콘 팩</string>

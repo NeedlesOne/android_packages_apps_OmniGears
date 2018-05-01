@@ -279,7 +279,7 @@
   <string name="recents_search_bar_title">Keresési sáv megjelenítése</string>
   <string name="recents_fullscreen_title">Teljes képernyő</string>
   <string name="weather_title">Időjárás</string>
-  <string name="weather_config_title">Szolgáltatás beállítások</string>
+  <string name="weather_config_title">Időjárás szolgáltatás</string>
   <string name="header_weather_title">Időjárás a fejlécen</string>
   <string name="header_weather_summary">Értesítési panel fejlécén az időjárás megjelenítésének engedélyezése</string>
   <string name="weather_icon_pack_title">Állapot ikoncsomag</string>

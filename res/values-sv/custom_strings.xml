@@ -193,7 +193,6 @@
   <string name="recents_search_bar_title">Visa sökfält</string>
   <string name="recents_fullscreen_title">Fullskärm</string>
   <string name="weather_title">Väder</string>
-  <string name="weather_config_title">Tjänsteinställningar</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Navigeringsfält</string>
   <!-- Enable Tablet Style navigation bar -->

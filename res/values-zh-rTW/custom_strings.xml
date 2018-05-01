@@ -22,6 +22,7 @@
   <string name="advanced">進階選項</string>
   <string name="profiles_add">新增...</string>
   <string name="profile_choose_app">選擇應用程式</string>
+  <string name="reset">重置</string>
   <!-- Hardware keys -->
   <string name="button_keys_title">按鍵</string>
   <string name="keys_bindings_title">按鍵行為</string>
@@ -61,6 +62,8 @@
   <string name="button_volume_keys_title">音量</string>
   <string name="button_volume_wake_title">按鍵點亮</string>
   <string name="button_volume_wake_summary">透過音量鍵點亮螢幕</string>
+  <string name="button_volume_wake_enabled_summary">音量鍵喚醒開啟</string>
+  <string name="button_volume_wake_disabled_summary">音量鍵喚醒關閉</string>
   <string name="volume_button_music_control_title">音樂控制</string>
   <string name="volume_button_music_control_summary">螢幕關閉狀態下，長按音量鍵切換音樂</string>
   <string name="keys_action_sleep">進入休眠</string>
@@ -70,16 +73,27 @@
   <string name="button_home_answers_call_title">使用按鍵接聽電話</string>
   <string name="button_home_answers_call_summary">按Home鍵接聽電話</string>
   <string name="button_other_title">其他</string>
+  <string name="keys_action_app_switch_card">AOSP (stack)</string>
   <string name="keys_action_omniswitch_short">OmniSwitch</string>
+  <string name="keys_action_app_switch_grid">AOSP (grid)</string>
   <string name="button_back_kill_enable_title">長按返回鍵終止應用程式</string>
   <string name="button_back_kill_enable_summary">長按返回鍵終止當前應用程式</string>
+  <string name="button_back_kill_timeout_title">終止應用程式超時</string>
   <string name="button_back_kill_timeout_500ms">500 毫秒</string>
   <string name="button_back_kill_timeout_1000ms">1000 毫秒</string>
   <string name="button_back_kill_timeout_1500ms">1500 毫秒</string>
   <string name="button_back_kill_timeout_2000ms">2000 毫秒</string>
   <!-- Double tap to sleep -->
+  <string name="double_tap_to_sleep_title">按兩下關閉屏幕</string>
+  <string name="double_tap_to_sleep_summary">雙擊狀態列睡眠</string>
   <!-- Doze pulse (ambient display) options -->
+  <string name="doze_overwrite_value_title">改寫值</string>
+  <string name="doze_overwrite_value_summary">允許使用者覆蓋預設設定</string>
+  <string name="doze_list_mode_title">打盹模式</string>
+  <string name="doze_list_mode_summary">配置打盹模式的選項</string>
+  <string name="doze_pulse_title">時間設定</string>
   <string name="doze_pulse_duration_in_title">淡入</string>
+  <string name="doze_pulse_duration_visible_title">可見持續時間</string>
   <string name="doze_pulse_duration_out_title">淡出</string>
   <string name="doze_pulse_on_notifications_title">閃爍通知</string>
   <string name="doze_pulse_on_notifications_summary">只觸發待處理的通知</string>
@@ -163,15 +177,57 @@
   <string name="button_backlight_on_touch_only_summary">僅在觸碰按鈕時開啟背光</string>
   <string name="button_timeout_title">背光長亮時間</string>
   <string name="button_timeout_summary">值為0時永遠啟用</string>
+  <string name="button_link_brightness">連結到螢幕</string>
+  <string name="button_link_brightness_summary">使用螢幕亮度級別</string>
+  <string name="button_manual_brightness">亮度級別</string>
   <string name="unit_sec">秒</string>
   <string name="unit_msec">毫秒</string>
   <string name="button_backlight_enable_title">開啟</string>
+  <string name="navigation_bar_show_title">顯示導航欄</string>
+  <string name="navigation_bar_show_summary">強制使用導航欄</string>
   <string name="hardware_keys_disable_title">禁用按鍵</string>
+  <string name="hardware_keys_disable_summary">強制關閉物理按鍵</string>
+  <string name="navbar_title">導航欄</string>
+  <string name="navbar_recents_style_title">多任務的樣式</string>
   <string name="omniswitch_settings">設定</string>
+  <string name="omniswitch_dialog_running_new">OmniSwitch 當前未啟用。請在應用程式設定中啟用它。</string>
+  <string name="omniswitch_dialog_unavail">未安裝 OmniSwitch。</string>
+  <string name="omniswitch_title">多任務的樣式</string>
+  <string name="long_press_recents_action_title">常按多任務按鈕的動作</string>
+  <string name="long_press_recents_action_split">切換分割螢幕</string>
+  <string name="long_press_home_action_title">長按主頁按鈕</string>
+  <string name="double_press_home_action_title">點兩下主頁鍵動作</string>
+  <string name="keys_action_recents">最近使用清單</string>
+  <string name="keys_action_assist">啟動協助</string>
+  <string name="doze_brightness_level_title">亮度級別</string>
   <!-- Lock screen config -->
   <string name="lockscreen_shortcut_title">捷徑</string>
+  <string name="lockscreen_voice_shortcut_title">語音輔助快速鍵</string>
+  <string name="lockscreen_voice_shortcut_summary">顯示語音輔助, 而不是撥號程式</string>
   <string name="lockscreen_shortcuts_enable_title">開啟</string>
+  <string name="lockscreen_clock_display_time_title">顯示時間</string>
+  <string name="lockscreen_clock_display_date_title">顯示日期</string>
+  <string name="lockscreen_clock_display_alarm_title">顯示下一個鬧鐘</string>
+  <string name="lockscreen_clock">時鐘</string>
+  <string name="lockscreen_clock_font_title">時間字體</string>
+  <string name="lockscreen_clock_color_title">時間和日期顏色</string>
+  <string name="lockscreen_clock_size_title">時間大小</string>
+  <string name="lockscreen_clock_enable_title">開啟</string>
+  <string name="lockscreen_clock_enable_summary">如果關閉，將顯示狀態欄時鐘</string>
+  <string name="lockscreen_clock_shadow_title">陰影</string>
+  <string name="lockscreen_shortcuts_title">自訂應用程式快捷方式</string>
+  <string name="lockscreen_shortcuts_summary">鎖定螢幕上顯示的應用程式可快速訪問。長按隱藏。</string>
+  <string name="lockscreen_shortcut_add_dialog_title">創建桌面快捷方式</string>
+  <string name="lockscreen_shortcut_apps_title">捷徑</string>
+  <string name="lockscreen_shortcut_add">新增\u2026</string>
+  <string name="lockscreen_hide_indicator_display_title">隱藏底部狀態的文字</string>
+  <string name="lockscreen_hide_indicator_display_summary">隱藏充電訊息和解除鎖定提示</string>
+  <string name="lockscreen_camera_shortcut_enable_title">顯示相機捷徑</string>
+  <string name="lockscreen_camera_shortcut_enable_summary">可見度取決於系統設定</string>
+  <string name="lockscreen_left_shortcut_enable_title">顯示撥號或語音助手的捷徑</string>
+  <string name="lockscreen_left_shortcut_enable_summary">可見度取決於系統設定</string>
   <string name="lockscreen_category_title">鎖定螢幕</string>
+  <string name="notification_title">通知面板</string>
   <string name="status_bar_custom_header_title">開啟</string>
   <string name="daylight_header_pack_title">標題欄的圖片集合</string>
   <string name="status_bar_custom_header_shadow_title">標題欄的圖案陰影</string>
@@ -223,7 +279,7 @@
   <string name="recents_search_bar_title">顯示搜尋列</string>
   <string name="recents_fullscreen_title">全螢幕</string>
   <string name="weather_title">天氣</string>
-  <string name="weather_config_title">服務設定</string>
+  <string name="weather_config_title">天氣服務</string>
   <string name="header_weather_title">標題欄顯示天氣</string>
   <string name="header_weather_summary">啟用通知欄標題天氣顯示</string>
   <string name="weather_icon_pack_title">天氣圖示包</string>
@@ -281,6 +337,7 @@
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">編輯指示燈設定</string>
   <string name="pulse_speed_title">閃爍長度和速度</string>
+  <string name="default_time">普通</string>
   <string name="custom_time">自定義</string>
   <string name="dialog_delete_title">刪除</string>
   <string name="dialog_delete_message">移除已選擇項目？</string>
@@ -288,14 +345,35 @@
   <string name="pulse_length_always_on">永遠開啟</string>
   <string name="pulse_length_very_short">很短</string>
   <string name="pulse_length_short">短</string>
+  <string name="pulse_length_normal">普通</string>
+  <string name="pulse_length_long">長</string>
+  <string name="pulse_length_very_long">很長</string>
+  <string name="pulse_speed_very_fast">很快</string>
+  <string name="pulse_speed_fast">快</string>
+  <string name="pulse_speed_normal">普通</string>
+  <string name="pulse_speed_slow">慢</string>
+  <string name="pulse_speed_very_slow">很慢</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="omni_battery_light_settings">電量提示</string>
+  <string name="omni_notification_light_settings">應用程式提示</string>
+  <string name="omni_leds">LED 燈</string>
+  <string name="omni_lights_title">通知閃燈</string>
+  <string name="notification_light_title">通知燈</string>
+  <string name="notificationlight_title">通知指示燈設置</string>
   <string name="notification_light_general_title">一般</string>
   <string name="notification_light_applist_title">應用程式</string>
   <string name="notification_light_use_custom">使用自訂值</string>
   <string name="notification_light_default_value">預設</string>
+  <string name="notification_light_screen_on">螢幕開啟時繼續啟用指示燈</string>
+  <string name="notification_light_zen_mode">零打擾模式指示燈</string>
+  <string name="notification_light_use_multiple_leds">多種提示燈</string>
+  <string name="keywords_lights_brightness_level">低亮度</string>
+  <string name="notification_light_automagic">自動調色</string>
   <!-- Lights settings, LED notification -->
   <!-- Hostname setting -->
+  <string name="device_hostname">裝置主機名稱</string>
   <!-- OMS -->
+  <string name="theming_title">主題</string>
   <!-- Summaries -->
   <string name="omni_battery_light_settings_summary">自訂電池的通知 led 燈</string>
   <string name="night_mode_title">亮色/暗色主題</string>

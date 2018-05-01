@@ -264,7 +264,6 @@
   <string name="recents_search_bar_title">Tampilkan bilah penelusuran</string>
   <string name="recents_fullscreen_title">Layar penuh</string>
   <string name="weather_title">Cuaca</string>
-  <string name="weather_config_title">Pengaturan layanan</string>
   <string name="header_weather_title">Header melihat cuaca</string>
   <string name="header_weather_summary">Aktifkan tampilan cuaca layar panel pemberitahuan</string>
   <string name="weather_icon_pack_title">Kondisi ikon paket</string>

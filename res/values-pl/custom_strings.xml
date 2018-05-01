@@ -56,6 +56,7 @@
   <string name="keys_action_normal">Normalne naciśnięcie</string>
   <string name="keys_action_long">Przytrzymanie</string>
   <string name="keys_action_double">Podwójne naciśnięcie</string>
+  <string name="keys_action_all_apps">Wszystkie aplikacje</string>
   <string name="dialog_no_home_key_title">Brak akcji dla Home</string>
   <string name="no_home_key">Nie masz przypisanego przycisku do obsługi akcji \"Home\"! Może to uniemożliwić korzystanie z urządzenia!</string>
   <string name="button_volume_keys_title">Głośność</string>
@@ -81,6 +82,7 @@
   <string name="button_back_kill_timeout_500ms">500 ms</string>
   <string name="button_back_kill_timeout_1000ms">1000 ms</string>
   <string name="button_back_kill_timeout_1500ms">1500 ms</string>
+  <string name="button_back_kill_timeout_2000ms">2000 ms</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">Podwójne stuknięcie wygasza ekran</string>
   <string name="double_tap_to_sleep_summary">Dwukrotnie stuknij na pasku stanu, aby uśpić urządzenie</string>
@@ -242,7 +244,6 @@
   <string name="recents_search_bar_title">Pokaż pasek wyszukiwania</string>
   <string name="recents_fullscreen_title">Pełny ekran</string>
   <string name="weather_title">Pogoda</string>
-  <string name="weather_config_title">Ustawienia usługi</string>
   <string name="header_weather_title">Pogoda w nagłówku</string>
   <string name="header_weather_summary">Włącz wyświetlanie pogody w nagłówku panelu powiadomień</string>
   <string name="weather_icon_pack_title">Pakiet ikon warunków zewnętrznych</string>

@@ -279,7 +279,7 @@
   <string name="recents_search_bar_title">Mostrar barra de pesquisa</string>
   <string name="recents_fullscreen_title">Ecrã inteiro</string>
   <string name="weather_title">Meteorologia</string>
-  <string name="weather_config_title">Definições do serviço</string>
+  <string name="weather_config_title">Serviço meteorológico</string>
   <string name="header_weather_title">Mostrar meteorologia no cabeçalho</string>
   <string name="header_weather_summary">Ativar a visualização da meteorologia no cabeçalho do painel de notificações</string>
   <string name="weather_icon_pack_title">Pacote de ícones</string>

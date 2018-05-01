@@ -279,7 +279,6 @@
   <string name="recents_search_bar_title">Toon zoekbalk</string>
   <string name="recents_fullscreen_title">Volledig scherm</string>
   <string name="weather_title">Weer</string>
-  <string name="weather_config_title">Service-instellingen</string>
   <string name="header_weather_title">Weer weergeven in header</string>
   <string name="header_weather_summary">Schakel de weergave van het weer in het notificatiepaneel in
 Schakel het tonen van het weer in het notificatiepaneel in</string>
