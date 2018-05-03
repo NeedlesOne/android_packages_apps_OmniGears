@@ -56,5 +56,15 @@
         android:summary="@string/hide_lockscreen_icon_summary"
         android:defaultValue="false" />
 
+    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_weather"
+        android:title="@string/lockscreen_weather_title"
+        android:summary="@string/lockscreen_weather_summary"
+        android:defaultValue="false" />
+
+    <Preference
+        android:icon="@drawable/ic_info_outline_24dp"
+        android:persistent="false"
+        android:summary="@string/lockscreen_items_aod_info_title" />
 </PreferenceScreen>
 
