@@ -89,6 +89,12 @@
             android:summary="@string/long_press_power_torch_summary"
             android:defaultValue="false" />
 
+        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            android:key="system_proxi_check_enabled"
+            android:title="@string/system_proxi_check_enabled_title"
+            android:summary="@string/system_proxi_check_enabled_summary"
+            android:defaultValue="false"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -768,4 +768,6 @@
     <string name="long_press_power_torch_title">Long press for flashlight</string>
     <string name="long_press_power_torch_summary">Toggle flashlight when screen is off</string>
 
+    <string name="system_proxi_check_enabled_title">Proximity check</string>
+    <string name="system_proxi_check_enabled_summary">Check proximity sensor before handling power button and volume button wake events</string>
 </resources>

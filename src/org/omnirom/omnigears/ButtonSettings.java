@@ -54,6 +54,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
     private static final String CATEGORY_KEYS = "button_keys";
     private static final String CATEGORY_OTHER = "button_other";
+    private static final String CATEGORY_POWER = "button_power";
     private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
     private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
     private static final String NAVIGATION_BAR_RECENTS_STYLE = "navbar_recents_style";
@@ -64,6 +65,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String KEY_BUTTON_LIGHT = "button_brightness";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+    private static final String SYSTEM_PROXI_CHECK_ENABLED = "system_proxi_check_enabled";
 
     private ListPreference mNavbarRecentsStyle;
     private ListPreference mLongPressRecentsAction;
@@ -98,6 +100,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
         final PreferenceCategory otherCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHER);
+        final PreferenceCategory powerCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
 
         mEnableNavBar = (SwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
         mDisabkeHWKeys = (SwitchPreference) prefScreen.findPreference(KEYS_DISABLE_HW_KEY);
@@ -178,7 +182,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         if (!mFingerprintManager.isHardwareDetected()){
             prefScreen.removePreference(mFpKeystore);
         }
-	}
+        boolean supportPowerButtonProxyCheck = getResources().getBoolean(com.android.internal.R.bool.config_proxiSensorWakupCheck);
+        SwitchPreference proxyCheckPreference = (SwitchPreference) findPreference(SYSTEM_PROXI_CHECK_ENABLED);
+        if (!supportPowerButtonProxyCheck) {
+            powerCategory.removePreference(proxyCheckPreference);
+        }
+    }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
