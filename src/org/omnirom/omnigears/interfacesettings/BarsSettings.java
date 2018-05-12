@@ -21,12 +21,12 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.TrafficStats;
 import android.os.Bundle;
-import android.support.v7.preference.Preference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.util.Log;
-import android.net.TrafficStats;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -47,8 +47,13 @@ import com.android.settings.search.Indexable;
 import com.android.internal.util.omni.DeviceUtils;
 import com.android.settings.Utils;
 
-import java.util.List;
+import org.omnirom.omnigears.preference.AppMultiSelectListPreference;
+import org.omnirom.omnigears.preference.ScrollAppsViewPreference;
+
+import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 public class BarsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
@@ -56,10 +61,15 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String NETWORK_TRAFFIC_ROOT = "category_network_traffic";
     private static final String NAVIGATIONBAR_ROOT = "category_navigationbar";
     private static final String EXPANDED_DESKTOP_CATEGORY = "expanded_desktop_category";
-
     private static final String QUICK_PULLDOWN = "quick_pulldown";
+    private static final String KEY_ASPECT_RATIO_APPS_ENABLED = "aspect_ratio_apps_enabled";
+    private static final String KEY_ASPECT_RATIO_APPS_LIST = "aspect_ratio_apps_list";
+    private static final String KEY_ASPECT_RATIO_CATEGORY = "aspect_ratio_category";
+    private static final String KEY_ASPECT_RATIO_APPS_LIST_SCROLLER = "aspect_ratio_apps_list_scroller";
 
     private ListPreference mQuickPulldown;
+    private AppMultiSelectListPreference mAspectRatioAppsSelect;
+    private ScrollAppsViewPreference mAspectRatioApps;
 
     @Override
     public int getMetricsCategory() {
@@ -91,6 +101,27 @@ public class BarsSettings extends SettingsPreferenceFragment implements
                 TrafficStats.getTotalRxBytes() == TrafficStats.UNSUPPORTED) {
             prefScreen.removePreference(findPreference(NETWORK_TRAFFIC_ROOT));
         }
+
+        final PreferenceCategory aspectRatioCategory =
+                (PreferenceCategory) getPreferenceScreen().findPreference(KEY_ASPECT_RATIO_CATEGORY);
+        final boolean supportMaxAspectRatio = getResources().getBoolean(com.android.internal.R.bool.config_haveHigherAspectRatioScreen);
+        if (!supportMaxAspectRatio) {
+            getPreferenceScreen().removePreference(aspectRatioCategory);
+        } else {
+            mAspectRatioAppsSelect = (AppMultiSelectListPreference) findPreference(KEY_ASPECT_RATIO_APPS_LIST);
+            mAspectRatioApps = (ScrollAppsViewPreference) findPreference(KEY_ASPECT_RATIO_APPS_LIST_SCROLLER);
+            final String valuesString = Settings.System.getString(getContentResolver(), Settings.System.ASPECT_RATIO_APPS_LIST);
+            List<String> valuesList = new ArrayList<String>();
+            if (!TextUtils.isEmpty(valuesString)) {
+                valuesList.addAll(Arrays.asList(valuesString.split(":")));
+                mAspectRatioApps.setVisible(true);
+                mAspectRatioApps.setValues(valuesList);
+            } else {
+                mAspectRatioApps.setVisible(false);
+            }
+            mAspectRatioAppsSelect.setValues(valuesList);
+            mAspectRatioAppsSelect.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -105,6 +136,18 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     quickPulldownValue);
             updatePulldownSummary(quickPulldownValue);
+            return true;
+        } else if (preference == mAspectRatioAppsSelect) {
+            Collection<String> valueList = (Collection<String>) newValue;
+            mAspectRatioApps.setVisible(false);
+            if (valueList != null) {
+                Settings.System.putString(getContentResolver(), Settings.System.ASPECT_RATIO_APPS_LIST,
+                        TextUtils.join(":", valueList));
+                mAspectRatioApps.setVisible(true);
+                mAspectRatioApps.setValues(valueList);
+            } else {
+                Settings.System.putString(getContentResolver(), Settings.System.ASPECT_RATIO_APPS_LIST, "");
+            }
             return true;
         }
         return false;
