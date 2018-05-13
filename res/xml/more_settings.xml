@@ -104,12 +104,6 @@
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
                 android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
-                android:key="mtp_dirty_hack"
-                android:title="@string/enable_mtp_dirtyhack_title"
-                android:summary="@string/enable_mtp_dirtyhack_summary"
-                android:defaultValue="true" />
-
         </PreferenceCategory>
 
     <PreferenceCategory
