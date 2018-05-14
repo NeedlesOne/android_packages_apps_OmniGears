@@ -45,7 +45,7 @@
             android:key="category_system"
             android:title="@string/system_category">
 
-            <org.omnirom.omnigears.preference.GlobalSettingSwitchPreference
+            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
                 android:key="sensor_block"
                 android:title="@string/sensor_block_title"
                 android:summary="@string/sensor_block_summary"
