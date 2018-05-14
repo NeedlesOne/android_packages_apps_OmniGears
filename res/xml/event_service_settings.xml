@@ -40,7 +40,7 @@
         <org.omnirom.omnigears.preference.AppMultiSelectListPreference
             android:dependency="event_service_enabled"
             android:icon="@drawable/ic_settings_bluetooth"
-            android:key="bt_a2dp_connect_app_list"
+            android:key="bt_a2dp_connect_app_string"
             android:persistent="false"
             android:summary="@string/bt_a2dp_connect_app_list_summary"
             android:title="@string/bt_a2dp_connect_app_list_title" />
@@ -54,7 +54,7 @@
         <org.omnirom.omnigears.preference.AppMultiSelectListPreference
             android:dependency="event_service_enabled"
             android:icon="@drawable/ic_headset_24dp"
-            android:key="headset_connect_app_list"
+            android:key="headset_connect_app_string"
             android:persistent="false"
             android:summary="@string/headset_connect_app_list_summary"
             android:title="@string/headset_connect_app_list_title" />
