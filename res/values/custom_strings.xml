@@ -605,8 +605,18 @@
 
     <string name="show_dashboard_columns_title">Use columns layout</string>
     <string name="show_dashboard_columns_summary">In settings main page</string>
-    <string name="hide_dashboard_summary_title">Hide summary</string>
-    <string name="hide_dashboard_summary_summary">In settings main page</string>
+    <string name="hide_dashboard_summary_title">Hide summary</string> 
+    <string name="hide_dashboard_summary_summary">In settings main page</string> 
+
+    <!-- Disable dashboard conditions -->
+    <string name="dashboard_conditions_title">Dashboard conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
+
+    <!-- Disable dashboard suggestions -->
+    <string name="dashboard_suggestions_title">Dashboard suggestions</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
 
     <string name="systemui_theme_style_title">SystemUI style</string>
     <string name="systemui_theme_style_auto">Wallpaper based</string>
