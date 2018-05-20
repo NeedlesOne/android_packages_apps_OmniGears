@@ -104,4 +104,7 @@
     <string name="sensor_block_title">Sensor block per-package</string>
     <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
 
+    <!-- QS Running Services Icon -->
+    <string name="qs_running_services_title">Hide Running Services Icon</string>
+    <string name="qs_running_services_summary">Running Services icon disabled</string>
 </resources>
