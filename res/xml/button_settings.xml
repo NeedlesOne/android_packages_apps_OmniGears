@@ -77,6 +77,12 @@
             android:summary="@string/qs_running_services_summary"
             android:defaultValue="false" />
 
+        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            android:key="anbi_enabled"
+            android:title="@string/anbi_title"
+            android:summary="@string/anbi_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
