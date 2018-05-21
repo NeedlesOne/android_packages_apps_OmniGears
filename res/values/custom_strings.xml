@@ -761,11 +761,11 @@
     <!-- Hide Lockscreen clock, date, alarm -->
     <string name="lockscreen_item_title">Hide Lockscreen Items</string>
     <string name="lockscreen_item_summary">Hide Lockscreen clock, date, alarm</string>
-    <string name="hide_lockscreen_clock_title">Clock widget</string>
+    <string name="hide_lockscreen_clock_title">Hide Clock widget</string>
     <string name="hide_lockscreen_clock_summary">Change the clock widget\'s visibility</string>
-    <string name="hide_lockscreen_date_title">Date widget</string>
+    <string name="hide_lockscreen_date_title">Hide Date widget</string>
     <string name="hide_lockscreen_date_summary">Change the date\'s visibility underneath the clock widget</string>
-    <string name="hide_lockscreen_alarm_title">Alarm text</string>
+    <string name="hide_lockscreen_alarm_title">Hide Alarm text</string>
     <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
     <string name="hide_lockscreen_status_bar_title">Hide status bar</string>
     <string name="hide_lockscreen_status_bar_summary">Touch status bar to toggle visibility</string>
