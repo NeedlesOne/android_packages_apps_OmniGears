@@ -40,19 +40,19 @@
             android:persistent="false"
             android:defaultValue="0"/>
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="statusbar_battery_percent_inside"
             android:title="@string/statusbar_percent_inside_title"
             android:summary="@string/statusbar_percent_inside_summary"
             android:defaultValue="false"/>
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="statusbar_battery_dotted_line"
             android:title="@string/statusbar_battery_dotted_line_title"
             android:summary="@string/statusbar_battery_dotted_line_summary"
             android:defaultValue="false"/>
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="statusbar_battery_low_color_enable"
             android:title="@string/statusbar_battery_low_color_enable_title"
             android:summary="@string/statusbar_battery_low_color_enable_summary"
@@ -62,17 +62,17 @@
             android:key="statusbar_category_charging"
             android:title="@string/statusbar_category_charging_title">
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="statusbar_battery_charging_image"
                 android:title="@string/statusbar_charging_image_title"
                 android:summary="@string/statusbar_charging_image_summary"
                 android:defaultValue="true"/>
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="statusbar_battery_charging_color_enable"
                 android:title="@string/statusbar_battery_charging_color_enable_title"
                 android:summary="@string/statusbar_battery_charging_color_enable_summary"
                 android:defaultValue="false"/>
-            <org.omnirom.omnigears.preference.ColorSelectPreference
+            <org.omnirom.omnilib.preference.ColorSelectPreference
                 android:key="statusbar_battery_charging_color"
                 android:title="@string/statusbar_battery_charging_color_title"
                 android:persistent="false"

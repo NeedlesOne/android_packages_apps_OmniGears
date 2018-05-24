@@ -37,7 +37,7 @@
             android:persistent="false"
             android:summary="@string/weather_icon_pack_info_title" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="lockscreen_weather"
             android:title="@string/lockscreen_weather_title"
             android:summary="@string/lockscreen_weather_summary"

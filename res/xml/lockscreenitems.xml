@@ -20,37 +20,37 @@
     android:title="@string/lockscreen_item_title"
     android:key="lockscreen_item">
 
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="hide_lockscreen_status_bar"
         android:title="@string/hide_lockscreen_status_bar_title"
         android:summary="@string/hide_lockscreen_status_bar_summary"
         android:defaultValue="true" />
 
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="hide_lockscreen_clock"
         android:title="@string/hide_lockscreen_clock_title"
         android:summary="@string/hide_lockscreen_clock_summary"
         android:defaultValue="true" />
 
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="hide_lockscreen_date"
         android:title="@string/hide_lockscreen_date_title"
         android:summary="@string/hide_lockscreen_date_summary"
         android:defaultValue="true" />
 
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="hide_lockscreen_alarm"
         android:title="@string/hide_lockscreen_alarm_title"
         android:summary="@string/hide_lockscreen_alarm_summary"
         android:defaultValue="true" />
 
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="hide_lockscreen_indicator_display"
         android:title="@string/hide_lockscreen_indicator_display_title"
         android:summary="@string/hide_lockscreen_indicator_display_summary"
         android:defaultValue="false" />
 
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="hide_lockscreen_icon"
         android:title="@string/hide_lockscreen_icon_title"
         android:summary="@string/hide_lockscreen_icon_summary"

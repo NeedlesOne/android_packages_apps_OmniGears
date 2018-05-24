@@ -17,43 +17,27 @@
 */
 package org.omnirom.omnigears.interfacesettings;
 
-import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.res.Resources;
-import android.net.TrafficStats;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v14.preference.PreferenceFragment;
-import android.support.v14.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.provider.Settings.SettingNotFoundException;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.omni.DeviceUtils;
-import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-
-import com.android.internal.util.omni.OmniSwitchConstants;
-import com.android.internal.util.omni.PackageUtils;
 
 import java.util.List;
 import java.util.ArrayList;
 
-import org.omnirom.omnigears.preference.ColorSelectPreference;
-import org.omnirom.omnigears.preference.SeekBarPreference;
-import org.omnirom.omnigears.preference.SystemCheckBoxPreference;
+import org.omnirom.omnilib.preference.ColorSelectPreference;
+import org.omnirom.omnilib.preference.SeekBarPreference;
+import org.omnirom.omnilib.preference.SystemCheckBoxPreference;
 
 public class StatusbarBatterySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {

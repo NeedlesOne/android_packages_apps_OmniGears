@@ -18,37 +18,27 @@
 package org.omnirom.omnigears.interfacesettings;
 
 import android.content.Context;
-import android.content.ContentResolver;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.net.TrafficStats;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.text.TextUtils;
-import android.util.Log;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.PreferenceCategory;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
-import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import com.android.internal.util.omni.DeviceUtils;
-import com.android.settings.Utils;
-
-import org.omnirom.omnigears.preference.AppMultiSelectListPreference;
-import org.omnirom.omnigears.preference.ScrollAppsViewPreference;
+import org.omnirom.omnilib.preference.AppMultiSelectListPreference;
+import org.omnirom.omnilib.preference.ScrollAppsViewPreference;
 
 import java.util.Arrays;
 import java.util.ArrayList;

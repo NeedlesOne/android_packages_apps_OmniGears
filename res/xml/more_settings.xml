@@ -23,7 +23,7 @@
             android:key="category_other"
             android:title="@string/other_category">
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="volume_dialog_headers"
                 android:title="@string/volume_dialog_headers_title"
                 android:summary="@string/volume_dialog_headers_summary"
@@ -40,14 +40,14 @@
                 android:summary="@string/hide_dashboard_summary_summary"
                 android:persistent="false" />
     <!-- Disable dashboard conditions -->
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="enable_conditions"
                 android:title="@string/dashboard_conditions_title"
                 android:summaryOn="@string/summary_dashboard_conditions_enabled"
                 android:summaryOff="@string/summary_dashboard_conditions_disabled"
                 android:defaultValue="false" />
     <!-- Disable dashboard suggestions -->
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="enable_suggestions"
                 android:title="@string/dashboard_suggestions_title"
                 android:summaryOn="@string/summary_dashboard_suggestions_enabled"
@@ -59,7 +59,7 @@
             android:key="category_system"
             android:title="@string/system_category">
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="sensor_block"
                 android:title="@string/sensor_block_title"
                 android:summary="@string/sensor_block_summary"
@@ -93,7 +93,7 @@
                 android:summary="@string/doze_settings_summary"
                 android:fragment="org.omnirom.omnigears.system.DozeSettings" />
 
-            <org.omnirom.omnigears.preference.GlobalSettingSwitchPreference
+            <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
                 android:key="show_cpu_overlay"
                 android:title="@string/show_cpu_title"
                 android:summary="@string/show_cpu_summary"
@@ -112,7 +112,7 @@
                 android:entryValues="@array/screen_off_animation_values"
                 android:persistent="false"/>
 
-            <org.omnirom.omnigears.preference.GlobalSettingSwitchPreference
+            <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
                 android:key="wake_when_plugged_or_unplugged"
                 android:title="@string/wake_when_plugged_or_unplugged_title"
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
@@ -124,17 +124,17 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />

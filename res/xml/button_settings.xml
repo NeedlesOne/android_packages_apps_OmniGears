@@ -23,26 +23,26 @@
         android:key="button_volume_keys"
         android:title="@string/button_volume_keys_title" >
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
             android:summary="@string/swap_volume_buttons_summary"
             android:defaultValue="false" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="volume_button_force_media"
             android:title="@string/volume_button_force_media_title"
             android:summary="@string/volume_button_force_media_summary"
             android:defaultValue="false" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="volume_button_wake"
             android:title="@string/button_volume_wake_title"
             android:summary="@string/button_volume_wake_summary"
             android:disableDependentsState="true"
             android:defaultValue="false" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="volume_button_music_control"
             android:title="@string/volume_button_music_control_title"
             android:summary="@string/volume_button_music_control_summary"
@@ -71,13 +71,13 @@
             android:persistent="false"
             android:fragment="org.omnirom.omnigears.ButtonBrightnessSettings" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="qs_running_services_toggle"
             android:title="@string/qs_running_services_title"
             android:summary="@string/qs_running_services_summary"
             android:defaultValue="false" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="anbi_enabled"
             android:title="@string/anbi_title"
             android:summary="@string/anbi_summary"
@@ -95,13 +95,13 @@
             android:summary="@string/global_actions_summary"
             android:fragment="org.omnirom.omnigears.interfacesettings.GlobalActionsSettings" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="long_press_power_torch"
             android:title="@string/long_press_power_torch_title"
             android:summary="@string/long_press_power_torch_summary"
             android:defaultValue="false" />
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="system_proxi_check_enabled"
             android:title="@string/system_proxi_check_enabled_title"
             android:summary="@string/system_proxi_check_enabled_summary"
@@ -120,7 +120,7 @@
             android:entryValues="@array/navbar_recents_style_values"
             android:persistent="false"/>
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="show_clear_all_recents"
             android:title="@string/show_clear_all_recents_button_title"
             android:summary="@string/show_clear_all_recents_button_summary"
@@ -153,7 +153,7 @@
             android:entryValues="@array/long_press_home_action_values"
             android:persistent="false"/>
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="button_back_kill_enable"
             android:title="@string/button_back_kill_enable_title"
             android:summary="@string/button_back_kill_enable_summary"

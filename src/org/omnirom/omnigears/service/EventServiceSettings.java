@@ -37,9 +37,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import org.omnirom.omnigears.preference.AppMultiSelectListPreference;
-import org.omnirom.omnigears.preference.ScrollAppsViewPreference;
-import org.omnirom.omnigears.preference.SeekBarPreference;
+import org.omnirom.omnilib.preference.AppMultiSelectListPreference;
+import org.omnirom.omnilib.preference.ScrollAppsViewPreference;
+import org.omnirom.omnilib.preference.SeekBarPreference;
 
 import java.util.Arrays;
 import java.util.ArrayList;

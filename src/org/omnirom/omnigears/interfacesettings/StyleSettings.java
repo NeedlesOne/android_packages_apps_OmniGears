@@ -22,29 +22,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.util.Log;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.omni.PackageUtils;
 
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import com.android.settingslib.core.AbstractPreferenceController;
 
-import org.omnirom.omnigears.preference.SystemSettingSwitchPreference;
-import org.omnirom.omnigears.preference.SeekBarPreference;
+import org.omnirom.omnilib.preference.SystemSettingSwitchPreference;
+import org.omnirom.omnilib.preference.SeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.Collections;

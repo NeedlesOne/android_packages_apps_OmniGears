@@ -21,34 +21,15 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.PowerManager;
-import android.support.v7.preference.CheckBoxPreference;
-import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.ListPreference;
-import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.SearchIndexableResource;
-import android.view.View;
-import android.util.Log;
-import android.app.AlertDialog;
-import android.text.TextWatcher;
-import android.text.Editable;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.SeekBar;
-import android.widget.TextView;
 
-import org.omnirom.omnigears.R;
-import org.omnirom.omnigears.preference.SeekBarPreference;
+import org.omnirom.omnilib.preference.SeekBarPreference;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -56,8 +37,6 @@ import com.android.settings.search.Indexable;
 
 import java.util.List;
 import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ButtonBrightnessSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {

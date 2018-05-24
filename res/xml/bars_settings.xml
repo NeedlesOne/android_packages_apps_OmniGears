@@ -23,19 +23,19 @@
             android:key="category_statusbar"
             android:title="@string/statusbar_title">
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="double_tap_sleep_gesture"
                 android:title="@string/double_tap_to_sleep_title"
                 android:summary="@string/double_tap_to_sleep_summary"
                 android:defaultValue="false" />
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="status_bar_brightness_control"
                 android:title="@string/status_bar_toggle_brightness"
                 android:summary="@string/status_bar_toggle_brightness_summary"
                 android:defaultValue="false" />
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="status_bar_ime_notification"
                 android:title="@string/status_bar_ime_notification_title"
                 android:summary="@string/status_bar_ime_notification_summary"
@@ -47,7 +47,7 @@
                 android:summary="@string/network_traffic_summary"
                 android:fragment="org.omnirom.omnigears.interfacesettings.NetworkTraffic" />
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="status_bar_logo"
                 android:title="@string/status_bar_logo_title"
                 android:summary="@string/status_bar_logo_summary"
@@ -78,13 +78,13 @@
             android:key="category_navigationbar"
             android:title="@string/navigationbar_title">
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="navigation_bar_ime_button"
                 android:title="@string/navigation_bar_ime_button_title"
                 android:summary="@string/navigation_bar_ime_button_summary"
                 android:defaultValue="true"/>
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="navigation_bar_menu_arrow_keys"
                 android:title="@string/navigation_bar_menu_arrow_keys_title"
                 android:summary="@string/navigation_bar_menu_arrow_keys_summary"
@@ -108,20 +108,20 @@
             android:key="aspect_ratio_category"
             android:title="@string/aspect_ratio_category_title">
 
-            <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
                 android:key="aspect_ratio_apps_enabled"
                 android:title="@string/aspect_ratio_apps_enabled_title"
                 android:summary="@string/aspect_ratio_apps_enabled_summary"
                 android:defaultValue="false" />
 
-            <org.omnirom.omnigears.preference.AppMultiSelectListPreference
+            <org.omnirom.omnilib.preference.AppMultiSelectListPreference
                 android:dependency="aspect_ratio_apps_enabled"
                 android:key="aspect_ratio_apps_list"
                 android:persistent="false"
                 android:summary="@string/aspect_ratio_apps_list_summary"
                 android:title="@string/aspect_ratio_apps_list_title" />
 
-            <org.omnirom.omnigears.preference.ScrollAppsViewPreference
+            <org.omnirom.omnilib.preference.ScrollAppsViewPreference
                 android:dependency="aspect_ratio_apps_enabled"
                 android:key="aspect_ratio_apps_list_scroller"
                 android:persistent="false"

@@ -60,7 +60,7 @@
         android:key="category_custom_header"
         android:title="@string/custom_header_title">
 
-        <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
             android:key="status_bar_custom_header"
             android:title="@string/status_bar_custom_header_title"
             android:defaultValue="false" />
@@ -98,7 +98,7 @@
             android:dependency="status_bar_custom_header" >
         </Preference>
 
-        <org.omnirom.omnigears.preference.SeekBarPreference
+        <org.omnirom.omnilib.preference.SeekBarPreference
             android:key="status_bar_custom_header_shadow"
             android:title="@string/status_bar_custom_header_shadow_title"
             android:summary="@string/status_bar_custom_header_shadow_summary"

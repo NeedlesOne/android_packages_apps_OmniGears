@@ -19,25 +19,25 @@
         android:key="button_brightness"
         android:title="@string/button_backlight_title" >
 
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="button_backlight_enable"
         android:title="@string/button_backlight_enable_title"
         android:defaultValue="true"/>
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="custom_button_use_screen_brightness"
         android:title="@string/button_link_brightness"
         android:summary="@string/button_link_brightness_summary"
         android:defaultValue="false"
         android:dependency="button_backlight_enable"
         android:disableDependentsState="true" />
-    <org.omnirom.omnigears.preference.SeekBarPreference
+    <org.omnirom.omnilib.preference.SeekBarPreference
         android:key="button_manual_brightness_new"
         android:title="@string/button_manual_brightness"
         android:max="255"
         settings:min="1"
         android:persistent="false"
         android:dependency="custom_button_use_screen_brightness" />
-    <org.omnirom.omnigears.preference.SeekBarPreference
+    <org.omnirom.omnilib.preference.SeekBarPreference
         android:key="button_timeout"
         android:title="@string/button_timeout_title"
         android:summary="@string/button_timeout_summary"
@@ -47,7 +47,7 @@
         settings:unitsRight="@string/unit_sec"
         android:persistent="false"
         android:dependency="button_backlight_enable" />
-    <org.omnirom.omnigears.preference.SystemSettingSwitchPreference
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
         android:key="button_backlight_on_touch_only"
         android:title="@string/button_backlight_on_touch_only_title"
         android:summary="@string/button_backlight_on_touch_only_summary"
