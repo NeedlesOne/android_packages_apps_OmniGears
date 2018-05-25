@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2018 The HolyDragon Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+ 
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- Color Picker -->
+    <string name="dialog_color_picker">Selector de cor</string>
+    <string name="press_color_to_apply">Pressione na cor abaixo para aplicar</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Configurar</string>
+
+<!-- Battery Bar -->
+    <string name="batterybar_title">Barra da bateria</string>
+    <string name="batterybar_summary">Configurar barra da bateria</string>
+    <string name="battery_icon">Estilo do ícone de bateria</string>
+    <string name="battery_not_title">Ícone de bateria nas notificações</string>
+    <string name="battery_not_summary">O ícone de bateria aparecerá onde o botão "Limpar tudo" aparece</string>
+    <string name="battery_bar_title">Barra de bateria</string>
+    <string name="battery_bar_location">Localização da barra de bateria</string>
+    <string name="battery_bar_color">Cor da barra de bateria</string>
+    <string name="battery_bar_charging_color">Cor da barra de bateria durante carregamento</string>
+    <string name="battery_bar_battery_low_color">Cor da barra de bateria com pouca bateria</string>
+    <string name="battery_bar_style_title">Estilo da barra de bateria</string>
+    <string name="battery_bar_thickness_title">Espessura da barra de bateria</string>
+    <string name="battery_bar_animate_title">Animação de carregamento</string>
+    <string name="battery_bar_animate_summary">A animação de carregamento pode resultar numa má experiência. Ativar a seu próprio critério.</string>
+    <string name="battery_bar_hide">Esconder</string>
+    <string name="battery_bar_statusbar">Barra de estado</string>
+    <string name="battery_bar_topnav">Topo da barra de navegação</string>
+    <string name="battery_bar_bottomnav">Para inferiro da barra de navegação</string>
+    <string name="battery_bar_reg">Regular</string>
+    <string name="battery_bar_center">Centro espelhado</string>
+    <string name="battery_bar_reversed">Reservado</string>
+    <string name="battery_bar_use_gradient_color">Usar cor gradiente</string>
+    <string name="battery_bar_gradient_color_summary">Usar cor  gradiente como escala para o nível da bateria</string>
+    <string name="battery_bar_high_color">Cor de bateria alta"</string>
+    <string name="battery_bar_low_color">Cor de bateria baixa"</string>
+
+<!-- Face Auto Unlock -->
+    <string name="face_auto_unlock_title">Desbloqueio automático facial</string>
+    <string name="face_auto_unlock_summary">Despensa o ecrã de bloqueio com desbloqueio facial</string>
+
+<!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Opções de vibração durante a chamada</string>
+    <string name="incall_vibrate_connect_title">Vibrar durante ligação</string>
+    <string name="incall_vibrate_call_wait_title">Vibrar na espera da chamada</string>
+    <string name="incall_vibrate_disconnect_title">Vibrar no fim da ligação</string>
+
+<!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">Desbloqueio por impressão digital</string>
+    <string name="fp_unlock_keystore_summary">Desbloqueia o dispositivo com impressão digital após reiniciar sem PIN/ Palavra-passe/ Padrão
+Nota: Por sua conta e risco</string>
+
+<!-- Recents panel -->
+    <string name="recents_title">Paínel de recentes</string>
+    <string name="recents_summary">Posição do botão limpar</string>
+
+<!-- Recents panel -->
+    <string name="show_clear_all_recents_button_title">Botão limpar tudo</string>
+    <string name="show_clear_all_recents_button_summary">Mostrar botão lim+ar tudo</string>
+    <string name="recents_clear_all_location_title">Localização do botão</string>
+    <string name="recents_clear_all_location_top_right">Topo direito</string>
+    <string name="recents_clear_all_location_top_left">Topo esquerdo</string>
+    <string name="recents_clear_all_location_top_center">Topo centro</string>
+    <string name="recents_clear_all_location_bottom_right">Inferior direito</string>
+    <string name="recents_clear_all_location_bottom_left">Inferior esquerdo</string>
+    <string name="recents_clear_all_location_bottom_center">Inferior centro</string>
+
+<!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Bloquear Wakelocks</string>
+    <string name="wakelock_blocker_summary">Bloqueia wakelocks de sistema</string>
+    <string name="wakelock_blocker_save">Guardar</string>
+    <string name="wakelock_list_header">Wakelocks disponíveis</string>
+    <string name="wakelock_blocker_reload">Recarregar</string>
+    <string name="wakelock_blocker_warning_title">Proceder com precaução</string>
+    <string name="wakelock_blocker_warning">Bloqueio de wakelocks tem o potencial de causar instabilidade, falhas ou perda de dados.</string>
+
+<!-- Alarm blocker -->
+    <string name="alarm_blocker">Bloquear alarme</string>
+    <string name="alarm_blocker_title">Ativar</string>
+    <string name="alarm_blocker_summary">Bloqueia alarmes enquanto o ecrã está desligado</string>
+    <string name="alarm_blocker_save">Guardar</string>
+    <string name="alarm_list_header">Alarmes disponíveis</string>
+    <string name="alarm_blocker_reload">Recarregar</string>
+    <string name="alarm_blocker_warning_title">Proceder com precaução</string>
+    <string name="alarm_blocker_warning">Bloqueio de alarmes tem o potencial de causar instabilidade, falhas ou perda de dados.</string>
+
+<!-- Sensor block per-package -->
+    <string name="sensor_block_title">Bloqueio de sensores por pacote</string>
+    <string name="sensor_block_summary">Bloqueia o acesso a certos sensores em algumas aplicações para poupar bateria.</string>
+
+<!-- QS Running Services Icon -->
+    <string name="qs_running_services_title">Ocultar ícone de serviços em execução</string>
+    <string name="qs_running_services_summary">Ícone Serviços em Execução desativado</string>
+
+<!-- ANBI -->
+    <string name="anbi_title">Toque acidental</string>
+    <string name="anbi_summary">Impedir a interação com os botões de navegação enquanto o ecrã está a ser tocado</string>
+</resources>
