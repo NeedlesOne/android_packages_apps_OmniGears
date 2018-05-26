@@ -118,6 +118,12 @@
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
                 android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
 
+            <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
+                android:key="captive_portal_mode"
+                android:title="@string/captive_portal_mode_title"
+                android:summary="@string/captive_portal_mode_summary"
+                android:defaultValue="true" />
+
         </PreferenceCategory>
 
     <PreferenceCategory
