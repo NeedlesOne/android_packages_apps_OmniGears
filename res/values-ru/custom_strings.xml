@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Добавить ярлык</string>
   <string name="lockscreen_shortcut_apps_title">Ярлыки</string>
   <string name="lockscreen_shortcut_add">Добавить\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Скрыть текст статуса внизу</string>
-  <string name="lockscreen_hide_indicator_display_summary">Скрыть информацию о зарядке и подсказки</string>
   <string name="lockscreen_camera_shortcut_enable_title">Показать значок камеры</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Видимость зависит от настройки системы</string>
   <string name="lockscreen_left_shortcut_enable_title">Показать ярлык телефона или голосового помощника</string>
@@ -265,6 +263,7 @@
   <string name="network_traffic_autohide_summary">Скрыть мониторинг трафика, когда нет никакой активности</string>
   <string name="network_traffic_autohide_threshold">Порог неактивности</string>
   <string name="network_traffic_enable_title">Включено</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Управление яркостью</string>
   <string name="status_bar_brightness_control_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
@@ -317,7 +316,6 @@
   <string name="global_actions_advanced_reboot_summary">Показывать варианты перезагрузки</string>
   <string name="global_actions_advanced_reboot_title">Включить расширенную перезагрузку</string>
   <string name="global_actions_advanced_reboot_summary_new">Показывать больше параметров в меню перезагрузки, если не заблокировано</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Кадрировать и поделиться снимком экрана</string>
   <string name="screenshot_crop_and_share_summary">Показывать окно редактирования после снятия снимка экрана, чтобы обрезать или поделиться им</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -494,7 +492,6 @@
   <string name="DESC_LIGHT_PRE_IDLE_TIMEOUT">Это количество времени, которое мы будем ждать с того момента, когда мы решаем, что мы хотели бы простаивать до тех пор, пока мы на самом деле не сделаем этого, пока ожидаем завершения работы и другой текущей деятельности</string>
   <string name="DESC_LIGHT_IDLE_TIMEOUT">Это начальное время, которое мы будем запускать в режиме ожидания в режиме обслуживания</string>
   <string name="DESC_LIGHT_IDLE_FACTOR">Масштабирующий коэффициент для применения к легкому режиму ожидания каждый раз, когда мы завершаем цикл</string>
-  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Это максимальное время, которое мы будем запускать в режиме ожидания в режиме обслуживания</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Это минимальное количество времени, которое мы хотим сделать доступным для режима обслуживания при легком простое</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Это максимальное количество времени, которое мы хотим сделать доступным для режима обслуживания при легком простое</string>
   <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Это минимальное количество времени, что мы останемся в режиме обслуживания после легкого сна</string>

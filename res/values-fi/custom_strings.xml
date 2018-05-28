@@ -152,6 +152,7 @@
   <string name="lockscreen_category_title">Lukitusnäyttö</string>
   <string name="notification_title">Ilmoituspaneeli</string>
   <string name="status_bar_custom_header_title">Ota käyttöön</string>
+  <string name="unit_percent">\u0025</string>
   <string name="header_provider_disabled">Pois käytöstä</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Verkkoliikenne</string>
@@ -167,6 +168,7 @@
   <string name="show_network_traffic_2000">2000 ms</string>
   <string name="network_traffic_autohide_title">Piilota automaattisesti</string>
   <string name="network_traffic_autohide_summary">Piilota verkonliikenteen seuranta, kun liikennettä ei ole</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Kirkkauden säätö</string>
   <string name="status_bar_brightness_control_summary">Säädä kirkkautta liu\'ttamalla pitkin tilapalkkia</string>
@@ -178,6 +180,8 @@
   <string name="recents_search_bar_title">Näytä hakupalkki</string>
   <string name="recents_fullscreen_title">Kokoruudun tila</string>
   <string name="weather_title">Sää</string>
+  <string name="weather_config_title">Sään tarjoaja</string>
+  <string name="weather_icon_pack_title">Sääkuvakepaketti</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Navigointipalkki</string>
   <!-- Enable Tablet Style navigation bar -->
@@ -202,7 +206,6 @@
   <string name="global_actions_advanced_reboot_summary">Näytä lisää vaihtoehtoja uudelleenkäynnistysvalikossa</string>
   <string name="global_actions_advanced_reboot_title">Ota edistynyt uudelleenkäynnistys käyttöön</string>
   <string name="global_actions_advanced_reboot_summary_new">Näytä lisää vaihtoehtoja uudelleenkäynnistysvalikossa, jos laite ei ole lukittuna</string>
-  <string name="font_sample_text">11.57</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="lockscreen_power_menu_disabled_title">Poista käynnistysvalikko käytöstä lukittuna</string>

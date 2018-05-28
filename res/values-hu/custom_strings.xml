@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Parancsikon hozzáadása</string>
   <string name="lockscreen_shortcut_apps_title">Parancsikonok</string>
   <string name="lockscreen_shortcut_add">Hozzáad\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Alsó állapotszöveg elrejtése</string>
-  <string name="lockscreen_hide_indicator_display_summary">Töltési információk és feloldási tippek elrejtése</string>
   <string name="lockscreen_camera_shortcut_enable_title">Kamera parancsikon megjelenítése</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Láthatóság a rendszerbeállításoktól függ</string>
   <string name="lockscreen_left_shortcut_enable_title">Tárcsázó, vagy hangsegéd parancsikon megjelenítése</string>
@@ -265,6 +263,9 @@
   <string name="network_traffic_autohide_summary">A forgalomfigyelő elrejtése inaktivitás esetén</string>
   <string name="network_traffic_autohide_threshold">Tétlenségi küszöb</string>
   <string name="network_traffic_enable_title">Engedélyezés</string>
+  <!-- captive portal - disable connectivity check -->
+  <string name="captive_portal_mode_title">Beléptető-oldal letiltása</string>
+  <string name="captive_portal_mode_summary">Kapcsolat-ellenőrzés letiltása a beléptető-oldal letiltásával</string>
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Fényerő beállítása</string>
   <string name="status_bar_brightness_control_summary">Fényerő beállítása az állapotsoron való csúsztatással</string>
@@ -280,10 +281,12 @@
   <string name="recents_fullscreen_title">Teljes képernyő</string>
   <string name="weather_title">Időjárás</string>
   <string name="weather_config_title">Időjárás szolgáltatás</string>
+  <string name="weather_config_summary">Rendszerszolgáltatás beállításai</string>
   <string name="header_weather_title">Időjárás a fejlécen</string>
   <string name="header_weather_summary">Értesítési panel fejlécén az időjárás megjelenítésének engedélyezése</string>
   <string name="weather_icon_pack_title">Állapot ikoncsomag</string>
   <string name="weather_icon_pack_note">Megjegyzés\u003a új ikoncsomagokat telepíthet a Play Áruházból a \"Chronus ikonok\"-ra való kereséssel</string>
+  <string name="weather_icon_pack_info_title">Az állapot ikoncsomag a gyorsbeállításokban és a képernyőzáron kerül felhasználásra</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Navigációs sáv</string>
   <!-- Enable Tablet Style navigation bar -->
@@ -318,7 +321,6 @@
   <string name="global_actions_advanced_reboot_summary">További lehetőségek megjelenítése az újraindítási menüben</string>
   <string name="global_actions_advanced_reboot_title">Speciális újraindítás engedélyezése</string>
   <string name="global_actions_advanced_reboot_summary_new">További lehetőségek megjelenítése az újraindítás menüben, ha nincs zárolva</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Képernyőmentés vágása és megosztása</string>
   <string name="screenshot_crop_and_share_summary">Képernyőmentés után szerkesztő ablak megjelenítése annak érdekében, hogy bizonyos műveleteket, mint a vágás, mentés és megosztás megtehessen</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -641,7 +643,7 @@
   <string name="quick_pulldown_always">Mindig</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Kiterjesztett képernyő</string>
-  <string name="expanded_desktop_summary">Állapotsor és navigációs gombok megjelenítésének alkalmazásonkénti konfigurációja</string>
+  <string name="expanded_desktop_summary">Az állapotsor és navigációs sáv megjelenítésének alkalmazásonkénti konfigurációja</string>
   <string name="expanded_hide_nothing">Ne rejtsen el semmit</string>
   <string name="expanded_hide_status">Állapotsor elrejtése</string>
   <string name="expanded_hide_navigation">Navigációs sáv elrejtése</string>
@@ -671,4 +673,20 @@
   <string name="hide_lockscreen_alarm_summary">Módosítsa az ébresztőszöveg láthatóságát az óra modul alatt</string>
   <string name="hide_lockscreen_status_bar_title">Állapotsor elrejtése</string>
   <string name="hide_lockscreen_status_bar_summary">Érintse meg az állapotsort a láthatóság és az elrejtés közötti váltásához</string>
+  <string name="hide_lockscreen_indicator_display_title">Alsó állapotszöveg elrejtése</string>
+  <string name="hide_lockscreen_indicator_display_summary">Töltési információk és feloldási tippek elrejtése</string>
+  <string name="hide_lockscreen_icon_title">Képernyőzárikon elrejtése</string>
+  <string name="hide_lockscreen_icon_summary">A képernyőzárikon láthatóságának módosítása</string>
+  <string name="lockscreen_weather_title">Időjárási viszonyok megjelenítése</string>
+  <string name="lockscreen_weather_summary">Megjeleníti az aktuális időjárási viszonyokat és a hőmérsékletet</string>
+  <string name="lockscreen_items_aod_info_title">Ez a láthatósági beállítás a környezeti kijelzőre is érvényessé válik</string>
+  <string name="system_proxi_check_enabled_title">Közelség-ellenőrzés</string>
+  <string name="system_proxi_check_enabled_summary">Ellenőrizze a közelségérzékelőt mielőtt a bekapcsoló- vagy a hangerőgomb által indított esemény megtörténne</string>
+  <string name="aspect_ratio_apps_enabled_title">Méretezés engedélyezése</string>
+  <string name="aspect_ratio_apps_enabled_summary">Lehetővé teszi, hogy az örökölt alkalmazások teljes képernyőt használjanak</string>
+  <string name="aspect_ratio_apps_list_title">Az alkalmazások engedélyt kapnak a méretezés használatára</string>
+  <string name="aspect_ratio_category_title">Örökölt alkalmazásméretezés</string>
+  <string name="aspect_ratio_apps_info">A változtatások után újra kell indítani az alkalmazásokat</string>
+  <string name="navigation_bar_menu_arrow_keys_title">Nyílbillentyűk megjelenítése gépelés közben</string>
+  <string name="navigation_bar_menu_arrow_keys_summary">Gépelés közben a bal és a jobb kurzorgomb megjelenítése</string>
 </resources>

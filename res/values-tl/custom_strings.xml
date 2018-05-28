@@ -213,8 +213,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Magdagdag ng shortcut</string>
   <string name="lockscreen_shortcut_apps_title">Ang mga shortcuts</string>
   <string name="lockscreen_shortcut_add">Magdagdag\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Etago ang bottom status text</string>
-  <string name="lockscreen_hide_indicator_display_summary">E-unlock ang hints and itago ang impormasyun sa pagcharge</string>
   <string name="lockscreen_camera_shortcut_enable_title">Ipakita ang shortcut ng camera</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Nakadepende sa set-ap ng systema ang bisibiliti</string>
   <string name="lockscreen_left_shortcut_enable_title">Ipakita ang dialer o ang voice assist shortcut</string>
@@ -251,6 +249,7 @@
   <string name="network_traffic_autohide_summary">Kapag walang aktibidad etago ang traffik monitor</string>
   <string name="network_traffic_autohide_threshold">Ang in-aktibong treshold</string>
   <string name="network_traffic_enable_title">Gawing aktibo</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Ang kontrol para sa liwanag</string>
   <string name="status_bar_brightness_control_summary">I-adjust ang liwanag sa pamamagitan ng pag-slide sa ibayo ng estatus bar</string>
@@ -334,7 +333,6 @@
   <string name="DESC_LIGHT_PRE_IDLE_TIMEOUT">Ang oras kung saaan kami ay maghihintay sa mga punto na kami ay makapagdesisyon, habang naghihintay ng mga tatrabahuin at iba pang mga aktibidad na tatapusin</string>
   <string name="DESC_LIGHT_IDLE_TIMEOUT">Ito ang paunang oras na kami ay mag-organisa ng maintenanace mode</string>
   <string name="DESC_LIGHT_IDLE_FACTOR">May scaling factor nag inaaplay sa light idle mode kada oras na makumpleto ang cycle</string>
-  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Ito ang pinakamataas na oras sa aming pagsasaad ng maintenance mode</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Ito ang pinakamaikling oras na kami ay magsasagawa ng maintenance mode habang naka-idling</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Ito ang pinakamataas na oras na kami ay magsasagawa ng maintenance mode habang naka-idling</string>
   <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Ito ang pinakamaikling oras na kami ay patuloy sa pagsasagawa ng maintenance mode pagkatapos ng light doze</string>

@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Přidat zástupce</string>
   <string name="lockscreen_shortcut_apps_title">Zástupci</string>
   <string name="lockscreen_shortcut_add">Přidat\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Skrýt dolní stavový text</string>
-  <string name="lockscreen_hide_indicator_display_summary">Skrýt informace o nabíjení a tipy odemknutí</string>
   <string name="lockscreen_camera_shortcut_enable_title">Zobrazit zástupce fotoaparátu</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Viditelnost závisí na nastavení systému</string>
   <string name="lockscreen_left_shortcut_enable_title">Zobrazit zástupce vytáčení nebo hlasového asistenta</string>
@@ -265,6 +263,7 @@
   <string name="network_traffic_autohide_summary">Skrytí nástroje sledování provozu, pokud neprobíhá žádná aktivita</string>
   <string name="network_traffic_autohide_threshold">Práh nečinnosti</string>
   <string name="network_traffic_enable_title">Povolit</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Ovládání jasu</string>
   <string name="status_bar_brightness_control_summary">Nastavit jas posouváním po stavovém řádku</string>
@@ -280,10 +279,12 @@
   <string name="recents_fullscreen_title">Celá obrazovka</string>
   <string name="weather_title">Počasí</string>
   <string name="weather_config_title">Služba počasí</string>
+  <string name="weather_config_summary">Nastavení služby systému</string>
   <string name="header_weather_title">Zobrazení počasí v záhlaví</string>
   <string name="header_weather_summary">Povolí zobrazení počasí v záhlaví na panelu upozornění</string>
   <string name="weather_icon_pack_title">Balík ikon počasí</string>
   <string name="weather_icon_pack_note">Poznámka\u003a nové balíčky ikon můžete instalovat z Obchodu Play po hledání \"Chronus icons\"</string>
+  <string name="weather_icon_pack_info_title">Balíček ikon počasí je použit v rychlých nastavení a zamykací obrazovce</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Navigační lišta</string>
   <!-- Enable Tablet Style navigation bar -->
@@ -318,7 +319,6 @@
   <string name="global_actions_advanced_reboot_summary">Zobrazit další možnosti v nabídce restartu</string>
   <string name="global_actions_advanced_reboot_title">Povolit rozšířené restartování</string>
   <string name="global_actions_advanced_reboot_summary_new">Zobrazit další možnosti v nabídce restartu není-li zamknuto</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Oříznout snímek displeje &amp; sdílet</string>
   <string name="screenshot_crop_and_share_summary">Zobrazit okno editoru po sejmutí displeje, s cílem provést některé operace jako je oříznutí, ukládání nebo sdílení</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -486,7 +486,7 @@
   <string name="DESC_IDLE_AFTER_INACTIVE_TIMEOUT">Toto je čas po uplynutí neaktivního časového limitu, kdy budeme čekat na hledání výrazného pohybu, dokud nebudeme považovat zařízení za skutečně nečinné</string>
   <string name="DESC_IDLE_PENDING_TIMEOUT">Toto je počáteční čas po nečinnosti, což nám umožňuje vrátit se do stavu IDLE_PENDING, který umožní, aby systém pracoval normálně, dokud se nevrátíme do pohotovostního režimu</string>
   <string name="DESC_MAX_IDLE_PENDING_TIMEOUT">Maximální čas nevyužitého volného času (čas spuštění), který lze použít</string>
-  <string name="DESC_IDLE_PENDING_FACTOR">Faktor změny měřítka, který se vztahuje na aktuální časový limit nečinnosti, když cyklus přejde do daného stavu</string>
+  <string name="DESC_IDLE_PENDING_FACTOR">Faktor změny měřítka, který se vztahuje na aktuální časový limit nečinnosti pokaždé, když cyklus přejde do daného stavu</string>
   <string name="DESC_IDLE_TIMEOUT">Počáteční čas, dokud se nedostaneme do pohotovostního režimu předtím, než se znovu probudíme, abychom se vrátili do čekající nečinnosti a umožnily běžnou práci</string>
   <string name="DESC_MAX_IDLE_TIMEOUT">Maximální trvání nečinnosti, kterou budeme moci používat</string>
   <string name="DESC_IDLE_FACTOR">Faktor změny měřítka, který se vztahuje na aktuální časový limit nečinnosti, když cyklus přejde do daného stavu</string>
@@ -641,7 +641,7 @@
   <string name="quick_pulldown_always">Vždy</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Rozšířená plocha</string>
-  <string name="expanded_desktop_summary">Nastavení stavové lišty a zobrazení navigačních tlačítek podle aplikace</string>
+  <string name="expanded_desktop_summary">Nastavení stavové lišty a navigačního panelu podle aplikace</string>
   <string name="expanded_hide_nothing">Nic neskrývat</string>
   <string name="expanded_hide_status">Skrýt stavovou lištu</string>
   <string name="expanded_hide_navigation">Skrýt navigační panel</string>
@@ -671,4 +671,18 @@
   <string name="hide_lockscreen_alarm_summary">Změnit viditelnost textu budíku pod widgetem hodin</string>
   <string name="hide_lockscreen_status_bar_title">Skrýt stavovou lištu</string>
   <string name="hide_lockscreen_status_bar_summary">Dotykem na stavovou lištu přepnete viditelnost</string>
+  <string name="hide_lockscreen_indicator_display_title">Skrýt dolní stavový text</string>
+  <string name="hide_lockscreen_indicator_display_summary">Skrýt informace o nabíjení a tipy odemknutí</string>
+  <string name="hide_lockscreen_icon_title">Skrýt ikonu zámku obrazovky</string>
+  <string name="hide_lockscreen_icon_summary">Změnit viditelnost zámku obrazovky</string>
+  <string name="lockscreen_weather_title">Zobrazit povětrnostní podmínky</string>
+  <string name="lockscreen_weather_summary">Zobrazit aktuální počasí a teplotu</string>
+  <string name="lockscreen_items_aod_info_title">Tato konfigurace viditelnosti platí také pro ambientní displej</string>
+  <string name="system_proxi_check_enabled_title">Kontrola senzoru přiblížení</string>
+  <string name="system_proxi_check_enabled_summary">Zkontroluje snímač přiblížení předtím, než dojde k události spuštěné tlačítkem napájení a hlasitosti</string>
+  <string name="aspect_ratio_apps_enabled_title">Povolit změnu velikosti</string>
+  <string name="aspect_ratio_apps_enabled_summary">Povolit starším aplikacím používat celou obrazovku</string>
+  <string name="aspect_ratio_apps_list_title">Aplikace, které můžou používat změnu velikosti</string>
+  <string name="aspect_ratio_category_title">Změna velikosti starších aplikací</string>
+  <string name="aspect_ratio_apps_info">Po provedených změnách je nutné aplikaci restartovat</string>
 </resources>

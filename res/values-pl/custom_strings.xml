@@ -199,7 +199,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Dodaj skrót</string>
   <string name="lockscreen_shortcut_apps_title">Skróty</string>
   <string name="lockscreen_shortcut_add">Dodaj\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Ukryj tekst stanu</string>
   <string name="lockscreen_camera_shortcut_enable_title">Pokaż skrót aparatu</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Dostępność zależy od konfiguracji systemu</string>
   <string name="lockscreen_left_shortcut_enable_title">Pokaż skrót dialera albo asystenta głosowego</string>
@@ -230,6 +229,7 @@
   <string name="network_traffic_autohide_title">Automatyczne ukrywanie</string>
   <string name="network_traffic_autohide_summary">Ukryj monitor ruchu sieciowego, gdy nie ma aktywności</string>
   <string name="network_traffic_autohide_threshold">Próg bezczynności</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Regulacja jasności</string>
   <string name="status_bar_brightness_control_summary">Dostosuj jasność ekranu przeciągając palcem po pasku stanu</string>
@@ -280,7 +280,6 @@
   <string name="global_actions_header">Niektóre akcje są widoczne w zależności od konfiguracji lub tylko wtedy, gdy urządzenie jest odblokowane</string>
   <string name="global_actions_advanced_reboot_summary">Pokaż więcej opcji w menu restartu</string>
   <string name="global_actions_advanced_reboot_title">Włącz zaawansowany restart</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Przytnij zrzut ekranu &amp; udostępnij</string>
   <string name="screenshot_crop_and_share_summary">Pokaż okno edytora po wykonaniu zrzutu ekranu, aby wykonać pewnie operacji, takie jak przycinanie, zapisywanie lub udostępnianie</string>
   <!--<string name="screenshot_crop_behavior_title"></string>

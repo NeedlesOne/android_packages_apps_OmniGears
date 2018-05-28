@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">創建桌面快捷方式</string>
   <string name="lockscreen_shortcut_apps_title">捷徑</string>
   <string name="lockscreen_shortcut_add">新增\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">隱藏底部狀態的文字</string>
-  <string name="lockscreen_hide_indicator_display_summary">隱藏充電訊息和解除鎖定提示</string>
   <string name="lockscreen_camera_shortcut_enable_title">顯示相機捷徑</string>
   <string name="lockscreen_camera_shortcut_enable_summary">可見度取決於系統設定</string>
   <string name="lockscreen_left_shortcut_enable_title">顯示撥號或語音助手的捷徑</string>
@@ -265,6 +263,7 @@
   <string name="network_traffic_autohide_summary">沒有活動時自動隱藏網路流量</string>
   <string name="network_traffic_autohide_threshold">無活動門檻</string>
   <string name="network_traffic_enable_title">開啟</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">亮度控制</string>
   <string name="status_bar_brightness_control_summary">在狀態列上左右滑動以調整亮度</string>
@@ -318,7 +317,6 @@
   <string name="global_actions_advanced_reboot_summary">在重新開機功能表中顯示更多選項</string>
   <string name="global_actions_advanced_reboot_title">啟用高級重新開機</string>
   <string name="global_actions_advanced_reboot_summary_new">如果沒有鎖定，在重新開機功能表中顯示更多選項</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">截圖&amp; 分享</string>
   <string name="screenshot_crop_and_share_summary">截圖後顯示一個編輯器窗口，以便進行裁剪，保存或分享等操作</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -369,12 +367,31 @@
   <string name="notification_light_use_multiple_leds">多種提示燈</string>
   <string name="keywords_lights_brightness_level">低亮度</string>
   <string name="notification_light_automagic">自動調色</string>
+  <string name="notification_light_automagic_summary">如果沒有自訂值，則自動設定為適當的值</string>
   <!-- Lights settings, LED notification -->
+  <string name="led_notification_title">通知燈設定</string>
+  <string name="led_notification_text">經由設定啟用通知燈</string>
+  <string name="led_category_summary_on">啟用通知燈</string>
+  <string name="led_category_summary_off">關閉通知燈</string>
+  <string name="notification_light_no_apps_summary">若要添加應用單獨控制，請啟用%1$s然後輕觸菜單列上的\u002b</string>
   <!-- Hostname setting -->
   <string name="device_hostname">裝置主機名稱</string>
   <!-- OMS -->
   <string name="theming_title">主題</string>
+  <string name="status_bar_ime_notification_title">顯示輸入法通知</string>
+  <string name="status_bar_ime_notification_summary">如果導覽條不可用</string>
+  <string name="navigation_bar_ime_button_title">顯示輸入法通知按鈕</string>
+  <string name="navigation_bar_ime_button_summary">導覽欄中切換輸入法</string>
   <!-- Summaries -->
+  <string name="bars_brightness_enabled_summary">亮度控制啟動</string>
+  <string name="bars_brightness_disabled_summary">亮度控制關閉</string>
+  <string name="bars_dt2s_enabled_summary">雙擊喚醒啟動</string>
+  <string name="bars_dt2s_disabled_summary">雙擊喚醒關閉</string>
+  <string name="volume_dialog_headers_title">音量彈窗標題</string>
+  <string name="volume_dialog_headers_summary">在音量彈窗顯示標題</string>
+  <string name="lockscreen_hide_media_title">禁用多媒體桌布</string>
+  <string name="lockscreen_hide_media_summary">不顯示多媒體後設資料在鎖定桌布中</string>
+  <string name="omni_notification_light_settings_summary">自訂應用程式的通知 led 燈</string>
   <string name="omni_battery_light_settings_summary">自訂電池的通知 led 燈</string>
   <string name="night_mode_title">亮色/暗色主題</string>
   <string name="night_mode_summary">%s</string>
@@ -396,21 +413,66 @@
   <string name="screen_on_time">螢幕已開</string>
   <string name="awake_time">喚醒</string>
   <string name="deep_sleep_time">深度睡眠</string>
+  <string name="no_kernel_wakelock_file_found">未找到內核喚醒鎖統計檔：/proc/wakelocks　或　/sys/kernel/debug/wakeup_sources</string>
+  <string name="more_line_text">更多\u2026</string>
+  <string name="state_core_mode">核心</string>
+  <string name="kernel_wakelock_time">內核喚醒鎖</string>
   <string name="user_wakelock_time">部分喚醒鎖</string>
+  <string name="battery_change">更換電池</string>
   <string name="spinner_state_time_title">時間</string>
   <string name="total_time">總共</string>
+  <string name="wakelock_time">喚醒鎖</string>
+  <string name="copy_as_text">以文字複製</string>
+  <string name="google_it">以 Google 搜尋</string>
+  <string name="app_details">應用程式詳細資料</string>
+  <string name="no_stat_because_reset_state">按重新設定以開始在狀態資料中收集時間</string>
+  <string name="no_stat_because_reset_wakelock">按重新設定以開始收集喚醒鎖的資料</string>
+  <string name="no_stat_because_plugged">請拔下充電以獲取喚醒鎖資料</string>
+  <string name="no_states_file_found">找不到任何狀態檔案。您確定您的手機是否相容？\n\n如果您正在使用自定ＲＯＭ或內核，請連繫其維護者。</string>
+  <string name="deep_sleep">"深度睡眠"</string>
+  <string name="mt_refresh">重新整理</string>
+  <string name="mt_share">分享</string>
   <string name="mt_reset">重設</string>
+  <string name="time_in_state_title">狀態時間</string>
+  <string name="time_in_state_summary">顯示 CPU 頻率統計資訊</string>
+  <string name="wakelocks_title">喚醒鎖</string>
+  <string name="wakelocks_summary">顯示喚醒鎖通計資訊</string>
   <string name="system_category">系統</string>
+  <string name="custom_wall_browse_title">Omni 桌布</string>
+  <string name="custom_wall_browse_summary">瀏覽和設定 Omni 桌布</string>
   <string name="show_cpu_title">顯示 CPU 資訊</string>
+  <string name="show_cpu_summary">在螢幕上方顯示目前的 CPU 使用量</string>
+  <string name="headset_plugged_notification_title">耳機通知</string>
+  <string name="headset_plugged_notification_summary">連接有線耳機時顯示通知</string>
+  <string name="wake_when_plugged_or_unplugged_title">插入/拔出時喚醒</string>
+  <string name="wake_when_plugged_or_unplugged_summary">當設備插入/拔出充電器時喚醒</string>
   <!-- Display : Rotation -->
   <string name="category_display">顯示 </string>
+  <string name="display_rotation_disabled">已關閉</string>
+  <string name="display_rotation_unit">度</string>
+  <string name="display_rotation_category_title">旋轉模式</string>
   <string name="display_rotation_0_title">0 度</string>
   <string name="display_rotation_90_title">90 度</string>
   <string name="display_rotation_180_title">180 度</string>
   <string name="display_rotation_270_title">270 度</string>
   <string name="display_lockscreen_rotation_title">鎖定螢幕</string>
+  <string name="volume_button_force_media_title">使用多媒體音量</string>
+  <string name="volume_button_force_media_summary">預設情況下會改變多媒體音量</string>
+  <string name="status_bar_logo_title">狀態欄 logo</string>
+  <string name="status_bar_logo_summary">一個小調調</string>
   <!-- Doze settings editor -->
+  <string name="doze_settings_title">打盹設定</string>
+  <string name="doze_settings_summary">編輯打盹設定檔</string>
   <string name="action_save">儲存</string>
+  <string name="action_restoredefault">還原預設值</string>
+  <string name="action_profile">設定檔</string>
+  <string name="action_save_as_profile">另存為設定檔</string>
+  <string name="delete_profile">刪除設定檔</string>
+  <string name="profile_name">名稱</string>
+  <string name="string_seconds">秒</string>
+  <string name="string_default">預設</string>
+  <string name="action_filter">篩選</string>
+  <string name="doze_settings_applied">應用的設置</string>
   <string name="battery_percent_title">顯示百分比</string>
   <!-- fingerprint authentication vibration -->
   <!-- Quick Pulldown-->

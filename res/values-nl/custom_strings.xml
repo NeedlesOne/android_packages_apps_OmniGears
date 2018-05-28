@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Snelkoppeling toevoegen</string>
   <string name="lockscreen_shortcut_apps_title">Snelkoppelingen</string>
   <string name="lockscreen_shortcut_add">Voeg toe\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Verberg status tekst onderaan</string>
-  <string name="lockscreen_hide_indicator_display_summary">Informatie over opladen en tips over ontgrendelen verbergen</string>
   <string name="lockscreen_camera_shortcut_enable_title">Toon camera snelkoppeling</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Zichtbaarheid hangt af van systeeminstellingen</string>
   <string name="lockscreen_left_shortcut_enable_title">Weergeef telefoon of voice assist snelkoppeling</string>
@@ -265,6 +263,7 @@
   <string name="network_traffic_autohide_summary">Verberg datamonitor als er geen activiteit is</string>
   <string name="network_traffic_autohide_threshold">Inactiviteitslimiet</string>
   <string name="network_traffic_enable_title">Inschakelen</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Helderheidsregeling</string>
   <string name="status_bar_brightness_control_summary">Helderheid aanpassen door over de statusbalk te schuiven</string>
@@ -279,6 +278,7 @@
   <string name="recents_search_bar_title">Toon zoekbalk</string>
   <string name="recents_fullscreen_title">Volledig scherm</string>
   <string name="weather_title">Weer</string>
+  <string name="weather_config_title">Weerservice</string>
   <string name="header_weather_title">Weer weergeven in header</string>
   <string name="header_weather_summary">Schakel de weergave van het weer in het notificatiepaneel in
 Schakel het tonen van het weer in het notificatiepaneel in</string>
@@ -318,7 +318,6 @@ Schakel het tonen van het weer in het notificatiepaneel in</string>
   <string name="global_actions_advanced_reboot_summary">Toon meer opties in het opstart menu</string>
   <string name="global_actions_advanced_reboot_title">Activeer geavanceerd herstarten</string>
   <string name="global_actions_advanced_reboot_summary_new">Toon meer opties in het opstart menu indien niet vergrendeld</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Screenshot crop &amp; delen</string>
   <string name="screenshot_crop_and_share_summary">Toon een bewerk scherm na het nemen van een screenshot om deze te kunnen bewerken, opslaan of te delen</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -638,7 +637,6 @@ Schakel het tonen van het weer in het notificatiepaneel in</string>
   <string name="quick_pulldown_always">Altijd</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Uitgebreid bureaublad</string>
-  <string name="expanded_desktop_summary">Per-app configuratie van de statusbalk en weergave van navigatietoets</string>
   <string name="expanded_hide_nothing">Niets verbergen</string>
   <string name="expanded_hide_status">Statusbalk verbergen</string>
   <string name="expanded_hide_navigation">Navigatiebalk verbergen</string>

@@ -181,6 +181,7 @@
   <string name="show_network_traffic_1500">1500 ms</string>
   <string name="show_network_traffic_2000">2000 ms</string>
   <string name="network_traffic_autohide_title">Dölj automatiskt</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Ljusstyrkekontroll</string>
   <!-- Status Bar Activity Indicators -->
@@ -220,7 +221,6 @@
   <string name="global_actions_dnd_title">Stör ej</string>
   <string name="global_actions_advanced_reboot_summary">Visa fler alternativ i omstartsmeny</string>
   <string name="global_actions_advanced_reboot_title">Aktivera avancerad omstart</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_summary">Visa ett redigeringsfönster efter tagen skärmdump för operationer som beskär, spara eller dela den</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->

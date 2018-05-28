@@ -182,6 +182,7 @@
   <string name="show_network_traffic_2000">2000 ميلي ثانية</string>
   <string name="network_traffic_autohide_title">إخفاء تلقائي</string>
   <string name="network_traffic_autohide_threshold">عتبة عدم النشاط</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">خيارات السطوع</string>
   <!-- Status Bar Activity Indicators -->
@@ -219,7 +220,6 @@
   <string name="global_actions_dnd_title">عدم الإزعاج</string>
   <string name="global_actions_summary">الإجراءات المعروضة في قائمة التشغيل</string>
   <string name="global_actions_header">بعض الإجراءات يتم عرضها حسب اعداداتها أو إذا كان الجهاز غير مقفل</string>
-  <string name="font_sample_text">11:57</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <!-- Notification light dialogs -->

@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Añadir atajo</string>
   <string name="lockscreen_shortcut_apps_title">Accesos directos</string>
   <string name="lockscreen_shortcut_add">Añadir\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Ocultar texto inferior de la barra de estado</string>
-  <string name="lockscreen_hide_indicator_display_summary">Ocultar información de carga y pistas de desbloqueo</string>
   <string name="lockscreen_camera_shortcut_enable_title">Mostrar atajo a la cámara</string>
   <string name="lockscreen_camera_shortcut_enable_summary">La visibilidad depende de la configuración del sistema</string>
   <string name="lockscreen_left_shortcut_enable_title">Mostrar atajo del marcador o del asistente de voz</string>
@@ -265,6 +263,7 @@
   <string name="network_traffic_autohide_summary">Ocultar el monitor de tráfico de red cuando no hay actividad</string>
   <string name="network_traffic_autohide_threshold">Umbral de inactividad</string>
   <string name="network_traffic_enable_title">Habilitar</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Control de brillo</string>
   <string name="status_bar_brightness_control_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
@@ -279,6 +278,7 @@
   <string name="recents_search_bar_title">Mostrar la barra de búsqueda</string>
   <string name="recents_fullscreen_title">Pantalla completa</string>
   <string name="weather_title">El Tiempo</string>
+  <string name="weather_config_title">Proveedor Meteorológico</string>
   <string name="header_weather_title">Ver tiempo en la cortina de notificaciones</string>
   <string name="header_weather_summary">Habilitar la visualización del tiempo en la cortina de notificaciones</string>
   <string name="weather_icon_pack_title">Paquete de iconos de clima</string>
@@ -317,7 +317,6 @@
   <string name="global_actions_advanced_reboot_summary">Mostrar más opciones en el menú de reinicio</string>
   <string name="global_actions_advanced_reboot_title">Habilitar reinicio avanzado</string>
   <string name="global_actions_advanced_reboot_summary_new">Mostrar más opciones en el menú de reinicio</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Recortar y compartir capturas de pantalla</string>
   <string name="screenshot_crop_and_share_summary">Mostrar un editor después de tomar una captura de pantalla con el fin de hacer algunas operaciones como recortar, guardar o compartir</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -477,8 +476,13 @@
   <string name="DESC_INACTIVE_TIMEOUT">Este es el tiempo, tras desactivarse, en el cual comenzamos a mirar el sensor de movimiento para determinar si el dispositivo se está quedando solo. No hacemos esto inmediatamente después de estar inactivos porque no queremos estar continuamente ejecutando el sensor de movimiento cada vez que la pantalla está apagada</string>
   <string name="DESC_SENSING_TIMEOUT">Si no recibimos una devolución de llamada de AnyMotion en esta cantidad de tiempo + locating_to, cambiará de STATE_SENSING a STATE_INACTIVE, y se ignorará cualquier callbacks de AnyMotion no esté en STATE_SENSING</string>
   <string name="DESC_LOCATING_TIMEOUT">Este es el tiempo que esperaremos para tratar de obtener una buena ubicación antes de entrar en modo inactivo</string>
-  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Este es el tiempo máximo que ejecutaremos el mantenimiento en modo inactivo</string>
+  <string name="DESC_MIN_TIME_TO_ALARM">Este es el tiempo mínimo que permitiremos hasta la próxima alarma que entrará en modo inactivo</string>
+  <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Esta es la cantidad mínima de tiempo que permaneceremos en modo de mantenimiento despues de un ligero sueño</string>
+  <string name="DESC_MIN_DEEP_MAINTENANCE_TIME">Esta es la cantidad mínima de tiempo que permaneceremos en modo de mantenimiento despues de un sueño profundo</string>
+  <string name="DESC_KEY_NOTIFICATION_WHITELIST_DURATION">Cantidad de tiempo que nos gustaría incluir en la lista blanca una aplicación que está manejando una notificación</string>
   <string name="SHORT_INACTIVE_TIMEOUT">Tiempo de espera inactivo</string>
+  <string name="SHORT_SENSING_TIMEOUT">Tiempo de espera de detección</string>
+  <string name="SHORT_LOCATING_TIMEOUT">Tiempo de espera de localización</string>
   <string name="SHORT_MIN_TIME_TO_ALARM">Tiempo mínimo para alarmar</string>
   <string name="logcat_app_title">MatLog</string>
   <string name="show_dashboard_columns_title">Diseño de dos columnas</string>
@@ -586,7 +590,11 @@
   <string name="status_bar_toggle_brightness">Control de brillo</string>
   <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
   <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Configurar los atajos de la parte inferior</string>
   <string name="long_press_power_torch_title">Pulsación larga para linterna</string>
   <string name="long_press_power_torch_summary">Activar linterna cuando la pantalla está apagada</string>
   <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Objetos en la pantalla de bloqueo</string>
+  <string name="hide_lockscreen_status_bar_title">Ocultar la barra de estado</string>
+  <string name="hide_lockscreen_status_bar_summary">Toca la barra de estado para cambiar la visibilidad</string>
 </resources>

@@ -189,6 +189,7 @@
   <string name="show_network_traffic_1000">1000 ms</string>
   <string name="show_network_traffic_1500">1500 ms</string>
   <string name="show_network_traffic_2000">2000 ms</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Lysstyrkekontroll</string>
   <!-- Status Bar Activity Indicators -->

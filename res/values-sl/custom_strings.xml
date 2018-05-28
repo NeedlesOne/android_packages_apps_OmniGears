@@ -198,8 +198,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Dodaj bližnjico</string>
   <string name="lockscreen_shortcut_apps_title">Bližnjice</string>
   <string name="lockscreen_shortcut_add">Dodaj \u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Skrij obvestila na dnu</string>
-  <string name="lockscreen_hide_indicator_display_summary">Skrij obvestila o poljnjenju in odklepanju</string>
   <string name="lockscreen_camera_shortcut_enable_title">Prikaži bližnjico fotoaparata</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Vidnost je odvisna od sistemskih nastavitev</string>
   <string name="lockscreen_left_shortcut_enable_title">Prikaži bližnjico klicalnika ali glasovne pomoči</string>
@@ -230,6 +228,7 @@
   <string name="network_traffic_autohide_title">Samodejno skrij</string>
   <string name="network_traffic_autohide_summary">Skrij nadzornik prometa, ko ni dejavnosti</string>
   <string name="network_traffic_autohide_threshold">Prag nedejavnosti</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Nadzor svetlosti</string>
   <string name="status_bar_brightness_control_summary">Prilagodi svetlost s potegom preko vrstice stanja</string>
@@ -281,7 +280,6 @@
   <string name="global_actions_header">Nekatera dejanja so vidna glede na nastavitev ali samo, če je naprava odklenjena</string>
   <string name="global_actions_advanced_reboot_summary">Prikaži več možnosti v meniju zagon</string>
   <string name="global_actions_advanced_reboot_title">Omogoči napreden zagonski meni</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Obrezovanje in deljenje zaslonske slike</string>
   <string name="screenshot_crop_and_share_summary">Prikaži okno urejevalnika po zajemu zaslonske slike za nekatera opravila, kot so obrezovanje, shranjevanje ali deljenje</string>
   <!--<string name="screenshot_crop_behavior_title"></string>

@@ -213,6 +213,7 @@
   <string name="network_traffic_autohide_title">Oculta automàticament</string>
   <string name="network_traffic_autohide_summary">Oculta el monitor de trànsit si no hi ha activitat</string>
   <string name="network_traffic_autohide_threshold">Llindar d\'inactivitat</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Control de brillantor</string>
   <string name="status_bar_brightness_control_summary">Ajusta la brillantor lliscant el dit per la barra d\'estat</string>
@@ -261,7 +262,6 @@
   <string name="global_actions_dnd_title">No molesteu</string>
   <string name="global_actions_summary">Accions que es mostren al menú d\'encesa</string>
   <string name="global_actions_header">Algunes accions són visibles segons la configuració o si el dispositiu està desbloquejat</string>
-  <string name="font_sample_text">11:57</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <!-- Notification light dialogs -->

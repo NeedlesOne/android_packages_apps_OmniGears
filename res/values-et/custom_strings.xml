@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Lisa otsetee</string>
   <string name="lockscreen_shortcut_apps_title">Otseteed</string>
   <string name="lockscreen_shortcut_add">Lisa\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Peida alumine olekutekst</string>
-  <string name="lockscreen_hide_indicator_display_summary">Peida laadimise info ja luku avamise vihjed</string>
   <string name="lockscreen_camera_shortcut_enable_title">Kuva kaamera otsetee</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Nähtavus sõltub süsteemi seadistusest</string>
   <string name="lockscreen_left_shortcut_enable_title">Kuva telefoni või hääle abirakenduse otseteed</string>
@@ -265,6 +263,7 @@
   <string name="network_traffic_autohide_summary">Peida liiklusmonitor, kui pole tegevust</string>
   <string name="network_traffic_autohide_threshold">Ebaaktiivsuse piirmäär</string>
   <string name="network_traffic_enable_title">Luba</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Heleduse reguleerimine</string>
   <string name="status_bar_brightness_control_summary">Reguleeri heledust, libistades mööda ülariba</string>
@@ -318,7 +317,6 @@
   <string name="global_actions_advanced_reboot_summary">Kuva rohkem valikuid taaskäivitusmenüüs</string>
   <string name="global_actions_advanced_reboot_title">Luba täpsem taaskäivitus</string>
   <string name="global_actions_advanced_reboot_summary_new">Kuva lukustamata olekus taaskäivitusmenüüs rohkem valikuid</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Kuvatõmmise lõikamine ja jagamine</string>
   <string name="screenshot_crop_and_share_summary">Kuva redaktoriakent peale kuvatõmmise tegemist, et teha teatud toiminguid nagu kärpimine, salvestamine või jagamine</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -491,7 +489,6 @@
   <string name="DESC_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Aeg pärast ebaaktiivsust, mil me lähme esimesse kergesse ebaaktiivsusrežiimi</string>
   <string name="DESC_LIGHT_IDLE_TIMEOUT">Esialgne aeg, mil töötame eemaloleku haldusrežiimis</string>
   <string name="DESC_LIGHT_IDLE_FACTOR">Skaleerimistegur, mida rakendada kergele eemalolekurežiimile iga kord, kui lõpetame tsükli</string>
-  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Maksimaalne aeg, mil töötame eemaloleku haldusrežiimis</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Minimaalne aeg, mida tahame muuta haldusrežiimile kättesaadavaks, kui oleme kerges eemalolekus</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Maksimaalne aeg, mida tahame muuta haldusrežiimile kättesaadavaks, kui oleme kerges eemalolekus</string>
   <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Minimaalne aeg, mil jääme haldusrežiimi peale kerget uinakut</string>
@@ -634,7 +631,6 @@
   <string name="quick_pulldown_always">Alati</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Laiendatud töölaud</string>
-  <string name="expanded_desktop_summary">Rakendusepõhine seadistus olekuriba ja navigatsiooniriba vaatele</string>
   <string name="expanded_hide_nothing">Ära peida midagi</string>
   <string name="expanded_hide_status">Peida olekuriba</string>
   <string name="expanded_hide_navigation">Peida navigatsiooniriba</string>

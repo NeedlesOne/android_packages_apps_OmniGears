@@ -215,8 +215,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Verknüpfung erstellen</string>
   <string name="lockscreen_shortcut_apps_title">Verknüpfungen</string>
   <string name="lockscreen_shortcut_add">Hinzufügen\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Unteren Statustext ausblenden</string>
-  <string name="lockscreen_hide_indicator_display_summary">Lade-Informationen und Hinweise zum Entsperren ausblenden</string>
   <string name="lockscreen_camera_shortcut_enable_title">Kamera Verknüpfung anzeigen</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Sichtbarkeit hängt von Systemeinstellungen ab</string>
   <string name="lockscreen_left_shortcut_enable_title">Wählhilfe- oder Sprachassistent-Verknüpfung anzeigen</string>
@@ -254,6 +252,7 @@
   <string name="network_traffic_autohide_summary">Verstecke Netzwerkverkehr-Monitor bei fehlender Aktivität</string>
   <string name="network_traffic_autohide_threshold">Inaktivitätsschwelle</string>
   <string name="network_traffic_enable_title">Aktiviert</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Helligkeitskontrolle</string>
   <string name="status_bar_brightness_control_summary">Helligkeit durch Wischen über die Statusleiste einstellen</string>
@@ -306,7 +305,6 @@
   <string name="global_actions_advanced_reboot_summary">Zeige weitere Optionen im Neustart-Menü</string>
   <string name="global_actions_advanced_reboot_title">Erweiterten Neustart aktivieren</string>
   <string name="global_actions_advanced_reboot_summary_new">Zeige weitere Optionen im Neustart-Menü, wenn nicht gesperrt</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Bildschirmfoto zuschneiden &amp; teilen</string>
   <string name="screenshot_crop_and_share_summary">Nach der Aufnahme eines Bildschirmfotos einen Editor zur weiteren Bearbeitung anzeigen</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -481,7 +479,6 @@
   <string name="DESC_LIGHT_PRE_IDLE_TIMEOUT">Dies ist eine Zeitspanne, in der wir von dem Punkt an warten, an dem wir entscheiden, dass wir in den Leerlauf möchten, bis wir tatsächlich darauf warten, dass Jobs und andere derzeitige Aktivitäten beendet werden</string>
   <string name="DESC_LIGHT_IDLE_TIMEOUT">Dies ist die Anfangszeit, die wir im Leerlauf-Wartungsmodus laufen werden</string>
   <string name="DESC_LIGHT_IDLE_FACTOR">Skalierungsfaktor, der auf die Leerlauf-Moduszeit bei jedem Zyklus angewendet wird</string>
-  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Dies ist die maximale Zeit, die wir im Leerlauf-Wartungsmodus laufen werden</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Dies ist die minimale Zeit, die wir für den Wartungsmodus zur Verfügung stellen möchten, wenn das Gerät im leichten Schlummern-Modus ist</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Dies ist die maximale Zeit, die wir für den Wartungsmodus zur Verfügung stellen möchten, wenn das Gerät im leichten Schlummern-Modus ist</string>
   <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Dies ist die minimale Zeit, die wir im Wartungsmodus bleiben, nachdem das Gerät im leichten Doze-Modus war</string>

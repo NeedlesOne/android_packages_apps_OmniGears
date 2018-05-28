@@ -221,6 +221,7 @@
   <string name="network_traffic_autohide_title">자동 숨기기</string>
   <string name="network_traffic_autohide_summary">활동이 없는 경우 트래픽 모니터 숨김</string>
   <string name="network_traffic_autohide_threshold">비활성 임계값</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">밝기 제어</string>
   <string name="status_bar_brightness_control_summary">상태 표시줄에서 슬라이딩하여 밝기 조절</string>
@@ -269,7 +270,6 @@
   <string name="global_actions_dnd_title">방해 금지</string>
   <string name="global_actions_summary">전원 메뉴의 작업을 보여줍니다.</string>
   <string name="global_actions_header">일부 작업은 설정 중이거나 장치의 잠금이 풀렸을 때만 보여집니다.</string>
-  <string name="font_sample_text">11:57</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <!-- Notification light dialogs -->

@@ -221,6 +221,7 @@
   <string name="network_traffic_autohide_title">Автоматично-приховувати</string>
   <string name="network_traffic_autohide_summary">Приховати монітор трафіку, якщо він неактивний</string>
   <string name="network_traffic_autohide_threshold">Поріг неактивності</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Контроль яскравості</string>
   <string name="status_bar_brightness_control_summary">Регулюйте яскравість проводячи по статус бару</string>

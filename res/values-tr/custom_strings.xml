@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Kısayol ekle</string>
   <string name="lockscreen_shortcut_apps_title">Kısayollar</string>
   <string name="lockscreen_shortcut_add">Ekle\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Alt durum metnini gizle</string>
-  <string name="lockscreen_hide_indicator_display_summary">Şarj edilme bilgisini ve kilit açma ipuçlarını gizle</string>
   <string name="lockscreen_camera_shortcut_enable_title">Kamera kısayolu göster</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Görünürlük sistem ayarına bağlıdır</string>
   <string name="lockscreen_left_shortcut_enable_title">Çevirici veyâ sesli yardımcı kısayolunu göster</string>
@@ -265,6 +263,9 @@
   <string name="network_traffic_autohide_summary">Hiçbir faaliyet yokken trafik monitörünü sakla</string>
   <string name="network_traffic_autohide_threshold">Hareketsizlik eşiği</string>
   <string name="network_traffic_enable_title">Etkinleştir</string>
+  <!-- captive portal - disable connectivity check -->
+  <string name="captive_portal_mode_title">Kısıtlama girişini devre dışı bırak</string>
+  <string name="captive_portal_mode_summary">Kısıtlama girişini devre dışı bırakarak bağlanabilirlik yoklamasını devre dışı bırakın</string>
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Parlaklık denetimi</string>
   <string name="status_bar_brightness_control_summary">Parlaklığı durum çubuğu üzerinde parmağınızı gezdirerek ayarlayın</string>
@@ -280,10 +281,12 @@
   <string name="recents_fullscreen_title">Tam ekran</string>
   <string name="weather_title">Hava Durumu</string>
   <string name="weather_config_title">Hava durumu hizmeti</string>
+  <string name="weather_config_summary">Sistem hizmeti ayarları</string>
   <string name="header_weather_title">Başlıkta hava durumu</string>
   <string name="header_weather_summary">Bildirim paneli başlığında hava durumu göstermeyi etkinleştirin</string>
   <string name="weather_icon_pack_title">Hava durumu simge paketi</string>
   <string name="weather_icon_pack_note">Not\u003a play store\'dan \"Chronus simgeleri\" araması yaparak yeni simge paketleri yükleyebilirsiniz</string>
+  <string name="weather_icon_pack_info_title">Hava durumu simge paketi hızlı ayarlarda ve kilit ekranında kullanılır</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Gezinti çubuğu</string>
   <!-- Enable Tablet Style navigation bar -->
@@ -318,7 +321,6 @@
   <string name="global_actions_advanced_reboot_summary">Yeniden başlat menüsünde daha fazla seçenek göster</string>
   <string name="global_actions_advanced_reboot_title">İleri seviye tekrar başlatmayı etkinleştir</string>
   <string name="global_actions_advanced_reboot_summary_new">Telefon kilitli değilse, tekrar başlatma menüsünde daha fazla tercih göster</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Ekran resmini kırp ve paylaş</string>
   <string name="screenshot_crop_and_share_summary">Bir ekran resmi aldıktan sonra kırpma, kaydetme veyâ paylaşma gibi bazı işlemleri yapmak için bir düzenleyici penceresi göster</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -641,7 +643,7 @@
   <string name="quick_pulldown_always">Dâimâ</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Genişletilmiş masaüstü</string>
-  <string name="expanded_desktop_summary">Durum çubuğunu ve gezinti tuşunu uygulamaya mahsusen ayarlama</string>
+  <string name="expanded_desktop_summary">Durum ve gezinti çubuklarını uygulamaya mahsus ayarlama</string>
   <string name="expanded_hide_nothing">Hiçbir şeyi saklama</string>
   <string name="expanded_hide_status">Durum çubuğunu sakla</string>
   <string name="expanded_hide_navigation">Gezinti çubuğunu sakla</string>
@@ -671,4 +673,20 @@
   <string name="hide_lockscreen_alarm_summary">Saat widget\'ının altındaki alarm metninin görünürlüğünü değiştirin</string>
   <string name="hide_lockscreen_status_bar_title">Durum çubuğunu sakla</string>
   <string name="hide_lockscreen_status_bar_summary">Görünürlüğü değiştirmek için durum çubuğuna dokunun</string>
+  <string name="hide_lockscreen_indicator_display_title">Alttaki durum metnini sakla</string>
+  <string name="hide_lockscreen_indicator_display_summary">Şarj edilme bilgisini ve kilit açma ipuçlarını sakla</string>
+  <string name="hide_lockscreen_icon_title">Kilit ekranı simgesini sakla</string>
+  <string name="hide_lockscreen_icon_summary">Kilit ekranı simgesinin görünürlüğünü değiştirin</string>
+  <string name="lockscreen_weather_title">Hava durumunu göster</string>
+  <string name="lockscreen_weather_summary">Mevcûd hava durumunu ve sıcaklığı göster</string>
+  <string name="lockscreen_items_aod_info_title">Bu görünürlük ayarı fa\'âl ekrana da uygulanır</string>
+  <string name="system_proxi_check_enabled_title">Yakınlık yoklaması</string>
+  <string name="system_proxi_check_enabled_summary">Güç ve ses seviyesi düğmelerinin uyandırma hadiselerini ele almadan evvel yakınlık sensörünü yokla</string>
+  <string name="aspect_ratio_apps_enabled_title">Ölçeklemeyi fa\'âl hâle getir</string>
+  <string name="aspect_ratio_apps_enabled_summary">Eski uygulamaların ekranın tamamını kullanmasına izin verin</string>
+  <string name="aspect_ratio_apps_list_title">Ölçeklemeyi kullanmasına izin verilen uygulamalar</string>
+  <string name="aspect_ratio_category_title">Eski uygulama ölçekleme</string>
+  <string name="aspect_ratio_apps_info">Değişikliklerden sonra uygulamaların tekrar başlatılması gerekir</string>
+  <string name="navigation_bar_menu_arrow_keys_title">Yazarken ok tuşlarını göster</string>
+  <string name="navigation_bar_menu_arrow_keys_summary">Yazarken sağda ve solda işaretçi düğmelerini göster</string>
 </resources>

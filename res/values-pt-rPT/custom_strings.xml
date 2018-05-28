@@ -226,8 +226,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Adicionar atalho</string>
   <string name="lockscreen_shortcut_apps_title">Atalhos</string>
   <string name="lockscreen_shortcut_add">Adicionar\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Ocultar o texto de estado do fundo do ecrã</string>
-  <string name="lockscreen_hide_indicator_display_summary">Ocultar a informação de carregamento e dicas de desbloqueio</string>
   <string name="lockscreen_camera_shortcut_enable_title">Mostrar atalho da câmara</string>
   <string name="lockscreen_camera_shortcut_enable_summary">A visibilidade depende da configuração do sistema</string>
   <string name="lockscreen_left_shortcut_enable_title">Mostrar atalho do telefone ou assistente de voz</string>
@@ -271,6 +269,9 @@
   <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfego quando não existir atividade</string>
   <string name="network_traffic_autohide_threshold">Limiar de inatividade</string>
   <string name="network_traffic_enable_title">Ativar</string>
+  <!-- captive portal - disable connectivity check -->
+  <string name="captive_portal_mode_title">Desativar o portal cativo</string>
+  <string name="captive_portal_mode_summary">Desativar a verificação de ligação ao desativar o portal cativo</string>
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Controlo de brilho</string>
   <string name="status_bar_brightness_control_summary">Ajustar o brilho deslizando através da barra de estado</string>
@@ -326,7 +327,6 @@
   <string name="global_actions_advanced_reboot_summary">Mostrar mais opções no menu de reinicialização</string>
   <string name="global_actions_advanced_reboot_title">Ativar a reinicialização avançada</string>
   <string name="global_actions_advanced_reboot_summary_new">Mostrar mais opções no menu de reinicialização quando o dispositivo estiver desbloqueado</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Cortar e partilhar a captura de ecrã</string>
   <string name="screenshot_crop_and_share_summary">Mostrar uma janela de edição de imagem após uma captura de ecrã de modo a poder realizar operações como cortar, partilhar ou guardar</string>
   <!--<string name="screenshot_crop_behavior_title"></string>

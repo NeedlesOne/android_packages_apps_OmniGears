@@ -218,8 +218,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Ajouter un raccourci</string>
   <string name="lockscreen_shortcut_apps_title">Raccourcis</string>
   <string name="lockscreen_shortcut_add">Ajouter\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Masquer les notifications d\'état au bas de l\'écran</string>
-  <string name="lockscreen_hide_indicator_display_summary">Cache les informations de charge et les astuces de déverrouillage</string>
   <string name="lockscreen_camera_shortcut_enable_title">Afficher le raccourci de l\'appareil photo</string>
   <string name="lockscreen_camera_shortcut_enable_summary">La visibilité dépend de la configuration du système</string>
   <string name="lockscreen_left_shortcut_enable_title">Afficher le raccourci du téléphone ou de l\'assistant vocal</string>
@@ -239,6 +237,7 @@
   <string name="header_provider_disabled">Désactivé</string>
   <string name="custom_header_title">Personnalisation de l\'image d\'en-tête</string>
   <string name="file_header_select_title">Sélectionner une image locale</string>
+  <string name="file_header_select_summary">Choisissez l’image à partir du stockage</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Trafic réseau</string>
   <string name="network_traffic_summary">Indicateur d\'activité réseau dans la barre d\'état</string>
@@ -259,6 +258,7 @@
   <string name="network_traffic_autohide_summary">Masque le moniteur de trafic lorsqu\'il n\'y a aucune activité</string>
   <string name="network_traffic_autohide_threshold">Seuil d\'inactivité</string>
   <string name="network_traffic_enable_title">Activer</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Contrôle de la luminosité</string>
   <string name="status_bar_brightness_control_summary">Ajuster la luminosité du rétroéclairage en glissant votre doigt sur la barre d\'état</string>
@@ -312,7 +312,6 @@
   <string name="global_actions_advanced_reboot_summary">Affiche plus d\'options dans le menu redémarrer</string>
   <string name="global_actions_advanced_reboot_title">Activer le redémarrage avancé</string>
   <string name="global_actions_advanced_reboot_summary_new">Affiche plus d\'options dans le menu redémarrer si non verrouillé</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Rogner &amp; partager les captures d’écran</string>
   <string name="screenshot_crop_and_share_summary">Affiche une fenêtre d’édition après avoir pris une capture d’écran afin d’effectuer des opérations telles que rogner, sauvegarder ou partager celle-ci</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -473,9 +472,9 @@
   <string name="DESC_SENSING_TIMEOUT">Si nous ne recevons un rappel de AnyMotion dans ce laps de temps + locating_to, nous allons changer de STATE_SENSING à STATE_INACTIVE, et tous les rappels de AnyMotion passés hors STATE_SENSING seront ignorés</string>
   <string name="DESC_LOCATING_TIMEOUT">C\'est le temps que nous attendrons pour obtenir une bonne localisation avant de passer en mode veille</string>
   <string name="DESC_LOCATION_ACCURACY">La précision maximale désirée (en mètres) pour laquelle nous considérons la localisation être suffisante pour passer en veille. Nous allons essayer d’obtenir une précision équivalente ou jusqu\'à l’expiration de la locating_to</string>
-  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">C\'est la durée maximum d\'exécution en mode de maintenance inactif</string>
   <string name="SHORT_INACTIVE_TIMEOUT">Délai d’inactivité</string>
   <string name="SHORT_SENSING_TIMEOUT">Délai de détection</string>
+  <string name="SHORT_LOCATING_TIMEOUT">Délai d\'expiration de localisation</string>
   <string name="SHORT_LOCATION_ACCURACY">Précision de la localisation</string>
   <string name="SHORT_IDLE_TIMEOUT">Délai d’inactivité</string>
   <string name="SHORT_MAX_IDLE_TIMEOUT">Délai maximum d\'inactivité</string>

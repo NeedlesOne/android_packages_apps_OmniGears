@@ -212,8 +212,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Tambahkan pintasan</string>
   <string name="lockscreen_shortcut_apps_title">Pintasan</string>
   <string name="lockscreen_shortcut_add">Tambahkan\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Sembunyikan teks status bawah</string>
-  <string name="lockscreen_hide_indicator_display_summary">Sembunyikan informasi pengisian dan penguncian petunjuk</string>
   <string name="lockscreen_camera_shortcut_enable_title">Tampilkan pintasan kamera</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Visibilitas tergantung pada pengaturan sistem</string>
   <string name="lockscreen_left_shortcut_enable_title">Tampilkan cara pintas dialer atau voice assist</string>
@@ -250,6 +248,7 @@
   <string name="network_traffic_autohide_summary">Sembunyikan monitor lalu lintas saat tidak ada aktivitas</string>
   <string name="network_traffic_autohide_threshold">Ambang ketidakaktifan</string>
   <string name="network_traffic_enable_title">Mengaktifkan</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Kontrol kecerahan</string>
   <string name="status_bar_brightness_control_summary">Sesuaikan kecerahan dengan menggeser melintasi bilah status</string>
@@ -302,7 +301,6 @@
   <string name="global_actions_advanced_reboot_summary">Tampilkan lebih banyak pilihan di menu restart</string>
   <string name="global_actions_advanced_reboot_title">Aktifkan lanjutan restart</string>
   <string name="global_actions_advanced_reboot_summary_new">Tampilkan lebih banyak pilihan di menu restart jika tidak terkunci</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Tangkapan layar &amp; Bagikan</string>
   <string name="screenshot_crop_and_share_summary">Tampilkan jendela editor setelah mengambil tangkapan layar untuk melakukan beberapa operasi seperti memotong, menyimpan atau membagikannya</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -479,7 +477,6 @@
   <string name="DESC_LIGHT_PRE_IDLE_TIMEOUT">Ini adalah jumlah waktu kita akan menunggu dari titik di mana kita memutuskan kita ingin pergi menganggur sampai kita benar-benar melakukannya, sambil menunggu pekerjaan dan aktivitas lancar lainnya untuk menyelesaikannya</string>
   <string name="DESC_LIGHT_IDLE_TIMEOUT">Ini adalah saat awal kita akan berjalan dalam mode perbaikan idle</string>
   <string name="DESC_LIGHT_IDLE_FACTOR">Faktor penskalaan untuk diterapkan pada mode siaga cahaya setiap kali kita menyelesaikan sebuah siklus</string>
-  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Ini adalah waktu maksimum yang akan kita jalankan dalam mode maintenance idle</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Ini adalah jumlah minimum waktu yang kami inginkan untuk menyediakan mode perawatan saat pemalasan ringan</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Ini adalah jumlah maksimum waktu yang kami inginkan untuk menyediakan mode perawatan saat pemalasan ringan</string>
   <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Ini adalah jumlah minimum waktu yang kita akan tetap dalam mode pemeliharaan setelah tertidur ringan</string>

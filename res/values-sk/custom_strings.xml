@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">Pridať odkaz</string>
   <string name="lockscreen_shortcut_apps_title">Odkazy</string>
   <string name="lockscreen_shortcut_add">Pridať\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">Skryť stavový text naspodku</string>
-  <string name="lockscreen_hide_indicator_display_summary">Skrytie informácií o nabíjaní a rady k odomknutiu</string>
   <string name="lockscreen_camera_shortcut_enable_title">Zobrazovať odkaz na fotoaparát</string>
   <string name="lockscreen_camera_shortcut_enable_summary">Viditeľnosť závisí od nastavenia systému</string>
   <string name="lockscreen_left_shortcut_enable_title">Zobrazovať odkaz vytáčania alebo hlasového asistenta</string>
@@ -265,6 +263,7 @@
   <string name="network_traffic_autohide_summary">V prípade neaktivity skryť sledovanie sieťového presnosu</string>
   <string name="network_traffic_autohide_threshold">Prah nečinnosti</string>
   <string name="network_traffic_enable_title">Zapnúť</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Ovládanie jasu</string>
   <string name="status_bar_brightness_control_summary">Upraviť jas posúvaním po stavovej lište</string>
@@ -317,7 +316,6 @@
   <string name="global_actions_advanced_reboot_summary">Zobraziť viac volieb v ponuke reštartovania</string>
   <string name="global_actions_advanced_reboot_title">Povoliť pokročilé reštartovanie</string>
   <string name="global_actions_advanced_reboot_summary_new">Zobraziť viac možností v ponuke reštartovania, ak to nie je uzamknuté</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">Orezanie snímky obrazovky &amp; zdieľanie</string>
   <string name="screenshot_crop_and_share_summary">Po vyhotovení snímky obrazovky zobraziť okno editora pre operácie ako orezanie, uloženie alebo zdieľanie</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -497,7 +495,6 @@
   <string name="DESC_LIGHT_PRE_IDLE_TIMEOUT">To je čas, ktorý čakáme, odkedy sme sa rozhodli prejsť do pohotovostného režimu, až kým to skutočne neuskutočníme, kým čakáme na pracovné postupy a ďalšie aktuálne aktivity na dokončenie</string>
   <string name="DESC_LIGHT_IDLE_TIMEOUT">Toto je počiatočný čas spustenia v pohotovostnom režime</string>
   <string name="DESC_LIGHT_IDLE_FACTOR">Faktor zmeny merítka, ktorý sa používa pre jednoduchý režim nečinnosti pri každom dokončení cyklu</string>
-  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">Toto je maximálny čas spustenia v režime nečinnosti</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Toto je minimálny čas, ktorý chcete sprístupniť pre režim údržby v režime slabej nečinnosti</string>
   <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Toto je maximálny čas, ktorý chcete sprístupniť pre režim údržby v režime slabej nečinnosti</string>
   <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">Toto je minimálny čas, po ktorý zostaneme v režime údržby po ľahkom spánku</string>
@@ -641,7 +638,6 @@
   <string name="quick_pulldown_always">Vždy</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Rozšírená plocha</string>
-  <string name="expanded_desktop_summary">Nastavenie stavového riadku a zobrazenia navigačných tlačidiel podľa aplikácie</string>
   <string name="expanded_hide_nothing">Nič neskrývať</string>
   <string name="expanded_hide_status">Skryť stavový riadok</string>
   <string name="expanded_hide_navigation">Skryť navigačný panel</string>

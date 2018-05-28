@@ -164,6 +164,7 @@
   <string name="show_network_traffic_1500">1500 ms</string>
   <string name="show_network_traffic_2000">2000 ms</string>
   <string name="network_traffic_autohide_title">Avtomatik gizlət</string>
+  <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Parlaqlıq tənzimləmələri</string>
   <string name="status_bar_brightness_control_summary">Parlaqlığı status paneli üzərində barmağınızı sürüşdürməklə tənmizləyə bilərsiniz</string>
@@ -197,7 +198,6 @@
   <string name="global_actions_summary">Güc menyusunda göstərilən əməllər</string>
   <string name="global_actions_advanced_reboot_summary">Yenidən başlatma menyusunda daha çox parametr göstər</string>
   <string name="global_actions_advanced_reboot_title">Qabaqcıl yenidən başlatmanı aktivləşdir</string>
-  <string name="font_sample_text">11:57</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
   <string name="status_bar_quick_qs_pulldown_summary_left">Sol</string>

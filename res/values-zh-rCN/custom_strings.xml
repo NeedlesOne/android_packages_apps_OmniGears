@@ -220,8 +220,6 @@
   <string name="lockscreen_shortcut_add_dialog_title">添加快捷方式</string>
   <string name="lockscreen_shortcut_apps_title">快捷方式</string>
   <string name="lockscreen_shortcut_add">新增\u2026</string>
-  <string name="lockscreen_hide_indicator_display_title">隐藏底部状态文本</string>
-  <string name="lockscreen_hide_indicator_display_summary">隐藏充电信息和解锁提示</string>
   <string name="lockscreen_camera_shortcut_enable_title">显示相机快捷方式</string>
   <string name="lockscreen_camera_shortcut_enable_summary">可见性取决于系统设置</string>
   <string name="lockscreen_left_shortcut_enable_title">显示拨号程序或语音助手快捷方式</string>
@@ -265,6 +263,9 @@
   <string name="network_traffic_autohide_summary">没有活动连接时自动隐藏网速指示器</string>
   <string name="network_traffic_autohide_threshold">不活动状态阈值</string>
   <string name="network_traffic_enable_title">启用</string>
+  <!-- captive portal - disable connectivity check -->
+  <string name="captive_portal_mode_title">禁用 captive portal</string>
+  <string name="captive_portal_mode_summary">通过禁用 captive portal 来取消网络连接检查</string>
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">亮度调节</string>
   <string name="status_bar_brightness_control_summary">在状态栏上左右滑动以调整亮度</string>
@@ -280,10 +281,12 @@
   <string name="recents_fullscreen_title">全屏</string>
   <string name="weather_title">天气</string>
   <string name="weather_config_title">天气服务</string>
+  <string name="weather_config_summary">系统服务设置</string>
   <string name="header_weather_title">标题栏显示天气</string>
   <string name="header_weather_summary">在通知面板标题栏显示天气</string>
   <string name="weather_icon_pack_title">天气状态图标包</string>
   <string name="weather_icon_pack_note">注意\u003a 您可以安装新的图标包从play商店搜索“Chronus icons”</string>
+  <string name="weather_icon_pack_info_title">用于快速设置和锁屏界面的天气状况图标包</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">导航栏</string>
   <!-- Enable Tablet Style navigation bar -->
@@ -318,7 +321,6 @@
   <string name="global_actions_advanced_reboot_summary">在重新启动菜单中显示更多选项</string>
   <string name="global_actions_advanced_reboot_title">启用高级重启</string>
   <string name="global_actions_advanced_reboot_summary_new">如果未锁定将在重新启动菜单中显示更多选项</string>
-  <string name="font_sample_text">11:57</string>
   <string name="screenshot_crop_and_share_title">屏幕截图 裁剪 &amp; 分享</string>
   <string name="screenshot_crop_and_share_summary">截图后显示编辑窗口以提供如裁剪、 保存或共享等操作</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
@@ -447,7 +449,7 @@
   <string name="headset_plugged_notification_title">耳机通知</string>
   <string name="headset_plugged_notification_summary">当连接有线耳机时显示通知</string>
   <string name="wake_when_plugged_or_unplugged_title">插入/拔出时唤醒</string>
-  <string name="wake_when_plugged_or_unplugged_summary">当设备插入/拔出充电器时, 唤醒它</string>
+  <string name="wake_when_plugged_or_unplugged_summary">插入/拔出充电器时唤醒设备</string>
   <!-- Display : Rotation -->
   <string name="category_display">显示</string>
   <string name="display_rotation_disabled">禁用</string>
@@ -534,7 +536,7 @@
   <string name="hide_dashboard_summary_title">隐藏摘要</string>
   <string name="hide_dashboard_summary_summary">显示主页设置</string>
   <string name="systemui_theme_style_title">状态栏风格</string>
-  <string name="systemui_theme_style_auto">壁纸集</string>
+  <string name="systemui_theme_style_auto">基于壁纸</string>
   <string name="systemui_theme_style_light">亮色主题</string>
   <string name="systemui_theme_style_dark">黑暗主题</string>
   <string name="volume_steps_title">音量步阶</string>
@@ -552,9 +554,9 @@
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">比例尺</string>
   <string name="screen_off_animation_title">关屏动画</string>
-  <string name="omni_theme_select_title">Omni主题</string>
+  <string name="omni_theme_select_title">Omni 主题</string>
   <string name="omni_theme_select_none">禁用</string>
-  <string name="omni_theme_select_summary">浏览并选择安装的Omni主题</string>
+  <string name="omni_theme_select_summary">浏览并选择已安装的 Omni 主题</string>
   <string name="keys_action_notifications">通知</string>
   <string name="battery_style_text">纯文本</string>
   <string name="battery_style_default">默认</string>
@@ -638,7 +640,7 @@
   <string name="quick_pulldown_always">总是</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">全屏桌面</string>
-  <string name="expanded_desktop_summary">状态栏和导航键视图的每应用程序配置</string>
+  <string name="expanded_desktop_summary">每个应用程序的状态栏和导航栏视图配置</string>
   <string name="expanded_hide_nothing">不隐藏</string>
   <string name="expanded_hide_status">隐藏状态栏</string>
   <string name="expanded_hide_navigation">隐藏导航栏</string>
@@ -668,4 +670,20 @@
   <string name="hide_lockscreen_alarm_summary">更改闹钟文本在时钟小部件下方的可见性</string>
   <string name="hide_lockscreen_status_bar_title">隐藏状态栏</string>
   <string name="hide_lockscreen_status_bar_summary">触摸状态栏以显示状态栏</string>
+  <string name="hide_lockscreen_indicator_display_title">隐藏底部状态文本</string>
+  <string name="hide_lockscreen_indicator_display_summary">隐藏充电信息和解锁提示</string>
+  <string name="hide_lockscreen_icon_title">隐藏锁屏界面图标</string>
+  <string name="hide_lockscreen_icon_summary">更改锁屏界面图标的可见性</string>
+  <string name="lockscreen_weather_title">显示天气状况</string>
+  <string name="lockscreen_weather_summary">显示当前天气状况和温度</string>
+  <string name="lockscreen_items_aod_info_title">此可见性配置也适用于环境显示界面</string>
+  <string name="system_proxi_check_enabled_title">距离检测</string>
+  <string name="system_proxi_check_enabled_summary">在处理电源按键和音量按键唤醒事件之前检查距离传感器</string>
+  <string name="aspect_ratio_apps_enabled_title">启用缩放</string>
+  <string name="aspect_ratio_apps_enabled_summary">允许旧式应用程序使用全屏显示</string>
+  <string name="aspect_ratio_apps_list_title">允许使用缩放的应用程序</string>
+  <string name="aspect_ratio_category_title">旧式应用程序缩放</string>
+  <string name="aspect_ratio_apps_info">更改后需要重新启动应用程序</string>
+  <string name="navigation_bar_menu_arrow_keys_title">键入光标</string>
+  <string name="navigation_bar_menu_arrow_keys_summary">键入时显示左、右光标</string>
 </resources>
