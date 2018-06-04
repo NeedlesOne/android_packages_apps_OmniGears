@@ -15,7 +15,6 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:key="bars_settings"
             android:title="@string/custom_bars_settings_title" >
 

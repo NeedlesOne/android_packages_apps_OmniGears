@@ -15,7 +15,6 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="rotation_settings"
         android:title="@string/display_rotation_title" >
 

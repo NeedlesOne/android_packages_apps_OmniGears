@@ -15,7 +15,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        xmlns:settings="http://schemas.android.com/apk/lib/res/org.omnirom.omnilib"
         android:key="led_settings"
         android:title="@string/battery_light_settings_title" >
 
@@ -50,25 +50,25 @@
 
         <org.omnirom.omnilib.preference.ColorSelectPreference
             android:key="low_color"
-            ledPreview="true"
+            settings:ledPreview="true"
             android:title="@string/battery_light_low_color_title"
             android:persistent="false" />
 
         <org.omnirom.omnilib.preference.ColorSelectPreference
             android:key="medium_color"
-            ledPreview="true"
+            settings:ledPreview="true"
             android:title="@string/battery_light_medium_color_title"
             android:persistent="false" />
 
         <org.omnirom.omnilib.preference.ColorSelectPreference
             android:key="full_color"
-            ledPreview="true"
+            settings:ledPreview="true"
             android:title="@string/battery_light_full_color_title"
             android:persistent="false" />
 
         <org.omnirom.omnilib.preference.ColorSelectPreference
             android:key="really_full_color"
-            ledPreview="true"
+            settings:ledPreview="true"
             android:title="@string/battery_light_really_full_color_title"
             android:persistent="false" />
 
@@ -87,7 +87,7 @@
 
         <org.omnirom.omnilib.preference.ColorSelectPreference
             android:key="fast_color"
-            ledPreview="true"
+            settings:ledPreview="true"
             android:title="@string/fast_charging_light_color_title"
             android:summary="@string/fast_charging_light_color_summary"
             android:persistent="false"
