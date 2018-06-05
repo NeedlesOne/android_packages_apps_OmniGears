@@ -64,6 +64,7 @@
   <string name="volume_button_music_control_summary">Vaihda kappaleita pitämällä äänenvoimakkuusnäppäimiä pohjassa näytön ollessa suljettuna</string>
   <string name="keys_action_sleep">Lepotila</string>
   <string name="button_home_wake_title">Herätä laite</string>
+  <string name="button_other_title">Muu</string>
   <string name="keys_action_app_switch_card">AOSP (pino)</string>
   <string name="keys_action_omniswitch_short">OmniSwitch</string>
   <string name="keys_action_app_switch_grid">AOSP (ruudukko)</string>
@@ -95,6 +96,7 @@
   <!-- Swap volume buttons when the screen is rotated -->
   <string name="color_picker_dialog_title">Väri</string>
   <!-- Battery light settings  -->
+  <string name="battery_light_enable">Ota käyttöön</string>
   <string name="battery_light_list_title">Värit</string>
   <string name="battery_light_medium_color_title">Ladataan</string>
   <string name="battery_light_full_color_title">Ladattu (90 %)</string>
@@ -168,6 +170,7 @@
   <string name="show_network_traffic_2000">2000 ms</string>
   <string name="network_traffic_autohide_title">Piilota automaattisesti</string>
   <string name="network_traffic_autohide_summary">Piilota verkonliikenteen seuranta, kun liikennettä ei ole</string>
+  <string name="network_traffic_enable_title">Ota käyttöön</string>
   <!-- captive portal - disable connectivity check -->
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Kirkkauden säätö</string>
@@ -185,6 +188,7 @@
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Navigointipalkki</string>
   <!-- Enable Tablet Style navigation bar -->
+  <string name="other_category">Muu</string>
   <!-- Dashboard columns -->
   <string name="dashboard_columns_phone_default">Oletus</string>
   <string name="dashboard_columns_two">2</string>
@@ -219,6 +223,7 @@
   <!-- Notification light dialogs -->
   <string name="default_time">Normaali</string>
   <string name="dialog_delete_title">Poista</string>
+  <string name="dialog_delete_message">Poista valittu kohde?</string>
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_always_on">Aina päällä</string>
   <string name="pulse_length_very_short">Erittäin lyhyt</string>
@@ -328,9 +333,12 @@
   <!-- fingerprint authentication vibration -->
   <string name="choose_app">Valitse sovellus</string>
   <string name="disabled_entry">Pois käytöstä</string>
+  <string name="event_service_settings_title">Tapahtumat</string>
   <!-- Quick Pulldown-->
   <!-- Expanded desktop -->
   <!-- Brightness control -->
   <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Alaosan pikakuvakkeet</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Määritä alaosan pikakuvakkeet</string>
   <!-- Hide lockscreen status bar, clock, date, alarm -->
 </resources>

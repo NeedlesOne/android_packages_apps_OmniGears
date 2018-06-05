@@ -162,6 +162,7 @@
   <string name="statusbar_clock_summary">Définir le style d\'affichage de l\'horloge dans la barre d\'état</string>
   <string name="battery_style_title">Style</string>
   <string name="statusbar_percent_inside_title">Superposition du pourcentage</string>
+  <string name="statusbar_percent_inside_summary">Afficher le pourcentage de la batterie au-dessus de l\'image de la batterie</string>
   <string name="statusbar_charging_image_title">Indicateur de charge</string>
   <string name="statusbar_category_charging_title">En charge</string>
   <string name="statusbar_charging_image_summary">Afficher l\'icône en gras durant la charge. Masque la superposition du pourcentage</string>
@@ -173,6 +174,7 @@
   <string name="button_backlight_title">Rétro-éclairage des boutons</string>
   <string name="button_backlight_summary">Configurer activation et Luminosité</string>
   <string name="button_backlight_on_touch_only_title">Bouton tactile</string>
+  <string name="button_backlight_on_touch_only_summary">Activer le rétroéclairage avec le délai d\'expiration uniquement sur le bouton tactile</string>
   <string name="button_timeout_title">Délai d\'extinction du rétro-éclairage</string>
   <string name="button_timeout_summary">Désactivé lorsque la valeur est égale à 0</string>
   <string name="button_link_brightness">Lier à l\'écran</string>
@@ -225,10 +227,12 @@
   <string name="lockscreen_category_title">Écran de verrouillage</string>
   <string name="notification_title">Panneau de notification</string>
   <string name="status_bar_custom_header_title">Personnalisation d\'en-tête</string>
+  <string name="daylight_header_pack_title">Collection d’images en-tête</string>
   <string name="status_bar_custom_header_shadow_title">Ombrage de l\'image d\'en-tête</string>
   <string name="status_bar_custom_header_shadow_summary">Pour une meilleure visibilité des images lumineuses</string>
   <string name="unit_percent">\u0025</string>
   <string name="static_header_provider_title">Image statique</string>
+  <string name="daylight_header_provider_title">Collection d’images</string>
   <string name="custom_header_provider_title">Fournisseur de l’en-tête</string>
   <string name="custom_header_pick_title">Définir l\'image d\'en-tête</string>
   <string name="custom_header_pick_summary">Sélectionnez une image locale ou distante</string>
@@ -238,6 +242,7 @@
   <string name="custom_header_title">Personnalisation de l\'image d\'en-tête</string>
   <string name="file_header_select_title">Sélectionner une image locale</string>
   <string name="file_header_select_summary">Choisissez l’image à partir du stockage</string>
+  <string name="file_header_provider_title">Image unique</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Trafic réseau</string>
   <string name="network_traffic_summary">Indicateur d\'activité réseau dans la barre d\'état</string>

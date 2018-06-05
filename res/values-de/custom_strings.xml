@@ -231,6 +231,7 @@
   <string name="style_disabled_summary">Benutzerdefiniertes Header-Bild ist AUS</string>
   <string name="header_provider_disabled">Deaktiviert</string>
   <string name="custom_header_title">Benutzerdefiniertes Header-Bild</string>
+  <string name="file_header_select_title">Wähle ein Bild</string>
   <string name="file_header_provider_title">Einzelnes Bild</string>
   <!-- Network traffic -->
   <string name="network_traffic_title">Netzwerkverkehr</string>
@@ -267,6 +268,7 @@
   <string name="recents_search_bar_title">Suche-Leiste anzeigen</string>
   <string name="recents_fullscreen_title">Vollbild</string>
   <string name="weather_title">Wetter</string>
+  <string name="weather_config_title">Wetteranbieter</string>
   <string name="header_weather_title">Wetteranzeige in Kopfzeile</string>
   <string name="header_weather_summary">Wetteranzeige in Benachrichtigungsfeld-Kopfzeile aktivieren</string>
   <string name="weather_icon_pack_title">Wetter Symbol-Paket</string>
@@ -528,11 +530,20 @@
   <string name="volume_steps_5">5 Schritte</string>
   <string name="system_volume_option_title">System-Lautstärke</string>
   <string name="call_volume_option_title">Gesprächslautstärke</string>
+  <string name="double_tap_sleep_lockscreen_title">Doppeltippen auf Sperrbildschirm für Ruhemodus</string>
+  <string name="double_tap_sleep_lockscreen_summary">Zweimal irgendwo auf dem Sperrbildschirm tippen, um das Gerät in den Ruhemodus zu versetzen</string>
+  <string name="omni_theme_select_none">Deaktiviert</string>
+  <string name="keys_action_notifications">Benachrichtigungen</string>
   <string name="battery_style_text">Nur Text</string>
   <string name="battery_style_default">Standard</string>
+  <string name="battery_style_meter_horizontal">Horizontaler Balken</string>
+  <string name="battery_style_circle">Kreis</string>
+  <string name="battery_style_round_rect">Quadrat</string>
+  <string name="statusbar_battery_dotted_line_title">Gestrichelte Linie</string>
   <string name="battery_percent_none">Niemals</string>
   <string name="battery_percent_always">Immer</string>
   <string name="battery_percent_title">Prozent anzeigen</string>
+  <string name="clock_title_enable">Ausrichtung</string>
   <string name="clock_enabled">Aktiviert</string>
   <string name="clock_disabled">Deaktiviert</string>
   <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
@@ -543,7 +554,13 @@
   <string name="left_clock">Uhr links</string>
   <string name="dont_show">Nicht anzeigen</string>
   <string name="clock_date_display">Datum</string>
+  <string name="clock_date_style">Datumsformat</string>
+  <string name="clock_date_position">Datumsposition</string>
   <string name="clock_date_format">Datumsformat</string>
+  <string name="clock_date_string_edittext_title">Muss in einem Datumsformat wie z.B. MM/dd/yy sein</string>
+  <string name="clock_date_string_edittext_summary">Zeichenfolge eingeben</string>
+  <string name="clock_date_right">Rechts neben Uhrzeit</string>
+  <string name="clock_date_left">Links neben Uhrzeit</string>
   <string name="am_pm_clock_normal">Normale Schriftgröße</string>
   <string name="am_pm_clock_small">Kleine Schriftgröße</string>
   <string name="am_pm_clock_none">Nicht anzeigen</string>
@@ -553,12 +570,36 @@
   <string name="clock_date_style_normal">Normal</string>
   <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
   <string name="clock_date_style_uppercase">Großbuchstaben</string>
+  <string name="clock_date_format_custom">Benutzerdefiniertes Java Format</string>
   <string name="status_bar_clock_seconds_title">Sekunden anzeigen</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibriere bei erkanntem Fingerabdruck</string>
+  <string name="fprint_sucess_vib_summary">Vibriert bei erfolgreicher Fingerabdruckauthentifizierung</string>
+  <string name="choose_app">App wählen</string>
   <string name="disabled_entry">Deaktiviert</string>
+  <string name="app_chooser_left">Links</string>
+  <string name="app_chooser_right">Rechts</string>
   <!-- Quick Pulldown-->
+  <string name="quick_pulldown_off">Deaktiviert</string>
+  <string name="quick_pulldown_left">Links</string>
+  <string name="quick_pulldown_right">Rechts</string>
+  <string name="quick_pulldown_always">Immer</string>
   <!-- Expanded desktop -->
+  <string name="expanded_hide_status">Statusleiste ausblenden</string>
+  <string name="expanded_hide_navigation">Navigationsleiste ausblenden</string>
+  <string name="expanded_hide_both">Beide ausblenden</string>
+  <string name="expanded_nothing_to_show">Um eine benutzerdefinierte Anwendungskonfiguration für den erweiterten Modus zu setzen, deaktivieren Sie \"Aktiviert für alle\"</string>
+  <string name="expanded_enabled_for_all">Aktiviert für alle</string>
+  <string name="show_all_apps_menu">Alle Apps</string>
   <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Helligkeitskontrolle</string>
+  <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste ändern</string>
   <!-- Bottom shortcuts -->
   <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="hide_lockscreen_status_bar_title">Statusleiste ausblenden</string>
+  <string name="hide_lockscreen_indicator_display_title">Unteren Statustext ausblenden</string>
+  <string name="hide_lockscreen_indicator_display_summary">Lade-Informationen und Hinweise zum Entsperren ausblenden</string>
+  <string name="system_proxi_check_enabled_title">Näherungssensor überprüfen</string>
+  <string name="navigation_bar_menu_arrow_keys_title">Pfeiltasten während des Schreibens</string>
+  <string name="navigation_bar_menu_arrow_keys_summary">Zeige nach links und rechts Pfeiltasten während des Schreibens</string>
 </resources>
