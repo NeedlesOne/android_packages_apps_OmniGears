@@ -119,9 +119,9 @@
                 android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
 
             <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
-                android:key="captive_portal_mode"
-                android:title="@string/captive_portal_mode_title"
-                android:summary="@string/captive_portal_mode_summary"
+                android:key="captive_portal_ignore_mode"
+                android:title="@string/captive_portal_ignore_mode_title"
+                android:summary="@string/captive_portal_ignore_mode_summary"
                 android:defaultValue="true" />
 
         </PreferenceCategory>

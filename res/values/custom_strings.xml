@@ -302,8 +302,8 @@
     <string name="network_traffic_enable_title">Enable</string>
 
     <!-- captive portal - disable connectivity check -->
-    <string name="captive_portal_mode_title">Disable captive portal</string>
-    <string name="captive_portal_mode_summary">Disable connectivity check by disabling captive portal</string>
+    <string name="captive_portal_ignore_mode_title">Enable captive portal</string>
+    <string name="captive_portal_ignore_mode_summary">Enable connectivity check by enabling captive portal</string>
 
     <!-- statusbar brightness -->
     <string name="status_bar_brightness_control_title">Brightness control</string>
